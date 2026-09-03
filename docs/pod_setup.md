@@ -1,0 +1,43 @@
+# GPU pod setup
+
+## Model choice
+
+There is **no Qwen 3.6 at 4B or 9B**. As of 2026-09-03 the only Qwen-authored 3.6 checkpoints are
+`Qwen/Qwen3.6-27B` (+FP8) and `Qwen/Qwen3.6-35B-A3B` (+FP8). Use:
+
+| Where | `MODEL_ID` (src/config.py) | Notes |
+|---|---|---|
+| Laptop (MPS, 16GB) | `Qwen/Qwen3-4B-Instruct-2507` | dense, standard attention; pipeline testing only |
+| Pod, default | `Qwen/Qwen3.5-9B` | hybrid, 32 layers, hidden 4096, ~18GB bf16 |
+| Pod, if GPU allows | `Qwen/Qwen3.6-27B` | hybrid, 64 layers, hidden 5120, ~54GB bf16 (80GB card) |
+
+Both `Qwen/Qwen3.5-*` and `Qwen/Qwen3.6-*` are `Qwen3_5ForConditionalGeneration` hybrids:
+3 of every 4 layers are Gated DeltaNet linear attention. Decoder blocks live at
+`model.model.language_model.layers`; `src/model.py:get_decoder_layers` finds them automatically.
+
+## Kernels the hybrid models need
+
+Without these, transformers silently falls back to a pure-PyTorch chunked/recurrent implementation
+that is ~3 s/token on MPS and still slow on CUDA. Install on the pod **before** loading the model:
+
+```bash
+pip install flash-linear-attention   # provides the `fla` package (chunk_gated_delta_rule etc.)
+pip install causal-conv1d             # fused causal conv used by the DeltaNet layers
+python -c "import fla, causal_conv1d; print('kernels ok')"
+```
+
+`flash-linear-attention` needs a recent Triton (bundled with the CUDA torch wheel). If the
+`causal-conv1d` wheel fails to build, `pip install causal-conv1d --no-build-isolation` after
+`pip install ninja packaging`. A quick timing check after install: a 60-token greedy reply from
+Qwen3.5-9B should take a few seconds on an A100, not minutes.
+
+## Everything else
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt        # torch here is the CPU/MPS wheel; on the pod install the CUDA wheel first
+export HF_TOKEN=...                    # optional; faster, rate-limit-free downloads
+```
+
+Set `MODEL_ID` in `src/config.py`, then `python -m src.model` to load and sanity-check a reply.
+Weights cache in `~/.cache/huggingface/hub`; nothing under `models/` or `activations/` is committed.

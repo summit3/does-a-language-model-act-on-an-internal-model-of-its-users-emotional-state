@@ -1,0 +1,13 @@
+#!/bin/sh
+# Block any staged file larger than 50MB.
+limit=$((50 * 1024 * 1024))
+fail=0
+for f in $(git diff --cached --name-only --diff-filter=AM); do
+  [ -f "$f" ] || continue
+  size=$(stat -f%z "$f" 2>/dev/null || stat -c%s "$f")
+  if [ "$size" -gt "$limit" ]; then
+    echo "pre-commit: $f is $((size / 1048576))MB (>50MB); refusing to commit." >&2
+    fail=1
+  fi
+done
+exit $fail

@@ -1,0 +1,42 @@
+# --- never commit model weights or cached activations ---
+models/
+activations/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.h5
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# --- environment ---
+.venv/
+venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+*.egg-info/
+.python-version
+
+# --- jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# --- caches / OS ---
+.cache/
+.DS_Store
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- large generated files (>~50MB are also blocked by .githooks/pre-commit) ---
+*.parquet
+*.arrow
+
+# --- local-only notes (kept out of the repo) ---
+default_600k.md
