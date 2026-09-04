@@ -97,3 +97,47 @@ def steer_generate(model, tokenizer, prompt: str, vector: torch.Tensor, layers: 
         )
     new_tokens = out[0, enc["input_ids"].shape[1]:]
     return _strip_thinking(tokenizer.decode(new_tokens, skip_special_tokens=True))
+
+
+# ---------------------------------------------------------------------------
+# Steering strength relative to the residual norm, so calibration transfers between models.
+# ---------------------------------------------------------------------------
+
+@torch.inference_mode()
+def residual_norms(model, tokenizer, prompt: str, system: str | None = None) -> torch.Tensor:
+    """L2 norm of the residual stream at the last prompt token, per layer: [n_layers]."""
+    return get_residual_activations(model, tokenizer, prompt, system).norm(dim=-1)
+
+
+def relative_to_absolute_N(frac: float, norms: torch.Tensor, layers: Iterable[int],
+                           vector: torch.Tensor) -> float:
+    """Convert a strength given as a fraction of the mean residual norm at `layers` into the
+    absolute N used by `steering`, for a `vector` of any norm (N * ||v|| == frac * mean_norm).
+    `norms` is [n_layers] (e.g. from `residual_norms`, or averaged over a set of prompts).
+    """
+    layers = list(layers)
+    mean_norm = norms[layers].mean().item()
+    vnorm = (vector[layers].norm(dim=-1).mean() if vector.ndim == 2 else vector.norm()).item()
+    return frac * mean_norm / vnorm
+
+
+@torch.inference_mode()
+def steer_generate_relative(model, tokenizer, prompt: str, vector: torch.Tensor, layers: Iterable[int],
+                            frac: float, norms: torch.Tensor | None = None, system: str | None = None,
+                            max_new_tokens: int = 200, enable_thinking: bool = ENABLE_THINKING,
+                            return_N: bool = False):
+    """Like `steer_generate`, but the strength is `frac` x (mean residual norm at `layers`).
+
+    `norms` defaults to this prompt's own per-layer norms; pass a dataset-averaged [n_layers]
+    tensor to keep N fixed across prompts. With return_N=True returns (text, absolute_N).
+    Playground reference on Qwen3-1.7B, layers 12-23 (mean last-token norm over the band ~530):
+    N=8 (frac ~0.015) kept the fact, N=15 (frac ~0.03) abandoned the task for emotional support,
+    N=25-35 (frac ~0.05-0.07) was incoherent, N=50+ (frac ~0.1) degenerate.
+    """
+    layers = list(layers)
+    if norms is None:
+        norms = residual_norms(model, tokenizer, prompt, system)
+    N = relative_to_absolute_N(frac, norms, layers, vector)
+    text = steer_generate(model, tokenizer, prompt, vector, layers, N=N, system=system,
+                          max_new_tokens=max_new_tokens, enable_thinking=enable_thinking)
+    return (text, N) if return_N else text
