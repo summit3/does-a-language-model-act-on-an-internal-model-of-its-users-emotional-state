@@ -10,6 +10,7 @@ from typing import Iterable
 
 import torch
 
+from .config import ENABLE_THINKING
 from .model import encode_prompt, get_decoder_layers
 
 
@@ -29,7 +30,7 @@ def _replace_hidden(output, new):
 @torch.inference_mode()
 def get_residual_activations(model, tokenizer, prompt: str, system: str | None = None,
                              add_generation_prompt: bool = True, token_index: int = -1,
-                             enable_thinking: bool = False) -> torch.Tensor:
+                             enable_thinking: bool = ENABLE_THINKING) -> torch.Tensor:
     """Run `prompt` once and return the residual stream at `token_index` (default: last
     prompt token) after every decoder layer, as a float32 CPU tensor [n_layers, hidden_dim].
     """
@@ -83,7 +84,7 @@ def steering(model, vector: torch.Tensor, layers: Iterable[int], N: float = 1.0)
 @torch.inference_mode()
 def steer_generate(model, tokenizer, prompt: str, vector: torch.Tensor, layers: Iterable[int],
                    N: float = 1.0, system: str | None = None, max_new_tokens: int = 200,
-                   enable_thinking: bool = False) -> str:
+                   enable_thinking: bool = ENABLE_THINKING) -> str:
     """Greedy generation with N * vector added to the residual stream at `layers`."""
     from .model import _strip_thinking
     enc = encode_prompt(tokenizer, prompt, system, enable_thinking=enable_thinking)

@@ -9,3 +9,8 @@ MODEL_ID = "Qwen/Qwen3-1.7B"
 # attention) and need the `fla` and `causal_conv1d` CUDA kernels; see docs/pod_setup.md.
 # MODEL_ID = "Qwen/Qwen3.5-9B"      # primary GPU model: 32 layers, hidden 4096, ~18GB bf16
 # MODEL_ID = "Qwen/Qwen3.6-27B"     # replication on an 80GB card: 64 layers, hidden 5120, ~54GB bf16
+
+# Qwen3 / Qwen3.5 / Qwen3.6 chat templates have a thinking mode. With enable_thinking=False the
+# template closes an empty <think></think> block in the *prompt*, so the reply starts directly
+# with the answer. chat() and steer_generate() both read this flag by default.
+ENABLE_THINKING = False

@@ -10,7 +10,7 @@ from __future__ import annotations
 import torch
 from transformers import AutoModelForCausalLM, AutoModelForImageTextToText, AutoTokenizer
 
-from .config import MODEL_ID
+from .config import ENABLE_THINKING, MODEL_ID
 
 DEFAULT_MODEL = MODEL_ID
 
@@ -60,7 +60,7 @@ def build_messages(user_message: str, system: str | None = None) -> list[dict]:
 
 
 def encode_prompt(tokenizer, user_message: str, system: str | None = None,
-                  add_generation_prompt: bool = True, enable_thinking: bool = False):
+                  add_generation_prompt: bool = True, enable_thinking: bool = ENABLE_THINKING):
     """Apply the chat template and return a dict of tensors (input_ids, attention_mask).
 
     With add_generation_prompt=True the last token is the one whose residual stream
@@ -85,8 +85,8 @@ def _strip_thinking(text: str) -> str:
 
 @torch.inference_mode()
 def chat(model, tokenizer, user_message: str, system: str | None = None,
-         max_new_tokens: int = 200, enable_thinking: bool = False) -> str:
-    """Greedy single-turn reply using the model's chat template."""
+         max_new_tokens: int = 200, enable_thinking: bool = ENABLE_THINKING) -> str:
+    """Greedy single-turn reply using the model's chat template (thinking off by default)."""
     enc = encode_prompt(tokenizer, user_message, system, enable_thinking=enable_thinking)
     enc = {k: v.to(model.device) for k, v in enc.items()}
     out = model.generate(
@@ -102,11 +102,32 @@ def chat(model, tokenizer, user_message: str, system: str | None = None,
 
 if __name__ == "__main__":
     import sys, time
-    name = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_MODEL
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    name = args[0] if args else DEFAULT_MODEL
     t0 = time.time()
     model, tok = load_model(name)
     print(f"loaded {name} on {model.device} in {time.time()-t0:.0f}s; "
           f"{len(get_decoder_layers(model))} layers, hidden={model.config.get_text_config().hidden_size}")
+    prompt = "Explain how compound interest works in two sentences."
+    if "--check-thinking" in sys.argv:
+        # Raw check: template has a thinking switch? prompt ends with an empty think block?
+        # generated tokens (special tokens kept, nothing stripped) free of <think>/</think>?
+        template = tok.chat_template or ""
+        print("template has enable_thinking switch:", "enable_thinking" in template)
+        enc = encode_prompt(tok, prompt)
+        print("prompt tail:", repr(tok.decode(enc["input_ids"][0][-8:])))
+        enc = {k: v.to(model.device) for k, v in enc.items()}
+        with torch.inference_mode():
+            out = model.generate(**enc, max_new_tokens=60, do_sample=False,
+                                 pad_token_id=tok.pad_token_id or tok.eos_token_id)
+        gen = out[0, enc["input_ids"].shape[1]:]
+        raw = tok.decode(gen, skip_special_tokens=False)
+        first = tok.convert_ids_to_tokens(gen[:3].tolist())
+        print("first generated tokens:", first)
+        print("raw generated text:", repr(raw))
+        ok = "<think>" not in raw and "</think>" not in raw and not any("think" in t for t in first)
+        print("PASS: no think block, no leading think token" if ok else "FAIL: think tokens present")
+        sys.exit(0 if ok else 1)
     t0 = time.time()
-    print(chat(model, tok, "Explain how compound interest works in two sentences."))
+    print(chat(model, tok, prompt))
     print(f"[{time.time()-t0:.1f}s]")

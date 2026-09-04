@@ -41,3 +41,19 @@ export HF_TOKEN=...                    # optional; faster, rate-limit-free downl
 
 Set `MODEL_ID` in `src/config.py`, then `python -m src.model` to load and sanity-check a reply.
 Weights cache in `~/.cache/huggingface/hub`; nothing under `models/` or `activations/` is committed.
+
+## Thinking mode (applies to Qwen3.5-9B and Qwen3.6-27B on the pod too)
+
+Qwen3, Qwen3.5 and Qwen3.6 chat templates all carry an `enable_thinking` switch. With it on, the
+reply starts with a `<think>...</think>` block of chain-of-thought, which would (a) change what the
+"reply" is for every behavioural metric and (b) put hundreds of extra tokens before the answer.
+`src/config.py:ENABLE_THINKING = False` is passed to `apply_chat_template` by `chat()`,
+`steer_generate()` and `get_residual_activations()`; the template then emits an empty
+`<think>\n\n</think>\n\n` at the end of the *prompt* so the model answers directly.
+
+After loading a new model on the pod, re-run the check (prints raw decoded output, must contain no
+`<think>` and must not start with a think token):
+
+```bash
+python -m src.model --check-thinking
+```
