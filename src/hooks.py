@@ -1,7 +1,10 @@
 """Residual-stream extraction and activation steering via PyTorch forward hooks.
 
-Both functions hook the *output* of each decoder block, i.e. the residual stream
-after that block. Layer index i therefore means "residual stream after block i".
+LAYER CONVENTION (used everywhere in this repo): activation index i = the OUTPUT of decoder
+block i, zero-based, embeddings excluded. So an activation tensor has first dim
+model.config.num_hidden_layers, index 0 is the residual stream after block 0, and index
+n_layers-1 is the residual stream after the last block (before the final norm). This equals
+HuggingFace's output_hidden_states[i + 1]. Steering at "layer i" adds to that same tensor.
 """
 from __future__ import annotations
 
@@ -48,7 +51,10 @@ def get_residual_activations(model, tokenizer, prompt: str, system: str | None =
     finally:
         for h in handles:
             h.remove()
-    return torch.stack([store[i] for i in range(len(layers))])
+    acts = torch.stack([store[i] for i in range(len(layers))])
+    n_expected = model.config.get_text_config().num_hidden_layers
+    assert acts.shape[0] == n_expected, f"got {acts.shape[0]} layers, config says {n_expected}"
+    return acts
 
 
 @contextmanager
@@ -141,3 +147,55 @@ def steer_generate_relative(model, tokenizer, prompt: str, vector: torch.Tensor,
     text = steer_generate(model, tokenizer, prompt, vector, layers, N=N, system=system,
                           max_new_tokens=max_new_tokens, enable_thinking=enable_thinking)
     return (text, N) if return_N else text
+
+
+# ---------------------------------------------------------------------------
+# Introspection: where exactly are the hooks, and what kind of block is each layer?
+# ---------------------------------------------------------------------------
+
+def describe_layers(model, tokenizer=None, prompt: str | None = None) -> dict:
+    """Print (and return) the resolved decoder-layer path, the class/children of blocks 0 and 1,
+    the per-block type (linear attention / DeltaNet vs full attention) from the config, and, if a
+    tokenizer+prompt are given, a check that hooked activations equal output_hidden_states[i+1].
+    """
+    from .model import get_decoder_layers
+    blocks = get_decoder_layers(model)
+    # find the attribute path that get_decoder_layers resolved to
+    path = None
+    for cand in ("model.language_model.layers", "model.layers", "language_model.model.layers",
+                 "language_model.layers", "transformer.h", "layers"):
+        obj = model
+        try:
+            for a in cand.split("."):
+                obj = getattr(obj, a)
+        except AttributeError:
+            continue
+        if obj is blocks:
+            path = cand
+            break
+    cfg = model.config.get_text_config()
+    layer_types = list(getattr(cfg, "layer_types", None) or ["full_attention"] * len(blocks))
+    info = {"path": path, "n_blocks": len(blocks), "num_hidden_layers": cfg.num_hidden_layers,
+            "layer_types": layer_types,
+            "block0": type(blocks[0]).__name__, "block1": type(blocks[1]).__name__,
+            "block0_children": [f"{n}:{type(m).__name__}" for n, m in blocks[0].named_children()],
+            "block1_children": [f"{n}:{type(m).__name__}" for n, m in blocks[1].named_children()]}
+    print(f"decoder layers: model.{path}  ({len(blocks)} blocks; config num_hidden_layers={cfg.num_hidden_layers})")
+    print(f"block 0: model.{path}[0] = {info['block0']} children {info['block0_children']}")
+    print(f"block 1: model.{path}[1] = {info['block1']} children {info['block1_children']}")
+    lin = [i for i, t in enumerate(layer_types) if "linear" in t]
+    full = [i for i, t in enumerate(layer_types) if "linear" not in t]
+    print(f"linear-attention (DeltaNet) blocks ({len(lin)}): {lin}")
+    print(f"full-attention blocks ({len(full)}): {full}")
+    info["linear_attention_blocks"], info["full_attention_blocks"] = lin, full
+    if tokenizer is not None and prompt is not None:
+        with torch.inference_mode():
+            enc = encode_prompt(tokenizer, prompt)
+            enc = {k: v.to(model.device) for k, v in enc.items()}
+            hs = model(**enc, output_hidden_states=True, use_cache=False).hidden_states
+            acts = get_residual_activations(model, tokenizer, prompt)
+            diffs = [float((acts[i] - hs[i + 1][0, -1].float().cpu()).abs().max()) for i in range(len(blocks))]
+        info["max_abs_diff_vs_hidden_states"] = max(diffs)
+        print(f"hooks == output_hidden_states[i+1] at last token: max |diff| over layers = {max(diffs):.3g} "
+              f"(len(hidden_states)={len(hs)} = embeddings + {len(blocks)} blocks)")
+    return info
