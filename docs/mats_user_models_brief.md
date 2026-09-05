@@ -32,11 +32,18 @@ Stretch H4 (low priority; Empathic Machines showed this qualitatively): quantify
 
 Existence claims (H2, H3) can use qualitative examples. Method/causal claims (H1, H4) need baselines.
 
-Playground observation (untimed, Qwen3-1.7B): at moderate steering strength along a crude user-distress direction the model dropped a factual task in favour of emotional support. Phase 1 must include task-abandonment / refusal rate as a primary metric, and the concise-answer system prompt must be applied identically across all conditions. (Details: results/playground_notes.md.)
+## Verified pod facts (untimed, Sept 5)
+
+- Qwen3.5-9B on an A40: 32 blocks, hidden 4096, 26 tok/s, thinking off, concise system prompt in place.
+- Layout: 24 Gated DeltaNet blocks + 8 full-attention blocks at 3,7,11,15,19,23,27,31. Hooks are on each block's output; verified equal to HF hidden_states (block 31 differs only by the final norm).
+- Residual norms 5 -> 246 across blocks, no final-layer dip. Mean over blocks 11-21 = 39.5.
+- Playground direction at layer 21 from 5 pairs: all neutral project negative, all stressed positive after mean-centring.
+- Calibration (band 10-21, fraction of mean band norm): random direction inert to 0.1, breaks at 0.15. Stress direction: 0.03 factual distortion ("no single capital"), 0.06 task abandoned (pure emotional support), 0.1 support + repetition, 0.15 looping. Specificity gap ~2-5x. In-sample, n=1; Phase 1/4 must reproduce on held-out prompts.
+- Primary metrics for Phase 1 must therefore include: task abandonment / refusal, factual distortion or hedging on known facts, correctness on arithmetic, agreement with false premises, length.
 
 ## Setup
 
-- Model: Qwen 3.6 9B instruct (27B if GPU allows). Chat template applied.
+- Model: Qwen3.5-9B (Qwen/Qwen3.5-9B) on a rented CUDA GPU; Qwen3.6-27B for an optional end-of-project replication on an 80GB card. Note: no Qwen 3.6 exists below 27B. Qwen 3.5/3.6 are hybrid Gated DeltaNet models and need the flash-linear-attention and causal-conv1d kernels on the pod (see docs/pod_setup.md). Local laptop pipeline testing uses Qwen3-1.7B-Instruct; laptop results are for debugging only. Chat template applied.
 - Access: nnsight or PyTorch hooks. Persistent Jupyter kernel via MCP.
 - One rented GPU. Chen trained probes in ~3 min each on an A100; expect similar.
 - Toggl from clock start.
