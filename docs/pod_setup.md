@@ -77,14 +77,22 @@ python -m src.model --check-thinking
 - Runpod re-maps the external SSH port on every stop/start: re-read it from `get-pod` and update
   `~/.ssh/config`.
 - **Copy the repo with rsync, not git** (the pod has no GitHub credentials). macOS ships openrsync, so
-  use `--stats`, not `--info=...`:
+  use `--stats`, not `--info=...`. Always pull `results/` back **first**, then push with `--delete` so
+  files removed from the repo (e.g. the untracked third-party docs formerly in `docs/`) are removed
+  on the pod too. Excluded paths (`.venv`, `models/`, `activations/`, ...) are protected from
+  deletion by rsync, and `results/` is protected explicitly so pod-generated outputs are never lost:
 
   ```bash
-  rsync -az --stats --exclude .venv --exclude models/ --exclude activations/ --exclude .git/ \
-    --exclude __pycache__ --exclude .ipynb_checkpoints --exclude .DS_Store --exclude default_600k.md \
+  # 1. pull results back (never overwrite the local README)
+  rsync -az --stats --exclude README.md runpod-mats:/workspace/mats-user-models/results/ results/
+  # 2. push the repo, deleting anything on the pod that no longer exists locally
+  rsync -az --stats --delete --filter='P results/' \
+    --exclude .venv --exclude models/ --exclude activations/ --exclude .git/ --exclude __pycache__ \
+    --exclude .ipynb_checkpoints --exclude .DS_Store --exclude default_600k.md --exclude docs/private/ \
     ./ runpod-mats:/workspace/mats-user-models/
   ```
-  The `chown ... Operation not permitted` warnings on `/workspace` are harmless.
+  The `chown ... Operation not permitted` warnings on `/workspace` are harmless (rsync exits 23; the
+  files still transfer).
 - On the pod the venv is `/workspace/venv` (activate it first). Its `bin/activate` exports
   `MATS_MODEL_ID=Qwen/Qwen3.5-9B` (read by `src/config.py`, laptop default is Qwen3-1.7B) and
   `HF_HOME=/workspace/hf_cache` so weights survive a container reset. `src/config.py` is identical on
