@@ -32,6 +32,8 @@ Stretch H4 (low priority; Empathic Machines showed this qualitatively): quantify
 
 Existence claims (H2, H3) can use qualitative examples. Method/causal claims (H1, H4) need baselines.
 
+Playground observation (untimed, Qwen3-1.7B): at moderate steering strength along a crude user-distress direction the model dropped a factual task in favour of emotional support. Phase 1 must include task-abandonment / refusal rate as a primary metric, and the concise-answer system prompt must be applied identically across all conditions. (Details: results/playground_notes.md.)
+
 ## Verified pod facts (untimed, Sept 5)
 
 - Qwen3.5-9B on an A40: 32 blocks, hidden 4096, 26 tok/s, thinking off, concise system prompt in place.
@@ -43,7 +45,7 @@ Existence claims (H2, H3) can use qualitative examples. Method/causal claims (H1
 
 ## Setup
 
-- Model: Qwen3.5-9B (Qwen/Qwen3.5-9B) on a rented CUDA GPU; Qwen3.6-27B for an optional end-of-project replication on an 80GB card. Note: no Qwen 3.6 exists below 27B. Qwen 3.5/3.6 are hybrid Gated DeltaNet models and need the flash-linear-attention and causal-conv1d kernels on the pod (see docs/pod_setup.md). Local laptop pipeline testing uses Qwen3-1.7B-Instruct; laptop results are for debugging only. Chat template applied.
+- Model: Qwen3.5-9B (Qwen/Qwen3.5-9B) on a rented CUDA GPU; Qwen3.6-27B for an optional end-of-project replication on an 80GB card. Note: no Qwen 3.6 exists below 27B. Qwen 3.5/3.6 are hybrid Gated DeltaNet models and need the flash-linear-attention and causal-conv1d kernels on the pod (see docs/pod_setup.md). Local laptop pipeline testing uses Qwen3-1.7B; laptop results are for debugging only. Chat template applied.
 - Access: nnsight or PyTorch hooks. Persistent Jupyter kernel via MCP.
 - One rented GPU. Chen trained probes in ~3 min each on an A100; expect similar.
 - Toggl from clock start.
