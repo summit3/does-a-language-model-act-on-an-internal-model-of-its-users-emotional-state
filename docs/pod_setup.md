@@ -57,3 +57,32 @@ After loading a new model on the pod, re-run the check (prints raw decoded outpu
 ```bash
 python -m src.model --check-thinking
 ```
+
+## Connecting from the laptop (what worked on 2026-09-05)
+
+- Pod created via the Runpod MCP: A40 48GB, secure cloud on-demand ($0.49/hr), template
+  `runpod-torch-v280`, 30GB container disk, 60GB volume at `/workspace`, ports `22/tcp,8888/http`,
+  env `PUBLIC_KEY=<ssh public key>` and `JUPYTER_PASSWORD=<token>` (Jupyter only starts if that is set).
+- **Use a passphrase-free key for the pod.** A passphrase-protected key fails non-interactively
+  (server accepts the key, then "Permission denied") unless it is loaded into ssh-agent. A dedicated
+  `~/.ssh/runpod_mats_ed25519` (no passphrase) is registered on the pod; the `~/.ssh/config` alias is
+  `runpod-mats`. If the pod is ever recreated, pass that key's `.pub` as `PUBLIC_KEY`. To add a key to a
+  running pod without SSH, run Python through JupyterLab's kernel API and append to
+  `/root/.ssh/authorized_keys`.
+- Runpod re-maps the external SSH port on every stop/start: re-read it from `get-pod` and update
+  `~/.ssh/config`.
+- **Copy the repo with rsync, not git** (the pod has no GitHub credentials). macOS ships openrsync, so
+  use `--stats`, not `--info=...`:
+
+  ```bash
+  rsync -az --stats --exclude .venv --exclude models/ --exclude activations/ --exclude .git/ \
+    --exclude __pycache__ --exclude .ipynb_checkpoints --exclude .DS_Store --exclude default_600k.md \
+    ./ runpod-mats:/workspace/mats-user-models/
+  ```
+  The `chown ... Operation not permitted` warnings on `/workspace` are harmless.
+- On the pod the venv is `/workspace/venv` (activate it first); the HF cache is `/workspace/hf_cache`
+  (`export HF_HOME=/workspace/hf_cache`) so weights survive a container reset. Pull results back with
+  `rsync -az runpod-mats:/workspace/mats-user-models/results/ results/`.
+- JupyterLab: `https://<pod-id>-8888.proxy.runpod.net/?token=<JUPYTER_PASSWORD>`.
+- **Stop the pod when not in use** (Runpod console or MCP `stop-pod`); a stopped pod bills only the
+  volume. Terminate it at the end of the project.
