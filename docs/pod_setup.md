@@ -39,7 +39,7 @@ pip install -r requirements.txt        # torch here is the CPU/MPS wheel; on the
 export HF_TOKEN=...                    # optional; faster, rate-limit-free downloads
 ```
 
-Set `MODEL_ID` in `src/config.py`, then `python -m src.model` to load and sanity-check a reply.
+Set `MATS_MODEL_ID` (env or `.env`), then `python -m src.model` to load and sanity-check a reply.
 Weights cache in `~/.cache/huggingface/hub`; nothing under `models/` or `activations/` is committed.
 
 ## Thinking mode (applies to Qwen3.5-9B and Qwen3.6-27B on the pod too)
@@ -63,6 +63,11 @@ python -m src.model --check-thinking
 - Pod created via the Runpod MCP: A40 48GB, secure cloud on-demand ($0.49/hr), template
   `runpod-torch-v280`, 30GB container disk, 60GB volume at `/workspace`, ports `22/tcp,8888/http`,
   env `PUBLIC_KEY=<ssh public key>` and `JUPYTER_PASSWORD=<token>` (Jupyter only starts if that is set).
+- **`PUBLIC_KEY` env overrides account keys.** With `PUBLIC_KEY` set on the pod, the template's
+  start script installs only that key and ignores keys registered on the Runpod account (verified
+  2026-09-05: an account key added while the pod existed was not injected on restart). So either put
+  every key you need in `PUBLIC_KEY` (newline-separated) at creation, or create the pod without
+  `PUBLIC_KEY` and rely on account keys.
 - **Use a passphrase-free key for the pod.** A passphrase-protected key fails non-interactively
   (server accepts the key, then "Permission denied") unless it is loaded into ssh-agent. A dedicated
   `~/.ssh/runpod_mats_ed25519` (no passphrase) is registered on the pod; the `~/.ssh/config` alias is
@@ -80,8 +85,10 @@ python -m src.model --check-thinking
     ./ runpod-mats:/workspace/mats-user-models/
   ```
   The `chown ... Operation not permitted` warnings on `/workspace` are harmless.
-- On the pod the venv is `/workspace/venv` (activate it first); the HF cache is `/workspace/hf_cache`
-  (`export HF_HOME=/workspace/hf_cache`) so weights survive a container reset. Pull results back with
+- On the pod the venv is `/workspace/venv` (activate it first). Its `bin/activate` exports
+  `MATS_MODEL_ID=Qwen/Qwen3.5-9B` (read by `src/config.py`, laptop default is Qwen3-1.7B) and
+  `HF_HOME=/workspace/hf_cache` so weights survive a container reset. `src/config.py` is identical on
+  both machines; never edit it per machine. Pull results back with
   `rsync -az runpod-mats:/workspace/mats-user-models/results/ results/`.
 - JupyterLab: `https://<pod-id>-8888.proxy.runpod.net/?token=<JUPYTER_PASSWORD>`.
 - **Stop the pod when not in use** (Runpod console or MCP `stop-pod`); a stopped pod bills only the
