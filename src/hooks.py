@@ -194,8 +194,18 @@ def describe_layers(model, tokenizer=None, prompt: str | None = None) -> dict:
             enc = {k: v.to(model.device) for k, v in enc.items()}
             hs = model(**enc, output_hidden_states=True, use_cache=False).hidden_states
             acts = get_residual_activations(model, tokenizer, prompt)
-            diffs = [float((acts[i] - hs[i + 1][0, -1].float().cpu()).abs().max()) for i in range(len(blocks))]
+            # HF's last hidden_states entry is AFTER the final RMSNorm, so compare norm(hook) there.
+            final_norm = next((m for n, m in model.named_modules() if n.endswith("norm") and n.count(".") <= 3
+                               and type(m).__name__.endswith("RMSNorm") and "layers" not in n), None)
+            diffs = []
+            for i in range(len(blocks)):
+                ref = hs[i + 1][0, -1].float().cpu()
+                mine = acts[i]
+                if i == len(blocks) - 1 and final_norm is not None:
+                    mine = final_norm(acts[i].to(device=model.device, dtype=hs[-1].dtype)).float().cpu()
+                diffs.append(float((mine - ref).abs().max()))
         info["max_abs_diff_vs_hidden_states"] = max(diffs)
-        print(f"hooks == output_hidden_states[i+1] at last token: max |diff| over layers = {max(diffs):.3g} "
+        print(f"hooks == output_hidden_states[i+1] at last token (final layer compared after the model's "
+              f"final norm): max |diff| over layers = {max(diffs):.3g} "
               f"(len(hidden_states)={len(hs)} = embeddings + {len(blocks)} blocks)")
     return info
