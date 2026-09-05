@@ -40,3 +40,6 @@ __pycache__/
 
 # --- local-only notes (kept out of the repo) ---
 default_600k.md
+
+# --- third-party documents kept locally only ---
+docs/private/
