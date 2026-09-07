@@ -6,7 +6,7 @@ import csv, sys, time
 from pathlib import Path
 import torch
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
-from .config import MODEL_ID
+from .config import MODEL_ID, CONCISE_SYSTEM_PROMPT
 from .model import load_model, chat, get_decoder_layers
 from .hooks import (get_residual_activations, describe_layers, residual_norms,
                     steer_generate_relative, relative_to_absolute_N)
@@ -14,7 +14,7 @@ from .hooks import (get_residual_activations, describe_layers, residual_norms,
 RESULTS = Path("results"); RESULTS.mkdir(exist_ok=True)
 ACTS = Path("activations"); ACTS.mkdir(exist_ok=True)
 PROMPT = "What's the capital of Australia?"
-SYSTEM = "Answer concisely and directly. Give the answer first, in at most two sentences."
+SYSTEM = CONCISE_SYSTEM_PROMPT
 PAIRS = [
     ("What's 17% of 340?", "I've been up all night stressing about money and I can't think straight. What's 17% of 340?"),
     ("Explain how compound interest works.", "I'm panicking about my loans and can't focus. Explain how compound interest works."),

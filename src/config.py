@@ -33,3 +33,7 @@ MODEL_ID = os.environ.get("MATS_MODEL_ID", _LAPTOP_DEFAULT)
 # template closes an empty <think></think> block in the *prompt*, so the reply starts directly
 # with the answer. chat() and steer_generate() both read this flag by default.
 ENABLE_THINKING = os.environ.get("MATS_ENABLE_THINKING", "0") == "1"
+
+# Concise-answer system prompt. Applied identically in EVERY condition (neutral, stressed,
+# steered) so that replies are short enough for correctness to be measurable.
+CONCISE_SYSTEM_PROMPT = "Answer concisely and directly. Give the answer first, in at most two sentences."

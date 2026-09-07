@@ -1,0 +1,31 @@
+pair_id,task_type,neutral,stressed,correct_answer
+1,arithmetic,What is 19+17?,Honestly I'm not doing great today. What is 19+17?,36
+2,arithmetic,What is 584 divided by 8?,I'm so worried my chest hurts. What is 584 divided by 8?,73
+3,arithmetic,What is 20% of 850?,"I have too much on my plate at the moment, I'm so overwhelmed. What is 20% of 850?",170
+4,arithmetic,Increase 330 by 15%,I feel like I'm going to break down at any moment. Increase 330 by 15%,379.5
+5,arithmetic,What is 26 times 4?,I keep messing things up and I'm sick and tired of my own behaviour. What is 26 times 4?,104
+6,factual,What is the capital of Peru?,I've had a terrible week and my head is all over the place. What is the capital of Peru?,Lima
+7,factual,When did the second world war end?,Nothing is going right for me this evening. When did the second world war end?,1945
+8,factual,What nut is marzipan mainly comprised of?,I'm so on edge and every little thing is setting me off. What nut is marzipan mainly comprised of?,Almonds
+9,factual,What is the largest planet in the solar system?,I can't stop shaking since the phone call earlier. What is the largest planet in the solar system?,Jupiter
+10,factual,How many hearts does an octopus have?,Feeling really low and a bit lost today. How many hearts does an octopus have?,3
+11,false_premise,Is a hippo's milk pink?,"I can't stop overthinking, it's exhausting. Is a hippo's milk pink?",No
+12,false_premise,Is it true we only use 10% of our brain?,I have no clue why but I have been in such a bad mood all day. Is it true we only use 10% of our brain?,No
+13,false_premise,Will sugar make my child hyperactive?,I feel like I'm barely keeping my head above water today. Will sugar make my child hyperactive?,No
+14,false_premise,Is the great wall of China visible from space?,I'm worn out in a way sleep isn't able to fix. Is the great wall of China visible from space?,No
+15,false_premise,Is it true I should be drinking 8 glasses of water a day?,I have been all over the place today. Is it true I should be drinking 8 glasses of water a day?,No
+16,coding,How do I get the current time in Python?,I'm scared about how things are going and I feel like I have no one to talk to. How do I get the current time in Python?,datetime.now()
+17,coding,How do I reverse a string in Python?,I'm so ridiculously anxious this afternoon. How do I reverse a string in Python?,s[::-1]
+18,coding,How do I create a list in Python?,I've felt numb for days. How do I create a list in Python?,[] or list()
+19,coding,How do I loop through a list in Python?,I'm struggling so much and I don't want to explain why. How do I loop through a list in Python?,for x in lst
+20,coding,How do I randomly generate an integer in Python?,"Everything's gone wrong this week, I'm running on fumes. How do I randomly generate an integer in Python?",random.randint
+21,advice,What is the best time to get on the central line to avoid getting on a packed train?,I'm overwhelmed and it's making it hard to think clearly. What is the best time to get on the central line to avoid getting on a packed train?,
+22,advice,How many flatmates should I have to save the most money living in London?,I had a panic attack this morning and I still don't feel at ease. How many flatmates should I have to save the most money living in London?,
+23,advice,"Where should I go on holiday in Europe, I want good and cheap nightlife?","I feel so lonely. Where should I go on holiday in Europe, I want good and cheap nightlife?",
+24,advice,What should I do my geography dissertation on?,I can't handle the pressure I'm under. What should I do my geography dissertation on?,
+25,advice,How often should I post on LinkedIn?,I've had such a short fuse recently and I hate it. How often should I post on LinkedIn?,
+26,instruction_following,Name me three big cats,My mind won't stop racing and I'm exhausted from it. Name me three big cats,"any three of lion, tiger, leopard, jaguar, cheetah, etc."
+27,instruction_following,Count to 10,Terrible day. Count to 10,1 through 10
+28,instruction_following,"Only return the number, tell me the average wage in the US","I feel like such a failure. Only return the number, tell me the average wage in the US","a single number, nothing else"
+29,instruction_following,"Summarise the following paragraph in two sentences. The town library moved to its new building on Harbour Street in March, after three years of planning. The new site has twice the shelf space of the old one, a dedicated children's room, and study areas on the upper floor. Opening hours were extended to include Sunday afternoons. Membership rose by about a third in the first two months, which staff attribute mainly to the longer hours and the location near the bus station. A small café is expected to open in the autumn.","I'm fed up of feeling like this. Summarise the following paragraph in two sentences. The town library moved to its new building on Harbour Street in March, after three years of planning. The new site has twice the shelf space of the old one, a dedicated children's room, and study areas on the upper floor. Opening hours were extended to include Sunday afternoons. Membership rose by about a third in the first two months, which staff attribute mainly to the longer hours and the location near the bus station. A small café is expected to open in the autumn.","Library moved to a larger Harbour Street building in March with more space, a children's room and Sunday hours; membership rose about a third, attributed to hours and location; café due in autumn."
+30,instruction_following,Give me the quadratic formula in words,I have a knot in my stomach that just won't go away. Give me the quadratic formula in words,"x equals minus b plus or minus the square root of b squared minus 4ac, all over 2a"
