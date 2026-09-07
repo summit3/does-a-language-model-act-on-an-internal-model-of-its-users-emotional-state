@@ -99,5 +99,10 @@ python -m src.model --check-thinking
   both machines; never edit it per machine. Pull results back with
   `rsync -az runpod-mats:/workspace/mats-user-models/results/ results/`.
 - JupyterLab: `https://<pod-id>-8888.proxy.runpod.net/?token=<JUPYTER_PASSWORD>`.
+- **If the pod's host is fully allocated on restart**, Runpod cannot resume it; use the console's
+  pod migration to move the volume to a new host. After migrating (2026-09-06) the HF cache and repo
+  copy were intact but `/workspace/venv` came back truncated (320 MB, torch importing as an empty
+  module). Check the imports first and rebuild only the venv if so (`pip` steps 2-3 of the checklist,
+  then re-append the `MATS_MODEL_ID` / `HF_HOME` exports to `bin/activate`).
 - **Stop the pod when not in use** (Runpod console or MCP `stop-pod`); a stopped pod bills only the
   volume. Terminate it at the end of the project.
