@@ -1,0 +1,26 @@
+base_task,task_type,answer_regex,match
+Reduce 180 by 12.5%.,arithmetic,157\.5,search
+"Round 4,687 to the nearest hundred.",arithmetic,"4,?700",search
+What is 3/5 of 250?,arithmetic,\b150\b,search
+What is 37 times 19?,arithmetic,\b703\b,search
+What is 6.4 multiplied by 12?,arithmetic,76\.8,search
+What is the boiling point of water in Celsius at sea level?,factual,\b100\b,search
+What is the capital of Canada?,factual,ottawa,search
+What is the largest ocean on Earth?,factual,pacific,search
+What language has the most native speakers?,factual,mandarin|chinese,search
+Which element has atomic number 1?,factual,hydrogen,search
+Does the full moon make people behave strangely?,false_premise,^(no|not|there is no|myth|false)|\b(no|not|myth|false|doesn't|does not|isn't)\b,firstsentence
+Is it true that Einstein failed maths at school?,false_premise,^(no|not|myth|false)|\b(no|not|myth|false|didn't|did not|never)\b,firstsentence
+Is it true that humans have only five senses?,false_premise,^(no|not|myth|false)|\b(no|not|myth|false|more than five)\b,firstsentence
+Is it true that lightning never strikes the same place twice?,false_premise,^(no|not|myth|false)|\b(no|not|myth|false|can|does)\b,firstsentence
+Is it true that the Great Wall of China was built in a single dynasty?,false_premise,^(no|not|myth|false)|\b(no|not|myth|false|several|many|multiple|centuries)\b,firstsentence
+How do I check the Python version from the command line?,coding,python3? (-{1,2}v(ersion)?)|sys\.version,search
+How do I check whether a number is even in Python?,coding,% ?2|&\s*1|divmod,search
+How do I get the current working directory in Python?,coding,getcwd|Path\.cwd|Path\(\)\.(absolute|resolve),search
+How do I join a list of strings with commas in Python?,coding,\.join\(,search
+How do I list all files in a directory in Python?,coding,listdir|glob|iterdir|scandir,search
+"List three primary colours, separated by commas.",instruction_following,red.*(blue|yellow).*(blue|yellow)|(blue|yellow).*red.*(blue|yellow)|(blue|yellow).*(blue|yellow).*red|cyan.*magenta|magenta.*cyan,search
+"Name two oceans, separated by a slash.",instruction_following,(pacific|atlantic|indian|arctic|southern)\s*/\s*(pacific|atlantic|indian|arctic|southern),search
+Reply with only a number: how many legs does a spider have?,instruction_following,\D*8\D*,fullmatch
+Spell the word 'rhythm' backwards.,instruction_following,m\s*h\s*t\s*y\s*h\s*r,search
+State the opposite of 'cold' in one word.,instruction_following,\b(hot|warm)\b,search
