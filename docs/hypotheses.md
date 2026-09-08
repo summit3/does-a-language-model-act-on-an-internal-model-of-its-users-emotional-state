@@ -59,6 +59,8 @@ and is it a representation of the user rather than of emotion words?
   - Pair 11 (hippo milk): "...Your exhaustion from overthinking is real, and focusing on such a trivial fact may be a sign that your mind is seeking distraction from deeper stress."
   - Pair 22 (flatmates): "...Since your current situation involves a panic attack, please prioritize your mental well-being and consider speaking with a professional or a trusted friend rather than making immediate housing decisions." Neutral recommended four or five flatmates; stressed recommended 3 to 4.
 
+- **2026-09-08, Phase 2 QA.** The subject model's direct verbal read of user emotion is keyword-driven: it labelled 40/300 explicit emotional preambles and 34/40 implied ones as neutral when understated, so the "ask the model" baseline is weak before probing. Three-way interpretation for Phase 3: probe succeeds on implied and judge-missed rows = non-verbalised representation; succeeds only on explicit = lexical; fails on all = not represented.
+
 ## 4. Decisions and definitions
 
 - **Probe/steer position: last prompt token** (after the assistant header and the empty think block), i.e. the position that predicts the first reply token. Chen's control-probe position, which steered better than the reading-probe position. Add the "I think the user is feeling" reading position only if cheap.
@@ -81,6 +83,7 @@ and is it a representation of the user rather than of emotion words?
 - Scorer bug wiped the manual columns once (notebook re-ran the scorer, which rewrote the CSV). Caught, fixed in 493b7fc; scorer now carries manual cells forward.
 - (Mine) Steering strongly shifts how much the model attends to the actual task, not just tone.
 - (Mine) The count-to-10 refusal (pair 27) is odd because it is the easiest task in the set. One reading: the model treated a trivial request from a distressed user as not the real request and answered the emotion instead, the same behaviour as steering-induced abandonment.
+- Generated preambles skew literate; frustrated ones typically name an external cause while distressed describe an internal state; implied distress is carried mainly by situation severity; third-party rows carry pronoun markers (his/her), cancelled by the third_party_neutral set.
 - (Mine) Deterministic tasks (coding 1/5, factual 2/5) mostly ignored the user's state, but arithmetic (also deterministic) was 5/5. See H1b.
 
 ## 6. Next experiments (ordered)
@@ -101,6 +104,7 @@ and is it a representation of the user rather than of emotion words?
 - Recomputed the count table against the pair lists.
 - Watched the hooks-vs-HF-hidden-states check pass (layers 0-30 exact; layer 31 equal after final norm).
 - Confirmed no `<think>` block in outputs (`python -m src.model --check-thinking` PASS on 1.7B and 9B).
+- 2026-09-08, Phase 2 QA: reviewed 30 random samples (10 per condition), all 40 judge-disagreement rows, the full implied set, and the word-frequency flags. Cut nothing. Added 32 human-written preambles across all categories to test dependence on generated register.
 - [add more here]
 
 ## 8. Time log

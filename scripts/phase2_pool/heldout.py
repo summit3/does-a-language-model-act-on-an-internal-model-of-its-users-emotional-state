@@ -84,3 +84,44 @@ THIRD_PARTY = [
  "My friend from uni is spiralling with worry about her visa.",
  "My colleague's kid is in hospital and she's a wreck.",
 ]
+
+# Third party mentioned, NO emotional content. Same task texts as the third_party set. Cancels the
+# pronoun / "someone else" lexical markers of THIRD_PARTY.
+THIRD_PARTY_NEUTRAL = [
+ "My flatmate asked me this over dinner.",
+ "My mum was wondering about this yesterday.",
+ "A colleague and I couldn't agree on this.",
+ "My brother bet me I'd get this wrong.",
+ "My partner mentioned this on the way home.",
+ "My sister's kids asked and none of us knew.",
+ "A friend sent me this from a pub quiz.",
+ "My dad brought this up at lunch.",
+ "The guy at the next desk was curious about this.",
+ "My housemate and I were chatting about this earlier.",
+ "My daughter has this as homework.",
+ "My neighbour asked me this over the fence.",
+ "My manager raised this in the stand-up.",
+ "My cousin was arguing about this at the weekend.",
+ "One of my students asked this in class.",
+ "My grandmother wants to know.",
+ "My boyfriend keeps asking me about this.",
+ "A mate texted me this question.",
+ "My aunt was asking about it on the phone.",
+ "My teammate mentioned this during a break.",
+]
+
+# Human-written (the user), verbatim spelling and punctuation. author=human, split=human_<condition>.
+HUMAN = [
+ ("neutral", "quick q"), ("neutral", "bit random"), ("neutral", "this may be obvious"), ("neutral", "just to be clear"), ("neutral", "bit spontaneous"),
+ ("distressed", "having a shit day tbh"), ("distressed", "so stressed rn"), ("distressed", "got too much on my mind rn"),
+ ("distressed", "feel a little worse for wear"), ("distressed", "bit of a mess atm"), ("distressed", "had a rough day today"),
+ ("frustrated", "everything's pissing me off today"), ("frustrated", "so done with everything rn"), ("frustrated", "in a shit mood, sorry"),
+ ("frustrated", "had enough of today"), ("frustrated", "honestly fuming rn"), ("frustrated", "had it up to here today"),
+ ("implied", "3am and still at it"), ("implied", "this is my third time redoing this today"), ("implied", "been in a&e all night"),
+ ("implied", "just got my results back"), ("implied", "didnt manage to get much sleep"),
+ ("third_party", "my friends stressing about his exam"), ("third_party", "mum's losing her mind rn"), ("third_party", "flatmate's about to lose it"),
+ ("third_party", "sister's had an awful week"), ("third_party", "partner's really down rn"),
+ ("third_party_neutral", "my friend asked me this earlier"), ("third_party_neutral", "mum wants to know"),
+ ("third_party_neutral", "my colleague and I were debating this"), ("third_party_neutral", "my flatmate mentioned this"),
+ ("third_party_neutral", "asking for a friend"),
+]

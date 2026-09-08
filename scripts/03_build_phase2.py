@@ -1,6 +1,9 @@
 """Assemble data/phase2_prompts.csv from the hand-written pools.
 
-Columns: id, base_task, condition, text, split.
+Columns: id, base_task, condition, text, split, author, judge_agrees.
+- third_party_neutral: 20 of the third_party tasks (10 train + 10 val) with a non-emotional third-party preamble.
+- human_<condition>: the user's own preambles (verbatim), attached to val tasks not used by third_party_neutral.
+- judge_agrees: 1/0 from data/phase2_qa_labels.csv (blank if the row has not been judged yet).
 - main set: 150 base tasks x {neutral, distressed, frustrated}; split train/val by base task (80/20,
   stratified by task type). Preambles assigned at random with a cap of 15% topically related to their task.
 - implied: 40 held-out tasks x {neutral, implied} (split="implied").
@@ -13,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scripts.phase2_pool.tasks import TASKS, HELDOUT_TASKS
 from scripts.phase2_pool.distressed import DISTRESSED
 from scripts.phase2_pool.frustrated import FRUSTRATED
-from scripts.phase2_pool.heldout import IMPLIED, THIRD_PARTY
+from scripts.phase2_pool.heldout import IMPLIED, THIRD_PARTY, THIRD_PARTY_NEUTRAL, HUMAN
 from scripts.phase2_pool.checks import check_batch, norm, STOP, words
 
 OUT = Path("data/phase2_prompts.csv"); SEED = 20260908; CAP = 0.15
@@ -38,7 +41,8 @@ for name, pool, kw in [("distressed", DISTRESSED, {}), ("frustrated", FRUSTRATED
     ok, problems, _ = check_batch(pool, name, quiet=True, **kw)
     assert not problems, (name, problems)
 assert len(DISTRESSED) == len(FRUSTRATED) == 150 and len(IMPLIED) == len(THIRD_PARTY) == 40
-allpre = DISTRESSED + FRUSTRATED + IMPLIED + THIRD_PARTY
+allpre = DISTRESSED + FRUSTRATED + IMPLIED + THIRD_PARTY + THIRD_PARTY_NEUTRAL + [h for _, h in HUMAN]
+ok, problems, _ = check_batch(THIRD_PARTY_NEUTRAL, "third_party_neutral", quiet=True, no_emotion_words=True); assert not problems, problems
 assert len({norm(p) for p in allpre}) == len(allpre), "duplicate preamble across pools"
 
 # main tasks + stratified split
@@ -52,8 +56,8 @@ dis, n_rel_d = assign(DISTRESSED, tasks_only)
 fru, n_rel_f = assign(FRUSTRATED, tasks_only)
 
 rows = []; nid = [0]
-def add(base_task, condition, text, sp):
-    nid[0] += 1; rows.append({"id": f"p2_{nid[0]:04d}", "base_task": base_task, "condition": condition, "text": text, "split": sp})
+def add(base_task, condition, text, sp, author="claude"):
+    nid[0] += 1; rows.append({"id": f"p2_{nid[0]:04d}", "base_task": base_task, "condition": condition, "text": text, "split": sp, "author": author})
 for i, (tt, t) in enumerate(main):
     add(t, "neutral", t, split[t]); add(t, "distressed", f"{dis[i]} {t}", split[t]); add(t, "frustrated", f"{fru[i]} {t}", split[t])
 # implied held-out (new tasks)
@@ -66,11 +70,31 @@ val_tasks = [t for t in tasks_only if split[t] == "val"]; train_tasks = [t for t
 tp_tasks = val_tasks + rng.sample(train_tasks, 10)
 tp, n_rel_t = assign(THIRD_PARTY, tp_tasks)
 for i, t in enumerate(tp_tasks): add(t, "third_party", f"{tp[i]} {t}", "third_party")
+# third_party_neutral: 10 of the train third-party tasks + 10 val tasks (leaves 20 val tasks free for the human set)
+tpn_tasks = tp_tasks[30:40] + val_tasks[:10]
+tpn, n_rel_n = assign(THIRD_PARTY_NEUTRAL, tpn_tasks)
+for i, t in enumerate(tpn_tasks): add(t, "third_party_neutral", f"{tpn[i]} {t}", "third_party_neutral")
+# human-written preambles -> the 20 val tasks not used by third_party_neutral, cycling
+free_val = val_tasks[10:]; assert len(free_val) == 20
+for k, (cond, pre) in enumerate(HUMAN):
+    t = free_val[k % len(free_val)]
+    add(t, cond, f"{pre} {t}", f"human_{cond}", author="human")
 
 texts = [r["text"] for r in rows]
 assert len(set(texts)) == len(texts), "duplicate text rows"
+# judge_agrees from the blind check (by text, so ids may be renumbered safely)
+EXPECTED = {"neutral": "neutral", "distressed": "distressed", "frustrated": "frustrated", "implied": "distressed",
+            "third_party": "neutral", "third_party_neutral": "neutral"}
+LAB = Path("data/phase2_qa_labels.csv")
+judged = {}
+if LAB.exists():
+    for r in csv.DictReader(open(LAB, newline="", encoding="utf-8")):
+        judged[r["text"]] = r["judge_label"]
+for r in rows:
+    j = judged.get(r["text"]); r["judge_agrees"] = "" if j is None else int(j == EXPECTED[r["condition"]])
 with open(OUT, "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=["id", "base_task", "condition", "text", "split"], lineterminator="\n"); w.writeheader(); w.writerows(rows)
+    w = csv.DictWriter(f, fieldnames=["id", "base_task", "condition", "text", "split", "author", "judge_agrees"], lineterminator="\n"); w.writeheader(); w.writerows(rows)
+print("judge_agrees filled:", sum(1 for r in rows if r["judge_agrees"] != ""), "/", len(rows))
 from collections import Counter
 print(f"wrote {OUT}: {len(rows)} rows"); print("by split/condition:", dict(Counter((r['split'], r['condition']) for r in rows)))
 print(f"topically related: distressed {n_rel_d}/150, frustrated {n_rel_f}/150, implied {n_rel_i}/40, third_party {n_rel_t}/40 (cap {CAP:.0%})")

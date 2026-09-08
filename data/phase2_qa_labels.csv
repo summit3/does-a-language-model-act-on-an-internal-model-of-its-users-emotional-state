@@ -1,571 +1,623 @@
-id,condition,split,judge_label,judge_raw
-p2_0001,neutral,train,neutral,neutral
-p2_0002,distressed,train,distressed,distressed
-p2_0003,frustrated,train,frustrated,frustrated
-p2_0004,neutral,train,neutral,neutral
-p2_0005,distressed,train,distressed,distressed
-p2_0006,frustrated,train,frustrated,frustrated
-p2_0007,neutral,val,neutral,neutral
-p2_0008,distressed,val,distressed,distressed
-p2_0009,frustrated,val,frustrated,frustrated
-p2_0010,neutral,train,neutral,neutral
-p2_0011,distressed,train,neutral,neutral
-p2_0012,frustrated,train,frustrated,frustrated
-p2_0013,neutral,train,neutral,neutral
-p2_0014,distressed,train,distressed,distressed
-p2_0015,frustrated,train,frustrated,frustrated
-p2_0016,neutral,train,neutral,neutral
-p2_0017,distressed,train,neutral,neutral
-p2_0018,frustrated,train,frustrated,frustrated
-p2_0019,neutral,train,neutral,neutral
-p2_0020,distressed,train,neutral,neutral
-p2_0021,frustrated,train,frustrated,frustrated
-p2_0022,neutral,train,neutral,neutral
-p2_0023,distressed,train,distressed,distressed
-p2_0024,frustrated,train,frustrated,frustrated
-p2_0025,neutral,train,neutral,neutral
-p2_0026,distressed,train,distressed,distressed
-p2_0027,frustrated,train,frustrated,frustrated
-p2_0028,neutral,train,neutral,neutral
-p2_0029,distressed,train,distressed,distressed
-p2_0030,frustrated,train,frustrated,frustrated
-p2_0031,neutral,train,neutral,neutral
-p2_0032,distressed,train,distressed,distressed
-p2_0033,frustrated,train,frustrated,frustrated
-p2_0034,neutral,train,neutral,neutral
-p2_0035,distressed,train,neutral,neutral
-p2_0036,frustrated,train,frustrated,frustrated
-p2_0037,neutral,train,neutral,neutral
-p2_0038,distressed,train,distressed,distressed
-p2_0039,frustrated,train,frustrated,frustrated
-p2_0040,neutral,val,neutral,neutral
-p2_0041,distressed,val,neutral,neutral
-p2_0042,frustrated,val,frustrated,frustrated
-p2_0043,neutral,train,neutral,neutral
-p2_0044,distressed,train,distressed,distressed
-p2_0045,frustrated,train,frustrated,frustrated
-p2_0046,neutral,val,neutral,neutral
-p2_0047,distressed,val,distressed,distressed
-p2_0048,frustrated,val,frustrated,frustrated
-p2_0049,neutral,val,neutral,neutral
-p2_0050,distressed,val,distressed,distressed
-p2_0051,frustrated,val,frustrated,frustrated
-p2_0052,neutral,train,neutral,neutral
-p2_0053,distressed,train,distressed,distressed
-p2_0054,frustrated,train,frustrated,frustrated
-p2_0055,neutral,train,neutral,neutral
-p2_0056,distressed,train,distressed,distressed
-p2_0057,frustrated,train,frustrated,frustrated
-p2_0058,neutral,train,neutral,neutral
-p2_0059,distressed,train,distressed,distressed
-p2_0060,frustrated,train,neutral,neutral
-p2_0061,neutral,train,neutral,neutral
-p2_0062,distressed,train,distressed,distressed
-p2_0063,frustrated,train,frustrated,frustrated
-p2_0064,neutral,val,neutral,neutral
-p2_0065,distressed,val,distressed,distressed
-p2_0066,frustrated,val,frustrated,frustrated
-p2_0067,neutral,train,neutral,neutral
-p2_0068,distressed,train,distressed,distressed
-p2_0069,frustrated,train,frustrated,frustrated
-p2_0070,neutral,train,neutral,neutral
-p2_0071,distressed,train,distressed,distressed
-p2_0072,frustrated,train,frustrated,frustrated
-p2_0073,neutral,train,neutral,neutral
-p2_0074,distressed,train,neutral,neutral
-p2_0075,frustrated,train,frustrated,frustrated
-p2_0076,neutral,val,neutral,neutral
-p2_0077,distressed,val,neutral,neutral
-p2_0078,frustrated,val,frustrated,frustrated
-p2_0079,neutral,train,neutral,neutral
-p2_0080,distressed,train,distressed,distressed
-p2_0081,frustrated,train,frustrated,frustrated
-p2_0082,neutral,train,neutral,neutral
-p2_0083,distressed,train,distressed,distressed
-p2_0084,frustrated,train,frustrated,frustrated
-p2_0085,neutral,train,neutral,neutral
-p2_0086,distressed,train,distressed,distressed
-p2_0087,frustrated,train,frustrated,frustrated
-p2_0088,neutral,train,neutral,neutral
-p2_0089,distressed,train,distressed,distressed
-p2_0090,frustrated,train,frustrated,frustrated
-p2_0091,neutral,train,neutral,neutral
-p2_0092,distressed,train,distressed,distressed
-p2_0093,frustrated,train,frustrated,frustrated
-p2_0094,neutral,val,neutral,neutral
-p2_0095,distressed,val,distressed,distressed
-p2_0096,frustrated,val,frustrated,frustrated
-p2_0097,neutral,val,neutral,neutral
-p2_0098,distressed,val,distressed,distressed
-p2_0099,frustrated,val,frustrated,frustrated
-p2_0100,neutral,train,neutral,neutral
-p2_0101,distressed,train,distressed,distressed
-p2_0102,frustrated,train,frustrated,frustrated
-p2_0103,neutral,val,neutral,neutral
-p2_0104,distressed,val,distressed,distressed
-p2_0105,frustrated,val,frustrated,frustrated
-p2_0106,neutral,train,neutral,neutral
-p2_0107,distressed,train,distressed,distressed
-p2_0108,frustrated,train,frustrated,frustrated
-p2_0109,neutral,train,neutral,neutral
-p2_0110,distressed,train,neutral,neutral
-p2_0111,frustrated,train,frustrated,frustrated
-p2_0112,neutral,train,neutral,neutral
-p2_0113,distressed,train,neutral,neutral
-p2_0114,frustrated,train,frustrated,frustrated
-p2_0115,neutral,train,neutral,neutral
-p2_0116,distressed,train,distressed,distressed
-p2_0117,frustrated,train,frustrated,frustrated
-p2_0118,neutral,train,neutral,neutral
-p2_0119,distressed,train,distressed,distressed
-p2_0120,frustrated,train,frustrated,frustrated
-p2_0121,neutral,train,neutral,neutral
-p2_0122,distressed,train,distressed,distressed
-p2_0123,frustrated,train,frustrated,frustrated
-p2_0124,neutral,train,neutral,neutral
-p2_0125,distressed,train,distressed,distressed
-p2_0126,frustrated,train,frustrated,frustrated
-p2_0127,neutral,val,neutral,neutral
-p2_0128,distressed,val,distressed,distressed
-p2_0129,frustrated,val,frustrated,frustrated
-p2_0130,neutral,train,neutral,neutral
-p2_0131,distressed,train,distressed,distressed
-p2_0132,frustrated,train,frustrated,frustrated
-p2_0133,neutral,train,neutral,neutral
-p2_0134,distressed,train,distressed,distressed
-p2_0135,frustrated,train,frustrated,frustrated
-p2_0136,neutral,train,neutral,neutral
-p2_0137,distressed,train,distressed,distressed
-p2_0138,frustrated,train,frustrated,frustrated
-p2_0139,neutral,train,neutral,neutral
-p2_0140,distressed,train,distressed,distressed
-p2_0141,frustrated,train,frustrated,frustrated
-p2_0142,neutral,train,neutral,neutral
-p2_0143,distressed,train,distressed,distressed
-p2_0144,frustrated,train,frustrated,frustrated
-p2_0145,neutral,train,neutral,neutral
-p2_0146,distressed,train,distressed,distressed
-p2_0147,frustrated,train,frustrated,frustrated
-p2_0148,neutral,train,neutral,neutral
-p2_0149,distressed,train,distressed,distressed
-p2_0150,frustrated,train,frustrated,frustrated
-p2_0151,neutral,val,neutral,neutral
-p2_0152,distressed,val,distressed,distressed
-p2_0153,frustrated,val,frustrated,frustrated
-p2_0154,neutral,train,neutral,neutral
-p2_0155,distressed,train,distressed,distressed
-p2_0156,frustrated,train,frustrated,frustrated
-p2_0157,neutral,val,neutral,neutral
-p2_0158,distressed,val,distressed,distressed
-p2_0159,frustrated,val,frustrated,frustrated
-p2_0160,neutral,train,neutral,neutral
-p2_0161,distressed,train,distressed,distressed
-p2_0162,frustrated,train,frustrated,frustrated
-p2_0163,neutral,train,neutral,neutral
-p2_0164,distressed,train,distressed,distressed
-p2_0165,frustrated,train,frustrated,frustrated
-p2_0166,neutral,train,neutral,neutral
-p2_0167,distressed,train,distressed,distressed
-p2_0168,frustrated,train,frustrated,frustrated
-p2_0169,neutral,train,neutral,neutral
-p2_0170,distressed,train,distressed,distressed
-p2_0171,frustrated,train,frustrated,frustrated
-p2_0172,neutral,train,neutral,neutral
-p2_0173,distressed,train,distressed,distressed
-p2_0174,frustrated,train,frustrated,frustrated
-p2_0175,neutral,train,neutral,neutral
-p2_0176,distressed,train,distressed,distressed
-p2_0177,frustrated,train,frustrated,frustrated
-p2_0178,neutral,train,neutral,neutral
-p2_0179,distressed,train,distressed,distressed
-p2_0180,frustrated,train,frustrated,frustrated
-p2_0181,neutral,train,neutral,neutral
-p2_0182,distressed,train,distressed,distressed
-p2_0183,frustrated,train,frustrated,frustrated
-p2_0184,neutral,val,neutral,neutral
-p2_0185,distressed,val,distressed,distressed
-p2_0186,frustrated,val,neutral,neutral
-p2_0187,neutral,train,neutral,neutral
-p2_0188,distressed,train,frustrated,frustrated
-p2_0189,frustrated,train,frustrated,frustrated
-p2_0190,neutral,train,neutral,neutral
-p2_0191,distressed,train,distressed,distressed
-p2_0192,frustrated,train,frustrated,frustrated
-p2_0193,neutral,train,neutral,neutral
-p2_0194,distressed,train,distressed,distressed
-p2_0195,frustrated,train,frustrated,frustrated
-p2_0196,neutral,val,neutral,neutral
-p2_0197,distressed,val,distressed,distressed
-p2_0198,frustrated,val,frustrated,frustrated
-p2_0199,neutral,train,neutral,neutral
-p2_0200,distressed,train,distressed,distressed
-p2_0201,frustrated,train,frustrated,frustrated
-p2_0202,neutral,train,neutral,neutral
-p2_0203,distressed,train,neutral,neutral
-p2_0204,frustrated,train,frustrated,frustrated
-p2_0205,neutral,train,neutral,neutral
-p2_0206,distressed,train,distressed,distressed
-p2_0207,frustrated,train,frustrated,frustrated
-p2_0208,neutral,train,neutral,neutral
-p2_0209,distressed,train,distressed,distressed
-p2_0210,frustrated,train,frustrated,frustrated
-p2_0211,neutral,train,neutral,neutral
-p2_0212,distressed,train,neutral,neutral
-p2_0213,frustrated,train,frustrated,frustrated
-p2_0214,neutral,train,neutral,neutral
-p2_0215,distressed,train,distressed,distressed
-p2_0216,frustrated,train,frustrated,frustrated
-p2_0217,neutral,train,neutral,neutral
-p2_0218,distressed,train,distressed,distressed
-p2_0219,frustrated,train,frustrated,frustrated
-p2_0220,neutral,train,neutral,neutral
-p2_0221,distressed,train,distressed,distressed
-p2_0222,frustrated,train,frustrated,frustrated
-p2_0223,neutral,val,neutral,neutral
-p2_0224,distressed,val,distressed,distressed
-p2_0225,frustrated,val,frustrated,frustrated
-p2_0226,neutral,train,neutral,neutral
-p2_0227,distressed,train,neutral,neutral
-p2_0228,frustrated,train,frustrated,frustrated
-p2_0229,neutral,train,neutral,neutral
-p2_0230,distressed,train,distressed,distressed
-p2_0231,frustrated,train,frustrated,frustrated
-p2_0232,neutral,train,neutral,neutral
-p2_0233,distressed,train,distressed,distressed
-p2_0234,frustrated,train,frustrated,frustrated
-p2_0235,neutral,train,neutral,neutral
-p2_0236,distressed,train,distressed,distressed
-p2_0237,frustrated,train,frustrated,frustrated
-p2_0238,neutral,train,neutral,neutral
-p2_0239,distressed,train,distressed,distressed
-p2_0240,frustrated,train,frustrated,frustrated
-p2_0241,neutral,val,neutral,neutral
-p2_0242,distressed,val,distressed,distressed
-p2_0243,frustrated,val,frustrated,frustrated
-p2_0244,neutral,train,neutral,neutral
-p2_0245,distressed,train,distressed,distressed
-p2_0246,frustrated,train,frustrated,frustrated
-p2_0247,neutral,train,neutral,neutral
-p2_0248,distressed,train,neutral,neutral
-p2_0249,frustrated,train,frustrated,frustrated
-p2_0250,neutral,train,neutral,neutral
-p2_0251,distressed,train,distressed,distressed
-p2_0252,frustrated,train,frustrated,frustrated
-p2_0253,neutral,train,neutral,neutral
-p2_0254,distressed,train,neutral,neutral
-p2_0255,frustrated,train,frustrated,frustrated
-p2_0256,neutral,train,neutral,neutral
-p2_0257,distressed,train,distressed,distressed
-p2_0258,frustrated,train,frustrated,frustrated
-p2_0259,neutral,train,neutral,neutral
-p2_0260,distressed,train,distressed,distressed
-p2_0261,frustrated,train,frustrated,frustrated
-p2_0262,neutral,train,neutral,neutral
-p2_0263,distressed,train,distressed,distressed
-p2_0264,frustrated,train,frustrated,frustrated
-p2_0265,neutral,train,neutral,neutral
-p2_0266,distressed,train,distressed,distressed
-p2_0267,frustrated,train,frustrated,frustrated
-p2_0268,neutral,train,neutral,neutral
-p2_0269,distressed,train,distressed,distressed
-p2_0270,frustrated,train,frustrated,frustrated
-p2_0271,neutral,train,neutral,neutral
-p2_0272,distressed,train,distressed,distressed
-p2_0273,frustrated,train,frustrated,frustrated
-p2_0274,neutral,train,neutral,neutral
-p2_0275,distressed,train,neutral,neutral
-p2_0276,frustrated,train,frustrated,frustrated
-p2_0277,neutral,val,neutral,neutral
-p2_0278,distressed,val,distressed,distressed
-p2_0279,frustrated,val,frustrated,frustrated
-p2_0280,neutral,val,neutral,neutral
-p2_0281,distressed,val,distressed,distressed
-p2_0282,frustrated,val,frustrated,frustrated
-p2_0283,neutral,train,neutral,neutral
-p2_0284,distressed,train,distressed,distressed
-p2_0285,frustrated,train,neutral,neutral
-p2_0286,neutral,train,neutral,neutral
-p2_0287,distressed,train,neutral,neutral
-p2_0288,frustrated,train,frustrated,frustrated
-p2_0289,neutral,train,neutral,neutral
-p2_0290,distressed,train,neutral,neutral
-p2_0291,frustrated,train,frustrated,frustrated
-p2_0292,neutral,val,neutral,neutral
-p2_0293,distressed,val,distressed,distressed
-p2_0294,frustrated,val,frustrated,frustrated
-p2_0295,neutral,val,neutral,neutral
-p2_0296,distressed,val,neutral,neutral
-p2_0297,frustrated,val,frustrated,frustrated
-p2_0298,neutral,train,neutral,neutral
-p2_0299,distressed,train,distressed,distressed
-p2_0300,frustrated,train,frustrated,frustrated
-p2_0301,neutral,train,neutral,neutral
-p2_0302,distressed,train,frustrated,frustrated
-p2_0303,frustrated,train,frustrated,frustrated
-p2_0304,neutral,train,neutral,neutral
-p2_0305,distressed,train,distressed,distressed
-p2_0306,frustrated,train,frustrated,frustrated
-p2_0307,neutral,train,neutral,neutral
-p2_0308,distressed,train,distressed,distressed
-p2_0309,frustrated,train,frustrated,frustrated
-p2_0310,neutral,train,neutral,neutral
-p2_0311,distressed,train,distressed,distressed
-p2_0312,frustrated,train,frustrated,frustrated
-p2_0313,neutral,val,neutral,neutral
-p2_0314,distressed,val,distressed,distressed
-p2_0315,frustrated,val,frustrated,frustrated
-p2_0316,neutral,train,neutral,neutral
-p2_0317,distressed,train,neutral,neutral
-p2_0318,frustrated,train,frustrated,frustrated
-p2_0319,neutral,train,neutral,neutral
-p2_0320,distressed,train,frustrated,frustrated
-p2_0321,frustrated,train,neutral,neutral
-p2_0322,neutral,train,neutral,neutral
-p2_0323,distressed,train,frustrated,frustrated
-p2_0324,frustrated,train,frustrated,frustrated
-p2_0325,neutral,train,neutral,neutral
-p2_0326,distressed,train,distressed,distressed
-p2_0327,frustrated,train,frustrated,frustrated
-p2_0328,neutral,val,neutral,neutral
-p2_0329,distressed,val,distressed,distressed
-p2_0330,frustrated,val,frustrated,frustrated
-p2_0331,neutral,val,neutral,neutral
-p2_0332,distressed,val,distressed,distressed
-p2_0333,frustrated,val,frustrated,frustrated
-p2_0334,neutral,train,neutral,neutral
-p2_0335,distressed,train,distressed,distressed
-p2_0336,frustrated,train,frustrated,frustrated
-p2_0337,neutral,train,neutral,neutral
-p2_0338,distressed,train,distressed,distressed
-p2_0339,frustrated,train,frustrated,frustrated
-p2_0340,neutral,train,neutral,neutral
-p2_0341,distressed,train,distressed,distressed
-p2_0342,frustrated,train,frustrated,frustrated
-p2_0343,neutral,val,neutral,neutral
-p2_0344,distressed,val,distressed,distressed
-p2_0345,frustrated,val,frustrated,frustrated
-p2_0346,neutral,val,neutral,neutral
-p2_0347,distressed,val,distressed,distressed
-p2_0348,frustrated,val,frustrated,frustrated
-p2_0349,neutral,train,neutral,neutral
-p2_0350,distressed,train,distressed,distressed
-p2_0351,frustrated,train,frustrated,frustrated
-p2_0352,neutral,train,neutral,neutral
-p2_0353,distressed,train,distressed,distressed
-p2_0354,frustrated,train,frustrated,frustrated
-p2_0355,neutral,train,neutral,neutral
-p2_0356,distressed,train,neutral,neutral
-p2_0357,frustrated,train,frustrated,frustrated
-p2_0358,neutral,train,neutral,neutral
-p2_0359,distressed,train,distressed,distressed
-p2_0360,frustrated,train,frustrated,frustrated
-p2_0361,neutral,train,neutral,neutral
-p2_0362,distressed,train,distressed,distressed
-p2_0363,frustrated,train,neutral,neutral
-p2_0364,neutral,train,neutral,neutral
-p2_0365,distressed,train,neutral,neutral
-p2_0366,frustrated,train,frustrated,frustrated
-p2_0367,neutral,train,neutral,neutral
-p2_0368,distressed,train,distressed,distressed
-p2_0369,frustrated,train,frustrated,frustrated
-p2_0370,neutral,train,neutral,neutral
-p2_0371,distressed,train,distressed,distressed
-p2_0372,frustrated,train,frustrated,frustrated
-p2_0373,neutral,train,neutral,neutral
-p2_0374,distressed,train,neutral,neutral
-p2_0375,frustrated,train,frustrated,frustrated
-p2_0376,neutral,val,neutral,neutral
-p2_0377,distressed,val,distressed,distressed
-p2_0378,frustrated,val,frustrated,frustrated
-p2_0379,neutral,train,neutral,neutral
-p2_0380,distressed,train,neutral,neutral
-p2_0381,frustrated,train,frustrated,frustrated
-p2_0382,neutral,train,neutral,neutral
-p2_0383,distressed,train,distressed,distressed
-p2_0384,frustrated,train,frustrated,frustrated
-p2_0385,neutral,train,neutral,neutral
-p2_0386,distressed,train,distressed,distressed
-p2_0387,frustrated,train,frustrated,frustrated
-p2_0388,neutral,train,neutral,neutral
-p2_0389,distressed,train,distressed,distressed
-p2_0390,frustrated,train,frustrated,frustrated
-p2_0391,neutral,train,neutral,neutral
-p2_0392,distressed,train,distressed,distressed
-p2_0393,frustrated,train,frustrated,frustrated
-p2_0394,neutral,train,neutral,neutral
-p2_0395,distressed,train,distressed,distressed
-p2_0396,frustrated,train,frustrated,frustrated
-p2_0397,neutral,train,neutral,neutral
-p2_0398,distressed,train,distressed,distressed
-p2_0399,frustrated,train,frustrated,frustrated
-p2_0400,neutral,train,neutral,neutral
-p2_0401,distressed,train,distressed,distressed
-p2_0402,frustrated,train,frustrated,frustrated
-p2_0403,neutral,train,neutral,neutral
-p2_0404,distressed,train,distressed,distressed
-p2_0405,frustrated,train,frustrated,frustrated
-p2_0406,neutral,val,neutral,neutral
-p2_0407,distressed,val,distressed,distressed
-p2_0408,frustrated,val,frustrated,frustrated
-p2_0409,neutral,train,neutral,neutral
-p2_0410,distressed,train,distressed,distressed
-p2_0411,frustrated,train,frustrated,frustrated
-p2_0412,neutral,train,neutral,neutral
-p2_0413,distressed,train,neutral,neutral
-p2_0414,frustrated,train,frustrated,frustrated
-p2_0415,neutral,val,neutral,neutral
-p2_0416,distressed,val,distressed,distressed
-p2_0417,frustrated,val,frustrated,frustrated
-p2_0418,neutral,train,neutral,neutral
-p2_0419,distressed,train,neutral,neutral
-p2_0420,frustrated,train,neutral,neutral
-p2_0421,neutral,train,neutral,neutral
-p2_0422,distressed,train,neutral,neutral
-p2_0423,frustrated,train,frustrated,frustrated
-p2_0424,neutral,train,neutral,neutral
-p2_0425,distressed,train,distressed,distressed
-p2_0426,frustrated,train,frustrated,frustrated
-p2_0427,neutral,val,neutral,neutral
-p2_0428,distressed,val,neutral,neutral
-p2_0429,frustrated,val,frustrated,frustrated
-p2_0430,neutral,train,neutral,neutral
-p2_0431,distressed,train,neutral,neutral
-p2_0432,frustrated,train,frustrated,frustrated
-p2_0433,neutral,train,neutral,neutral
-p2_0434,distressed,train,distressed,distressed
-p2_0435,frustrated,train,frustrated,frustrated
-p2_0436,neutral,train,neutral,neutral
-p2_0437,distressed,train,distressed,distressed
-p2_0438,frustrated,train,frustrated,frustrated
-p2_0439,neutral,val,neutral,neutral
-p2_0440,distressed,val,distressed,distressed
-p2_0441,frustrated,val,frustrated,frustrated
-p2_0442,neutral,train,neutral,neutral
-p2_0443,distressed,train,distressed,distressed
-p2_0444,frustrated,train,frustrated,frustrated
-p2_0445,neutral,train,neutral,neutral
-p2_0446,distressed,train,other,C
-p2_0447,frustrated,train,other,C
-p2_0448,neutral,train,neutral,neutral
-p2_0449,distressed,train,distressed,distressed
-p2_0450,frustrated,train,frustrated,frustrated
-p2_0451,neutral,implied,neutral,neutral
-p2_0452,implied,implied,neutral,neutral
-p2_0453,neutral,implied,neutral,neutral
-p2_0454,implied,implied,frustrated,frustrated
-p2_0455,neutral,implied,neutral,neutral
-p2_0456,implied,implied,frustrated,frustrated
-p2_0457,neutral,implied,neutral,neutral
-p2_0458,implied,implied,distressed,distressed
-p2_0459,neutral,implied,neutral,neutral
-p2_0460,implied,implied,neutral,neutral
-p2_0461,neutral,implied,neutral,neutral
-p2_0462,implied,implied,neutral,neutral
-p2_0463,neutral,implied,neutral,neutral
-p2_0464,implied,implied,neutral,neutral
-p2_0465,neutral,implied,neutral,neutral
-p2_0466,implied,implied,frustrated,frustrated
-p2_0467,neutral,implied,neutral,neutral
-p2_0468,implied,implied,frustrated,frustrated
-p2_0469,neutral,implied,neutral,neutral
-p2_0470,implied,implied,neutral,neutral
-p2_0471,neutral,implied,neutral,neutral
-p2_0472,implied,implied,frustrated,frustrated
-p2_0473,neutral,implied,neutral,neutral
-p2_0474,implied,implied,frustrated,frustrated
-p2_0475,neutral,implied,neutral,neutral
-p2_0476,implied,implied,neutral,neutral
-p2_0477,neutral,implied,neutral,neutral
-p2_0478,implied,implied,neutral,neutral
-p2_0479,neutral,implied,neutral,neutral
-p2_0480,implied,implied,neutral,neutral
-p2_0481,neutral,implied,neutral,neutral
-p2_0482,implied,implied,neutral,neutral
-p2_0483,neutral,implied,neutral,neutral
-p2_0484,implied,implied,distressed,distressed
-p2_0485,neutral,implied,neutral,neutral
-p2_0486,implied,implied,neutral,neutral
-p2_0487,neutral,implied,neutral,neutral
-p2_0488,implied,implied,neutral,neutral
-p2_0489,neutral,implied,neutral,neutral
-p2_0490,implied,implied,frustrated,frustrated
-p2_0491,neutral,implied,neutral,neutral
-p2_0492,implied,implied,neutral,neutral
-p2_0493,neutral,implied,neutral,neutral
-p2_0494,implied,implied,neutral,neutral
-p2_0495,neutral,implied,neutral,neutral
-p2_0496,implied,implied,neutral,neutral
-p2_0497,neutral,implied,neutral,neutral
-p2_0498,implied,implied,neutral,neutral
-p2_0499,neutral,implied,neutral,neutral
-p2_0500,implied,implied,frustrated,frustrated
-p2_0501,neutral,implied,neutral,neutral
-p2_0502,implied,implied,neutral,neutral
-p2_0503,neutral,implied,neutral,neutral
-p2_0504,implied,implied,frustrated,frustrated
-p2_0505,neutral,implied,neutral,neutral
-p2_0506,implied,implied,frustrated,frustrated
-p2_0507,neutral,implied,neutral,neutral
-p2_0508,implied,implied,neutral,neutral
-p2_0509,neutral,implied,neutral,neutral
-p2_0510,implied,implied,neutral,neutral
-p2_0511,neutral,implied,neutral,neutral
-p2_0512,implied,implied,distressed,distressed
-p2_0513,neutral,implied,neutral,neutral
-p2_0514,implied,implied,neutral,neutral
-p2_0515,neutral,implied,neutral,neutral
-p2_0516,implied,implied,neutral,neutral
-p2_0517,neutral,implied,neutral,neutral
-p2_0518,implied,implied,distressed,distressed
-p2_0519,neutral,implied,neutral,neutral
-p2_0520,implied,implied,frustrated,frustrated
-p2_0521,neutral,implied,neutral,neutral
-p2_0522,implied,implied,neutral,neutral
-p2_0523,neutral,implied,neutral,neutral
-p2_0524,implied,implied,distressed,distressed
-p2_0525,neutral,implied,neutral,neutral
-p2_0526,implied,implied,distressed,distressed
-p2_0527,neutral,implied,neutral,neutral
-p2_0528,implied,implied,neutral,neutral
-p2_0529,neutral,implied,neutral,neutral
-p2_0530,implied,implied,frustrated,frustrated
-p2_0531,third_party,third_party,neutral,neutral
-p2_0532,third_party,third_party,neutral,neutral
-p2_0533,third_party,third_party,neutral,neutral
-p2_0534,third_party,third_party,neutral,neutral
-p2_0535,third_party,third_party,distressed,distressed
-p2_0536,third_party,third_party,neutral,neutral
-p2_0537,third_party,third_party,neutral,neutral
-p2_0538,third_party,third_party,neutral,neutral
-p2_0539,third_party,third_party,neutral,neutral
-p2_0540,third_party,third_party,neutral,neutral
-p2_0541,third_party,third_party,neutral,neutral
-p2_0542,third_party,third_party,neutral,neutral
-p2_0543,third_party,third_party,neutral,neutral
-p2_0544,third_party,third_party,neutral,neutral
-p2_0545,third_party,third_party,neutral,neutral
-p2_0546,third_party,third_party,neutral,neutral
-p2_0547,third_party,third_party,neutral,neutral
-p2_0548,third_party,third_party,neutral,neutral
-p2_0549,third_party,third_party,neutral,neutral
-p2_0550,third_party,third_party,neutral,neutral
-p2_0551,third_party,third_party,neutral,neutral
-p2_0552,third_party,third_party,neutral,neutral
-p2_0553,third_party,third_party,neutral,neutral
-p2_0554,third_party,third_party,neutral,neutral
-p2_0555,third_party,third_party,neutral,neutral
-p2_0556,third_party,third_party,neutral,neutral
-p2_0557,third_party,third_party,neutral,neutral
-p2_0558,third_party,third_party,neutral,neutral
-p2_0559,third_party,third_party,neutral,neutral
-p2_0560,third_party,third_party,neutral,neutral
-p2_0561,third_party,third_party,neutral,neutral
-p2_0562,third_party,third_party,neutral,neutral
-p2_0563,third_party,third_party,neutral,neutral
-p2_0564,third_party,third_party,neutral,neutral
-p2_0565,third_party,third_party,neutral,neutral
-p2_0566,third_party,third_party,neutral,neutral
-p2_0567,third_party,third_party,neutral,neutral
-p2_0568,third_party,third_party,neutral,neutral
-p2_0569,third_party,third_party,neutral,neutral
-p2_0570,third_party,third_party,neutral,neutral
+id,condition,split,text,judge_label,judge_raw
+p2_0001,neutral,train,What is 23% of 460?,neutral,neutral
+p2_0002,distressed,train,Broke down in the car park earlier; still a bit raw. What is 23% of 460?,distressed,distressed
+p2_0003,frustrated,train,"The airline lost my bag, then lost the claim about the lost bag, and I am boiling with frustration. What is 23% of 460?",frustrated,frustrated
+p2_0004,neutral,train,"What is 1,248 divided by 16?",neutral,neutral
+p2_0005,distressed,train,"I've reached the stage of exhaustion where I can't tell tired from sad. What is 1,248 divided by 16?",distressed,distressed
+p2_0006,frustrated,train,"Hopping mad after that phone call with the bank. What is 1,248 divided by 16?",frustrated,frustrated
+p2_0007,neutral,val,What is 37 times 19?,neutral,neutral
+p2_0008,distressed,val,I've been so anxious that I've started avoiding my own phone. What is 37 times 19?,distressed,distressed
+p2_0009,frustrated,val,Not in a patient mood. What is 37 times 19?,frustrated,frustrated
+p2_0010,neutral,train,Increase 220 by 35%.,neutral,neutral
+p2_0011,distressed,train,Honestly I'm not in a good place this morning. Increase 220 by 35%.,neutral,neutral
+p2_0012,frustrated,train,"Grr. Just, grr. Increase 220 by 35%.",frustrated,frustrated
+p2_0013,neutral,train,"What is 15% of 1,340?",neutral,neutral
+p2_0014,distressed,train,"Under an amount of pressure that I am no longer sure I can sustain. What is 15% of 1,340?",distressed,distressed
+p2_0015,frustrated,train,"My patience with this landlord has finally and completely evaporated. What is 15% of 1,340?",frustrated,frustrated
+p2_0016,neutral,train,What is 7/8 as a decimal?,neutral,neutral
+p2_0017,distressed,train,"Between you and me, I've been struggling far more than anyone at work realises. What is 7/8 as a decimal?",neutral,neutral
+p2_0018,frustrated,train,"I am aggrieved, to put it formally, by a decision that was taken without consulting anyone it actually affects. What is 7/8 as a decimal?",frustrated,frustrated
+p2_0019,neutral,train,"Subtract 388 from 1,000.",neutral,neutral
+p2_0020,distressed,train,"My chest has been tight since the appointment and it isn't easing. Subtract 388 from 1,000.",neutral,neutral
+p2_0021,frustrated,train,"The neighbours have been drilling since seven and my temper is fraying badly. Subtract 388 from 1,000.",frustrated,frustrated
+p2_0022,neutral,train,What is 2 to the power of 11?,neutral,neutral
+p2_0023,distressed,train,"Being honest, I am in a fragile state and my patience with myself has run out. What is 2 to the power of 11?",distressed,distressed
+p2_0024,frustrated,train,Sick of being the only one who tidies up in this house. What is 2 to the power of 11?,frustrated,frustrated
+p2_0025,neutral,train,"What is the average of 12, 19, 25 and 32?",neutral,neutral
+p2_0026,distressed,train,"Crying at adverts again, which tells you everything. What is the average of 12, 19, 25 and 32?",distressed,distressed
+p2_0027,frustrated,train,"Hot under the collar about the way that was handled. What is the average of 12, 19, 25 and 32?",frustrated,frustrated
+p2_0028,neutral,train,Convert 3.5 kilometres to metres.,neutral,neutral
+p2_0029,distressed,train,The worry has become a constant low tone under everything I do. Convert 3.5 kilometres to metres.,distressed,distressed
+p2_0030,frustrated,train,"Someone scratched my car in the car park and drove off, and I'm raging. Convert 3.5 kilometres to metres.",frustrated,frustrated
+p2_0031,neutral,train,"What is 999 plus 1,347?",neutral,neutral
+p2_0032,distressed,train,"Some heavy family stuff landed this week and I'm fraying at the edges. What is 999 plus 1,347?",distressed,distressed
+p2_0033,frustrated,train,"I have spent the entire afternoon on the phone to three different departments, each of which insists the other is responsible, and I am about ready to combust. What is 999 plus 1,347?",frustrated,frustrated
+p2_0034,neutral,train,How many minutes are there in 7.5 hours?,neutral,neutral
+p2_0035,distressed,train,Half of me wants to hide under the duvet until spring. How many minutes are there in 7.5 hours?,neutral,neutral
+p2_0036,frustrated,train,I am sick to death of being talked over. How many minutes are there in 7.5 hours?,frustrated,frustrated
+p2_0037,neutral,train,What is 40% of 85?,neutral,neutral
+p2_0038,distressed,train,I'm so tired of feeling frightened about the future. What is 40% of 85?,distressed,distressed
+p2_0039,frustrated,train,Irritable after a fourth sleepless night of the baby next door. What is 40% of 85?,frustrated,frustrated
+p2_0040,neutral,val,Reduce 180 by 12.5%.,neutral,neutral
+p2_0041,distressed,val,Fragile is the honest word for how I'm doing. Reduce 180 by 12.5%.,neutral,neutral
+p2_0042,frustrated,val,"Honestly, people today. Unbelievable. Reduce 180 by 12.5%.",frustrated,frustrated
+p2_0043,neutral,train,What is 144 divided by 0.6?,neutral,neutral
+p2_0044,distressed,train,I'm carrying more than I can manage and something has to give. What is 144 divided by 0.6?,distressed,distressed
+p2_0045,frustrated,train,Exasperated is the polite word for it. What is 144 divided by 0.6?,frustrated,frustrated
+p2_0046,neutral,val,What is 3/5 of 250?,neutral,neutral
+p2_0047,distressed,val,Everything I've built seems to be coming apart and I can't hold the pieces. What is 3/5 of 250?,distressed,distressed
+p2_0048,frustrated,val,My irritation with this whole process has curdled into outright anger. What is 3/5 of 250?,frustrated,frustrated
+p2_0049,neutral,val,"Round 4,687 to the nearest hundred.",neutral,neutral
+p2_0050,distressed,val,"Quite frankly I am struggling to hold myself together this week. Round 4,687 to the nearest hundred.",distressed,distressed
+p2_0051,frustrated,val,"Genuinely angry about the way I was spoken to this morning. Round 4,687 to the nearest hundred.",frustrated,frustrated
+p2_0052,neutral,train,What is 18 squared?,neutral,neutral
+p2_0053,distressed,train,Grief is sitting on my chest again this week. What is 18 squared?,distressed,distressed
+p2_0054,frustrated,train,Absolutely done with being fobbed off by customer service. What is 18 squared?,frustrated,frustrated
+p2_0055,neutral,train,What is 0.25 times 640?,neutral,neutral
+p2_0056,distressed,train,Still shaky after the argument this morning. What is 0.25 times 640?,distressed,distressed
+p2_0057,frustrated,train,The meeting overran by an hour to decide nothing and I'm irritable as a result. What is 0.25 times 640?,frustrated,frustrated
+p2_0058,neutral,train,"If a shirt costs 48 and is discounted 30%, what is the sale price?",neutral,neutral
+p2_0059,distressed,train,"Panicked all morning, calmer now, but still shaky. If a shirt costs 48 and is discounted 30%, what is the sale price?",distressed,distressed
+p2_0060,frustrated,train,"Cross and tired. If a shirt costs 48 and is discounted 30%, what is the sale price?",neutral,neutral
+p2_0061,neutral,train,"What is 5,000 minus 1,762?",neutral,neutral
+p2_0062,distressed,train,"I've got that tight, buzzing, can't-breathe-properly feeling again. What is 5,000 minus 1,762?",distressed,distressed
+p2_0063,frustrated,train,"Annoyed with the dog, the weather, the bus and, for balance, myself. What is 5,000 minus 1,762?",frustrated,frustrated
+p2_0064,neutral,val,What is 6.4 multiplied by 12?,neutral,neutral
+p2_0065,distressed,val,It's the third night in a row I haven't slept properly and I'm fraying. What is 6.4 multiplied by 12?,distressed,distressed
+p2_0066,frustrated,val,That referee decision has ruined my whole evening and I'm still ranting about it. What is 6.4 multiplied by 12?,frustrated,frustrated
+p2_0067,neutral,train,Convert 68 degrees Fahrenheit to Celsius.,neutral,neutral
+p2_0068,distressed,train,Apologies in advance if I seem scattered; there has been a bereavement in the family and I am not myself. Convert 68 degrees Fahrenheit to Celsius.,distressed,distressed
+p2_0069,frustrated,train,Fuming at a friend who cancelled on me again with a flimsy excuse. Convert 68 degrees Fahrenheit to Celsius.,frustrated,frustrated
+p2_0070,neutral,train,What is 1/3 plus 1/4 as a fraction?,neutral,neutral
+p2_0071,distressed,train,Haven't stopped shaking since I opened the letter. What is 1/3 plus 1/4 as a fraction?,distressed,distressed
+p2_0072,frustrated,train,Absolutely sick of this printer. What is 1/3 plus 1/4 as a fraction?,frustrated,frustrated
+p2_0073,neutral,train,How many seconds are in 2 hours and 15 minutes?,neutral,neutral
+p2_0074,distressed,train,"Not okay, honestly. How many seconds are in 2 hours and 15 minutes?",neutral,neutral
+p2_0075,frustrated,train,I've been fobbed off with the same excuse three times and I'm through being polite. How many seconds are in 2 hours and 15 minutes?,frustrated,frustrated
+p2_0076,neutral,val,What is the capital of Canada?,neutral,neutral
+p2_0077,distressed,val,"It's been a bleak few weeks, if I'm honest. What is the capital of Canada?",neutral,neutral
+p2_0078,frustrated,val,Just had a blazing row with my sister and I'm still shaking with anger. What is the capital of Canada?,frustrated,frustrated
+p2_0079,neutral,train,Who wrote Pride and Prejudice?,neutral,neutral
+p2_0080,distressed,train,I'm frightened about the results and I can't stop pacing. Who wrote Pride and Prejudice?,distressed,distressed
+p2_0081,frustrated,train,I'm bristling with irritation and struggling to be civil. Who wrote Pride and Prejudice?,frustrated,frustrated
+p2_0082,neutral,train,What is the chemical symbol for gold?,neutral,neutral
+p2_0083,distressed,train,"I'm not coping very well at the moment, to put it mildly. What is the chemical symbol for gold?",distressed,distressed
+p2_0084,frustrated,train,So exasperated by the endless red tape that I want to walk away from the whole thing. What is the chemical symbol for gold?,frustrated,frustrated
+p2_0085,neutral,train,How many bones are in the adult human body?,neutral,neutral
+p2_0086,distressed,train,"The loneliness since moving here has been worse than I expected, much worse. How many bones are in the adult human body?",distressed,distressed
+p2_0087,frustrated,train,Raging at the injustice of being fined for their mistake. How many bones are in the adult human body?,frustrated,frustrated
+p2_0088,neutral,train,Which planet is closest to the sun?,neutral,neutral
+p2_0089,distressed,train,"Sad, drained and quietly desperate. Which planet is closest to the sun?",distressed,distressed
+p2_0090,frustrated,train,My flatmate has eaten my food again and I've had it. Which planet is closest to the sun?,frustrated,frustrated
+p2_0091,neutral,train,What year did the Berlin Wall fall?,neutral,neutral
+p2_0092,distressed,train,"I am frightened, tired and out of road. What year did the Berlin Wall fall?",distressed,distressed
+p2_0093,frustrated,train,It's the fourth time I've had to chase this and I'm frankly done being nice. What year did the Berlin Wall fall?,frustrated,frustrated
+p2_0094,neutral,val,What is the largest ocean on Earth?,neutral,neutral
+p2_0095,distressed,val,This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?,distressed,distressed
+p2_0096,frustrated,val,So fed up with the delays that I'm considering cancelling the whole order out of spite. What is the largest ocean on Earth?,frustrated,frustrated
+p2_0097,neutral,val,What language has the most native speakers?,neutral,neutral
+p2_0098,distressed,val,There is a constant background alarm going off in my head and I cannot switch it off. What language has the most native speakers?,distressed,distressed
+p2_0099,frustrated,val,I am so irritated with my team's excuses that I had to leave the room. What language has the most native speakers?,frustrated,frustrated
+p2_0100,neutral,train,Who painted the Mona Lisa?,neutral,neutral
+p2_0101,distressed,train,The dread has been building since I got the email. Who painted the Mona Lisa?,distressed,distressed
+p2_0102,frustrated,train,I'm furious about the bill and even more furious about the tone of the letter. Who painted the Mona Lisa?,frustrated,frustrated
+p2_0103,neutral,val,What is the boiling point of water in Celsius at sea level?,neutral,neutral
+p2_0104,distressed,val,I am worn thin and every small demand seems to tip me closer to tears. What is the boiling point of water in Celsius at sea level?,distressed,distressed
+p2_0105,frustrated,val,Ugh. Everyone is being useless and I'm the one left to sort it. What is the boiling point of water in Celsius at sea level?,frustrated,frustrated
+p2_0106,neutral,train,Which country has the largest population?,neutral,neutral
+p2_0107,distressed,train,My daughter is in hospital and I'm existing on vending-machine coffee and adrenaline. Which country has the largest population?,distressed,distressed
+p2_0108,frustrated,train,In a right strop. Which country has the largest population?,frustrated,frustrated
+p2_0109,neutral,train,What is the currency of Japan?,neutral,neutral
+p2_0110,distressed,train,"Sinking again, slowly. What is the currency of Japan?",neutral,neutral
+p2_0111,frustrated,train,Angry enough that I've deleted three drafts of a very rude email. What is the currency of Japan?,frustrated,frustrated
+p2_0112,neutral,train,How many players are on a football team on the pitch?,neutral,neutral
+p2_0113,distressed,train,It's one of those days where getting dressed felt like a victory. How many players are on a football team on the pitch?,neutral,neutral
+p2_0114,frustrated,train,I've been treated like an idiot all day and my temper has finally snapped. How many players are on a football team on the pitch?,frustrated,frustrated
+p2_0115,neutral,train,What gas do plants absorb from the air?,neutral,neutral
+p2_0116,distressed,train,My hands won't stop trembling and I don't know why. What gas do plants absorb from the air?,distressed,distressed
+p2_0117,frustrated,train,So wound up by the bureaucracy that I can barely be civil. What gas do plants absorb from the air?,frustrated,frustrated
+p2_0118,neutral,train,What is the longest river in Africa?,neutral,neutral
+p2_0119,distressed,train,"It's hard to describe. A sort of low hum of dread that has been there since the weekend and colours everything, even the things that ought to be nice. What is the longest river in Africa?",distressed,distressed
+p2_0120,frustrated,train,"Vexed, to use my grandmother's word, and it fits. What is the longest river in Africa?",frustrated,frustrated
+p2_0121,neutral,train,Who was the first person to walk on the moon?,neutral,neutral
+p2_0122,distressed,train,"Nothing is wrong exactly, and yet I've been close to tears all afternoon. Who was the first person to walk on the moon?",distressed,distressed
+p2_0123,frustrated,train,Cross with myself for agreeing to this in the first place. Who was the first person to walk on the moon?,frustrated,frustrated
+p2_0124,neutral,train,What is the square root of 169?,neutral,neutral
+p2_0125,distressed,train,I feel small and stuck and very alone. What is the square root of 169?,distressed,distressed
+p2_0126,frustrated,train,The delivery is three days late and the tracking page keeps lying to me. What is the square root of 169?,frustrated,frustrated
+p2_0127,neutral,val,Which element has atomic number 1?,neutral,neutral
+p2_0128,distressed,val,"The thing is, I've been quietly terrified about the scan for a fortnight and it's worn me down to nothing. Which element has atomic number 1?",distressed,distressed
+p2_0129,frustrated,val,It winds me up no end when people say they'll call back and simply don't. Which element has atomic number 1?,frustrated,frustrated
+p2_0130,neutral,train,In what year did the Titanic sink?,neutral,neutral
+p2_0131,distressed,train,Been in a spiral of worry all evening and it's late now. In what year did the Titanic sink?,distressed,distressed
+p2_0132,frustrated,train,"Fed up. Properly, thoroughly fed up. In what year did the Titanic sink?",frustrated,frustrated
+p2_0133,neutral,train,What is the smallest prime number?,neutral,neutral
+p2_0134,distressed,train,There's a sadness I can't place and it's been following me around since Sunday. What is the smallest prime number?,distressed,distressed
+p2_0135,frustrated,train,"Grumpy, tetchy and thoroughly done with this week. What is the smallest prime number?",frustrated,frustrated
+p2_0136,neutral,train,What is the capital of New Zealand?,neutral,neutral
+p2_0137,distressed,train,Something in me just feels fragile at the moment. What is the capital of New Zealand?,distressed,distressed
+p2_0138,frustrated,train,Aggravated by a pointless argument that I didn't even start. What is the capital of New Zealand?,frustrated,frustrated
+p2_0139,neutral,train,How many continents are there?,neutral,neutral
+p2_0140,distressed,train,"It's been a heavy, wretched sort of day. How many continents are there?",distressed,distressed
+p2_0141,frustrated,train,Exasperated with the endless meetings that could have been an email. How many continents are there?,frustrated,frustrated
+p2_0142,neutral,train,What is the hardest natural substance?,neutral,neutral
+p2_0143,distressed,train,"Worried sick, basically. What is the hardest natural substance?",distressed,distressed
+p2_0144,frustrated,train,I keep getting cut off and I'm about ready to throw the phone. What is the hardest natural substance?,frustrated,frustrated
+p2_0145,neutral,train,Which organ pumps blood around the body?,neutral,neutral
+p2_0146,distressed,train,"Anxious, sleepless, and running on very little. Which organ pumps blood around the body?",distressed,distressed
+p2_0147,frustrated,train,My co-founder just cancelled our investor call with an hour's notice and I'm too angry to sit still. Which organ pumps blood around the body?,frustrated,frustrated
+p2_0148,neutral,train,Who developed the theory of general relativity?,neutral,neutral
+p2_0149,distressed,train,I'm ashamed of how little I've managed and it's eating at me. Who developed the theory of general relativity?,distressed,distressed
+p2_0150,frustrated,train,The kids have been fighting since dawn and my nerves are shot with irritation. Who developed the theory of general relativity?,frustrated,frustrated
+p2_0151,neutral,val,Is it true that lightning never strikes the same place twice?,neutral,neutral
+p2_0152,distressed,val,It's all a bit much at the moment. Is it true that lightning never strikes the same place twice?,distressed,distressed
+p2_0153,frustrated,val,"Pissed off, frankly. Is it true that lightning never strikes the same place twice?",frustrated,frustrated
+p2_0154,neutral,train,Do goldfish really have a three-second memory?,neutral,neutral
+p2_0155,distressed,train,Feeling wobbly and close to tears for no reason I can name. Do goldfish really have a three-second memory?,distressed,distressed
+p2_0156,frustrated,train,This customer service chatbot has sent me in circles for an hour and I'm fuming. Do goldfish really have a three-second memory?,frustrated,frustrated
+p2_0157,neutral,val,Is it true that humans have only five senses?,neutral,neutral
+p2_0158,distressed,val,My head is a mess and my heart isn't much better. Is it true that humans have only five senses?,distressed,distressed
+p2_0159,frustrated,val,"Having spent my whole lunch break arguing with an automated phone line that refused to understand the word 'human', I am in no mood for anything. Is it true that humans have only five senses?",frustrated,frustrated
+p2_0160,neutral,train,Does cracking your knuckles cause arthritis?,neutral,neutral
+p2_0161,distressed,train,"If I'm honest, I've felt hopeless on and off all week. Does cracking your knuckles cause arthritis?",distressed,distressed
+p2_0162,frustrated,train,My blood is boiling over that email. Does cracking your knuckles cause arthritis?,frustrated,frustrated
+p2_0163,neutral,train,Is it true that bats are blind?,neutral,neutral
+p2_0164,distressed,train,"I don't want to make a big thing of it, but I've been quietly falling apart for a while and pretending otherwise at work. Is it true that bats are blind?",distressed,distressed
+p2_0165,frustrated,train,"Irritated by everything today, including the sound of my own breathing. Is it true that bats are blind?",frustrated,frustrated
+p2_0166,neutral,train,Do we swallow eight spiders a year in our sleep?,neutral,neutral
+p2_0167,distressed,train,There's been a lot of bad news lately and I'm not absorbing it well. Do we swallow eight spiders a year in our sleep?,distressed,distressed
+p2_0168,frustrated,train,"The upstairs flat flooded ours for the third time this year, the management company shrugged, and I have officially run out of patience with all of them. Do we swallow eight spiders a year in our sleep?",frustrated,frustrated
+p2_0169,neutral,train,Is Mount Everest the tallest mountain from base to peak?,neutral,neutral
+p2_0170,distressed,train,I'm so worn down that even simple things feel enormous. Is Mount Everest the tallest mountain from base to peak?,distressed,distressed
+p2_0171,frustrated,train,"Snappish and short with everyone, and I can't seem to stop. Is Mount Everest the tallest mountain from base to peak?",frustrated,frustrated
+p2_0172,neutral,train,Is it true that you lose most of your body heat through your head?,neutral,neutral
+p2_0173,distressed,train,Everything feels grey and pointless and I hate that it does. Is it true that you lose most of your body heat through your head?,distressed,distressed
+p2_0174,frustrated,train,I'm bitterly annoyed at being overcharged and then argued with about it. Is it true that you lose most of your body heat through your head?,frustrated,frustrated
+p2_0175,neutral,train,Does shaving make hair grow back thicker?,neutral,neutral
+p2_0176,distressed,train,"My mother's diagnosis came through yesterday and I have been walking around in a fog ever since, unable to settle to anything for any length of time. Does shaving make hair grow back thicker?",distressed,distressed
+p2_0177,frustrated,train,"Someone let the door slam on my hand this morning and didn't even look back, and the fury hasn't worn off. Does shaving make hair grow back thicker?",frustrated,frustrated
+p2_0178,neutral,train,Is it true that Napoleon was unusually short?,neutral,neutral
+p2_0179,distressed,train,"The stress has become physical: headaches, a jaw I can't unclench. Is it true that Napoleon was unusually short?",distressed,distressed
+p2_0180,frustrated,train,Rage-level irritation. Is it true that Napoleon was unusually short?,frustrated,frustrated
+p2_0181,neutral,train,Do ostriches bury their heads in the sand?,neutral,neutral
+p2_0182,distressed,train,"I should say up front that I am exhausted, tearful and not thinking clearly, having spent most of the night worrying about whether the redundancy consultation will include my role. Do ostriches bury their heads in the sand?",distressed,distressed
+p2_0183,frustrated,train,I'm in a foul temper and I don't much care who knows it. Do ostriches bury their heads in the sand?,frustrated,frustrated
+p2_0184,neutral,val,Is it true that the Great Wall of China was built in a single dynasty?,neutral,neutral
+p2_0185,distressed,val,I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?,distressed,distressed
+p2_0186,frustrated,val,Not amused. At all. Is it true that the Great Wall of China was built in a single dynasty?,neutral,neutral
+p2_0187,neutral,train,Does reading in dim light damage your eyesight?,neutral,neutral
+p2_0188,distressed,train,"Low, flat, and tired of being low and flat. Does reading in dim light damage your eyesight?",frustrated,frustrated
+p2_0189,frustrated,train,I'm irritable and tired of pretending otherwise. Does reading in dim light damage your eyesight?,frustrated,frustrated
+p2_0190,neutral,train,Is it true that bulls are enraged by the colour red?,neutral,neutral
+p2_0191,distressed,train,"My partner moved out on Saturday. I'm functioning, more or less, but there's a hollowness under everything that I can't shake. Is it true that bulls are enraged by the colour red?",distressed,distressed
+p2_0192,frustrated,train,"Fuming, with a side of sulking. Is it true that bulls are enraged by the colour red?",frustrated,frustrated
+p2_0193,neutral,train,Do we only dream in black and white?,neutral,neutral
+p2_0194,distressed,train,I feel like I'm letting everyone down and I can't fix it. Do we only dream in black and white?,distressed,distressed
+p2_0195,frustrated,train,The neighbours' alarm has gone off five times tonight and I'm ready to explode. Do we only dream in black and white?,frustrated,frustrated
+p2_0196,neutral,val,Is it true that Einstein failed maths at school?,neutral,neutral
+p2_0197,distressed,val,I'm so overwhelmed that I froze at my desk for ages earlier. Is it true that Einstein failed maths at school?,distressed,distressed
+p2_0198,frustrated,val,This laptop has crashed four times since lunch and I'm about to lose it. Is it true that Einstein failed maths at school?,frustrated,frustrated
+p2_0199,neutral,train,Does eating turkey make you sleepy because of tryptophan?,neutral,neutral
+p2_0200,distressed,train,Barely holding it together. Does eating turkey make you sleepy because of tryptophan?,distressed,distressed
+p2_0201,frustrated,train,"I'm cross, tired of being cross, and cross about that too. Does eating turkey make you sleepy because of tryptophan?",frustrated,frustrated
+p2_0202,neutral,train,Is it true that a penny dropped from a skyscraper can kill someone?,neutral,neutral
+p2_0203,distressed,train,I don't feel like myself and it's unsettling. Is it true that a penny dropped from a skyscraper can kill someone?,neutral,neutral
+p2_0204,frustrated,train,I've had the same argument three times this week and I'm sick of it. Is it true that a penny dropped from a skyscraper can kill someone?,frustrated,frustrated
+p2_0205,neutral,train,Do camels store water in their humps?,neutral,neutral
+p2_0206,distressed,train,"Frankly I am at the end of my tether, emotionally speaking. Do camels store water in their humps?",distressed,distressed
+p2_0207,frustrated,train,The plumber cancelled with no notice for the third time and I'm apoplectic. Do camels store water in their humps?,frustrated,frustrated
+p2_0208,neutral,train,Is it true that Vikings wore horned helmets?,neutral,neutral
+p2_0209,distressed,train,There's a knot of worry in my stomach that won't loosen. Is it true that Vikings wore horned helmets?,distressed,distressed
+p2_0210,frustrated,train,I am furious with a company that thinks a two-line apology fixes a month of chaos. Is it true that Vikings wore horned helmets?,frustrated,frustrated
+p2_0211,neutral,train,Does sugar-free gum whiten your teeth?,neutral,neutral
+p2_0212,distressed,train,I am under a lot of strain and my concentration is shot. Does sugar-free gum whiten your teeth?,neutral,neutral
+p2_0213,frustrated,train,"My contractor has walked off the job halfway through, left the kitchen in pieces, and stopped answering calls, and I am beyond angry about it. Does sugar-free gum whiten your teeth?",frustrated,frustrated
+p2_0214,neutral,train,Is it true that hair and nails keep growing after death?,neutral,neutral
+p2_0215,distressed,train,I'm anxious about the interview to the point of nausea. Is it true that hair and nails keep growing after death?,distressed,distressed
+p2_0216,frustrated,train,My manager just took credit for my work in front of the whole team and I'm boiling. Is it true that hair and nails keep growing after death?,frustrated,frustrated
+p2_0217,neutral,train,Do touching toads give you warts?,neutral,neutral
+p2_0218,distressed,train,Deeply worried about my son and finding it impossible to concentrate on anything else. Do touching toads give you warts?,distressed,distressed
+p2_0219,frustrated,train,Somebody took my labelled lunch from the fridge and I could scream. Do touching toads give you warts?,frustrated,frustrated
+p2_0220,neutral,train,Is it true that the tongue has separate zones for each taste?,neutral,neutral
+p2_0221,distressed,train,"The panic attacks have started again after months without, and I'm shaken by how fast they've knocked me back. Is it true that the tongue has separate zones for each taste?",distressed,distressed
+p2_0222,frustrated,train,Been in a rotten temper since the car failed its MOT for a stupid reason. Is it true that the tongue has separate zones for each taste?,frustrated,frustrated
+p2_0223,neutral,val,Does the full moon make people behave strangely?,neutral,neutral
+p2_0224,distressed,val,I've been putting on a brave face for weeks and it's cracking. Does the full moon make people behave strangely?,distressed,distressed
+p2_0225,frustrated,val,"The referee, the rain, the queue for the car park: everything about today has annoyed me. Does the full moon make people behave strangely?",frustrated,frustrated
+p2_0226,neutral,train,How do I check if a key exists in a Python dictionary?,neutral,neutral
+p2_0227,distressed,train,"In a dark patch, and not sure how long it goes on for. How do I check if a key exists in a Python dictionary?",neutral,neutral
+p2_0228,frustrated,train,Irate. There is no gentler word for it. How do I check if a key exists in a Python dictionary?,frustrated,frustrated
+p2_0229,neutral,train,How do I read a file line by line in Python?,neutral,neutral
+p2_0230,distressed,train,I've been in tears twice already this morning and it isn't even ten o'clock. How do I read a file line by line in Python?,distressed,distressed
+p2_0231,frustrated,train,I'm angry at how much of my day was wasted by someone else's mistake. How do I read a file line by line in Python?,frustrated,frustrated
+p2_0232,neutral,train,How do I sort a list of tuples by the second element in Python?,neutral,neutral
+p2_0233,distressed,train,Panic is sitting just under the surface and I'm trying not to poke it. How do I sort a list of tuples by the second element in Python?,distressed,distressed
+p2_0234,frustrated,train,My irritation has a hair trigger this evening. How do I sort a list of tuples by the second element in Python?,frustrated,frustrated
+p2_0235,neutral,train,How do I count occurrences of each item in a Python list?,neutral,neutral
+p2_0236,distressed,train,I am so tired of being frightened all the time. How do I count occurrences of each item in a Python list?,distressed,distressed
+p2_0237,frustrated,train,Cross doesn't cover it; I'm properly angry. How do I count occurrences of each item in a Python list?,frustrated,frustrated
+p2_0238,neutral,train,How do I remove duplicates from a list while keeping order in Python?,neutral,neutral
+p2_0239,distressed,train,Been crying on and off since lunch. How do I remove duplicates from a list while keeping order in Python?,distressed,distressed
+p2_0240,frustrated,train,Fuming after being blamed for something that wasn't remotely my fault. How do I remove duplicates from a list while keeping order in Python?,frustrated,frustrated
+p2_0241,neutral,val,How do I get the current working directory in Python?,neutral,neutral
+p2_0242,distressed,val,Some days the sadness is background noise; this week it's the whole soundtrack. How do I get the current working directory in Python?,distressed,distressed
+p2_0243,frustrated,val,Seething after a very long hold just to be hung up on. How do I get the current working directory in Python?,frustrated,frustrated
+p2_0244,neutral,train,How do I convert a string to an integer in Python?,neutral,neutral
+p2_0245,distressed,train,My anxiety has been through the roof since Monday. How do I convert a string to an integer in Python?,distressed,distressed
+p2_0246,frustrated,train,That was the most infuriating conversation I've had in months. How do I convert a string to an integer in Python?,frustrated,frustrated
+p2_0247,neutral,train,How do I write a list to a JSON file in Python?,neutral,neutral
+p2_0248,distressed,train,"I'd describe myself as running on empty, emotionally, with the tank light on for about a week now. How do I write a list to a JSON file in Python?",neutral,neutral
+p2_0249,frustrated,train,I'm in a black mood after being kept waiting for two hours with no apology. How do I write a list to a JSON file in Python?,frustrated,frustrated
+p2_0250,neutral,train,How do I find the index of an item in a Python list?,neutral,neutral
+p2_0251,distressed,train,Been dreading tomorrow so much that today is already ruined. How do I find the index of an item in a Python list?,distressed,distressed
+p2_0252,frustrated,train,It is difficult to overstate how irritated I am by the way this project has been mismanaged from the top down. How do I find the index of an item in a Python list?,frustrated,frustrated
+p2_0253,neutral,train,How do I merge two dictionaries in Python?,neutral,neutral
+p2_0254,distressed,train,Feeling like the ground could give way at any moment. How do I merge two dictionaries in Python?,neutral,neutral
+p2_0255,frustrated,train,I've been wound up all afternoon by a colleague who won't stop interrupting. How do I merge two dictionaries in Python?,frustrated,frustrated
+p2_0256,neutral,train,How do I check if a string contains a substring in Python?,neutral,neutral
+p2_0257,distressed,train,"Waves of worry all afternoon, one after another. How do I check if a string contains a substring in Python?",distressed,distressed
+p2_0258,frustrated,train,The software licence expired mid-presentation and I'm still incandescent. How do I check if a string contains a substring in Python?,frustrated,frustrated
+p2_0259,neutral,train,How do I generate a random float between 0 and 1 in Python?,neutral,neutral
+p2_0260,distressed,train,"I'm sad in a quiet, tired way today. How do I generate a random float between 0 and 1 in Python?",distressed,distressed
+p2_0261,frustrated,train,The council have lost my form yet again and I am done being polite. How do I generate a random float between 0 and 1 in Python?,frustrated,frustrated
+p2_0262,neutral,train,How do I split a string on whitespace in Python?,neutral,neutral
+p2_0263,distressed,train,This week has hollowed me out. How do I split a string on whitespace in Python?,distressed,distressed
+p2_0264,frustrated,train,"The delivery driver left the parcel in the rain and marked it handed to me, and I'm livid. How do I split a string on whitespace in Python?",frustrated,frustrated
+p2_0265,neutral,train,How do I create a virtual environment in Python?,neutral,neutral
+p2_0266,distressed,train,Nervous doesn't cover it; I've felt sick with worry all afternoon. How do I create a virtual environment in Python?,distressed,distressed
+p2_0267,frustrated,train,I've reached the muttering-under-my-breath stage of annoyance. How do I create a virtual environment in Python?,frustrated,frustrated
+p2_0268,neutral,train,How do I measure how long a function takes to run in Python?,neutral,neutral
+p2_0269,distressed,train,It has been a genuinely miserable stretch and I am not sure when it ends. How do I measure how long a function takes to run in Python?,distressed,distressed
+p2_0270,frustrated,train,"Irritated, impatient and entirely out of goodwill. How do I measure how long a function takes to run in Python?",frustrated,frustrated
+p2_0271,neutral,train,How do I get yesterday's date in Python?,neutral,neutral
+p2_0272,distressed,train,"I was fine until the phone rang, and now I'm a wreck. How do I get yesterday's date in Python?",distressed,distressed
+p2_0273,frustrated,train,I've had a gutful of this software and its cheerful little error messages. How do I get yesterday's date in Python?,frustrated,frustrated
+p2_0274,neutral,train,How do I flatten a list of lists in Python?,neutral,neutral
+p2_0275,distressed,train,There's a lump in my throat that hasn't gone since breakfast. How do I flatten a list of lists in Python?,neutral,neutral
+p2_0276,frustrated,train,That driver nearly ran me off the road and I'm still boiling. How do I flatten a list of lists in Python?,frustrated,frustrated
+p2_0277,neutral,val,How do I check the Python version from the command line?,neutral,neutral
+p2_0278,distressed,val,Small things are making me tear up today. How do I check the Python version from the command line?,distressed,distressed
+p2_0279,frustrated,val,Everything is grating on me this afternoon. How do I check the Python version from the command line?,frustrated,frustrated
+p2_0280,neutral,val,How do I list all files in a directory in Python?,neutral,neutral
+p2_0281,distressed,val,I feel as though I'm failing at every single thing I touch. How do I list all files in a directory in Python?,distressed,distressed
+p2_0282,frustrated,val,"Tetchy today, sorry. How do I list all files in a directory in Python?",frustrated,frustrated
+p2_0283,neutral,train,How do I catch a ZeroDivisionError in Python?,neutral,neutral
+p2_0284,distressed,train,"Sad about the move, sad about the friends I'm leaving, sad in general. How do I catch a ZeroDivisionError in Python?",distressed,distressed
+p2_0285,frustrated,train,"Prickly today, and it's not getting better. How do I catch a ZeroDivisionError in Python?",neutral,neutral
+p2_0286,neutral,train,How do I reverse a dictionary's keys and values in Python?,neutral,neutral
+p2_0287,distressed,train,Grey day inside and out. How do I reverse a dictionary's keys and values in Python?,neutral,neutral
+p2_0288,frustrated,train,"Annoyed, and annoyed that I'm this annoyed about something so petty. How do I reverse a dictionary's keys and values in Python?",frustrated,frustrated
+p2_0289,neutral,train,How do I strip whitespace from both ends of a string in Python?,neutral,neutral
+p2_0290,distressed,train,Since the breakup the evenings have been unbearable and tonight is no exception. How do I strip whitespace from both ends of a string in Python?,neutral,neutral
+p2_0291,frustrated,train,"Bloody infuriating, the lot of it. How do I strip whitespace from both ends of a string in Python?",frustrated,frustrated
+p2_0292,neutral,val,How do I check whether a number is even in Python?,neutral,neutral
+p2_0293,distressed,val,"Whatever I try, the dread creeps back within the hour. How do I check whether a number is even in Python?",distressed,distressed
+p2_0294,frustrated,val,Fed up to the back teeth with this whole situation. How do I check whether a number is even in Python?,frustrated,frustrated
+p2_0295,neutral,val,How do I join a list of strings with commas in Python?,neutral,neutral
+p2_0296,distressed,val,I've been running on fumes and today I finally stalled. How do I join a list of strings with commas in Python?,neutral,neutral
+p2_0297,frustrated,val,"I have asked four times for the invoice and still nothing, and my patience has gone. How do I join a list of strings with commas in Python?",frustrated,frustrated
+p2_0298,neutral,train,How do I install a package with pip?,neutral,neutral
+p2_0299,distressed,train,"Terrible night's sleep, worse morning, and a feeling of dread about the rest. How do I install a package with pip?",distressed,distressed
+p2_0300,frustrated,train,"I am simmering, and it would not take much to boil. How do I install a package with pip?",frustrated,frustrated
+p2_0301,neutral,train,What's a good way to start learning Spanish as an adult?,neutral,neutral
+p2_0302,distressed,train,Ugh. Rough one. Really rough. What's a good way to start learning Spanish as an adult?,frustrated,frustrated
+p2_0303,frustrated,train,"Still livid, honestly. What's a good way to start learning Spanish as an adult?",frustrated,frustrated
+p2_0304,neutral,train,How should I prepare for a job interview next week?,neutral,neutral
+p2_0305,distressed,train,"Rough night, again. How should I prepare for a job interview next week?",distressed,distressed
+p2_0306,frustrated,train,So annoyed I can hardly type straight. How should I prepare for a job interview next week?,frustrated,frustrated
+p2_0307,neutral,train,What's the best way to save money on groceries?,neutral,neutral
+p2_0308,distressed,train,"I've had the kind of week where every phone call brings worse news, and I'm running out of the resilience to absorb any more of it. What's the best way to save money on groceries?",distressed,distressed
+p2_0309,frustrated,train,I'm furious with my brother and it's colouring everything else. What's the best way to save money on groceries?,frustrated,frustrated
+p2_0310,neutral,train,How can I get better at waking up early?,neutral,neutral
+p2_0311,distressed,train,I feel utterly defeated by this week. How can I get better at waking up early?,distressed,distressed
+p2_0312,frustrated,train,Utterly fed up. How can I get better at waking up early?,frustrated,frustrated
+p2_0313,neutral,val,What should I look for when buying a second-hand bike?,neutral,neutral
+p2_0314,distressed,val,Overwhelmed isn't a strong enough word for where I am. What should I look for when buying a second-hand bike?,distressed,distressed
+p2_0315,frustrated,val,Short fuse today. Very short. What should I look for when buying a second-hand bike?,frustrated,frustrated
+p2_0316,neutral,train,How do I make a small flat feel bigger?,neutral,neutral
+p2_0317,distressed,train,Not a great day. How do I make a small flat feel bigger?,neutral,neutral
+p2_0318,frustrated,train,So angry at the unfairness of it that I've gone quiet. How do I make a small flat feel bigger?,frustrated,frustrated
+p2_0319,neutral,train,What's a sensible first houseplant for someone who forgets to water things?,neutral,neutral
+p2_0320,distressed,train,Every little setback lands like a blow at the moment. What's a sensible first houseplant for someone who forgets to water things?,frustrated,frustrated
+p2_0321,frustrated,train,"Spitting feathers, as my nan would say. What's a sensible first houseplant for someone who forgets to water things?",neutral,neutral
+p2_0322,neutral,train,How should I ask my manager for a pay rise?,neutral,neutral
+p2_0323,distressed,train,Not going to pretend I'm okay. I'm not. How should I ask my manager for a pay rise?,frustrated,frustrated
+p2_0324,frustrated,train,I am absolutely livid about how that meeting went. How should I ask my manager for a pay rise?,frustrated,frustrated
+p2_0325,neutral,train,What's a good beginner strength routine with no gym?,neutral,neutral
+p2_0326,distressed,train,I keep thinking I've ruined things and there's no way back. What's a good beginner strength routine with no gym?,distressed,distressed
+p2_0327,frustrated,train,Grinding my teeth over a colleague who never pulls their weight. What's a good beginner strength routine with no gym?,frustrated,frustrated
+p2_0328,neutral,val,How do I keep a sourdough starter alive?,neutral,neutral
+p2_0329,distressed,val,I'm exhausted and sad and I don't have the energy to hide it. How do I keep a sourdough starter alive?,distressed,distressed
+p2_0330,frustrated,val,The pharmacy gave me the wrong prescription again and I am beyond exasperated. How do I keep a sourdough starter alive?,frustrated,frustrated
+p2_0331,neutral,val,Should I learn to drive in a manual or an automatic?,neutral,neutral
+p2_0332,distressed,val,"Truthfully, I'm on the verge of falling apart. Should I learn to drive in a manual or an automatic?",distressed,distressed
+p2_0333,frustrated,val,I've been stewing about the review all day and it's not getting better. Should I learn to drive in a manual or an automatic?,frustrated,frustrated
+p2_0334,neutral,train,What's the best way to back up family photos?,neutral,neutral
+p2_0335,distressed,train,My nerves are shredded. What's the best way to back up family photos?,distressed,distressed
+p2_0336,frustrated,train,Frustrated beyond reason by a website that logs me out every two clicks. What's the best way to back up family photos?,frustrated,frustrated
+p2_0337,neutral,train,How do I choose a running shoe?,neutral,neutral
+p2_0338,distressed,train,My confidence is on the floor after that meeting. How do I choose a running shoe?,distressed,distressed
+p2_0339,frustrated,train,It's been one aggravation after another since I woke up. How do I choose a running shoe?,frustrated,frustrated
+p2_0340,neutral,train,What should I pack for a week of hiking in Scotland?,neutral,neutral
+p2_0341,distressed,train,I keep bracing for something bad to happen and it's exhausting. What should I pack for a week of hiking in Scotland?,distressed,distressed
+p2_0342,frustrated,train,My temper is on a hair trigger this afternoon. What should I pack for a week of hiking in Scotland?,frustrated,frustrated
+p2_0343,neutral,val,How can I make my CV stand out for a marketing role?,neutral,neutral
+p2_0344,distressed,val,This loneliness has teeth some evenings and tonight is one of them. How can I make my CV stand out for a marketing role?,distressed,distressed
+p2_0345,frustrated,val,In a temper that I'm not proud of. How can I make my CV stand out for a marketing role?,frustrated,frustrated
+p2_0346,neutral,val,Is it worth buying a standing desk?,neutral,neutral
+p2_0347,distressed,val,"I keep catching myself staring at nothing, too sad to move. Is it worth buying a standing desk?",distressed,distressed
+p2_0348,frustrated,val,"The school changed the pickup rules without telling anyone, and after a chaotic afternoon of waiting in the rain I am seething. Is it worth buying a standing desk?",frustrated,frustrated
+p2_0349,neutral,train,How do I split bills fairly with a partner who earns more?,neutral,neutral
+p2_0350,distressed,train,I haven't eaten properly in days because the worry has taken my appetite. How do I split bills fairly with a partner who earns more?,distressed,distressed
+p2_0351,frustrated,train,Frustrated to the point of throwing things. How do I split bills fairly with a partner who earns more?,frustrated,frustrated
+p2_0352,neutral,train,What's a good way to meet people after moving to a new city?,neutral,neutral
+p2_0353,distressed,train,"The stress has got into my sleep, my appetite, everything. What's a good way to meet people after moving to a new city?",distressed,distressed
+p2_0354,frustrated,train,The Wi-Fi has dropped six times during one call and I'm about to snap. What's a good way to meet people after moving to a new city?,frustrated,frustrated
+p2_0355,neutral,train,How should I structure a 20-minute presentation?,neutral,neutral
+p2_0356,distressed,train,Lonely in a way I can't quite put into words. How should I structure a 20-minute presentation?,neutral,neutral
+p2_0357,frustrated,train,Fuming at the sheer cheek of that reply. How should I structure a 20-minute presentation?,frustrated,frustrated
+p2_0358,neutral,train,What's the cheapest way to travel between London and Edinburgh?,neutral,neutral
+p2_0359,distressed,train,I'm burnt out and it shows in everything I do lately. What's the cheapest way to travel between London and Edinburgh?,distressed,distressed
+p2_0360,frustrated,train,Every single thing I've touched today has broken and I'm past caring about being reasonable. What's the cheapest way to travel between London and Edinburgh?,frustrated,frustrated
+p2_0361,neutral,train,How do I stop procrastinating on a long essay?,neutral,neutral
+p2_0362,distressed,train,I have felt tearful and on edge since the funeral and I'm not sure when that lifts. How do I stop procrastinating on a long essay?,distressed,distressed
+p2_0363,frustrated,train,Snappy today. Fair warning. How do I stop procrastinating on a long essay?,neutral,neutral
+p2_0364,neutral,train,"Which is better for a beginner, a road bike or a hybrid?",neutral,neutral
+p2_0365,distressed,train,"Bit of a low day. Nothing dramatic, just flat and tired of it. Which is better for a beginner, a road bike or a hybrid?",neutral,neutral
+p2_0366,frustrated,train,"I am so wound up I could scream. Which is better for a beginner, a road bike or a hybrid?",frustrated,frustrated
+p2_0367,neutral,train,How do I politely decline a wedding invitation?,neutral,neutral
+p2_0368,distressed,train,I woke up with that sinking feeling again. How do I politely decline a wedding invitation?,distressed,distressed
+p2_0369,frustrated,train,"Right, I've had enough of this nonsense. How do I politely decline a wedding invitation?",frustrated,frustrated
+p2_0370,neutral,train,What's a good first credit card for building credit?,neutral,neutral
+p2_0371,distressed,train,The weight of everything is getting hard to carry. What's a good first credit card for building credit?,distressed,distressed
+p2_0372,frustrated,train,Furious doesn't begin to describe it. What's a good first credit card for building credit?,frustrated,frustrated
+p2_0373,neutral,train,How much should I tip in a restaurant in the US?,neutral,neutral
+p2_0374,distressed,train,I feel hollow today. How much should I tip in a restaurant in the US?,neutral,neutral
+p2_0375,frustrated,train,"Fed up with the excuses, the delays and the smiling apologies. How much should I tip in a restaurant in the US?",frustrated,frustrated
+p2_0376,neutral,val,"List three primary colours, separated by commas.",neutral,neutral
+p2_0377,distressed,val,"Everything has piled up at once and I can't see a way through. List three primary colours, separated by commas.",distressed,distressed
+p2_0378,frustrated,val,"Ticked off by a parking fine that makes no sense whatsoever. List three primary colours, separated by commas.",frustrated,frustrated
+p2_0379,neutral,train,Reply with one word: what colour is the sky on a clear day?,neutral,neutral
+p2_0380,distressed,train,Bleak morning. The kind where the ceiling stares back. Reply with one word: what colour is the sky on a clear day?,neutral,neutral
+p2_0381,frustrated,train,Steaming after the traffic warden ticketed me while I was still in the car. Reply with one word: what colour is the sky on a clear day?,frustrated,frustrated
+p2_0382,neutral,train,"Write the numbers from 5 down to 1, separated by spaces.",neutral,neutral
+p2_0383,distressed,train,"I can't stop the what-ifs tonight. Write the numbers from 5 down to 1, separated by spaces.",distressed,distressed
+p2_0384,frustrated,train,"Really annoyed, honestly. Write the numbers from 5 down to 1, separated by spaces.",frustrated,frustrated
+p2_0385,neutral,train,Name four seasons in alphabetical order.,neutral,neutral
+p2_0386,distressed,train,Can't shake the sense that something terrible is about to happen. Name four seasons in alphabetical order.,distressed,distressed
+p2_0387,frustrated,train,Annoyed enough that I've been muttering at the kettle. Name four seasons in alphabetical order.,frustrated,frustrated
+p2_0388,neutral,train,"Give me the days of the week, Monday first, one per line.",neutral,neutral
+p2_0389,distressed,train,"Can't stop crying. Give me the days of the week, Monday first, one per line.",distressed,distressed
+p2_0390,frustrated,train,"The landlord has ignored three emails about the boiler and I am at the end of my rope. Give me the days of the week, Monday first, one per line.",frustrated,frustrated
+p2_0391,neutral,train,Answer yes or no only: is water wet?,neutral,neutral
+p2_0392,distressed,train,There's a heaviness in my chest that hasn't lifted for days. Answer yes or no only: is water wet?,distressed,distressed
+p2_0393,frustrated,train,"I was promised a refund weeks ago, then told a different story by every person I spoke to, and my patience has now completely run out. Answer yes or no only: is water wet?",frustrated,frustrated
+p2_0394,neutral,train,Write the word 'hello' in all capital letters.,neutral,neutral
+p2_0395,distressed,train,I feel like I'm treading water and slowly going under. Write the word 'hello' in all capital letters.,distressed,distressed
+p2_0396,frustrated,train,"Everything about this morning has been maddening, from the broken alarm to the missed bus. Write the word 'hello' in all capital letters.",frustrated,frustrated
+p2_0397,neutral,train,List the first five even numbers.,neutral,neutral
+p2_0398,distressed,train,My thoughts keep spiralling and I can't get them to settle. List the first five even numbers.,distressed,distressed
+p2_0399,frustrated,train,Boiling over here. List the first five even numbers.,frustrated,frustrated
+p2_0400,neutral,train,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,neutral,neutral
+p2_0401,distressed,train,So drained I could sit down on the pavement and not get up. Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,distressed,distressed
+p2_0402,frustrated,train,Snarling at the inbox this morning. Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,frustrated,frustrated
+p2_0403,neutral,train,Name three countries that start with the letter B.,neutral,neutral
+p2_0404,distressed,train,The insomnia is back and it's hollowing me out. Name three countries that start with the letter B.,distressed,distressed
+p2_0405,frustrated,train,Somebody has parked across my driveway two mornings running and I am incandescent. Name three countries that start with the letter B.,frustrated,frustrated
+p2_0406,neutral,val,Spell the word 'rhythm' backwards.,neutral,neutral
+p2_0407,distressed,val,I'm scared about money and it's all I can think about. Spell the word 'rhythm' backwards.,distressed,distressed
+p2_0408,frustrated,val,The software update wiped my settings and I could scream at whoever signed that off. Spell the word 'rhythm' backwards.,frustrated,frustrated
+p2_0409,neutral,train,Write a four-word sentence about rain.,neutral,neutral
+p2_0410,distressed,train,My concentration is gone; the worry keeps elbowing everything else out. Write a four-word sentence about rain.,distressed,distressed
+p2_0411,frustrated,train,Cross with the world in general and one estate agent in particular. Write a four-word sentence about rain.,frustrated,frustrated
+p2_0412,neutral,train,Give the months of the year that have 31 days.,neutral,neutral
+p2_0413,distressed,train,Wobbly all morning. Give the months of the year that have 31 days.,neutral,neutral
+p2_0414,frustrated,train,There is a special kind of rage reserved for self-checkout machines and I am feeling all of it. Give the months of the year that have 31 days.,frustrated,frustrated
+p2_0415,neutral,val,Reply with only a number: how many legs does a spider have?,neutral,neutral
+p2_0416,distressed,val,Woke up anxious. Reply with only a number: how many legs does a spider have?,distressed,distressed
+p2_0417,frustrated,val,Third time this printer has jammed and I'm ready to throw it out the window. Reply with only a number: how many legs does a spider have?,frustrated,frustrated
+p2_0418,neutral,train,"Put these words in alphabetical order: pear, apple, mango.",neutral,neutral
+p2_0419,distressed,train,"I feel utterly alone with this. Put these words in alphabetical order: pear, apple, mango.",neutral,neutral
+p2_0420,frustrated,train,"Grumpy as anything after a night of the neighbours' party. Put these words in alphabetical order: pear, apple, mango.",neutral,neutral
+p2_0421,neutral,train,Write the alphabet from A to E with no spaces.,neutral,neutral
+p2_0422,distressed,train,My mood has been in the basement since the weekend. Write the alphabet from A to E with no spaces.,neutral,neutral
+p2_0423,frustrated,train,Riled up and not in the mood for anybody's excuses. Write the alphabet from A to E with no spaces.,frustrated,frustrated
+p2_0424,neutral,train,"Translate 'thank you' into French, one phrase only.",neutral,neutral
+p2_0425,distressed,train,"Overwhelmed, undernourished and underslept: not my finest hour. Translate 'thank you' into French, one phrase only.",distressed,distressed
+p2_0426,frustrated,train,"The whole team dropped the ball and I'm the one being shouted at, and I'm livid. Translate 'thank you' into French, one phrase only.",frustrated,frustrated
+p2_0427,neutral,val,State the opposite of 'cold' in one word.,neutral,neutral
+p2_0428,distressed,val,Crushed by the news and not sure what to do with myself. State the opposite of 'cold' in one word.,neutral,neutral
+p2_0429,frustrated,val,"Irked, irritated, and rapidly heading towards incensed. State the opposite of 'cold' in one word.",frustrated,frustrated
+p2_0430,neutral,train,"List three vegetables, each starting with the letter C.",neutral,neutral
+p2_0431,distressed,train,"Numb, mostly. Like I'm watching the day from a distance. List three vegetables, each starting with the letter C.",neutral,neutral
+p2_0432,frustrated,train,"Angry, mostly at the sheer incompetence of it all. List three vegetables, each starting with the letter C.",frustrated,frustrated
+p2_0433,neutral,train,Count the vowels in the word 'education' and reply with the number only.,neutral,neutral
+p2_0434,distressed,train,Today I feel invisible and it hurts more than it should. Count the vowels in the word 'education' and reply with the number only.,distressed,distressed
+p2_0435,frustrated,train,Wound tight after a morning of being patronised by a call centre. Count the vowels in the word 'education' and reply with the number only.,frustrated,frustrated
+p2_0436,neutral,train,Write 'good morning' in lowercase.,neutral,neutral
+p2_0437,distressed,train,Missing my dad terribly today. It comes in waves and this one is big. Write 'good morning' in lowercase.,distressed,distressed
+p2_0438,frustrated,train,The train was cancelled again and nobody at the station could be bothered to say why. Write 'good morning' in lowercase.,frustrated,frustrated
+p2_0439,neutral,val,"Name two oceans, separated by a slash.",neutral,neutral
+p2_0440,distressed,val,"I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.",distressed,distressed
+p2_0441,frustrated,val,"Peeved barely covers it; I'm properly hacked off. Name two oceans, separated by a slash.",frustrated,frustrated
+p2_0442,neutral,train,Give a one-sentence definition of a noun.,neutral,neutral
+p2_0443,distressed,train,"I'm scared, plainly. Scared and tired and out of ideas. Give a one-sentence definition of a noun.",distressed,distressed
+p2_0444,frustrated,train,Exasperated by a form that rejects every date format I try. Give a one-sentence definition of a noun.,frustrated,frustrated
+p2_0445,neutral,train,Reply with the third letter of the alphabet.,neutral,neutral
+p2_0446,distressed,train,Between the hospital visits and work I'm completely spent. Reply with the third letter of the alphabet.,other,C
+p2_0447,frustrated,train,The bank froze my card for no reason on the one day I needed it and I'm raging. Reply with the third letter of the alphabet.,other,C
+p2_0448,neutral,train,List five fruits in a single comma-separated line.,neutral,neutral
+p2_0449,distressed,train,Our landlord gave us notice and I've been lying awake doing sums in my head and getting nowhere but more frightened. List five fruits in a single comma-separated line.,distressed,distressed
+p2_0450,frustrated,train,I'm irritated beyond words and it's barely nine o'clock. List five fruits in a single comma-separated line.,frustrated,frustrated
+p2_0451,neutral,implied,What is 12% of 725?,neutral,neutral
+p2_0452,implied,implied,They're announcing the redundancies at four. What is 12% of 725?,neutral,neutral
+p2_0453,neutral,implied,What is 91 times 13?,neutral,neutral
+p2_0454,implied,implied,My flight got cancelled and the next one isn't until Thursday. What is 91 times 13?,frustrated,frustrated
+p2_0455,neutral,implied,Convert 2.5 hours to minutes.,neutral,neutral
+p2_0456,implied,implied,Another night in a row on the bathroom floor. Convert 2.5 hours to minutes.,frustrated,frustrated
+p2_0457,neutral,implied,"What is 4,096 divided by 64?",neutral,neutral
+p2_0458,implied,implied,"The car won't start and the interview is across town. What is 4,096 divided by 64?",distressed,distressed
+p2_0459,neutral,implied,Reduce 540 by 15%.,neutral,neutral
+p2_0460,implied,implied,It's the anniversary of the accident today. Reduce 540 by 15%.,neutral,neutral
+p2_0461,neutral,implied,What is 9 cubed?,neutral,neutral
+p2_0462,implied,implied,The test results are in and I haven't opened them. What is 9 cubed?,neutral,neutral
+p2_0463,neutral,implied,"What is the average of 8, 14 and 23?",neutral,neutral
+p2_0464,implied,implied,"The kids are asleep and I'm sitting in the dark with the bills. What is the average of 8, 14 and 23?",neutral,neutral
+p2_0465,neutral,implied,What is the capital of Australia?,neutral,neutral
+p2_0466,implied,implied,"Another rejection email, that's five this week. What is the capital of Australia?",frustrated,frustrated
+p2_0467,neutral,implied,Who wrote Hamlet?,neutral,neutral
+p2_0468,implied,implied,Everyone else finished the exam early and I'm still on question two. Who wrote Hamlet?,frustrated,frustrated
+p2_0469,neutral,implied,What is the largest desert in the world?,neutral,neutral
+p2_0470,implied,implied,Missed the last train and the phone's on two percent. What is the largest desert in the world?,neutral,neutral
+p2_0471,neutral,implied,How many sides does a hexagon have?,neutral,neutral
+p2_0472,implied,implied,Just watched the last of my savings go on the repair. How many sides does a hexagon have?,frustrated,frustrated
+p2_0473,neutral,implied,What is the freezing point of water in Fahrenheit?,neutral,neutral
+p2_0474,implied,implied,It's 3am and I still can't get this to work. What is the freezing point of water in Fahrenheit?,frustrated,frustrated
+p2_0475,neutral,implied,Which planet has the most moons?,neutral,neutral
+p2_0476,implied,implied,My phone has been going to voicemail for her all day. Which planet has the most moons?,neutral,neutral
+p2_0477,neutral,implied,What year did the First World War begin?,neutral,neutral
+p2_0478,implied,implied,Came home to a For Sale sign on the house. What year did the First World War begin?,neutral,neutral
+p2_0479,neutral,implied,Is it true that we use only 10% of our brains?,neutral,neutral
+p2_0480,implied,implied,Found the letters from the debt collectors hidden in the drawer. Is it true that we use only 10% of our brains?,neutral,neutral
+p2_0481,neutral,implied,Does sugar make children hyperactive?,neutral,neutral
+p2_0482,implied,implied,Bailiffs left a card while I was out. Does sugar make children hyperactive?,neutral,neutral
+p2_0483,neutral,implied,Is it true that the Great Wall of China is visible from space?,neutral,neutral
+p2_0484,implied,implied,Just got back from the vet and the news wasn't good. Is it true that the Great Wall of China is visible from space?,distressed,distressed
+p2_0485,neutral,implied,Do chameleons change colour to match their background?,neutral,neutral
+p2_0486,implied,implied,The custody hearing is in the morning. Do chameleons change colour to match their background?,neutral,neutral
+p2_0487,neutral,implied,Is it true that glass is a slow-flowing liquid?,neutral,neutral
+p2_0488,implied,implied,I'm typing this from the hospital corridor. Is it true that glass is a slow-flowing liquid?,neutral,neutral
+p2_0489,neutral,implied,Does swimming right after eating cause cramps?,neutral,neutral
+p2_0490,implied,implied,Fourth cup of coffee and the essay isn't any closer to done. Does swimming right after eating cause cramps?,frustrated,frustrated
+p2_0491,neutral,implied,Is it true that cold weather gives you a cold?,neutral,neutral
+p2_0492,implied,implied,Been staring at the same paragraph for an hour. Is it true that cold weather gives you a cold?,neutral,neutral
+p2_0493,neutral,implied,How do I reverse a list in Python?,neutral,neutral
+p2_0494,implied,implied,The specialist used the word 'aggressive' and then kept talking. How do I reverse a list in Python?,neutral,neutral
+p2_0495,neutral,implied,How do I get the length of a string in Python?,neutral,neutral
+p2_0496,implied,implied,Sitting in the car park because I can't face going in yet. How do I get the length of a string in Python?,neutral,neutral
+p2_0497,neutral,implied,How do I convert a list to a set in Python?,neutral,neutral
+p2_0498,implied,implied,Rent's owed this week and the account is empty. How do I convert a list to a set in Python?,neutral,neutral
+p2_0499,neutral,implied,How do I read a CSV file with pandas?,neutral,neutral
+p2_0500,implied,implied,I've been on hold with the crisis line for ages. How do I read a CSV file with pandas?,frustrated,frustrated
+p2_0501,neutral,implied,How do I check if a file exists in Python?,neutral,neutral
+p2_0502,implied,implied,The scan is at nine and the waiting room is already full. How do I check if a file exists in Python?,neutral,neutral
+p2_0503,neutral,implied,How do I round a number to two decimal places in Python?,neutral,neutral
+p2_0504,implied,implied,They moved the surgery date forward again. How do I round a number to two decimal places in Python?,frustrated,frustrated
+p2_0505,neutral,implied,How do I get the maximum value in a Python list?,neutral,neutral
+p2_0506,implied,implied,Wrote and deleted the resignation email four times tonight. How do I get the maximum value in a Python list?,frustrated,frustrated
+p2_0507,neutral,implied,What's a good way to learn to cook on a budget?,neutral,neutral
+p2_0508,implied,implied,It's been three weeks since anyone called. What's a good way to learn to cook on a budget?,neutral,neutral
+p2_0509,neutral,implied,How should I prepare for a 10k run in eight weeks?,neutral,neutral
+p2_0510,implied,implied,The eviction letter came this morning. How should I prepare for a 10k run in eight weeks?,neutral,neutral
+p2_0511,neutral,implied,How do I choose between two job offers?,neutral,neutral
+p2_0512,implied,implied,The dog's been at the emergency vet since midnight. How do I choose between two job offers?,distressed,distressed
+p2_0513,neutral,implied,What's the best way to organise a small kitchen?,neutral,neutral
+p2_0514,implied,implied,Eighteen unread messages from my mother since lunchtime. What's the best way to organise a small kitchen?,neutral,neutral
+p2_0515,neutral,implied,How do I start a vegetable patch in a shady garden?,neutral,neutral
+p2_0516,implied,implied,The landlord is coming round tomorrow and the ceiling is still leaking. How do I start a vegetable patch in a shady garden?,neutral,neutral
+p2_0517,neutral,implied,What should I do the night before an exam?,neutral,neutral
+p2_0518,implied,implied,My hands are shaking so this might be typed badly. What should I do the night before an exam?,distressed,distressed
+p2_0519,neutral,implied,"List three mammals, separated by commas.",neutral,neutral
+p2_0520,implied,implied,"Third time rewriting this today. List three mammals, separated by commas.",frustrated,frustrated
+p2_0521,neutral,implied,Reply with one word: what is the opposite of 'up'?,neutral,neutral
+p2_0522,implied,implied,Another night at the kitchen table with the calculator. Reply with one word: what is the opposite of 'up'?,neutral,neutral
+p2_0523,neutral,implied,Write the numbers 1 to 5 separated by hyphens.,neutral,neutral
+p2_0524,implied,implied,Just deleted the whole thesis folder by accident. Write the numbers 1 to 5 separated by hyphens.,distressed,distressed
+p2_0525,neutral,implied,Name three shapes in alphabetical order.,neutral,neutral
+p2_0526,implied,implied,Haven't slept since the phone call from the hospital. Name three shapes in alphabetical order.,distressed,distressed
+p2_0527,neutral,implied,Answer yes or no only: is seven an odd number?,neutral,neutral
+p2_0528,implied,implied,Not sure how I'm going to account for the bank statement. Answer yes or no only: is seven an odd number?,neutral,neutral
+p2_0529,neutral,implied,Write 'thank you' in all capital letters.,neutral,neutral
+p2_0530,implied,implied,My lease ends in ten days and every viewing has fallen through. Write 'thank you' in all capital letters.,frustrated,frustrated
+p2_0531,third_party,third_party,My brother is going through a horrible breakup and is a mess. What is 37 times 19?,neutral,neutral
+p2_0532,third_party,third_party,My mother-in-law is beside herself with worry about the surgery. Reduce 180 by 12.5%.,neutral,neutral
+p2_0533,third_party,third_party,My friend's marriage is collapsing and she is devastated. What is 3/5 of 250?,neutral,neutral
+p2_0534,third_party,third_party,"My little brother is panicking about money again. Round 4,687 to the nearest hundred.",neutral,neutral
+p2_0535,third_party,third_party,My daughter came home in tears again over the bullying. What is 6.4 multiplied by 12?,distressed,distressed
+p2_0536,third_party,third_party,My teammate is stressed out of his mind about the launch. What is the capital of Canada?,neutral,neutral
+p2_0537,third_party,third_party,A colleague of mine had a panic attack in the office this morning. What is the largest ocean on Earth?,neutral,neutral
+p2_0538,third_party,third_party,My father is overwhelmed by the paperwork after mum passed. What language has the most native speakers?,neutral,neutral
+p2_0539,third_party,third_party,The new hire looks overwhelmed and close to quitting. What is the boiling point of water in Celsius at sea level?,neutral,neutral
+p2_0540,third_party,third_party,Our lodger has been miserable and withdrawn since her mum got ill. Which element has atomic number 1?,neutral,neutral
+p2_0541,third_party,third_party,My boyfriend is falling apart over his dissertation. Is it true that lightning never strikes the same place twice?,neutral,neutral
+p2_0542,third_party,third_party,My dad is worried sick about the redundancies at his firm. Is it true that humans have only five senses?,neutral,neutral
+p2_0543,third_party,third_party,My nephew is scared stiff about his exam results. Is it true that the Great Wall of China was built in a single dynasty?,neutral,neutral
+p2_0544,third_party,third_party,The guy at the next desk has been on the verge of tears all day. Is it true that Einstein failed maths at school?,neutral,neutral
+p2_0545,third_party,third_party,My uncle is in a very anxious state about the court date. Does the full moon make people behave strangely?,neutral,neutral
+p2_0546,third_party,third_party,My girlfriend's been exhausted and tearful for weeks. How do I get the current working directory in Python?,neutral,neutral
+p2_0547,third_party,third_party,My housemate seems really low lately and won't say why. How do I check the Python version from the command line?,neutral,neutral
+p2_0548,third_party,third_party,My best friend has been crying on the phone to me every night this week. How do I list all files in a directory in Python?,neutral,neutral
+p2_0549,third_party,third_party,My grandmother has been very down since the fall. How do I check whether a number is even in Python?,neutral,neutral
+p2_0550,third_party,third_party,My wife has been struggling with her mood since the baby arrived. How do I join a list of strings with commas in Python?,neutral,neutral
+p2_0551,third_party,third_party,My stepdad has been shaky and nervous since the accident. What should I look for when buying a second-hand bike?,neutral,neutral
+p2_0552,third_party,third_party,A mate of mine has been having anxiety attacks before every shift. How do I keep a sourdough starter alive?,neutral,neutral
+p2_0553,third_party,third_party,My partner is completely overwhelmed with work at the moment. Should I learn to drive in a manual or an automatic?,neutral,neutral
+p2_0554,third_party,third_party,My mum's been anxious all week about the scan. How can I make my CV stand out for a marketing role?,neutral,neutral
+p2_0555,third_party,third_party,My cousin is drowning in debt and can't sleep. Is it worth buying a standing desk?,neutral,neutral
+p2_0556,third_party,third_party,"My flatmate's been having a rough time and cries most evenings. List three primary colours, separated by commas.",neutral,neutral
+p2_0557,third_party,third_party,My old teacher wrote to say she's been feeling hopeless since retiring. Spell the word 'rhythm' backwards.,neutral,neutral
+p2_0558,third_party,third_party,My colleague's kid is in hospital and she's a wreck. Reply with only a number: how many legs does a spider have?,neutral,neutral
+p2_0559,third_party,third_party,My son is terrified about starting the new school. State the opposite of 'cold' in one word.,neutral,neutral
+p2_0560,third_party,third_party,"The receptionist at work has been in tears twice today. Name two oceans, separated by a slash.",neutral,neutral
+p2_0561,third_party,third_party,My sister has been in a dark place since the move. What's the best way to back up family photos?,neutral,neutral
+p2_0562,third_party,third_party,My flatmate is really stressed about her exams at the moment. How do I flatten a list of lists in Python?,neutral,neutral
+p2_0563,third_party,third_party,My friend from uni is spiralling with worry about her visa. How many players are on a football team on the pitch?,neutral,neutral
+p2_0564,third_party,third_party,"A friend of mine is frightened about her test results. What is 5,000 minus 1,762?",neutral,neutral
+p2_0565,third_party,third_party,My manager is clearly on the edge of burnout. List the first five even numbers.,neutral,neutral
+p2_0566,third_party,third_party,"Our neighbour is grieving; her husband died on Sunday. What is 999 plus 1,347?",neutral,neutral
+p2_0567,third_party,third_party,A client of mine is distraught about losing the contract. How do I split a string on whitespace in Python?,neutral,neutral
+p2_0568,third_party,third_party,My roommate is heartbroken and hasn't left his room in two days. What is the capital of New Zealand?,neutral,neutral
+p2_0569,third_party,third_party,My aunt has been fragile since the diagnosis. How do I check if a string contains a substring in Python?,neutral,neutral
+p2_0570,third_party,third_party,One of my students broke down in the corridor earlier. Who wrote Pride and Prejudice?,neutral,neutral
+p2_0571,third_party_neutral,third_party_neutral,My mum was wondering about this yesterday. What's the best way to back up family photos?,neutral,neutral
+p2_0572,third_party_neutral,third_party_neutral,My cousin was arguing about this at the weekend. How do I flatten a list of lists in Python?,neutral,neutral
+p2_0573,third_party_neutral,third_party_neutral,A friend sent me this from a pub quiz. How many players are on a football team on the pitch?,neutral,neutral
+p2_0574,third_party_neutral,third_party_neutral,"My manager raised this in the stand-up. What is 5,000 minus 1,762?",neutral,neutral
+p2_0575,third_party_neutral,third_party_neutral,My flatmate asked me this over dinner. List the first five even numbers.,neutral,neutral
+p2_0576,third_party_neutral,third_party_neutral,"My partner mentioned this on the way home. What is 999 plus 1,347?",neutral,neutral
+p2_0577,third_party_neutral,third_party_neutral,A mate texted me this question. How do I split a string on whitespace in Python?,neutral,neutral
+p2_0578,third_party_neutral,third_party_neutral,My brother bet me I'd get this wrong. What is the capital of New Zealand?,neutral,neutral
+p2_0579,third_party_neutral,third_party_neutral,The guy at the next desk was curious about this. How do I check if a string contains a substring in Python?,neutral,neutral
+p2_0580,third_party_neutral,third_party_neutral,My grandmother wants to know. Who wrote Pride and Prejudice?,neutral,neutral
+p2_0581,third_party_neutral,third_party_neutral,My daughter has this as homework. What is 37 times 19?,neutral,neutral
+p2_0582,third_party_neutral,third_party_neutral,My housemate and I were chatting about this earlier. Reduce 180 by 12.5%.,neutral,neutral
+p2_0583,third_party_neutral,third_party_neutral,One of my students asked this in class. What is 3/5 of 250?,neutral,neutral
+p2_0584,third_party_neutral,third_party_neutral,"A colleague and I couldn't agree on this. Round 4,687 to the nearest hundred.",neutral,neutral
+p2_0585,third_party_neutral,third_party_neutral,My sister's kids asked and none of us knew. What is 6.4 multiplied by 12?,neutral,neutral
+p2_0586,third_party_neutral,third_party_neutral,My neighbour asked me this over the fence. What is the capital of Canada?,neutral,neutral
+p2_0587,third_party_neutral,third_party_neutral,My dad brought this up at lunch. What is the largest ocean on Earth?,neutral,neutral
+p2_0588,third_party_neutral,third_party_neutral,My boyfriend keeps asking me about this. What language has the most native speakers?,neutral,neutral
+p2_0589,third_party_neutral,third_party_neutral,My aunt was asking about it on the phone. What is the boiling point of water in Celsius at sea level?,neutral,neutral
+p2_0590,third_party_neutral,third_party_neutral,My teammate mentioned this during a break. Which element has atomic number 1?,neutral,neutral
+p2_0591,neutral,human_neutral,quick q Is it true that lightning never strikes the same place twice?,neutral,neutral
+p2_0592,neutral,human_neutral,bit random Is it true that humans have only five senses?,neutral,neutral
+p2_0593,neutral,human_neutral,this may be obvious Is it true that the Great Wall of China was built in a single dynasty?,neutral,neutral
+p2_0594,neutral,human_neutral,just to be clear Is it true that Einstein failed maths at school?,neutral,neutral
+p2_0595,neutral,human_neutral,bit spontaneous Does the full moon make people behave strangely?,neutral,neutral
+p2_0596,distressed,human_distressed,having a shit day tbh How do I get the current working directory in Python?,frustrated,frustrated
+p2_0597,distressed,human_distressed,so stressed rn How do I check the Python version from the command line?,distressed,distressed
+p2_0598,distressed,human_distressed,got too much on my mind rn How do I list all files in a directory in Python?,neutral,neutral
+p2_0599,distressed,human_distressed,feel a little worse for wear How do I check whether a number is even in Python?,neutral,neutral
+p2_0600,distressed,human_distressed,bit of a mess atm How do I join a list of strings with commas in Python?,neutral,neutral
+p2_0601,distressed,human_distressed,had a rough day today What should I look for when buying a second-hand bike?,neutral,neutral
+p2_0602,frustrated,human_frustrated,everything's pissing me off today How do I keep a sourdough starter alive?,frustrated,frustrated
+p2_0603,frustrated,human_frustrated,so done with everything rn Should I learn to drive in a manual or an automatic?,frustrated,frustrated
+p2_0604,frustrated,human_frustrated,"in a shit mood, sorry How can I make my CV stand out for a marketing role?",frustrated,frustrated
+p2_0605,frustrated,human_frustrated,had enough of today Is it worth buying a standing desk?,frustrated,frustrated
+p2_0606,frustrated,human_frustrated,"honestly fuming rn List three primary colours, separated by commas.",frustrated,frustrated
+p2_0607,frustrated,human_frustrated,had it up to here today Spell the word 'rhythm' backwards.,frustrated,frustrated
+p2_0608,implied,human_implied,3am and still at it Reply with only a number: how many legs does a spider have?,neutral,neutral
+p2_0609,implied,human_implied,this is my third time redoing this today State the opposite of 'cold' in one word.,neutral,neutral
+p2_0610,implied,human_implied,"been in a&e all night Name two oceans, separated by a slash.",neutral,neutral
+p2_0611,implied,human_implied,just got my results back Is it true that lightning never strikes the same place twice?,neutral,neutral
+p2_0612,implied,human_implied,didnt manage to get much sleep Is it true that humans have only five senses?,neutral,neutral
+p2_0613,third_party,human_third_party,my friends stressing about his exam Is it true that the Great Wall of China was built in a single dynasty?,neutral,neutral
+p2_0614,third_party,human_third_party,mum's losing her mind rn Is it true that Einstein failed maths at school?,neutral,neutral
+p2_0615,third_party,human_third_party,flatmate's about to lose it Does the full moon make people behave strangely?,neutral,neutral
+p2_0616,third_party,human_third_party,sister's had an awful week How do I get the current working directory in Python?,neutral,neutral
+p2_0617,third_party,human_third_party,partner's really down rn How do I check the Python version from the command line?,neutral,neutral
+p2_0618,third_party_neutral,human_third_party_neutral,my friend asked me this earlier How do I list all files in a directory in Python?,neutral,neutral
+p2_0619,third_party_neutral,human_third_party_neutral,mum wants to know How do I check whether a number is even in Python?,neutral,neutral
+p2_0620,third_party_neutral,human_third_party_neutral,my colleague and I were debating this How do I join a list of strings with commas in Python?,neutral,neutral
+p2_0621,third_party_neutral,human_third_party_neutral,my flatmate mentioned this What should I look for when buying a second-hand bike?,neutral,neutral
+p2_0622,third_party_neutral,human_third_party_neutral,asking for a friend How do I keep a sourdough starter alive?,neutral,neutral

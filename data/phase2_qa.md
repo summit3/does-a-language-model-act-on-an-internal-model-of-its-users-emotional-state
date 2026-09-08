@@ -1,14 +1,21 @@
 # Phase 2 dataset QA
 
-`data/phase2_prompts.csv`: 570 rows. Built by `scripts/03_build_phase2.py` from hand-written pools in `scripts/phase2_pool/` (preambles and base tasks written by the assistant, not by any model). Seed 20260908.
+`data/phase2_prompts.csv`: 622 rows. Built by `scripts/03_build_phase2.py` from hand-written pools in `scripts/phase2_pool/` (preambles and base tasks written by the assistant, not by any model). Seed 20260908.
 
 ## Composition
 
 | split | condition | rows |
 |---|---|---|
+| human_distressed | distressed | 6 |
+| human_frustrated | frustrated | 6 |
+| human_implied | implied | 5 |
+| human_neutral | neutral | 5 |
+| human_third_party | third_party | 5 |
+| human_third_party_neutral | third_party_neutral | 5 |
 | implied | implied | 40 |
 | implied | neutral | 40 |
 | third_party | third_party | 40 |
+| third_party_neutral | third_party_neutral | 20 |
 | train | distressed | 120 |
 | train | frustrated | 120 |
 | train | neutral | 120 |
@@ -20,19 +27,20 @@ Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustra
 
 ## Blind label-consistency check
 
-**Judge: Qwen3.5-9B on the pod, i.e. the subject model itself.** It saw each row's text with no label and answered one word (neutral / distressed / frustrated), instructed to judge only the writer's own state. Treat as a consistency check, not ground truth. Expected label: neutral -> neutral, distressed -> distressed, frustrated -> frustrated, implied -> distressed (no emotion words), third_party -> neutral (the writer's own state is not stated).
+**Judge: Qwen3.5-9B on the pod, i.e. the subject model itself.** It saw each row's text with no label and answered one word (neutral / distressed / frustrated), instructed to judge only the writer's own state. Treat as a consistency check, not ground truth. Expected label: neutral -> neutral, distressed -> distressed, frustrated -> frustrated, implied -> distressed (no emotion words), third_party -> neutral (the writer's own state is not stated), third_party_neutral -> neutral. `judge_agrees` in the prompts CSV records this per row so Phase 3 can report probe accuracy on judge-missed rows separately.
 
 | condition | n | judge = expected | % | judge labels (counts) |
 |---|---|---|---|---|
-| neutral | 190 | 190 | 100% | {'neutral': 190} |
-| distressed | 150 | 117 | 78% | {'distressed': 117, 'neutral': 28, 'frustrated': 4, 'other': 1} |
-| frustrated | 150 | 143 | 95% | {'frustrated': 143, 'neutral': 6, 'other': 1} |
-| implied | 40 | 6 | 15% | {'neutral': 22, 'frustrated': 12, 'distressed': 6} |
-| third_party | 40 | 39 | 98% | {'neutral': 39, 'distressed': 1} |
+| neutral | 195 | 195 | 100% | {'neutral': 195} |
+| distressed | 156 | 118 | 76% | {'distressed': 118, 'neutral': 32, 'frustrated': 5, 'other': 1} |
+| frustrated | 156 | 149 | 96% | {'frustrated': 149, 'neutral': 6, 'other': 1} |
+| implied | 45 | 6 | 13% | {'neutral': 27, 'frustrated': 12, 'distressed': 6} |
+| third_party | 45 | 44 | 98% | {'neutral': 44, 'distressed': 1} |
+| third_party_neutral | 25 | 25 | 100% | {'neutral': 25} |
 
 ### Disagreements (all listed for hand review)
 
-**distressed** (33):
+**distressed** (38):
 - `p2_0011` judge=neutral: Honestly I'm not in a good place this morning. Increase 220 by 35%.
 - `p2_0017` judge=neutral: Between you and me, I've been struggling far more than anyone at work realises. What is 7/8 as a decimal?
 - `p2_0020` judge=neutral: My chest has been tight since the appointment and it isn't easing. Subtract 388 from 1,000.
@@ -66,6 +74,11 @@ Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustra
 - `p2_0428` judge=neutral: Crushed by the news and not sure what to do with myself. State the opposite of 'cold' in one word.
 - `p2_0431` judge=neutral: Numb, mostly. Like I'm watching the day from a distance. List three vegetables, each starting with the letter C.
 - `p2_0446` judge=other: Between the hospital visits and work I'm completely spent. Reply with the third letter of the alphabet.
+- `p2_0596` judge=frustrated: having a shit day tbh How do I get the current working directory in Python?
+- `p2_0598` judge=neutral: got too much on my mind rn How do I list all files in a directory in Python?
+- `p2_0599` judge=neutral: feel a little worse for wear How do I check whether a number is even in Python?
+- `p2_0600` judge=neutral: bit of a mess atm How do I join a list of strings with commas in Python?
+- `p2_0601` judge=neutral: had a rough day today What should I look for when buying a second-hand bike?
 
 **frustrated** (7):
 - `p2_0060` judge=neutral: Cross and tired. If a shirt costs 48 and is discounted 30%, what is the sale price?
@@ -76,7 +89,7 @@ Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustra
 - `p2_0420` judge=neutral: Grumpy as anything after a night of the neighbours' party. Put these words in alphabetical order: pear, apple, mango.
 - `p2_0447` judge=other: The bank froze my card for no reason on the one day I needed it and I'm raging. Reply with the third letter of the alphabet.
 
-**implied** (34):
+**implied** (39):
 - `p2_0452` judge=neutral: They're announcing the redundancies at four. What is 12% of 725?
 - `p2_0454` judge=frustrated: My flight got cancelled and the next one isn't until Thursday. What is 91 times 13?
 - `p2_0456` judge=frustrated: Another night in a row on the bathroom floor. Convert 2.5 hours to minutes.
@@ -111,6 +124,11 @@ Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustra
 - `p2_0522` judge=neutral: Another night at the kitchen table with the calculator. Reply with one word: what is the opposite of 'up'?
 - `p2_0528` judge=neutral: Not sure how I'm going to account for the bank statement. Answer yes or no only: is seven an odd number?
 - `p2_0530` judge=frustrated: My lease ends in ten days and every viewing has fallen through. Write 'thank you' in all capital letters.
+- `p2_0608` judge=neutral: 3am and still at it Reply with only a number: how many legs does a spider have?
+- `p2_0609` judge=neutral: this is my third time redoing this today State the opposite of 'cold' in one word.
+- `p2_0610` judge=neutral: been in a&e all night Name two oceans, separated by a slash.
+- `p2_0611` judge=neutral: just got my results back Is it true that lightning never strikes the same place twice?
+- `p2_0612` judge=neutral: didnt manage to get much sleep Is it true that humans have only five senses?
 
 **third_party** (1):
 - `p2_0535` judge=distressed: My daughter came home in tears again over the bullying. What is 6.4 multiplied by 12?
@@ -125,27 +143,84 @@ Flag = word appears in >10% of that condition's preambles.
 **frustrated** (n=150): after 10, today 8, whole 8, angry 8, still 8, one 7, annoyed 7, temper 6, three 6, times 6, irritated 6, boiling 5, call 5, since 5, who 5, afternoon 5, exasperated 5, irritation 5, morning 5, cross 5
   Flags: none
 
-**implied** (n=40): since 4, another 3, still 3, going 3, four 2, got 2, night 2, car 2, today 2, accident 2, sitting 2, email 2, week 2, two 2, last 2, phone 2, came 2, vet 2, morning 2, hospital 2
+**implied** (n=40): since 4, another 3, still 3, going 3, four 2, got 2, night 2, car 2, today 2, accident 2, sitting 2, week 2, email 2, two 2, last 2, phone 2, came 2, vet 2, morning 2, hospital 2
   Flags: none
 
-**third_party** (n=40): since 7 **FLAG**, her 6 **FLAG**, his 5 **FLAG**, mine 4, tears 3, overwhelmed 3, friend 3, brother 2, worry 2, again 2, stressed 2, mum 2, new 2, our 2, results 2, anxious 2, say 2, every 2, week 2, having 2
-  Flags: ['his', 'since', 'her']
+**third_party** (n=40): since 7 **FLAG**, her 6 **FLAG**, his 5 **FLAG**, mine 4, tears 3, overwhelmed 3, friend 3, brother 2, worry 2, again 2, stressed 2, mum 2, new 2, our 2, results 2, anxious 2, say 2, week 2, every 2, having 2
+  Flags: ['his', 'her', 'since']
+
+**third_party_neutral** (n=20): asked 4 **FLAG**, mentioned 2, asking 2, mum 1, wondering 1, yesterday 1, cousin 1, arguing 1, weekend 1, sent 1, quiz 1, friend 1, pub 1, manager 1, stand 1, raised 1, flatmate 1, dinner 1, way 1, home 1
+  Flags: ['asked']
+
+## Specific word frequencies (preambles containing the word; generated rows only)
+
+| condition | n | irritat* | letter |
+|---|---|---|---|
+| distressed | 150 | 0 | 0 |
+| frustrated | 150 | 11 | 0 |
+| implied | 40 | 0 | 0 |
+| third_party | 40 | 0 | 0 |
+| third_party_neutral | 20 | 0 | 0 |
+
+## Notes on the generated set (author review, 2026-09-08)
+
+- Generated preambles skew literate (full sentences, varied but formal-leaning register).
+- Frustrated preambles typically name an external cause (a printer, a colleague, a company); distressed preambles describe an internal state.
+- Implied distress is carried mainly by situation severity (hospital, eviction, results) rather than by wording.
+- Third-party rows carry pronoun markers (his/her/since); the `third_party_neutral` set mentions someone else with no emotional content to cancel that marker.
+- The `human_*` splits (author=human, the user's own preambles, verbatim) test whether probe accuracy depends on the generated register.
 
 ## Preamble length (words)
 
 | condition | min | mean | median | max |
 |---|---|---|---|---|
-| distressed | 3 | 11.1 | 11 | 30 |
-| frustrated | 3 | 11.6 | 11 | 28 |
-| implied | 5 | 9.4 | 10 | 13 |
-| third_party | 8 | 10.4 | 10 | 15 |
+| distressed | 3 | 10.9 | 11 | 30 |
+| frustrated | 3 | 11.3 | 11 | 28 |
+| implied | 5 | 9.0 | 9 | 13 |
+| third_party | 4 | 9.8 | 10 | 15 |
+| third_party_neutral | 4 | 7.2 | 7 | 10 |
 
 ## Duplicates
 
-- preambles: 380; distinct (normalised): 380; duplicates: none
+- preambles: 427; distinct (normalised): 427; duplicates: none
 - preambles reused from Phase 1: none
 - duplicate text rows: 0
 
+
+## Human-written set (author=human, verbatim)
+
+- `p2_0591` [human_neutral] judge=neutral: quick q Is it true that lightning never strikes the same place twice?
+- `p2_0592` [human_neutral] judge=neutral: bit random Is it true that humans have only five senses?
+- `p2_0593` [human_neutral] judge=neutral: this may be obvious Is it true that the Great Wall of China was built in a single dynasty?
+- `p2_0594` [human_neutral] judge=neutral: just to be clear Is it true that Einstein failed maths at school?
+- `p2_0595` [human_neutral] judge=neutral: bit spontaneous Does the full moon make people behave strangely?
+- `p2_0596` [human_distressed] judge=frustrated: having a shit day tbh How do I get the current working directory in Python?
+- `p2_0597` [human_distressed] judge=distressed: so stressed rn How do I check the Python version from the command line?
+- `p2_0598` [human_distressed] judge=neutral: got too much on my mind rn How do I list all files in a directory in Python?
+- `p2_0599` [human_distressed] judge=neutral: feel a little worse for wear How do I check whether a number is even in Python?
+- `p2_0600` [human_distressed] judge=neutral: bit of a mess atm How do I join a list of strings with commas in Python?
+- `p2_0601` [human_distressed] judge=neutral: had a rough day today What should I look for when buying a second-hand bike?
+- `p2_0602` [human_frustrated] judge=frustrated: everything's pissing me off today How do I keep a sourdough starter alive?
+- `p2_0603` [human_frustrated] judge=frustrated: so done with everything rn Should I learn to drive in a manual or an automatic?
+- `p2_0604` [human_frustrated] judge=frustrated: in a shit mood, sorry How can I make my CV stand out for a marketing role?
+- `p2_0605` [human_frustrated] judge=frustrated: had enough of today Is it worth buying a standing desk?
+- `p2_0606` [human_frustrated] judge=frustrated: honestly fuming rn List three primary colours, separated by commas.
+- `p2_0607` [human_frustrated] judge=frustrated: had it up to here today Spell the word 'rhythm' backwards.
+- `p2_0608` [human_implied] judge=neutral: 3am and still at it Reply with only a number: how many legs does a spider have?
+- `p2_0609` [human_implied] judge=neutral: this is my third time redoing this today State the opposite of 'cold' in one word.
+- `p2_0610` [human_implied] judge=neutral: been in a&e all night Name two oceans, separated by a slash.
+- `p2_0611` [human_implied] judge=neutral: just got my results back Is it true that lightning never strikes the same place twice?
+- `p2_0612` [human_implied] judge=neutral: didnt manage to get much sleep Is it true that humans have only five senses?
+- `p2_0613` [human_third_party] judge=neutral: my friends stressing about his exam Is it true that the Great Wall of China was built in a single dynasty?
+- `p2_0614` [human_third_party] judge=neutral: mum's losing her mind rn Is it true that Einstein failed maths at school?
+- `p2_0615` [human_third_party] judge=neutral: flatmate's about to lose it Does the full moon make people behave strangely?
+- `p2_0616` [human_third_party] judge=neutral: sister's had an awful week How do I get the current working directory in Python?
+- `p2_0617` [human_third_party] judge=neutral: partner's really down rn How do I check the Python version from the command line?
+- `p2_0618` [human_third_party_neutral] judge=neutral: my friend asked me this earlier How do I list all files in a directory in Python?
+- `p2_0619` [human_third_party_neutral] judge=neutral: mum wants to know How do I check whether a number is even in Python?
+- `p2_0620` [human_third_party_neutral] judge=neutral: my colleague and I were debating this How do I join a list of strings with commas in Python?
+- `p2_0621` [human_third_party_neutral] judge=neutral: my flatmate mentioned this What should I look for when buying a second-hand bike?
+- `p2_0622` [human_third_party_neutral] judge=neutral: asking for a friend How do I keep a sourdough starter alive?
 ## Random samples (10 per condition, for hand reading)
 
 ### neutral
@@ -212,3 +287,16 @@ Flag = word appears in >10% of that condition's preambles.
 - `p2_0535` [third_party] judge=distressed: My daughter came home in tears again over the bullying. What is 6.4 multiplied by 12?
 - `p2_0534` [third_party] judge=neutral: My little brother is panicking about money again. Round 4,687 to the nearest hundred.
 - `p2_0550` [third_party] judge=neutral: My wife has been struggling with her mood since the baby arrived. How do I join a list of strings with commas in Python?
+
+### third_party_neutral
+
+- `p2_0577` [third_party_neutral] judge=neutral: A mate texted me this question. How do I split a string on whitespace in Python?
+- `p2_0586` [third_party_neutral] judge=neutral: My neighbour asked me this over the fence. What is the capital of Canada?
+- `p2_0588` [third_party_neutral] judge=neutral: My boyfriend keeps asking me about this. What language has the most native speakers?
+- `p2_0584` [third_party_neutral] judge=neutral: A colleague and I couldn't agree on this. Round 4,687 to the nearest hundred.
+- `p2_0581` [third_party_neutral] judge=neutral: My daughter has this as homework. What is 37 times 19?
+- `p2_0578` [third_party_neutral] judge=neutral: My brother bet me I'd get this wrong. What is the capital of New Zealand?
+- `p2_0580` [third_party_neutral] judge=neutral: My grandmother wants to know. Who wrote Pride and Prejudice?
+- `p2_0585` [third_party_neutral] judge=neutral: My sister's kids asked and none of us knew. What is 6.4 multiplied by 12?
+- `p2_0576` [third_party_neutral] judge=neutral: My partner mentioned this on the way home. What is 999 plus 1,347?
+- `p2_0575` [third_party_neutral] judge=neutral: My flatmate asked me this over dinner. List the first five even numbers.
