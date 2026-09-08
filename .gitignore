@@ -47,3 +47,4 @@ docs/private/
 # --- editor / R junk ---
 .virtual_documents/
 .Rhistory
+.Rapp.history

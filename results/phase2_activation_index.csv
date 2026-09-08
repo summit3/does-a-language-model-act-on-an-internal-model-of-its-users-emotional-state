@@ -1,0 +1,623 @@
+row,id,base_task,condition,split,author,judge_agrees
+0,p2_0001,What is 23% of 460?,neutral,train,claude,1
+1,p2_0002,What is 23% of 460?,distressed,train,claude,1
+2,p2_0003,What is 23% of 460?,frustrated,train,claude,1
+3,p2_0004,"What is 1,248 divided by 16?",neutral,train,claude,1
+4,p2_0005,"What is 1,248 divided by 16?",distressed,train,claude,1
+5,p2_0006,"What is 1,248 divided by 16?",frustrated,train,claude,1
+6,p2_0007,What is 37 times 19?,neutral,val,claude,1
+7,p2_0008,What is 37 times 19?,distressed,val,claude,1
+8,p2_0009,What is 37 times 19?,frustrated,val,claude,1
+9,p2_0010,Increase 220 by 35%.,neutral,train,claude,1
+10,p2_0011,Increase 220 by 35%.,distressed,train,claude,0
+11,p2_0012,Increase 220 by 35%.,frustrated,train,claude,1
+12,p2_0013,"What is 15% of 1,340?",neutral,train,claude,1
+13,p2_0014,"What is 15% of 1,340?",distressed,train,claude,1
+14,p2_0015,"What is 15% of 1,340?",frustrated,train,claude,1
+15,p2_0016,What is 7/8 as a decimal?,neutral,train,claude,1
+16,p2_0017,What is 7/8 as a decimal?,distressed,train,claude,0
+17,p2_0018,What is 7/8 as a decimal?,frustrated,train,claude,1
+18,p2_0019,"Subtract 388 from 1,000.",neutral,train,claude,1
+19,p2_0020,"Subtract 388 from 1,000.",distressed,train,claude,0
+20,p2_0021,"Subtract 388 from 1,000.",frustrated,train,claude,1
+21,p2_0022,What is 2 to the power of 11?,neutral,train,claude,1
+22,p2_0023,What is 2 to the power of 11?,distressed,train,claude,1
+23,p2_0024,What is 2 to the power of 11?,frustrated,train,claude,1
+24,p2_0025,"What is the average of 12, 19, 25 and 32?",neutral,train,claude,1
+25,p2_0026,"What is the average of 12, 19, 25 and 32?",distressed,train,claude,1
+26,p2_0027,"What is the average of 12, 19, 25 and 32?",frustrated,train,claude,1
+27,p2_0028,Convert 3.5 kilometres to metres.,neutral,train,claude,1
+28,p2_0029,Convert 3.5 kilometres to metres.,distressed,train,claude,1
+29,p2_0030,Convert 3.5 kilometres to metres.,frustrated,train,claude,1
+30,p2_0031,"What is 999 plus 1,347?",neutral,train,claude,1
+31,p2_0032,"What is 999 plus 1,347?",distressed,train,claude,1
+32,p2_0033,"What is 999 plus 1,347?",frustrated,train,claude,1
+33,p2_0034,How many minutes are there in 7.5 hours?,neutral,train,claude,1
+34,p2_0035,How many minutes are there in 7.5 hours?,distressed,train,claude,0
+35,p2_0036,How many minutes are there in 7.5 hours?,frustrated,train,claude,1
+36,p2_0037,What is 40% of 85?,neutral,train,claude,1
+37,p2_0038,What is 40% of 85?,distressed,train,claude,1
+38,p2_0039,What is 40% of 85?,frustrated,train,claude,1
+39,p2_0040,Reduce 180 by 12.5%.,neutral,val,claude,1
+40,p2_0041,Reduce 180 by 12.5%.,distressed,val,claude,0
+41,p2_0042,Reduce 180 by 12.5%.,frustrated,val,claude,1
+42,p2_0043,What is 144 divided by 0.6?,neutral,train,claude,1
+43,p2_0044,What is 144 divided by 0.6?,distressed,train,claude,1
+44,p2_0045,What is 144 divided by 0.6?,frustrated,train,claude,1
+45,p2_0046,What is 3/5 of 250?,neutral,val,claude,1
+46,p2_0047,What is 3/5 of 250?,distressed,val,claude,1
+47,p2_0048,What is 3/5 of 250?,frustrated,val,claude,1
+48,p2_0049,"Round 4,687 to the nearest hundred.",neutral,val,claude,1
+49,p2_0050,"Round 4,687 to the nearest hundred.",distressed,val,claude,1
+50,p2_0051,"Round 4,687 to the nearest hundred.",frustrated,val,claude,1
+51,p2_0052,What is 18 squared?,neutral,train,claude,1
+52,p2_0053,What is 18 squared?,distressed,train,claude,1
+53,p2_0054,What is 18 squared?,frustrated,train,claude,1
+54,p2_0055,What is 0.25 times 640?,neutral,train,claude,1
+55,p2_0056,What is 0.25 times 640?,distressed,train,claude,1
+56,p2_0057,What is 0.25 times 640?,frustrated,train,claude,1
+57,p2_0058,"If a shirt costs 48 and is discounted 30%, what is the sale price?",neutral,train,claude,1
+58,p2_0059,"If a shirt costs 48 and is discounted 30%, what is the sale price?",distressed,train,claude,1
+59,p2_0060,"If a shirt costs 48 and is discounted 30%, what is the sale price?",frustrated,train,claude,0
+60,p2_0061,"What is 5,000 minus 1,762?",neutral,train,claude,1
+61,p2_0062,"What is 5,000 minus 1,762?",distressed,train,claude,1
+62,p2_0063,"What is 5,000 minus 1,762?",frustrated,train,claude,1
+63,p2_0064,What is 6.4 multiplied by 12?,neutral,val,claude,1
+64,p2_0065,What is 6.4 multiplied by 12?,distressed,val,claude,1
+65,p2_0066,What is 6.4 multiplied by 12?,frustrated,val,claude,1
+66,p2_0067,Convert 68 degrees Fahrenheit to Celsius.,neutral,train,claude,1
+67,p2_0068,Convert 68 degrees Fahrenheit to Celsius.,distressed,train,claude,1
+68,p2_0069,Convert 68 degrees Fahrenheit to Celsius.,frustrated,train,claude,1
+69,p2_0070,What is 1/3 plus 1/4 as a fraction?,neutral,train,claude,1
+70,p2_0071,What is 1/3 plus 1/4 as a fraction?,distressed,train,claude,1
+71,p2_0072,What is 1/3 plus 1/4 as a fraction?,frustrated,train,claude,1
+72,p2_0073,How many seconds are in 2 hours and 15 minutes?,neutral,train,claude,1
+73,p2_0074,How many seconds are in 2 hours and 15 minutes?,distressed,train,claude,0
+74,p2_0075,How many seconds are in 2 hours and 15 minutes?,frustrated,train,claude,1
+75,p2_0076,What is the capital of Canada?,neutral,val,claude,1
+76,p2_0077,What is the capital of Canada?,distressed,val,claude,0
+77,p2_0078,What is the capital of Canada?,frustrated,val,claude,1
+78,p2_0079,Who wrote Pride and Prejudice?,neutral,train,claude,1
+79,p2_0080,Who wrote Pride and Prejudice?,distressed,train,claude,1
+80,p2_0081,Who wrote Pride and Prejudice?,frustrated,train,claude,1
+81,p2_0082,What is the chemical symbol for gold?,neutral,train,claude,1
+82,p2_0083,What is the chemical symbol for gold?,distressed,train,claude,1
+83,p2_0084,What is the chemical symbol for gold?,frustrated,train,claude,1
+84,p2_0085,How many bones are in the adult human body?,neutral,train,claude,1
+85,p2_0086,How many bones are in the adult human body?,distressed,train,claude,1
+86,p2_0087,How many bones are in the adult human body?,frustrated,train,claude,1
+87,p2_0088,Which planet is closest to the sun?,neutral,train,claude,1
+88,p2_0089,Which planet is closest to the sun?,distressed,train,claude,1
+89,p2_0090,Which planet is closest to the sun?,frustrated,train,claude,1
+90,p2_0091,What year did the Berlin Wall fall?,neutral,train,claude,1
+91,p2_0092,What year did the Berlin Wall fall?,distressed,train,claude,1
+92,p2_0093,What year did the Berlin Wall fall?,frustrated,train,claude,1
+93,p2_0094,What is the largest ocean on Earth?,neutral,val,claude,1
+94,p2_0095,What is the largest ocean on Earth?,distressed,val,claude,1
+95,p2_0096,What is the largest ocean on Earth?,frustrated,val,claude,1
+96,p2_0097,What language has the most native speakers?,neutral,val,claude,1
+97,p2_0098,What language has the most native speakers?,distressed,val,claude,1
+98,p2_0099,What language has the most native speakers?,frustrated,val,claude,1
+99,p2_0100,Who painted the Mona Lisa?,neutral,train,claude,1
+100,p2_0101,Who painted the Mona Lisa?,distressed,train,claude,1
+101,p2_0102,Who painted the Mona Lisa?,frustrated,train,claude,1
+102,p2_0103,What is the boiling point of water in Celsius at sea level?,neutral,val,claude,1
+103,p2_0104,What is the boiling point of water in Celsius at sea level?,distressed,val,claude,1
+104,p2_0105,What is the boiling point of water in Celsius at sea level?,frustrated,val,claude,1
+105,p2_0106,Which country has the largest population?,neutral,train,claude,1
+106,p2_0107,Which country has the largest population?,distressed,train,claude,1
+107,p2_0108,Which country has the largest population?,frustrated,train,claude,1
+108,p2_0109,What is the currency of Japan?,neutral,train,claude,1
+109,p2_0110,What is the currency of Japan?,distressed,train,claude,0
+110,p2_0111,What is the currency of Japan?,frustrated,train,claude,1
+111,p2_0112,How many players are on a football team on the pitch?,neutral,train,claude,1
+112,p2_0113,How many players are on a football team on the pitch?,distressed,train,claude,0
+113,p2_0114,How many players are on a football team on the pitch?,frustrated,train,claude,1
+114,p2_0115,What gas do plants absorb from the air?,neutral,train,claude,1
+115,p2_0116,What gas do plants absorb from the air?,distressed,train,claude,1
+116,p2_0117,What gas do plants absorb from the air?,frustrated,train,claude,1
+117,p2_0118,What is the longest river in Africa?,neutral,train,claude,1
+118,p2_0119,What is the longest river in Africa?,distressed,train,claude,1
+119,p2_0120,What is the longest river in Africa?,frustrated,train,claude,1
+120,p2_0121,Who was the first person to walk on the moon?,neutral,train,claude,1
+121,p2_0122,Who was the first person to walk on the moon?,distressed,train,claude,1
+122,p2_0123,Who was the first person to walk on the moon?,frustrated,train,claude,1
+123,p2_0124,What is the square root of 169?,neutral,train,claude,1
+124,p2_0125,What is the square root of 169?,distressed,train,claude,1
+125,p2_0126,What is the square root of 169?,frustrated,train,claude,1
+126,p2_0127,Which element has atomic number 1?,neutral,val,claude,1
+127,p2_0128,Which element has atomic number 1?,distressed,val,claude,1
+128,p2_0129,Which element has atomic number 1?,frustrated,val,claude,1
+129,p2_0130,In what year did the Titanic sink?,neutral,train,claude,1
+130,p2_0131,In what year did the Titanic sink?,distressed,train,claude,1
+131,p2_0132,In what year did the Titanic sink?,frustrated,train,claude,1
+132,p2_0133,What is the smallest prime number?,neutral,train,claude,1
+133,p2_0134,What is the smallest prime number?,distressed,train,claude,1
+134,p2_0135,What is the smallest prime number?,frustrated,train,claude,1
+135,p2_0136,What is the capital of New Zealand?,neutral,train,claude,1
+136,p2_0137,What is the capital of New Zealand?,distressed,train,claude,1
+137,p2_0138,What is the capital of New Zealand?,frustrated,train,claude,1
+138,p2_0139,How many continents are there?,neutral,train,claude,1
+139,p2_0140,How many continents are there?,distressed,train,claude,1
+140,p2_0141,How many continents are there?,frustrated,train,claude,1
+141,p2_0142,What is the hardest natural substance?,neutral,train,claude,1
+142,p2_0143,What is the hardest natural substance?,distressed,train,claude,1
+143,p2_0144,What is the hardest natural substance?,frustrated,train,claude,1
+144,p2_0145,Which organ pumps blood around the body?,neutral,train,claude,1
+145,p2_0146,Which organ pumps blood around the body?,distressed,train,claude,1
+146,p2_0147,Which organ pumps blood around the body?,frustrated,train,claude,1
+147,p2_0148,Who developed the theory of general relativity?,neutral,train,claude,1
+148,p2_0149,Who developed the theory of general relativity?,distressed,train,claude,1
+149,p2_0150,Who developed the theory of general relativity?,frustrated,train,claude,1
+150,p2_0151,Is it true that lightning never strikes the same place twice?,neutral,val,claude,1
+151,p2_0152,Is it true that lightning never strikes the same place twice?,distressed,val,claude,1
+152,p2_0153,Is it true that lightning never strikes the same place twice?,frustrated,val,claude,1
+153,p2_0154,Do goldfish really have a three-second memory?,neutral,train,claude,1
+154,p2_0155,Do goldfish really have a three-second memory?,distressed,train,claude,1
+155,p2_0156,Do goldfish really have a three-second memory?,frustrated,train,claude,1
+156,p2_0157,Is it true that humans have only five senses?,neutral,val,claude,1
+157,p2_0158,Is it true that humans have only five senses?,distressed,val,claude,1
+158,p2_0159,Is it true that humans have only five senses?,frustrated,val,claude,1
+159,p2_0160,Does cracking your knuckles cause arthritis?,neutral,train,claude,1
+160,p2_0161,Does cracking your knuckles cause arthritis?,distressed,train,claude,1
+161,p2_0162,Does cracking your knuckles cause arthritis?,frustrated,train,claude,1
+162,p2_0163,Is it true that bats are blind?,neutral,train,claude,1
+163,p2_0164,Is it true that bats are blind?,distressed,train,claude,1
+164,p2_0165,Is it true that bats are blind?,frustrated,train,claude,1
+165,p2_0166,Do we swallow eight spiders a year in our sleep?,neutral,train,claude,1
+166,p2_0167,Do we swallow eight spiders a year in our sleep?,distressed,train,claude,1
+167,p2_0168,Do we swallow eight spiders a year in our sleep?,frustrated,train,claude,1
+168,p2_0169,Is Mount Everest the tallest mountain from base to peak?,neutral,train,claude,1
+169,p2_0170,Is Mount Everest the tallest mountain from base to peak?,distressed,train,claude,1
+170,p2_0171,Is Mount Everest the tallest mountain from base to peak?,frustrated,train,claude,1
+171,p2_0172,Is it true that you lose most of your body heat through your head?,neutral,train,claude,1
+172,p2_0173,Is it true that you lose most of your body heat through your head?,distressed,train,claude,1
+173,p2_0174,Is it true that you lose most of your body heat through your head?,frustrated,train,claude,1
+174,p2_0175,Does shaving make hair grow back thicker?,neutral,train,claude,1
+175,p2_0176,Does shaving make hair grow back thicker?,distressed,train,claude,1
+176,p2_0177,Does shaving make hair grow back thicker?,frustrated,train,claude,1
+177,p2_0178,Is it true that Napoleon was unusually short?,neutral,train,claude,1
+178,p2_0179,Is it true that Napoleon was unusually short?,distressed,train,claude,1
+179,p2_0180,Is it true that Napoleon was unusually short?,frustrated,train,claude,1
+180,p2_0181,Do ostriches bury their heads in the sand?,neutral,train,claude,1
+181,p2_0182,Do ostriches bury their heads in the sand?,distressed,train,claude,1
+182,p2_0183,Do ostriches bury their heads in the sand?,frustrated,train,claude,1
+183,p2_0184,Is it true that the Great Wall of China was built in a single dynasty?,neutral,val,claude,1
+184,p2_0185,Is it true that the Great Wall of China was built in a single dynasty?,distressed,val,claude,1
+185,p2_0186,Is it true that the Great Wall of China was built in a single dynasty?,frustrated,val,claude,0
+186,p2_0187,Does reading in dim light damage your eyesight?,neutral,train,claude,1
+187,p2_0188,Does reading in dim light damage your eyesight?,distressed,train,claude,0
+188,p2_0189,Does reading in dim light damage your eyesight?,frustrated,train,claude,1
+189,p2_0190,Is it true that bulls are enraged by the colour red?,neutral,train,claude,1
+190,p2_0191,Is it true that bulls are enraged by the colour red?,distressed,train,claude,1
+191,p2_0192,Is it true that bulls are enraged by the colour red?,frustrated,train,claude,1
+192,p2_0193,Do we only dream in black and white?,neutral,train,claude,1
+193,p2_0194,Do we only dream in black and white?,distressed,train,claude,1
+194,p2_0195,Do we only dream in black and white?,frustrated,train,claude,1
+195,p2_0196,Is it true that Einstein failed maths at school?,neutral,val,claude,1
+196,p2_0197,Is it true that Einstein failed maths at school?,distressed,val,claude,1
+197,p2_0198,Is it true that Einstein failed maths at school?,frustrated,val,claude,1
+198,p2_0199,Does eating turkey make you sleepy because of tryptophan?,neutral,train,claude,1
+199,p2_0200,Does eating turkey make you sleepy because of tryptophan?,distressed,train,claude,1
+200,p2_0201,Does eating turkey make you sleepy because of tryptophan?,frustrated,train,claude,1
+201,p2_0202,Is it true that a penny dropped from a skyscraper can kill someone?,neutral,train,claude,1
+202,p2_0203,Is it true that a penny dropped from a skyscraper can kill someone?,distressed,train,claude,0
+203,p2_0204,Is it true that a penny dropped from a skyscraper can kill someone?,frustrated,train,claude,1
+204,p2_0205,Do camels store water in their humps?,neutral,train,claude,1
+205,p2_0206,Do camels store water in their humps?,distressed,train,claude,1
+206,p2_0207,Do camels store water in their humps?,frustrated,train,claude,1
+207,p2_0208,Is it true that Vikings wore horned helmets?,neutral,train,claude,1
+208,p2_0209,Is it true that Vikings wore horned helmets?,distressed,train,claude,1
+209,p2_0210,Is it true that Vikings wore horned helmets?,frustrated,train,claude,1
+210,p2_0211,Does sugar-free gum whiten your teeth?,neutral,train,claude,1
+211,p2_0212,Does sugar-free gum whiten your teeth?,distressed,train,claude,0
+212,p2_0213,Does sugar-free gum whiten your teeth?,frustrated,train,claude,1
+213,p2_0214,Is it true that hair and nails keep growing after death?,neutral,train,claude,1
+214,p2_0215,Is it true that hair and nails keep growing after death?,distressed,train,claude,1
+215,p2_0216,Is it true that hair and nails keep growing after death?,frustrated,train,claude,1
+216,p2_0217,Do touching toads give you warts?,neutral,train,claude,1
+217,p2_0218,Do touching toads give you warts?,distressed,train,claude,1
+218,p2_0219,Do touching toads give you warts?,frustrated,train,claude,1
+219,p2_0220,Is it true that the tongue has separate zones for each taste?,neutral,train,claude,1
+220,p2_0221,Is it true that the tongue has separate zones for each taste?,distressed,train,claude,1
+221,p2_0222,Is it true that the tongue has separate zones for each taste?,frustrated,train,claude,1
+222,p2_0223,Does the full moon make people behave strangely?,neutral,val,claude,1
+223,p2_0224,Does the full moon make people behave strangely?,distressed,val,claude,1
+224,p2_0225,Does the full moon make people behave strangely?,frustrated,val,claude,1
+225,p2_0226,How do I check if a key exists in a Python dictionary?,neutral,train,claude,1
+226,p2_0227,How do I check if a key exists in a Python dictionary?,distressed,train,claude,0
+227,p2_0228,How do I check if a key exists in a Python dictionary?,frustrated,train,claude,1
+228,p2_0229,How do I read a file line by line in Python?,neutral,train,claude,1
+229,p2_0230,How do I read a file line by line in Python?,distressed,train,claude,1
+230,p2_0231,How do I read a file line by line in Python?,frustrated,train,claude,1
+231,p2_0232,How do I sort a list of tuples by the second element in Python?,neutral,train,claude,1
+232,p2_0233,How do I sort a list of tuples by the second element in Python?,distressed,train,claude,1
+233,p2_0234,How do I sort a list of tuples by the second element in Python?,frustrated,train,claude,1
+234,p2_0235,How do I count occurrences of each item in a Python list?,neutral,train,claude,1
+235,p2_0236,How do I count occurrences of each item in a Python list?,distressed,train,claude,1
+236,p2_0237,How do I count occurrences of each item in a Python list?,frustrated,train,claude,1
+237,p2_0238,How do I remove duplicates from a list while keeping order in Python?,neutral,train,claude,1
+238,p2_0239,How do I remove duplicates from a list while keeping order in Python?,distressed,train,claude,1
+239,p2_0240,How do I remove duplicates from a list while keeping order in Python?,frustrated,train,claude,1
+240,p2_0241,How do I get the current working directory in Python?,neutral,val,claude,1
+241,p2_0242,How do I get the current working directory in Python?,distressed,val,claude,1
+242,p2_0243,How do I get the current working directory in Python?,frustrated,val,claude,1
+243,p2_0244,How do I convert a string to an integer in Python?,neutral,train,claude,1
+244,p2_0245,How do I convert a string to an integer in Python?,distressed,train,claude,1
+245,p2_0246,How do I convert a string to an integer in Python?,frustrated,train,claude,1
+246,p2_0247,How do I write a list to a JSON file in Python?,neutral,train,claude,1
+247,p2_0248,How do I write a list to a JSON file in Python?,distressed,train,claude,0
+248,p2_0249,How do I write a list to a JSON file in Python?,frustrated,train,claude,1
+249,p2_0250,How do I find the index of an item in a Python list?,neutral,train,claude,1
+250,p2_0251,How do I find the index of an item in a Python list?,distressed,train,claude,1
+251,p2_0252,How do I find the index of an item in a Python list?,frustrated,train,claude,1
+252,p2_0253,How do I merge two dictionaries in Python?,neutral,train,claude,1
+253,p2_0254,How do I merge two dictionaries in Python?,distressed,train,claude,0
+254,p2_0255,How do I merge two dictionaries in Python?,frustrated,train,claude,1
+255,p2_0256,How do I check if a string contains a substring in Python?,neutral,train,claude,1
+256,p2_0257,How do I check if a string contains a substring in Python?,distressed,train,claude,1
+257,p2_0258,How do I check if a string contains a substring in Python?,frustrated,train,claude,1
+258,p2_0259,How do I generate a random float between 0 and 1 in Python?,neutral,train,claude,1
+259,p2_0260,How do I generate a random float between 0 and 1 in Python?,distressed,train,claude,1
+260,p2_0261,How do I generate a random float between 0 and 1 in Python?,frustrated,train,claude,1
+261,p2_0262,How do I split a string on whitespace in Python?,neutral,train,claude,1
+262,p2_0263,How do I split a string on whitespace in Python?,distressed,train,claude,1
+263,p2_0264,How do I split a string on whitespace in Python?,frustrated,train,claude,1
+264,p2_0265,How do I create a virtual environment in Python?,neutral,train,claude,1
+265,p2_0266,How do I create a virtual environment in Python?,distressed,train,claude,1
+266,p2_0267,How do I create a virtual environment in Python?,frustrated,train,claude,1
+267,p2_0268,How do I measure how long a function takes to run in Python?,neutral,train,claude,1
+268,p2_0269,How do I measure how long a function takes to run in Python?,distressed,train,claude,1
+269,p2_0270,How do I measure how long a function takes to run in Python?,frustrated,train,claude,1
+270,p2_0271,How do I get yesterday's date in Python?,neutral,train,claude,1
+271,p2_0272,How do I get yesterday's date in Python?,distressed,train,claude,1
+272,p2_0273,How do I get yesterday's date in Python?,frustrated,train,claude,1
+273,p2_0274,How do I flatten a list of lists in Python?,neutral,train,claude,1
+274,p2_0275,How do I flatten a list of lists in Python?,distressed,train,claude,0
+275,p2_0276,How do I flatten a list of lists in Python?,frustrated,train,claude,1
+276,p2_0277,How do I check the Python version from the command line?,neutral,val,claude,1
+277,p2_0278,How do I check the Python version from the command line?,distressed,val,claude,1
+278,p2_0279,How do I check the Python version from the command line?,frustrated,val,claude,1
+279,p2_0280,How do I list all files in a directory in Python?,neutral,val,claude,1
+280,p2_0281,How do I list all files in a directory in Python?,distressed,val,claude,1
+281,p2_0282,How do I list all files in a directory in Python?,frustrated,val,claude,1
+282,p2_0283,How do I catch a ZeroDivisionError in Python?,neutral,train,claude,1
+283,p2_0284,How do I catch a ZeroDivisionError in Python?,distressed,train,claude,1
+284,p2_0285,How do I catch a ZeroDivisionError in Python?,frustrated,train,claude,0
+285,p2_0286,How do I reverse a dictionary's keys and values in Python?,neutral,train,claude,1
+286,p2_0287,How do I reverse a dictionary's keys and values in Python?,distressed,train,claude,0
+287,p2_0288,How do I reverse a dictionary's keys and values in Python?,frustrated,train,claude,1
+288,p2_0289,How do I strip whitespace from both ends of a string in Python?,neutral,train,claude,1
+289,p2_0290,How do I strip whitespace from both ends of a string in Python?,distressed,train,claude,0
+290,p2_0291,How do I strip whitespace from both ends of a string in Python?,frustrated,train,claude,1
+291,p2_0292,How do I check whether a number is even in Python?,neutral,val,claude,1
+292,p2_0293,How do I check whether a number is even in Python?,distressed,val,claude,1
+293,p2_0294,How do I check whether a number is even in Python?,frustrated,val,claude,1
+294,p2_0295,How do I join a list of strings with commas in Python?,neutral,val,claude,1
+295,p2_0296,How do I join a list of strings with commas in Python?,distressed,val,claude,0
+296,p2_0297,How do I join a list of strings with commas in Python?,frustrated,val,claude,1
+297,p2_0298,How do I install a package with pip?,neutral,train,claude,1
+298,p2_0299,How do I install a package with pip?,distressed,train,claude,1
+299,p2_0300,How do I install a package with pip?,frustrated,train,claude,1
+300,p2_0301,What's a good way to start learning Spanish as an adult?,neutral,train,claude,1
+301,p2_0302,What's a good way to start learning Spanish as an adult?,distressed,train,claude,0
+302,p2_0303,What's a good way to start learning Spanish as an adult?,frustrated,train,claude,1
+303,p2_0304,How should I prepare for a job interview next week?,neutral,train,claude,1
+304,p2_0305,How should I prepare for a job interview next week?,distressed,train,claude,1
+305,p2_0306,How should I prepare for a job interview next week?,frustrated,train,claude,1
+306,p2_0307,What's the best way to save money on groceries?,neutral,train,claude,1
+307,p2_0308,What's the best way to save money on groceries?,distressed,train,claude,1
+308,p2_0309,What's the best way to save money on groceries?,frustrated,train,claude,1
+309,p2_0310,How can I get better at waking up early?,neutral,train,claude,1
+310,p2_0311,How can I get better at waking up early?,distressed,train,claude,1
+311,p2_0312,How can I get better at waking up early?,frustrated,train,claude,1
+312,p2_0313,What should I look for when buying a second-hand bike?,neutral,val,claude,1
+313,p2_0314,What should I look for when buying a second-hand bike?,distressed,val,claude,1
+314,p2_0315,What should I look for when buying a second-hand bike?,frustrated,val,claude,1
+315,p2_0316,How do I make a small flat feel bigger?,neutral,train,claude,1
+316,p2_0317,How do I make a small flat feel bigger?,distressed,train,claude,0
+317,p2_0318,How do I make a small flat feel bigger?,frustrated,train,claude,1
+318,p2_0319,What's a sensible first houseplant for someone who forgets to water things?,neutral,train,claude,1
+319,p2_0320,What's a sensible first houseplant for someone who forgets to water things?,distressed,train,claude,0
+320,p2_0321,What's a sensible first houseplant for someone who forgets to water things?,frustrated,train,claude,0
+321,p2_0322,How should I ask my manager for a pay rise?,neutral,train,claude,1
+322,p2_0323,How should I ask my manager for a pay rise?,distressed,train,claude,0
+323,p2_0324,How should I ask my manager for a pay rise?,frustrated,train,claude,1
+324,p2_0325,What's a good beginner strength routine with no gym?,neutral,train,claude,1
+325,p2_0326,What's a good beginner strength routine with no gym?,distressed,train,claude,1
+326,p2_0327,What's a good beginner strength routine with no gym?,frustrated,train,claude,1
+327,p2_0328,How do I keep a sourdough starter alive?,neutral,val,claude,1
+328,p2_0329,How do I keep a sourdough starter alive?,distressed,val,claude,1
+329,p2_0330,How do I keep a sourdough starter alive?,frustrated,val,claude,1
+330,p2_0331,Should I learn to drive in a manual or an automatic?,neutral,val,claude,1
+331,p2_0332,Should I learn to drive in a manual or an automatic?,distressed,val,claude,1
+332,p2_0333,Should I learn to drive in a manual or an automatic?,frustrated,val,claude,1
+333,p2_0334,What's the best way to back up family photos?,neutral,train,claude,1
+334,p2_0335,What's the best way to back up family photos?,distressed,train,claude,1
+335,p2_0336,What's the best way to back up family photos?,frustrated,train,claude,1
+336,p2_0337,How do I choose a running shoe?,neutral,train,claude,1
+337,p2_0338,How do I choose a running shoe?,distressed,train,claude,1
+338,p2_0339,How do I choose a running shoe?,frustrated,train,claude,1
+339,p2_0340,What should I pack for a week of hiking in Scotland?,neutral,train,claude,1
+340,p2_0341,What should I pack for a week of hiking in Scotland?,distressed,train,claude,1
+341,p2_0342,What should I pack for a week of hiking in Scotland?,frustrated,train,claude,1
+342,p2_0343,How can I make my CV stand out for a marketing role?,neutral,val,claude,1
+343,p2_0344,How can I make my CV stand out for a marketing role?,distressed,val,claude,1
+344,p2_0345,How can I make my CV stand out for a marketing role?,frustrated,val,claude,1
+345,p2_0346,Is it worth buying a standing desk?,neutral,val,claude,1
+346,p2_0347,Is it worth buying a standing desk?,distressed,val,claude,1
+347,p2_0348,Is it worth buying a standing desk?,frustrated,val,claude,1
+348,p2_0349,How do I split bills fairly with a partner who earns more?,neutral,train,claude,1
+349,p2_0350,How do I split bills fairly with a partner who earns more?,distressed,train,claude,1
+350,p2_0351,How do I split bills fairly with a partner who earns more?,frustrated,train,claude,1
+351,p2_0352,What's a good way to meet people after moving to a new city?,neutral,train,claude,1
+352,p2_0353,What's a good way to meet people after moving to a new city?,distressed,train,claude,1
+353,p2_0354,What's a good way to meet people after moving to a new city?,frustrated,train,claude,1
+354,p2_0355,How should I structure a 20-minute presentation?,neutral,train,claude,1
+355,p2_0356,How should I structure a 20-minute presentation?,distressed,train,claude,0
+356,p2_0357,How should I structure a 20-minute presentation?,frustrated,train,claude,1
+357,p2_0358,What's the cheapest way to travel between London and Edinburgh?,neutral,train,claude,1
+358,p2_0359,What's the cheapest way to travel between London and Edinburgh?,distressed,train,claude,1
+359,p2_0360,What's the cheapest way to travel between London and Edinburgh?,frustrated,train,claude,1
+360,p2_0361,How do I stop procrastinating on a long essay?,neutral,train,claude,1
+361,p2_0362,How do I stop procrastinating on a long essay?,distressed,train,claude,1
+362,p2_0363,How do I stop procrastinating on a long essay?,frustrated,train,claude,0
+363,p2_0364,"Which is better for a beginner, a road bike or a hybrid?",neutral,train,claude,1
+364,p2_0365,"Which is better for a beginner, a road bike or a hybrid?",distressed,train,claude,0
+365,p2_0366,"Which is better for a beginner, a road bike or a hybrid?",frustrated,train,claude,1
+366,p2_0367,How do I politely decline a wedding invitation?,neutral,train,claude,1
+367,p2_0368,How do I politely decline a wedding invitation?,distressed,train,claude,1
+368,p2_0369,How do I politely decline a wedding invitation?,frustrated,train,claude,1
+369,p2_0370,What's a good first credit card for building credit?,neutral,train,claude,1
+370,p2_0371,What's a good first credit card for building credit?,distressed,train,claude,1
+371,p2_0372,What's a good first credit card for building credit?,frustrated,train,claude,1
+372,p2_0373,How much should I tip in a restaurant in the US?,neutral,train,claude,1
+373,p2_0374,How much should I tip in a restaurant in the US?,distressed,train,claude,0
+374,p2_0375,How much should I tip in a restaurant in the US?,frustrated,train,claude,1
+375,p2_0376,"List three primary colours, separated by commas.",neutral,val,claude,1
+376,p2_0377,"List three primary colours, separated by commas.",distressed,val,claude,1
+377,p2_0378,"List three primary colours, separated by commas.",frustrated,val,claude,1
+378,p2_0379,Reply with one word: what colour is the sky on a clear day?,neutral,train,claude,1
+379,p2_0380,Reply with one word: what colour is the sky on a clear day?,distressed,train,claude,0
+380,p2_0381,Reply with one word: what colour is the sky on a clear day?,frustrated,train,claude,1
+381,p2_0382,"Write the numbers from 5 down to 1, separated by spaces.",neutral,train,claude,1
+382,p2_0383,"Write the numbers from 5 down to 1, separated by spaces.",distressed,train,claude,1
+383,p2_0384,"Write the numbers from 5 down to 1, separated by spaces.",frustrated,train,claude,1
+384,p2_0385,Name four seasons in alphabetical order.,neutral,train,claude,1
+385,p2_0386,Name four seasons in alphabetical order.,distressed,train,claude,1
+386,p2_0387,Name four seasons in alphabetical order.,frustrated,train,claude,1
+387,p2_0388,"Give me the days of the week, Monday first, one per line.",neutral,train,claude,1
+388,p2_0389,"Give me the days of the week, Monday first, one per line.",distressed,train,claude,1
+389,p2_0390,"Give me the days of the week, Monday first, one per line.",frustrated,train,claude,1
+390,p2_0391,Answer yes or no only: is water wet?,neutral,train,claude,1
+391,p2_0392,Answer yes or no only: is water wet?,distressed,train,claude,1
+392,p2_0393,Answer yes or no only: is water wet?,frustrated,train,claude,1
+393,p2_0394,Write the word 'hello' in all capital letters.,neutral,train,claude,1
+394,p2_0395,Write the word 'hello' in all capital letters.,distressed,train,claude,1
+395,p2_0396,Write the word 'hello' in all capital letters.,frustrated,train,claude,1
+396,p2_0397,List the first five even numbers.,neutral,train,claude,1
+397,p2_0398,List the first five even numbers.,distressed,train,claude,1
+398,p2_0399,List the first five even numbers.,frustrated,train,claude,1
+399,p2_0400,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,neutral,train,claude,1
+400,p2_0401,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,distressed,train,claude,1
+401,p2_0402,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,frustrated,train,claude,1
+402,p2_0403,Name three countries that start with the letter B.,neutral,train,claude,1
+403,p2_0404,Name three countries that start with the letter B.,distressed,train,claude,1
+404,p2_0405,Name three countries that start with the letter B.,frustrated,train,claude,1
+405,p2_0406,Spell the word 'rhythm' backwards.,neutral,val,claude,1
+406,p2_0407,Spell the word 'rhythm' backwards.,distressed,val,claude,1
+407,p2_0408,Spell the word 'rhythm' backwards.,frustrated,val,claude,1
+408,p2_0409,Write a four-word sentence about rain.,neutral,train,claude,1
+409,p2_0410,Write a four-word sentence about rain.,distressed,train,claude,1
+410,p2_0411,Write a four-word sentence about rain.,frustrated,train,claude,1
+411,p2_0412,Give the months of the year that have 31 days.,neutral,train,claude,1
+412,p2_0413,Give the months of the year that have 31 days.,distressed,train,claude,0
+413,p2_0414,Give the months of the year that have 31 days.,frustrated,train,claude,1
+414,p2_0415,Reply with only a number: how many legs does a spider have?,neutral,val,claude,1
+415,p2_0416,Reply with only a number: how many legs does a spider have?,distressed,val,claude,1
+416,p2_0417,Reply with only a number: how many legs does a spider have?,frustrated,val,claude,1
+417,p2_0418,"Put these words in alphabetical order: pear, apple, mango.",neutral,train,claude,1
+418,p2_0419,"Put these words in alphabetical order: pear, apple, mango.",distressed,train,claude,0
+419,p2_0420,"Put these words in alphabetical order: pear, apple, mango.",frustrated,train,claude,0
+420,p2_0421,Write the alphabet from A to E with no spaces.,neutral,train,claude,1
+421,p2_0422,Write the alphabet from A to E with no spaces.,distressed,train,claude,0
+422,p2_0423,Write the alphabet from A to E with no spaces.,frustrated,train,claude,1
+423,p2_0424,"Translate 'thank you' into French, one phrase only.",neutral,train,claude,1
+424,p2_0425,"Translate 'thank you' into French, one phrase only.",distressed,train,claude,1
+425,p2_0426,"Translate 'thank you' into French, one phrase only.",frustrated,train,claude,1
+426,p2_0427,State the opposite of 'cold' in one word.,neutral,val,claude,1
+427,p2_0428,State the opposite of 'cold' in one word.,distressed,val,claude,0
+428,p2_0429,State the opposite of 'cold' in one word.,frustrated,val,claude,1
+429,p2_0430,"List three vegetables, each starting with the letter C.",neutral,train,claude,1
+430,p2_0431,"List three vegetables, each starting with the letter C.",distressed,train,claude,0
+431,p2_0432,"List three vegetables, each starting with the letter C.",frustrated,train,claude,1
+432,p2_0433,Count the vowels in the word 'education' and reply with the number only.,neutral,train,claude,1
+433,p2_0434,Count the vowels in the word 'education' and reply with the number only.,distressed,train,claude,1
+434,p2_0435,Count the vowels in the word 'education' and reply with the number only.,frustrated,train,claude,1
+435,p2_0436,Write 'good morning' in lowercase.,neutral,train,claude,1
+436,p2_0437,Write 'good morning' in lowercase.,distressed,train,claude,1
+437,p2_0438,Write 'good morning' in lowercase.,frustrated,train,claude,1
+438,p2_0439,"Name two oceans, separated by a slash.",neutral,val,claude,1
+439,p2_0440,"Name two oceans, separated by a slash.",distressed,val,claude,1
+440,p2_0441,"Name two oceans, separated by a slash.",frustrated,val,claude,1
+441,p2_0442,Give a one-sentence definition of a noun.,neutral,train,claude,1
+442,p2_0443,Give a one-sentence definition of a noun.,distressed,train,claude,1
+443,p2_0444,Give a one-sentence definition of a noun.,frustrated,train,claude,1
+444,p2_0445,Reply with the third letter of the alphabet.,neutral,train,claude,1
+445,p2_0446,Reply with the third letter of the alphabet.,distressed,train,claude,0
+446,p2_0447,Reply with the third letter of the alphabet.,frustrated,train,claude,0
+447,p2_0448,List five fruits in a single comma-separated line.,neutral,train,claude,1
+448,p2_0449,List five fruits in a single comma-separated line.,distressed,train,claude,1
+449,p2_0450,List five fruits in a single comma-separated line.,frustrated,train,claude,1
+450,p2_0451,What is 12% of 725?,neutral,implied,claude,1
+451,p2_0452,What is 12% of 725?,implied,implied,claude,0
+452,p2_0453,What is 91 times 13?,neutral,implied,claude,1
+453,p2_0454,What is 91 times 13?,implied,implied,claude,0
+454,p2_0455,Convert 2.5 hours to minutes.,neutral,implied,claude,1
+455,p2_0456,Convert 2.5 hours to minutes.,implied,implied,claude,0
+456,p2_0457,"What is 4,096 divided by 64?",neutral,implied,claude,1
+457,p2_0458,"What is 4,096 divided by 64?",implied,implied,claude,1
+458,p2_0459,Reduce 540 by 15%.,neutral,implied,claude,1
+459,p2_0460,Reduce 540 by 15%.,implied,implied,claude,0
+460,p2_0461,What is 9 cubed?,neutral,implied,claude,1
+461,p2_0462,What is 9 cubed?,implied,implied,claude,0
+462,p2_0463,"What is the average of 8, 14 and 23?",neutral,implied,claude,1
+463,p2_0464,"What is the average of 8, 14 and 23?",implied,implied,claude,0
+464,p2_0465,What is the capital of Australia?,neutral,implied,claude,1
+465,p2_0466,What is the capital of Australia?,implied,implied,claude,0
+466,p2_0467,Who wrote Hamlet?,neutral,implied,claude,1
+467,p2_0468,Who wrote Hamlet?,implied,implied,claude,0
+468,p2_0469,What is the largest desert in the world?,neutral,implied,claude,1
+469,p2_0470,What is the largest desert in the world?,implied,implied,claude,0
+470,p2_0471,How many sides does a hexagon have?,neutral,implied,claude,1
+471,p2_0472,How many sides does a hexagon have?,implied,implied,claude,0
+472,p2_0473,What is the freezing point of water in Fahrenheit?,neutral,implied,claude,1
+473,p2_0474,What is the freezing point of water in Fahrenheit?,implied,implied,claude,0
+474,p2_0475,Which planet has the most moons?,neutral,implied,claude,1
+475,p2_0476,Which planet has the most moons?,implied,implied,claude,0
+476,p2_0477,What year did the First World War begin?,neutral,implied,claude,1
+477,p2_0478,What year did the First World War begin?,implied,implied,claude,0
+478,p2_0479,Is it true that we use only 10% of our brains?,neutral,implied,claude,1
+479,p2_0480,Is it true that we use only 10% of our brains?,implied,implied,claude,0
+480,p2_0481,Does sugar make children hyperactive?,neutral,implied,claude,1
+481,p2_0482,Does sugar make children hyperactive?,implied,implied,claude,0
+482,p2_0483,Is it true that the Great Wall of China is visible from space?,neutral,implied,claude,1
+483,p2_0484,Is it true that the Great Wall of China is visible from space?,implied,implied,claude,1
+484,p2_0485,Do chameleons change colour to match their background?,neutral,implied,claude,1
+485,p2_0486,Do chameleons change colour to match their background?,implied,implied,claude,0
+486,p2_0487,Is it true that glass is a slow-flowing liquid?,neutral,implied,claude,1
+487,p2_0488,Is it true that glass is a slow-flowing liquid?,implied,implied,claude,0
+488,p2_0489,Does swimming right after eating cause cramps?,neutral,implied,claude,1
+489,p2_0490,Does swimming right after eating cause cramps?,implied,implied,claude,0
+490,p2_0491,Is it true that cold weather gives you a cold?,neutral,implied,claude,1
+491,p2_0492,Is it true that cold weather gives you a cold?,implied,implied,claude,0
+492,p2_0493,How do I reverse a list in Python?,neutral,implied,claude,1
+493,p2_0494,How do I reverse a list in Python?,implied,implied,claude,0
+494,p2_0495,How do I get the length of a string in Python?,neutral,implied,claude,1
+495,p2_0496,How do I get the length of a string in Python?,implied,implied,claude,0
+496,p2_0497,How do I convert a list to a set in Python?,neutral,implied,claude,1
+497,p2_0498,How do I convert a list to a set in Python?,implied,implied,claude,0
+498,p2_0499,How do I read a CSV file with pandas?,neutral,implied,claude,1
+499,p2_0500,How do I read a CSV file with pandas?,implied,implied,claude,0
+500,p2_0501,How do I check if a file exists in Python?,neutral,implied,claude,1
+501,p2_0502,How do I check if a file exists in Python?,implied,implied,claude,0
+502,p2_0503,How do I round a number to two decimal places in Python?,neutral,implied,claude,1
+503,p2_0504,How do I round a number to two decimal places in Python?,implied,implied,claude,0
+504,p2_0505,How do I get the maximum value in a Python list?,neutral,implied,claude,1
+505,p2_0506,How do I get the maximum value in a Python list?,implied,implied,claude,0
+506,p2_0507,What's a good way to learn to cook on a budget?,neutral,implied,claude,1
+507,p2_0508,What's a good way to learn to cook on a budget?,implied,implied,claude,0
+508,p2_0509,How should I prepare for a 10k run in eight weeks?,neutral,implied,claude,1
+509,p2_0510,How should I prepare for a 10k run in eight weeks?,implied,implied,claude,0
+510,p2_0511,How do I choose between two job offers?,neutral,implied,claude,1
+511,p2_0512,How do I choose between two job offers?,implied,implied,claude,1
+512,p2_0513,What's the best way to organise a small kitchen?,neutral,implied,claude,1
+513,p2_0514,What's the best way to organise a small kitchen?,implied,implied,claude,0
+514,p2_0515,How do I start a vegetable patch in a shady garden?,neutral,implied,claude,1
+515,p2_0516,How do I start a vegetable patch in a shady garden?,implied,implied,claude,0
+516,p2_0517,What should I do the night before an exam?,neutral,implied,claude,1
+517,p2_0518,What should I do the night before an exam?,implied,implied,claude,1
+518,p2_0519,"List three mammals, separated by commas.",neutral,implied,claude,1
+519,p2_0520,"List three mammals, separated by commas.",implied,implied,claude,0
+520,p2_0521,Reply with one word: what is the opposite of 'up'?,neutral,implied,claude,1
+521,p2_0522,Reply with one word: what is the opposite of 'up'?,implied,implied,claude,0
+522,p2_0523,Write the numbers 1 to 5 separated by hyphens.,neutral,implied,claude,1
+523,p2_0524,Write the numbers 1 to 5 separated by hyphens.,implied,implied,claude,1
+524,p2_0525,Name three shapes in alphabetical order.,neutral,implied,claude,1
+525,p2_0526,Name three shapes in alphabetical order.,implied,implied,claude,1
+526,p2_0527,Answer yes or no only: is seven an odd number?,neutral,implied,claude,1
+527,p2_0528,Answer yes or no only: is seven an odd number?,implied,implied,claude,0
+528,p2_0529,Write 'thank you' in all capital letters.,neutral,implied,claude,1
+529,p2_0530,Write 'thank you' in all capital letters.,implied,implied,claude,0
+530,p2_0531,What is 37 times 19?,third_party,third_party,claude,1
+531,p2_0532,Reduce 180 by 12.5%.,third_party,third_party,claude,1
+532,p2_0533,What is 3/5 of 250?,third_party,third_party,claude,1
+533,p2_0534,"Round 4,687 to the nearest hundred.",third_party,third_party,claude,1
+534,p2_0535,What is 6.4 multiplied by 12?,third_party,third_party,claude,0
+535,p2_0536,What is the capital of Canada?,third_party,third_party,claude,1
+536,p2_0537,What is the largest ocean on Earth?,third_party,third_party,claude,1
+537,p2_0538,What language has the most native speakers?,third_party,third_party,claude,1
+538,p2_0539,What is the boiling point of water in Celsius at sea level?,third_party,third_party,claude,1
+539,p2_0540,Which element has atomic number 1?,third_party,third_party,claude,1
+540,p2_0541,Is it true that lightning never strikes the same place twice?,third_party,third_party,claude,1
+541,p2_0542,Is it true that humans have only five senses?,third_party,third_party,claude,1
+542,p2_0543,Is it true that the Great Wall of China was built in a single dynasty?,third_party,third_party,claude,1
+543,p2_0544,Is it true that Einstein failed maths at school?,third_party,third_party,claude,1
+544,p2_0545,Does the full moon make people behave strangely?,third_party,third_party,claude,1
+545,p2_0546,How do I get the current working directory in Python?,third_party,third_party,claude,1
+546,p2_0547,How do I check the Python version from the command line?,third_party,third_party,claude,1
+547,p2_0548,How do I list all files in a directory in Python?,third_party,third_party,claude,1
+548,p2_0549,How do I check whether a number is even in Python?,third_party,third_party,claude,1
+549,p2_0550,How do I join a list of strings with commas in Python?,third_party,third_party,claude,1
+550,p2_0551,What should I look for when buying a second-hand bike?,third_party,third_party,claude,1
+551,p2_0552,How do I keep a sourdough starter alive?,third_party,third_party,claude,1
+552,p2_0553,Should I learn to drive in a manual or an automatic?,third_party,third_party,claude,1
+553,p2_0554,How can I make my CV stand out for a marketing role?,third_party,third_party,claude,1
+554,p2_0555,Is it worth buying a standing desk?,third_party,third_party,claude,1
+555,p2_0556,"List three primary colours, separated by commas.",third_party,third_party,claude,1
+556,p2_0557,Spell the word 'rhythm' backwards.,third_party,third_party,claude,1
+557,p2_0558,Reply with only a number: how many legs does a spider have?,third_party,third_party,claude,1
+558,p2_0559,State the opposite of 'cold' in one word.,third_party,third_party,claude,1
+559,p2_0560,"Name two oceans, separated by a slash.",third_party,third_party,claude,1
+560,p2_0561,What's the best way to back up family photos?,third_party,third_party,claude,1
+561,p2_0562,How do I flatten a list of lists in Python?,third_party,third_party,claude,1
+562,p2_0563,How many players are on a football team on the pitch?,third_party,third_party,claude,1
+563,p2_0564,"What is 5,000 minus 1,762?",third_party,third_party,claude,1
+564,p2_0565,List the first five even numbers.,third_party,third_party,claude,1
+565,p2_0566,"What is 999 plus 1,347?",third_party,third_party,claude,1
+566,p2_0567,How do I split a string on whitespace in Python?,third_party,third_party,claude,1
+567,p2_0568,What is the capital of New Zealand?,third_party,third_party,claude,1
+568,p2_0569,How do I check if a string contains a substring in Python?,third_party,third_party,claude,1
+569,p2_0570,Who wrote Pride and Prejudice?,third_party,third_party,claude,1
+570,p2_0571,What's the best way to back up family photos?,third_party_neutral,third_party_neutral,claude,1
+571,p2_0572,How do I flatten a list of lists in Python?,third_party_neutral,third_party_neutral,claude,1
+572,p2_0573,How many players are on a football team on the pitch?,third_party_neutral,third_party_neutral,claude,1
+573,p2_0574,"What is 5,000 minus 1,762?",third_party_neutral,third_party_neutral,claude,1
+574,p2_0575,List the first five even numbers.,third_party_neutral,third_party_neutral,claude,1
+575,p2_0576,"What is 999 plus 1,347?",third_party_neutral,third_party_neutral,claude,1
+576,p2_0577,How do I split a string on whitespace in Python?,third_party_neutral,third_party_neutral,claude,1
+577,p2_0578,What is the capital of New Zealand?,third_party_neutral,third_party_neutral,claude,1
+578,p2_0579,How do I check if a string contains a substring in Python?,third_party_neutral,third_party_neutral,claude,1
+579,p2_0580,Who wrote Pride and Prejudice?,third_party_neutral,third_party_neutral,claude,1
+580,p2_0581,What is 37 times 19?,third_party_neutral,third_party_neutral,claude,1
+581,p2_0582,Reduce 180 by 12.5%.,third_party_neutral,third_party_neutral,claude,1
+582,p2_0583,What is 3/5 of 250?,third_party_neutral,third_party_neutral,claude,1
+583,p2_0584,"Round 4,687 to the nearest hundred.",third_party_neutral,third_party_neutral,claude,1
+584,p2_0585,What is 6.4 multiplied by 12?,third_party_neutral,third_party_neutral,claude,1
+585,p2_0586,What is the capital of Canada?,third_party_neutral,third_party_neutral,claude,1
+586,p2_0587,What is the largest ocean on Earth?,third_party_neutral,third_party_neutral,claude,1
+587,p2_0588,What language has the most native speakers?,third_party_neutral,third_party_neutral,claude,1
+588,p2_0589,What is the boiling point of water in Celsius at sea level?,third_party_neutral,third_party_neutral,claude,1
+589,p2_0590,Which element has atomic number 1?,third_party_neutral,third_party_neutral,claude,1
+590,p2_0591,Is it true that lightning never strikes the same place twice?,neutral,human_neutral,human,1
+591,p2_0592,Is it true that humans have only five senses?,neutral,human_neutral,human,1
+592,p2_0593,Is it true that the Great Wall of China was built in a single dynasty?,neutral,human_neutral,human,1
+593,p2_0594,Is it true that Einstein failed maths at school?,neutral,human_neutral,human,1
+594,p2_0595,Does the full moon make people behave strangely?,neutral,human_neutral,human,1
+595,p2_0596,How do I get the current working directory in Python?,distressed,human_distressed,human,0
+596,p2_0597,How do I check the Python version from the command line?,distressed,human_distressed,human,1
+597,p2_0598,How do I list all files in a directory in Python?,distressed,human_distressed,human,0
+598,p2_0599,How do I check whether a number is even in Python?,distressed,human_distressed,human,0
+599,p2_0600,How do I join a list of strings with commas in Python?,distressed,human_distressed,human,0
+600,p2_0601,What should I look for when buying a second-hand bike?,distressed,human_distressed,human,0
+601,p2_0602,How do I keep a sourdough starter alive?,frustrated,human_frustrated,human,1
+602,p2_0603,Should I learn to drive in a manual or an automatic?,frustrated,human_frustrated,human,1
+603,p2_0604,How can I make my CV stand out for a marketing role?,frustrated,human_frustrated,human,1
+604,p2_0605,Is it worth buying a standing desk?,frustrated,human_frustrated,human,1
+605,p2_0606,"List three primary colours, separated by commas.",frustrated,human_frustrated,human,1
+606,p2_0607,Spell the word 'rhythm' backwards.,frustrated,human_frustrated,human,1
+607,p2_0608,Reply with only a number: how many legs does a spider have?,implied,human_implied,human,0
+608,p2_0609,State the opposite of 'cold' in one word.,implied,human_implied,human,0
+609,p2_0610,"Name two oceans, separated by a slash.",implied,human_implied,human,0
+610,p2_0611,Is it true that lightning never strikes the same place twice?,implied,human_implied,human,0
+611,p2_0612,Is it true that humans have only five senses?,implied,human_implied,human,0
+612,p2_0613,Is it true that the Great Wall of China was built in a single dynasty?,third_party,human_third_party,human,1
+613,p2_0614,Is it true that Einstein failed maths at school?,third_party,human_third_party,human,1
+614,p2_0615,Does the full moon make people behave strangely?,third_party,human_third_party,human,1
+615,p2_0616,How do I get the current working directory in Python?,third_party,human_third_party,human,1
+616,p2_0617,How do I check the Python version from the command line?,third_party,human_third_party,human,1
+617,p2_0618,How do I list all files in a directory in Python?,third_party_neutral,human_third_party_neutral,human,1
+618,p2_0619,How do I check whether a number is even in Python?,third_party_neutral,human_third_party_neutral,human,1
+619,p2_0620,How do I join a list of strings with commas in Python?,third_party_neutral,human_third_party_neutral,human,1
+620,p2_0621,What should I look for when buying a second-hand bike?,third_party_neutral,human_third_party_neutral,human,1
+621,p2_0622,How do I keep a sourdough starter alive?,third_party_neutral,human_third_party_neutral,human,1
