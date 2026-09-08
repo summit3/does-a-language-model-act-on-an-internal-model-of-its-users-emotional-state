@@ -46,9 +46,8 @@ def sample_generate(prompt, vec, frac, norms, seed, temperature=0.7):
         out = model.generate(**enc, max_new_tokens=MAXT, do_sample=True, temperature=temperature, top_p=1.0, top_k=0, pad_token_id=tok.pad_token_id or tok.eos_token_id)
     return _strip_thinking(tok.decode(out[0, enc["input_ids"].shape[1]:], skip_special_tokens=True)), N
 
-def greedy(prompt, vec, frac, norms):
-    if not frac: return steer_generate_relative(model, tok, prompt, vec, BAND, frac=0.0, norms=norms, system=SYSTEM, max_new_tokens=MAXT, return_N=True)
-    return steer_generate_relative(model, tok, prompt, vec, BAND, frac=frac, norms=norms, system=SYSTEM, max_new_tokens=MAXT, return_N=True)
+def greedy(prompt, vec, frac, norms, band=None):
+    return steer_generate_relative(model, tok, prompt, vec, band or BAND, frac=float(frac), norms=norms, system=SYSTEM, max_new_tokens=MAXT, return_N=True)
 
 if STAGE == "A":
     for form, plist in [("bare", val_bare), ("preamble", val_pre)]:
@@ -80,4 +79,26 @@ elif STAGE == "D":
             for s in range(5):
                 if key("D", r, "bare", "distressed_md", f, s) in done: continue
                 t = time.time(); text, N = sample_generate(r["text"], DIRS["distressed_md"], f, norms, seed=1000 + s); emit("D", r, "bare", "distressed_md", f, N, s, 0.7, text, time.time() - t)
+elif STAGE == "E":   # preamble-presence control: (neutral_preamble - bare) mean-difference on bare prompts
+    vec = D["neutral_preamble_minus_bare_meandiff"]
+    for r in val_bare:
+        norms = residual_norms(model, tok, r["text"], SYSTEM)
+        for f in FRACS:
+            if key("E", r, "bare", "np_minus_bare_md", f) in done: continue
+            t = time.time(); text, N = greedy(r["text"], vec, f, norms); emit("E", r, "bare", "np_minus_bare_md", f, N, "", "", text, time.time() - t)
+elif STAGE == "F":   # band robustness: distressed md at 0.04 on bare prompts, bands 8-19 and 16-27
+    for bname, band in [("band8-19", list(range(8, 20))), ("band16-27", list(range(16, 28)))]:
+        for r in val_bare:
+            if key("F", r, "bare", f"distressed_md_{bname}", 0.04) in done: continue
+            norms = residual_norms(model, tok, r["text"], SYSTEM); t = time.time(); text, N = greedy(r["text"], DIRS["distressed_md"], 0.04, norms, band=band)
+            emit("F", r, "bare", f"distressed_md_{bname}", 0.04, N, "", "", text, time.time() - t)
+elif STAGE == "G":   # H1b: Phase 1 prompts with NO system prompt
+    from src.model import chat
+    pairs = list(csv.DictReader(open("data/phase1_pairs.csv", newline="", encoding="utf-8"))); outp = Path("results/phase1_replies_nosys.csv"); t0 = time.time(); rows_g = []
+    for r in pairs:
+        for cond in ("neutral", "stressed"):
+            reply = chat(model, tok, r[cond], system=None, max_new_tokens=MAXT)
+            rows_g.append({"pair_id": r["pair_id"], "task_type": r["task_type"], "condition": cond, "prompt": r[cond], "reply": reply, "n_tokens": len(tok(reply)["input_ids"])})
+    with open(outp, "w", newline="", encoding="utf-8") as f: w = csv.DictWriter(f, fieldnames=list(rows_g[0]), lineterminator="\n"); w.writeheader(); w.writerows(rows_g)
+    print(f"G: {len(rows_g)} replies, no system prompt, {time.time()-t0:.0f}s -> {outp}", flush=True)
 fh.close(); print(f"stage {STAGE} done: {n_done} new generations in {time.time()-t_all:.0f}s", flush=True)

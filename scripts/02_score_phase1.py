@@ -13,8 +13,8 @@ from pathlib import Path
 from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
-PAIRS = ROOT / "data/phase1_pairs.csv"; REPLIES = ROOT / "results/phase1_replies.csv"
-OUT = ROOT / "results/phase1_scores.csv"; JUDGE_OUT = ROOT / "results/phase1_llm_judge.json"
+PAIRS = ROOT / "data/phase1_pairs.csv"; REPLIES = ROOT / os.environ.get("P1_REPLIES", "results/phase1_replies.csv")
+OUT = ROOT / os.environ.get("P1_OUT", "results/phase1_scores.csv"); JUDGE_OUT = ROOT / os.environ.get("P1_JUDGE", "results/phase1_llm_judge.json")
 JUDGE_MODEL = "claude-opus-5"
 CLOSED = {"arithmetic", "factual", "false_premise", "coding", "instruction_following"}
 METRICS = ["acknowledges_emotion", "info_displaced", "task_abandoned", "unsolicited_inference", "advice_changed"]
