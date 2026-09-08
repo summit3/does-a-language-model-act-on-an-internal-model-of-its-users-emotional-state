@@ -12,9 +12,9 @@ and is it a representation of the user rather than of emotion words?
 ## 2. Hypotheses
 
 ### H0 (setup): User emotional state is linearly represented; a probe generalises to held-out phrasings and implied-emotion prompts, and beats bag-of-words.
-- Status: **confounded in v1; retest with neutral_preamble control**
+- Status: **Supported (v2)**
 - Evidence so far: Phase 3 v1 probe hits ~1.0 on val, implied and judge-missed rows, but does so from layer 0 and the length-only baseline also reaches 1.0: v1 neutral rows had no preamble, so the probe is largely a preamble-presence detector (see findings 2026-09-08 Phase 3 v1). Not yet evidence for or against H0.
-- Evidence so far (v2, 2026-09-08): with neutral_preamble as the neutral class, val 0.950 vs bag-of-words 0.850 and length-only 0.583; implied recall 0.850 vs bag-of-words 0.575 and ask-the-model 0.150; judge-missed recall 0.889. Not yet reviewed row by row.
+- Evidence (v2, 2026-09-08): val 0.95 at layer 18 vs bag-of-words 0.85 and length 0.58; implied recall 0.85 vs BoW 0.575 vs ask-the-model 0.15; human 0.917 vs BoW 0.35 vs ask-the-model 0.58; accuracy rises 0.77 -> 0.95 across layers; shuffled 0.50; train-val gap 0.05. v1 was confounded (see findings 2026-09-08 Phase 3 v1).
 - What would change my mind: probe accuracy on held-out set A (implied emotion) no better than bag-of-words; or accuracy at chance on shuffled labels not at chance (leak).
 
 ### H1 (behavioural): On unrelated tasks, replies to a distressed user differ from replies to a neutral user in measurable ways (accuracy, hedging, refusal rate, agreement with a false premise).
@@ -36,9 +36,9 @@ and is it a representation of the user rather than of emotion words?
 - Test later if time: relax the concise prompt and check whether coding acknowledgement rises.
 
 ### H2 (specificity): The representation distinguishes "the user is distressed" from "the user is talking about someone distressed," and only the former changes behaviour.
-- Status: **v1 evidence suggests NOT user-specific; retest**
+- Status: **Refuted (v2)**
 - Evidence so far: v1 task-(a) probe fires on third-party emotion (mean P(distressed) 1.00) and on non-emotional third-party context (0.94); cos(third_party_neutral mean-diff, distressed mean-diff) 0.84. Confounded by preamble presence (see H0); retest after the neutral_preamble control.
-- Evidence so far (v2, 2026-09-08): P(distressed) third_party 0.90 vs third_party_neutral 0.01; cos(third_party md, distressed md) 0.74 vs cos(third_party_neutral md, distressed md) -0.30. The probe fires on someone else's distress but not on someone else being mentioned. Not yet reviewed row by row.
+- Evidence (v2, 2026-09-08): P(distressed) 0.90 on third-party distress, 0.01 on third-party-neutral, 0.09 on mundane preamble; cos(third_party md, distressed md) 0.74. The representation encodes "distress present in the conversation", not "the user is distressed". It distinguishes emotional from mundane context; it does not distinguish whose emotion.
 - What would change my mind: probe trained on user-distress fires equally on third-party prompts, and third-party prompts produce the same acknowledge/displace/infer behaviour.
 
 ### H3 (causal): Steering along the user-distress direction on neutral prompts reproduces the H1 changes; subtracting it from distressed prompts removes them; unrelated-concept directions of matched norm do not.
@@ -76,6 +76,7 @@ and is it a representation of the user rather than of emotion words?
   - P(distressed) at layer 18: bare neutral 0.03, neutral_preamble 0.09, distressed 0.95, frustrated 0.89, positive 0.40, implied 0.80, third_party 0.90, third_party_neutral 0.01; human: neutral 0.07, distressed 0.88, frustrated 0.80, implied 0.31, third_party 0.75, third_party_neutral 0.00.
   - (b') neutral_preamble vs frustrated: layer 20, val 0.950, human 0.917. (c') 3-way: layer 23, val 0.911, human 0.889. (d') distressed vs positive: layer 17, val 0.933 (n=45), implied classified distressed 0.975.
   - Geometry at layer 18 (relative to neutral_preamble): cos(distressed md, frustrated md) 0.85; cos(distressed md, positive md) 0.63; cos(distressed md, neutral_preamble-minus-bare md) 0.31; cos(third_party md, third_party_neutral md) 0.01; cos(third_party md, distressed md) 0.74; cos(third_party_neutral md, distressed md) -0.30; cos(unrelated coding probe, distressed md) 0.01.
+  - Positive: P(distressed) 0.40, cos(distressed md, positive md) 0.63, distressed-vs-positive BA 0.93: the direction is part emotional-content, part negative valence; frustrated shares most of it (P 0.89, cos 0.85).
   - Files: results/phase3b_*.csv, F1-F4 regenerated (v1 kept as *_v1_confounded_*), results/directions_layer18_v2.pt.
 
 ## 4. Decisions and definitions
@@ -108,6 +109,10 @@ and is it a representation of the user rather than of emotion words?
 
 ## 6. Next experiments (ordered)
 
+Next: Phase 4 steering with `results/directions_layer18_v2.pt` on held-out prompts; plus a behavioural check on third_party and third_party_neutral prompts scored with the Phase 1 metrics.
+
+Original plan:
+
 1. Phase 2 dataset: ~150-200 prompts x 3 classes (neutral / distressed / frustrated), base tasks shared across classes, splits by base task; held-out A (implied emotion, no emotion words) and B (third-party emotion). QA: read 30 random, LLM label-consistency check, hidden-correlation check, lexical-marker check (no class identifiable by one token).
 2. Activations: last-token residual stream, all layers, cached to `activations/`.
 3. Per-layer probes: logistic regression, L2, stratified split, balanced accuracy on val / A / B. Baselines: ask-the-model one-word, shuffled labels, bag-of-words, prompt-length.
@@ -130,13 +135,13 @@ and is it a representation of the user rather than of emotion words?
 
 ## 8. Time log
 
-[Toggl hours so far: ~7h at end of Phase 3 v1]
+[Toggl hours so far: __ at end of Phase 3 (Phase 3 v1 was ~7h)]
 
 | Phase | Hours |
 |---|---|
 | Untimed prep (laptop playground, pod setup, calibration) | not counted |
 | Phase 1 exploration (pairs, generation, reading, scoring) | 4h05 |
 | Phase 2 dataset + Phase 3 v1 probes | ~3h (to ~7h cumulative) |
-| Phase 3b probing (with controls) | __ |
+| Phase 3b probing (with controls) | [Toggl] |
 | Phase 4 causal | __ |
 | Write-up + executive summary | __ |
