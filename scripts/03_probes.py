@@ -216,7 +216,7 @@ if STAGE in ("figures", "all"):
     pd_rows = list(csv.DictReader(open(R / "phase3_pdist_bestlayer.csv"))); groups = [("val neutral", lambda r: r["split"] == "val" and r["condition"] == "neutral"), ("val distressed", lambda r: r["split"] == "val" and r["condition"] == "distressed"),
               ("third_party", lambda r: r["condition"] == "third_party" and r["author"] == "claude"), ("third_party_neutral", lambda r: r["condition"] == "third_party_neutral" and r["author"] == "claude"), ("implied", lambda r: r["condition"] == "implied" and r["author"] == "claude")]
     data = [[float(r["p_distressed"]) for r in pd_rows if f(r)] for _, f in groups]
-    fig, ax = plt.subplots(figsize=(8, 4.4), dpi=150, facecolor=SURF); bp = ax.boxplot(data, labels=[n for n, _ in groups], patch_artist=True, widths=0.5, medianprops={"color": T1})
+    fig, ax = plt.subplots(figsize=(8, 4.4), dpi=150, facecolor=SURF); bp = ax.boxplot(data, tick_labels=[n for n, _ in groups], patch_artist=True, widths=0.5, medianprops={"color": T1})
     for b in bp["boxes"]: b.set(facecolor=S1, alpha=0.35, edgecolor=S1)
     for i, dd in enumerate(data): ax.scatter(np.full(len(dd), i + 1) + rng.uniform(-0.12, 0.12, len(dd)), dd, s=10, color=S1, alpha=0.6, zorder=3)
     style(ax, f"P(distressed) from the task (a) probe at layer {best['a']}", "P(distressed)"); ax.set_xlabel(""); ax.set_ylim(-0.02, 1.02); fig.tight_layout(); fig.savefig(R / "F3_pdist_boxplots_bestlayer.png"); plt.close(fig)
