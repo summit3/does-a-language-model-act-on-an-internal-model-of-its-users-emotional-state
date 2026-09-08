@@ -17,9 +17,15 @@ tt = {t: k for k, v in TASKS.items() for t in v}
 rows = list(csv.DictReader(open("data/phase2_prompts.csv", newline="", encoding="utf-8")))
 val_bare = [r for r in rows if r["split"] == "val" and r["condition"] == "neutral"]; val_pre = [r for r in rows if r["split"] == "val" and r["condition"] == "neutral_preamble"]
 val_dis = [r for r in rows if r["split"] == "val" and r["condition"] == "distressed"]; tp = [r for r in rows if r["condition"] in ("third_party", "third_party_neutral")]
+all_bare = [r for r in rows if r["split"] in ("train", "val") and r["condition"] == "neutral"]; tp_claude = [r for r in rows if r["condition"] == "third_party" and r["author"] == "claude"]
 D = torch.load("results/directions_layer18_v2.pt"); torch.manual_seed(0); rnd = torch.randn(4096); rnd = rnd / rnd.norm()
 DIRS = {"distressed_md": D["distressed_meandiff"], "distressed_probe": D["distressed_probe"], "frustrated_md": D["frustrated_meandiff"], "positive_md": D["positive_meandiff"],
         "third_party_md": D["third_party_meandiff"], "unrelated_coding_probe": D["unrelated_coding_probe"], "random": rnd}
+# K: component directions at layer 18 from the three emotional mean-differences
+_M = torch.stack([D["distressed_meandiff"], D["frustrated_meandiff"], D["positive_meandiff"]]).float(); _Mc = _M - _M.mean(0, keepdim=True)
+_U, _S, _Vt = torch.linalg.svd(_Mc, full_matrices=False); shared = _Vt[0]; shared = shared * torch.sign(shared @ D["distressed_meandiff"].float()); shared = shared / shared.norm()
+_pos = D["positive_meandiff"].float(); valence = D["distressed_meandiff"].float() - (D["distressed_meandiff"].float() @ _pos) * _pos; valence = valence / valence.norm()
+DIRS["shared_pc1"] = shared; DIRS["valence_resid"] = valence; DIRS["np_minus_bare_md"] = D["neutral_preamble_minus_bare_meandiff"]
 done = set()
 if OUT.exists():
     for r in csv.DictReader(open(OUT, newline="", encoding="utf-8")): done.add((r["run"], r["prompt_id"], r["form"], r["direction"], r["fraction"], r["sample_idx"]))
@@ -101,4 +107,49 @@ elif STAGE == "G":   # H1b: Phase 1 prompts with NO system prompt
             rows_g.append({"pair_id": r["pair_id"], "task_type": r["task_type"], "condition": cond, "prompt": r[cond], "reply": reply, "n_tokens": len(tok(reply)["input_ids"])})
     with open(outp, "w", newline="", encoding="utf-8") as f: w = csv.DictWriter(f, fieldnames=list(rows_g[0]), lineterminator="\n"); w.writeheader(); w.writerows(rows_g)
     print(f"G: {len(rows_g)} replies, no system prompt, {time.time()-t0:.0f}s -> {outp}", flush=True)
+elif STAGE == "I":   # finer dose-response on bare val prompts
+    for r in val_bare:
+        norms = residual_norms(model, tok, r["text"], SYSTEM)
+        for dname in ["distressed_md", "random", "unrelated_coding_probe", "np_minus_bare_md"]:
+            for f in [0.01, 0.03, 0.05]:
+                if key("I", r, "bare", dname, f) in done: continue
+                t = time.time(); text, N = greedy(r["text"], DIRS[dname], f, norms); emit("I", r, "bare", dname, f, N, "", "", text, time.time() - t)
+elif STAGE == "J":   # power: 0.04 on all 150 bare base tasks
+    for r in all_bare:
+        norms = None
+        for dname in ["distressed_md", "random", "unrelated_coding_probe"]:
+            if key("J", r, "bare", dname, 0.04) in done: continue
+            norms = norms if norms is not None else residual_norms(model, tok, r["text"], SYSTEM)
+            t = time.time(); text, N = greedy(r["text"], DIRS[dname], 0.04, norms); emit("J", r, "bare", dname, 0.04, N, "", "", text, time.time() - t)
+elif STAGE == "K":   # component decomposition
+    print(f"K: cos(shared, distressed_md)={float(shared @ D['distressed_meandiff'].float()):.3f} cos(valence, distressed_md)={float(valence @ D['distressed_meandiff'].float()):.3f} cos(shared, valence)={float(shared @ valence):.3f}", flush=True)
+    for r in val_bare:
+        norms = residual_norms(model, tok, r["text"], SYSTEM)
+        for dname in ["shared_pc1", "valence_resid"]:
+            for f in FRACS:
+                if key("K", r, "bare", dname, f) in done: continue
+                t = time.time(); text, N = greedy(r["text"], DIRS[dname], f, norms); emit("K", r, "bare", dname, f, N, "", "", text, time.time() - t)
+elif STAGE == "L":   # finer subtraction + third-party subtraction
+    for r in val_dis:
+        norms = residual_norms(model, tok, r["text"], SYSTEM)
+        for f in [0.02, 0.06]:
+            if key("L", r, "distressed", "distressed_md_subtract", f) in done: continue
+            t = time.time(); text, N = greedy(r["text"], DIRS["distressed_md"], -f, norms); emit("L", r, "distressed", "distressed_md_subtract", f, N, "", "", text, time.time() - t)
+    for r in tp_claude:
+        if key("L", r, "third_party", "third_party_md_subtract", 0.04) in done: continue
+        norms = residual_norms(model, tok, r["text"], SYSTEM); t = time.time(); text, N = greedy(r["text"], DIRS["third_party_md"], -0.04, norms); emit("L", r, "third_party", "third_party_md_subtract", 0.04, N, "", "", text, time.time() - t)
+elif STAGE == "M":   # sampled subtraction on distressed val prompts
+    for r in val_dis:
+        norms = residual_norms(model, tok, r["text"], SYSTEM)
+        for f in [0.0, 0.04]:
+            for sidx in range(5):
+                if key("M", r, "distressed", "distressed_md_subtract", f, sidx) in done: continue
+                t = time.time(); text, N = sample_generate(r["text"], DIRS["distressed_md"], -f, norms, seed=2000 + sidx); emit("M", r, "distressed", "distressed_md_subtract", f, N, sidx, 0.7, text, time.time() - t)
+elif STAGE == "N":   # preamble-form headline, sampled
+    for r in val_pre:
+        norms = residual_norms(model, tok, r["text"], SYSTEM)
+        for dname in ["distressed_md", "random", "unrelated_coding_probe"]:
+            for sidx in range(5):
+                if key("N", r, "preamble", dname, 0.04, sidx) in done: continue
+                t = time.time(); text, N = sample_generate(r["text"], DIRS[dname], 0.04, norms, seed=3000 + sidx); emit("N", r, "preamble", dname, 0.04, N, sidx, 0.7, text, time.time() - t)
 fh.close(); print(f"stage {STAGE} done: {n_done} new generations in {time.time()-t_all:.0f}s", flush=True)
