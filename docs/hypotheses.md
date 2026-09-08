@@ -42,9 +42,16 @@ and is it a representation of the user rather than of emotion words?
 - What would change my mind: probe trained on user-distress fires equally on third-party prompts, and third-party prompts produce the same acknowledge/displace/infer behaviour.
 
 ### H3 (causal): Steering along the user-distress direction on neutral prompts reproduces the H1 changes; subtracting it from distressed prompts removes them; unrelated-concept directions of matched norm do not.
-- Status: **untested** (playground/calibration evidence only, in-sample, n=1)
-- Evidence so far: 9B, layer-21 mean-difference direction from 5 pairs, band 10-21: random direction inert to f=0.10 and incoherent at 0.15; stress direction distorts the fact at 0.03 ("no single capital"), abandons the task for emotional support at 0.06, loops by 0.15. Steering prompt was one of the 5 training pairs.
-- What would change my mind: on held-out prompts, matched-norm random / other-emotion / unrelated-learned directions produce the same abandonment at the same fraction; or subtraction from distressed prompts leaves the H1 metrics unchanged.
+- Status: **Supported (Phase 4, 2026-09-08)**
+- Evidence: layer-18 distressed mean-difference (relative to neutral_preamble), band 12-23, strength as a fraction of mean band norm, held-out prompts, rule-scored.
+  - Power (J): at 0.04 on all 150 bare base tasks (n=150, Wilson 95% CI): acknowledges_emotion 0.327 [0.257, 0.405] vs random 0.107 [0.067, 0.166] vs unrelated coding probe 0.047 [0.023, 0.093]; user_state_inference 0.160 [0.110, 0.227] vs 0.013 vs 0.007; task_abandoned 0.080 [0.046, 0.135] vs 0.000 [0, 0.025] vs 0.000; incoherent 0 for all; correct 0.942 [0.885, 0.972] vs 0.950 vs 0.967 (n=121).
+  - Dose (I + A, 30 bare val): distressed_md acknowledgement 0.07 / 0.13 / 0.13 / 0.20 / 0.30 / 0.77 / 0.83 / 1.00 at 0 / 0.01 / 0.02 / 0.03 / 0.04 / 0.05 / 0.06 / 0.08; abandonment 0 / 0 / 0 / 0.03 / 0.10 / 0.27 / 0.40 / 0.40; correct holds 0.92 to 0.04 then 0.63 / 0.13 / 0.00. Random, unrelated-coding and preamble-presence directions stay at 0.03-0.17 acknowledgement and 0 abandonment through 0.05; coherence intact for all directions through 0.06.
+  - Subtraction (B, L, greedy; 30 distressed val): unsteered acknowledgement 0.37, inference 0.17, abandoned 0.03; at -0.02 / -0.04 / -0.06 / -0.08: 0.23 / 0.07 / 0.00 / 0.03, inference 0.03 / 0.03 / 0 / 0, correct 0.92 / 0.88 / 0.88 / 0.75. Sampled (M, T=0.7, 150 samples): acknowledgement 0.380 [0.306, 0.460] -> 0.080 [0.046, 0.135]; inference 0.173 -> 0.000 [0, 0.025]; correct 0.908 -> 0.883. Third-party prompts at -0.04 along third_party_md: acknowledgement 0.50 -> 0.15.
+  - Band robustness (F): distressed_md at 0.04 on bands 8-19 / 12-23 / 16-27: acknowledgement 0.20 / 0.30 / 0.20, abandonment 0.07 / 0.10 / 0.03, inference 0.07 / 0.17 / 0.03, correct 0.92 all.
+  - Sampled addition (D, T=0.7, 150 samples, bare val): acknowledgement 0.093 -> 0.387 [0.312, 0.467], inference 0.007 -> 0.167, abandoned 0.013 -> 0.080, correct 0.908 -> 0.917.
+- Sub-hypothesis (K, component decomposition) **refuted**: the valence residual (distressed md minus its projection on positive md; cos with distressed md 0.78) carries the behaviour (at 0.04 / 0.06 / 0.08: acknowledgement 0.27 / 0.30 / 0.57, inference 0.20 / 0.73 / 1.00, abandonment 0.03 / 0.30 / 0.77) while the shared any-emotion PC1 (cos 0.35) is inert (acknowledgement <= 0.13, abandonment <= 0.03, inference <= 0.23 at 0.08, correct >= 0.83). The prediction was the reverse (shared drives abandonment, valence drives acknowledgement).
+- Earlier: playground (1.7B) and 9B calibration (in-sample, n=1) had shown abandonment at 0.06 with a random direction inert to 0.10.
+- What would change my mind: a rule-scoring artefact (keyword lists in results/phase4_keyword_lists.json) firing on steered text for reasons other than emotional content; hand-reading results/phase4_sample_for_reading.md is the check. Frustrated_md as an other-emotion control: acknowledgement 0.10 at 0.04, 0.63 at 0.08 with 0.87 incoherent.
 
 ### H4 (stretch): Quantify how the probe tracks emotional state across turns.
 - Status: **untested**, low priority
@@ -100,6 +107,8 @@ and is it a representation of the user rather than of emotion words?
 - Lexical confound untested until Phase 3: bag-of-words baseline, implied-emotion set A, third-party set B. Phase 1 preambles contain explicit emotion words by design.
 - First effect under steering was factual distortion ("no single capital"), not tone. Track factual distortion as its own metric in Phase 4.
 - Scorer bug wiped the manual columns once (notebook re-ran the scorer, which rewrote the CSV). Caught, fixed in 493b7fc; scorer now carries manual cells forward.
+- Preamble amplification (N): the same 0.04 distressed_md step on the neutral_preamble form of the val prompts (sampled, T=0.7, n=150) gives acknowledgement 0.747 [0.672, 0.810], abandonment 0.200 [0.144, 0.271], inference 0.267, correct 0.750, vs 0.387 / 0.080 / 0.167 / 0.917 on the bare form; random and coding controls stay at 0.08-0.09 / 0.00-0.01 / 0.00-0.01 / 0.88-0.92.
+- Task-type reversal under steering: in Phase 1 (natural preambles) acknowledgement was highest for arithmetic (5/5) and lowest for coding (1/5); under steering at 0.04 (J, bare, n=25 per type) it is highest for advice (0.76) and false_premise (0.72) and lowest for instruction_following (0.04), arithmetic (0.12), coding and factual (0.16). Abandonment under steering: advice 0.28, coding 0.12, false_premise 0.08, others 0.
 - Phase 3 v1 confound, how it was caught: the length-only baseline reached 1.000 on val; task-(a) accuracy was ~1.0 at layer 0, where nothing about the user can yet be integrated; and the probe gave P(distressed) 0.94 on non-emotional third-party preambles. Fixed in 3b with a length-matched neutral_preamble class; the length-only baseline then drops to 0.583 and layer-0 accuracy to 0.767.
 - Chen et al. and Empathic Machines report no length or preamble-presence baseline; their neutral class was also bare tasks or bare scenarios.
 - (Mine) Steering strongly shifts how much the model attends to the actual task, not just tone.
@@ -130,6 +139,7 @@ Original plan:
 - Watched the hooks-vs-HF-hidden-states check pass (layers 0-30 exact; layer 31 equal after final norm).
 - Confirmed no `<think>` block in outputs (`python -m src.model --check-thinking` PASS on 1.7B and 9B).
 - 2026-09-08, Phase 2 QA: reviewed 30 random samples (10 per condition), all 40 judge-disagreement rows, the full implied set, and the word-frequency flags. Cut nothing. Added 32 human-written preambles across all categories to test dependence on generated register.
+- 2026-09-08, Phase 4: rule-based scoring only; keyword lists recorded in results/phase4_keyword_lists.json; the 145-row stratified sample and 406 flagged rows in results/phase4_sample_for_reading.md are NOT yet hand-read.
 - 2026-09-08, Phase 3 v1: read F1 and identified that ~1.0 accuracy from layer 0 is inconsistent with a real user-state representation; the length-only baseline and the third_party_neutral P(distressed) confirmed the confound.
 - [add more here]
 
@@ -143,5 +153,5 @@ Original plan:
 | Phase 1 exploration (pairs, generation, reading, scoring) | 4h05 |
 | Phase 2 dataset + Phase 3 v1 probes | ~3h (to ~7h cumulative) |
 | Phase 3b probing (with controls) | [Toggl] |
-| Phase 4 causal | __ |
+| Phase 4 causal (runs A-N, 4,340 steered generations) | [Toggl] |
 | Write-up + executive summary | __ |
