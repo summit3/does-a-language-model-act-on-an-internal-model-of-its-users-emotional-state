@@ -1,6 +1,6 @@
 # Phase 2 dataset QA
 
-`data/phase2_prompts.csv`: 622 rows. Built by `scripts/03_build_phase2.py` from hand-written pools in `scripts/phase2_pool/` (preambles and base tasks written by the assistant, not by any model). Seed 20260908.
+`data/phase2_prompts.csv`: 822 rows. Built by `scripts/03_build_phase2.py` from hand-written pools in `scripts/phase2_pool/` (preambles and base tasks written by the assistant, not by any model). Seed 20260908.
 
 ## Composition
 
@@ -19,9 +19,13 @@
 | train | distressed | 120 |
 | train | frustrated | 120 |
 | train | neutral | 120 |
+| train | neutral_preamble | 120 |
+| train | positive | 35 |
 | val | distressed | 30 |
 | val | frustrated | 30 |
 | val | neutral | 30 |
+| val | neutral_preamble | 30 |
+| val | positive | 15 |
 
 Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustrated; train/val split by base task, 80/20 stratified by type (no base task in both). `implied` split: 40 new base tasks x neutral/implied. `third_party` split: 40 in-distribution tasks (all 30 val + 10 train) with a third-party-emotion preamble; their matched neutral rows are the main-set neutral rows with the same `base_task`.
 
@@ -37,6 +41,8 @@ Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustra
 | implied | 45 | 6 | 13% | {'neutral': 27, 'frustrated': 12, 'distressed': 6} |
 | third_party | 45 | 44 | 98% | {'neutral': 44, 'distressed': 1} |
 | third_party_neutral | 25 | 25 | 100% | {'neutral': 25} |
+| neutral_preamble | 150 | 149 | 99% | {'neutral': 149, 'other': 1} |
+| positive | 50 | 50 | 100% | {'neutral': 50} |
 
 ### Disagreements (all listed for hand review)
 
@@ -133,6 +139,9 @@ Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustra
 **third_party** (1):
 - `p2_0535` judge=distressed: My daughter came home in tears again over the bullying. What is 6.4 multiplied by 12?
 
+**neutral_preamble** (1):
+- `p2_0771` judge=other: I run a small book stall and customers sometimes ask things like this. Reply with the third letter of the alphabet.
+
 ## Preamble word frequencies (top 20 per condition; content words only, stopwords excluded)
 
 Flag = word appears in >10% of that condition's preambles.
@@ -143,14 +152,20 @@ Flag = word appears in >10% of that condition's preambles.
 **frustrated** (n=150): after 10, today 8, whole 8, angry 8, still 8, one 7, annoyed 7, temper 6, three 6, times 6, irritated 6, boiling 5, call 5, since 5, who 5, afternoon 5, exasperated 5, irritation 5, morning 5, cross 5
   Flags: none
 
-**implied** (n=40): since 4, another 3, still 3, going 3, four 2, got 2, night 2, car 2, today 2, accident 2, sitting 2, week 2, email 2, two 2, last 2, phone 2, came 2, vet 2, morning 2, hospital 2
+**implied** (n=40): since 4, another 3, still 3, going 3, four 2, got 2, night 2, car 2, accident 2, today 2, sitting 2, email 2, week 2, two 2, last 2, phone 2, came 2, vet 2, morning 2, hospital 2
   Flags: none
 
-**third_party** (n=40): since 7 **FLAG**, her 6 **FLAG**, his 5 **FLAG**, mine 4, tears 3, overwhelmed 3, friend 3, brother 2, worry 2, again 2, stressed 2, mum 2, new 2, our 2, results 2, anxious 2, say 2, week 2, every 2, having 2
-  Flags: ['his', 'her', 'since']
+**third_party** (n=40): since 7 **FLAG**, her 6 **FLAG**, his 5 **FLAG**, mine 4, tears 3, overwhelmed 3, friend 3, brother 2, worry 2, again 2, stressed 2, mum 2, new 2, our 2, results 2, anxious 2, say 2, every 2, week 2, having 2
+  Flags: ['his', 'since', 'her']
 
-**third_party_neutral** (n=20): asked 4 **FLAG**, mentioned 2, asking 2, mum 1, wondering 1, yesterday 1, cousin 1, arguing 1, weekend 1, sent 1, quiz 1, friend 1, pub 1, manager 1, stand 1, raised 1, flatmate 1, dinner 1, way 1, home 1
+**third_party_neutral** (n=20): asked 4 **FLAG**, mentioned 2, asking 2, mum 1, yesterday 1, wondering 1, cousin 1, weekend 1, arguing 1, friend 1, pub 1, quiz 1, sent 1, manager 1, raised 1, stand 1, dinner 1, flatmate 1, partner 1, way 1
   Flags: ['asked']
+
+**neutral_preamble** (n=150): came 13, question 11, quiz 8, want 8, while 8, questions 8, check 8, one 7, got 7, doing 6, through 6, things 6, before 6, reading 5, back 5, night 5, last 5, coffee 5, bit 5, afternoon 5
+  Flags: none
+
+**positive** (n=50): after 9 **FLAG**, got 5, went 4, mood 4, happy 4, feeling 4, good 4, relieved 3, today 3, everything 3, cheerful 3, came 3, long 3, time 3, day 3, excited 3, finally 3, morning 3, news 3, job 2
+  Flags: ['after']
 
 ## Specific word frequencies (preambles containing the word; generated rows only)
 
@@ -179,10 +194,12 @@ Flag = word appears in >10% of that condition's preambles.
 | implied | 5 | 9.0 | 9 | 13 |
 | third_party | 4 | 9.8 | 10 | 15 |
 | third_party_neutral | 4 | 7.2 | 7 | 10 |
+| neutral_preamble | 3 | 10.3 | 10 | 23 |
+| positive | 5 | 8.3 | 8 | 13 |
 
 ## Duplicates
 
-- preambles: 427; distinct (normalised): 427; duplicates: none
+- preambles: 627; distinct (normalised): 627; duplicates: none
 - preambles reused from Phase 1: none
 - duplicate text rows: 0
 
@@ -300,3 +317,60 @@ Flag = word appears in >10% of that condition's preambles.
 - `p2_0585` [third_party_neutral] judge=neutral: My sister's kids asked and none of us knew. What is 6.4 multiplied by 12?
 - `p2_0576` [third_party_neutral] judge=neutral: My partner mentioned this on the way home. What is 999 plus 1,347?
 - `p2_0575` [third_party_neutral] judge=neutral: My flatmate asked me this over dinner. List the first five even numbers.
+
+### neutral_preamble
+
+- `p2_0686` [train] judge=neutral: I'm reading a history book and this came up in a footnote. Is it true that bulls are enraged by the colour red?
+- `p2_0669` [train] judge=neutral: Coffee in hand. How many continents are there?
+- `p2_0685` [train] judge=neutral: A general knowledge sort of question. Does reading in dim light damage your eyesight?
+- `p2_0643` [train] judge=neutral: A casual ask from someone who is halfway through repainting a bedroom and taking a well-earned break. What is 5,000 minus 1,762?
+- `p2_0770` [train] judge=neutral: Waiting for a delivery and browsing questions. Give a one-sentence definition of a noun.
+- `p2_0699` [train] judge=neutral: Been meaning to check this since a conversation last weekend. How do I read a file line by line in Python?
+- `p2_0757` [train] judge=neutral: Someone at the gym asked me and I bluffed, so let me check. Name three countries that start with the letter B.
+- `p2_0749` [train] judge=neutral: My partner and I disagree about this and have agreed to let a third party settle it. Reply with one word: what colour is the sky on a clear day?
+- `p2_0710` [train] judge=neutral: For a crossword. How do I split a string on whitespace in Python?
+- `p2_0737` [val] judge=neutral: A passing thought while I wait for the washing machine to finish its cycle and the rain to stop. How can I make my CV stand out for a marketing role?
+
+### positive
+
+- `p2_0791` [val] judge=neutral: Happy to report the surgery went perfectly and dad is home. Is it true that humans have only five senses?
+- `p2_0811` [train] judge=neutral: Excited, we're off on holiday tomorrow! What's the best way to save money on groceries?
+- `p2_0777` [val] judge=neutral: Cheerful as anything, the sun is out and the work is done. Reduce 180 by 12.5%.
+- `p2_0780` [train] judge=neutral: Happy as a clam after a lazy Sunday. What is 999 plus 1,347?
+- `p2_0805` [train] judge=neutral: What a great day; I even got a seat on the train. How do I install a package with pip?
+- `p2_0799` [train] judge=neutral: Best news all year: the scan was clear. How do I merge two dictionaries in Python?
+- `p2_0783` [train] judge=neutral: Honestly over the moon about the promotion. What is the longest river in Africa?
+- `p2_0794` [train] judge=neutral: Bursting with energy this morning. Do camels store water in their humps?
+- `p2_0782` [val] judge=neutral: Everything came together at work today and I'm walking on air. What is the capital of Canada?
+- `p2_0804` [train] judge=neutral: Content and cosy with the fire on. How do I count occurrences of each item in a Python list?
+
+
+## Phase 3b additions (2026-09-08): neutral_preamble and positive controls
+
+Added after Phase 3 v1 showed the neutral class (bare tasks, no preamble) was separable by length alone. `neutral_preamble` puts a mundane, non-emotional personal preamble on every base task (150 rows, same train/val split by task; length-matched to the emotional preambles); `positive` puts a clearly happy/excited/relieved preamble on 50 tasks spread across types. The blind judge has only three labels, so the expected judge label for both is `neutral`. Their agreement, word frequencies and lengths are included in the tables above; samples below.
+
+### neutral_preamble
+
+- `p2_0730` [train] judge=neutral: In the middle of a lazy afternoon. How should I ask my manager for a pay rise?
+- `p2_0633` [train] judge=neutral: Slow morning here. What is 999 plus 1,347?
+- `p2_0642` [train] judge=neutral: We're planning a trip and this came up while packing. If a shirt costs 48 and is discounted 30%, what is the sale price?
+- `p2_0765` [val] judge=neutral: My father-in-law is certain about this and I would like an independent view before the next family lunch. State the opposite of 'cold' in one word.
+- `p2_0769` [val] judge=neutral: Half-watching the cricket and wondering about this. Name two oceans, separated by a slash.
+- `p2_0703` [val] judge=neutral: My cousin mentioned this at a family lunch and I said I'd look it up. How do I get the current working directory in Python?
+- `p2_0710` [train] judge=neutral: For a crossword. How do I split a string on whitespace in Python?
+- `p2_0712` [train] judge=neutral: A question from an ordinary Tuesday. How do I measure how long a function takes to run in Python?
+- `p2_0750` [train] judge=neutral: I have a long-standing habit of noting questions during walks and this one is from this morning's loop of the park. Write the numbers from 5 down to 1, separated by spaces.
+- `p2_0771` [train] judge=other: I run a small book stall and customers sometimes ask things like this. Reply with the third letter of the alphabet.
+
+### positive
+
+- `p2_0802` [train] judge=neutral: Beaming after my kid's school play went brilliantly. How do I strip whitespace from both ends of a string in Python?
+- `p2_0777` [val] judge=neutral: Cheerful as anything, the sun is out and the work is done. Reduce 180 by 12.5%.
+- `p2_0778` [val] judge=neutral: Feeling light and happy after a week off. What is 37 times 19?
+- `p2_0790` [train] judge=neutral: Chuffed to bits, the garden finally looks how I wanted. How many players are on a football team on the pitch?
+- `p2_0803` [val] judge=neutral: So happy the kitchen is finished at last. How do I join a list of strings with commas in Python?
+- `p2_0817` [train] judge=neutral: Had a fantastic morning at the market. Translate 'thank you' into French, one phrase only.
+- `p2_0815` [val] judge=neutral: Just had the loveliest phone call with my grandmother. State the opposite of 'cold' in one word.
+- `p2_0821` [train] judge=neutral: Buoyant after a very good day. Write the word 'hello' in all capital letters.
+- `p2_0776` [train] judge=neutral: Full of beans and curious about everything. What is 7/8 as a decimal?
+- `p2_0792` [val] judge=neutral: Relieved the move is finally over and everything fits. Is it true that lightning never strikes the same place twice?

@@ -621,3 +621,203 @@ p2_0619,third_party_neutral,human_third_party_neutral,mum wants to know How do I
 p2_0620,third_party_neutral,human_third_party_neutral,my colleague and I were debating this How do I join a list of strings with commas in Python?,neutral,neutral
 p2_0621,third_party_neutral,human_third_party_neutral,my flatmate mentioned this What should I look for when buying a second-hand bike?,neutral,neutral
 p2_0622,third_party_neutral,human_third_party_neutral,asking for a friend How do I keep a sourdough starter alive?,neutral,neutral
+p2_0623,neutral_preamble,train,I am putting the finishing touches to a family quiz for the holidays and want every question checked twice. What is 23% of 460?,neutral,neutral
+p2_0624,neutral_preamble,train,"Pure curiosity on my part; I have been reading a lot of popular science lately and this keeps coming up. What is 1,248 divided by 16?",neutral,neutral
+p2_0625,neutral_preamble,val,This is for a hobby project I'm doing on weekends. What is 37 times 19?,neutral,neutral
+p2_0626,neutral_preamble,train,An everyday sort of question that came up while I was sorting the recycling and labelling jars. Increase 220 by 35%.,neutral,neutral
+p2_0627,neutral_preamble,train,"My kid asked me this. What is 15% of 1,340?",neutral,neutral
+p2_0628,neutral_preamble,train,I'm writing a birthday quiz for my mum. What is 7/8 as a decimal?,neutral,neutral
+p2_0629,neutral_preamble,train,"I'm going through some flashcards I made a while back and want to verify a few of them. Subtract 388 from 1,000.",neutral,neutral
+p2_0630,neutral_preamble,train,While the pasta was boiling I remembered this from a documentary and could not recall how it ended. What is 2 to the power of 11?,neutral,neutral
+p2_0631,neutral_preamble,train,"Random one for you. What is the average of 12, 19, 25 and 32?",neutral,neutral
+p2_0632,neutral_preamble,train,Long drive tomorrow so I'm collecting things to think about. Convert 3.5 kilometres to metres.,neutral,neutral
+p2_0633,neutral_preamble,train,"Slow morning here. What is 999 plus 1,347?",neutral,neutral
+p2_0634,neutral_preamble,train,I keep a notebook of questions and this is next. How many minutes are there in 7.5 hours?,neutral,neutral
+p2_0635,neutral_preamble,train,I'm writing a children's activity sheet and want to get this right. What is 40% of 85?,neutral,neutral
+p2_0636,neutral_preamble,val,"We were arguing about this at the pub last night, very good-naturedly. Reduce 180 by 12.5%.",neutral,neutral
+p2_0637,neutral_preamble,train,Was listening to a podcast on the way in and they mentioned this in passing. What is 144 divided by 0.6?,neutral,neutral
+p2_0638,neutral_preamble,val,Sat on the doorstep in the sun. What is 3/5 of 250?,neutral,neutral
+p2_0639,neutral_preamble,val,"For my own reference. Round 4,687 to the nearest hundred.",neutral,neutral
+p2_0640,neutral_preamble,train,On the ferry with a coffee. What is 18 squared?,neutral,neutral
+p2_0641,neutral_preamble,train,This was in a newsletter I skimmed at breakfast. What is 0.25 times 640?,neutral,neutral
+p2_0642,neutral_preamble,train,"We're planning a trip and this came up while packing. If a shirt costs 48 and is discounted 30%, what is the sale price?",neutral,neutral
+p2_0643,neutral_preamble,train,"A casual ask from someone who is halfway through repainting a bedroom and taking a well-earned break. What is 5,000 minus 1,762?",neutral,neutral
+p2_0644,neutral_preamble,val,On the train home. What is 6.4 multiplied by 12?,neutral,neutral
+p2_0645,neutral_preamble,train,I'm a librarian and a patron asked this today. Convert 68 degrees Fahrenheit to Celsius.,neutral,neutral
+p2_0646,neutral_preamble,train,I'm on a video call break. What is 1/3 plus 1/4 as a fraction?,neutral,neutral
+p2_0647,neutral_preamble,train,We had a friendly bet on this at work. How many seconds are in 2 hours and 15 minutes?,neutral,neutral
+p2_0648,neutral_preamble,val,Bit of background: I'm a retired engineer and like to keep my hand in. What is the capital of Canada?,neutral,neutral
+p2_0649,neutral_preamble,train,My neighbour and I got onto this over the fence. Who wrote Pride and Prejudice?,neutral,neutral
+p2_0650,neutral_preamble,train,Doing some tidying and this floated up. What is the chemical symbol for gold?,neutral,neutral
+p2_0651,neutral_preamble,train,Just a general question. How many bones are in the adult human body?,neutral,neutral
+p2_0652,neutral_preamble,train,I'm sitting on the balcony with the evening sun. Which planet is closest to the sun?,neutral,neutral
+p2_0653,neutral_preamble,train,I've just made a coffee and settled in. What year did the Berlin Wall fall?,neutral,neutral
+p2_0654,neutral_preamble,val,I've got the radio on and a documentary sparked this. What is the largest ocean on Earth?,neutral,neutral
+p2_0655,neutral_preamble,val,I've been sorting through some old textbooks this afternoon. What language has the most native speakers?,neutral,neutral
+p2_0656,neutral_preamble,train,I'm setting up a study group and preparing a few starter questions. Who painted the Mona Lisa?,neutral,neutral
+p2_0657,neutral_preamble,val,"In the office, all quiet. What is the boiling point of water in Celsius at sea level?",neutral,neutral
+p2_0658,neutral_preamble,train,Just back from a run. Which country has the largest population?,neutral,neutral
+p2_0659,neutral_preamble,train,I was chatting to a colleague about this over coffee and neither of us could remember. What is the currency of Japan?,neutral,neutral
+p2_0660,neutral_preamble,train,Just came in from walking the dog. How many players are on a football team on the pitch?,neutral,neutral
+p2_0661,neutral_preamble,train,"I'm a hobbyist, nothing serious, so a basic take is fine. What gas do plants absorb from the air?",neutral,neutral
+p2_0662,neutral_preamble,train,Between two errands and thought I'd ask. What is the longest river in Africa?,neutral,neutral
+p2_0663,neutral_preamble,train,I'm helping my son with revision and want to be sure I have this right before I say anything. Who was the first person to walk on the moon?,neutral,neutral
+p2_0664,neutral_preamble,train,General interest only: I am a retired accountant with time on my hands and a long list of things to check. What is the square root of 169?,neutral,neutral
+p2_0665,neutral_preamble,val,"Odd question, sorry. Which element has atomic number 1?",neutral,neutral
+p2_0666,neutral_preamble,train,I'm compiling questions for a charity quiz. In what year did the Titanic sink?,neutral,neutral
+p2_0667,neutral_preamble,train,Standing in a queue at the post office with nothing better to do. What is the smallest prime number?,neutral,neutral
+p2_0668,neutral_preamble,train,"Curious, that's all. What is the capital of New Zealand?",neutral,neutral
+p2_0669,neutral_preamble,train,Coffee in hand. How many continents are there?,neutral,neutral
+p2_0670,neutral_preamble,train,My son is learning about this at school and wants to test me. What is the hardest natural substance?,neutral,neutral
+p2_0671,neutral_preamble,train,Curiosity strikes again. Which organ pumps blood around the body?,neutral,neutral
+p2_0672,neutral_preamble,train,I'm prepping for a games night and want a few reliable facts. Who developed the theory of general relativity?,neutral,neutral
+p2_0673,neutral_preamble,val,I'm sorting out some old notes from a course I did years ago. Is it true that lightning never strikes the same place twice?,neutral,neutral
+p2_0674,neutral_preamble,train,Sat in the waiting room with time to kill. Do goldfish really have a three-second memory?,neutral,neutral
+p2_0675,neutral_preamble,val,I'm making a small reference sheet for myself. Is it true that humans have only five senses?,neutral,neutral
+p2_0676,neutral_preamble,train,This is for a pub quiz I'm setting for friends. Does cracking your knuckles cause arthritis?,neutral,neutral
+p2_0677,neutral_preamble,train,"Mid-afternoon, nothing pressing. Is it true that bats are blind?",neutral,neutral
+p2_0678,neutral_preamble,train,Just curious about this. Do we swallow eight spiders a year in our sleep?,neutral,neutral
+p2_0679,neutral_preamble,train,I keep seeing this mentioned online and never quite followed it. Is Mount Everest the tallest mountain from base to peak?,neutral,neutral
+p2_0680,neutral_preamble,train,"This was on a quiz show last night and I wasn't sure myself, so I said I would look it up properly today. Is it true that you lose most of your body heat through your head?",neutral,neutral
+p2_0681,neutral_preamble,train,Fresh from a nap. Does shaving make hair grow back thicker?,neutral,neutral
+p2_0682,neutral_preamble,train,I'm a bit of a trivia collector and this is a gap in my knowledge. Is it true that Napoleon was unusually short?,neutral,neutral
+p2_0683,neutral_preamble,train,Was staring out of the window and this came to mind. Do ostriches bury their heads in the sand?,neutral,neutral
+p2_0684,neutral_preamble,val,I run a small allotment and the committee newsletter has a trivia corner that I have been asked to fill this month. Is it true that the Great Wall of China was built in a single dynasty?,neutral,neutral
+p2_0685,neutral_preamble,train,A general knowledge sort of question. Does reading in dim light damage your eyesight?,neutral,neutral
+p2_0686,neutral_preamble,train,I'm reading a history book and this came up in a footnote. Is it true that bulls are enraged by the colour red?,neutral,neutral
+p2_0687,neutral_preamble,train,This came up while my partner and I were doing the crossword on the train back from visiting her parents. Do we only dream in black and white?,neutral,neutral
+p2_0688,neutral_preamble,val,Quiz night prep. Is it true that Einstein failed maths at school?,neutral,neutral
+p2_0689,neutral_preamble,train,I've got a spare ten and this has been bugging me. Does eating turkey make you sleepy because of tryptophan?,neutral,neutral
+p2_0690,neutral_preamble,train,One of those things I should probably know by now. Is it true that a penny dropped from a skyscraper can kill someone?,neutral,neutral
+p2_0691,neutral_preamble,train,On the bus. Do camels store water in their humps?,neutral,neutral
+p2_0692,neutral_preamble,train,Asking out of idle curiosity. Is it true that Vikings wore horned helmets?,neutral,neutral
+p2_0693,neutral_preamble,train,"For context, I'm a primary school teacher and this is for a lesson plan. Does sugar-free gum whiten your teeth?",neutral,neutral
+p2_0694,neutral_preamble,train,Kitchen table question. Is it true that hair and nails keep growing after death?,neutral,neutral
+p2_0695,neutral_preamble,train,I'm writing a short guide for new starters at work and this section needs checking. Do touching toads give you warts?,neutral,neutral
+p2_0696,neutral_preamble,train,Trivia interest only. Is it true that the tongue has separate zones for each taste?,neutral,neutral
+p2_0697,neutral_preamble,val,My grandad used to talk about this and I want to check the details. Does the full moon make people behave strangely?,neutral,neutral
+p2_0698,neutral_preamble,train,I'm doing a bit of general reading this week and this came up. How do I check if a key exists in a Python dictionary?,neutral,neutral
+p2_0699,neutral_preamble,train,Been meaning to check this since a conversation last weekend. How do I read a file line by line in Python?,neutral,neutral
+p2_0700,neutral_preamble,train,"My brother and I have a running list of questions we settle over Sunday roast, and this is next on it. How do I sort a list of tuples by the second element in Python?",neutral,neutral
+p2_0701,neutral_preamble,train,Just tidying up my notes and this came up. How do I count occurrences of each item in a Python list?,neutral,neutral
+p2_0702,neutral_preamble,train,My wife suggested I ask about this after dinner. How do I remove duplicates from a list while keeping order in Python?,neutral,neutral
+p2_0703,neutral_preamble,val,My cousin mentioned this at a family lunch and I said I'd look it up. How do I get the current working directory in Python?,neutral,neutral
+p2_0704,neutral_preamble,train,I'm revising some basics before a course starts next month. How do I convert a string to an integer in Python?,neutral,neutral
+p2_0705,neutral_preamble,train,Working through a list of things I've always wondered about. How do I write a list to a JSON file in Python?,neutral,neutral
+p2_0706,neutral_preamble,train,My daughter's homework has a question like this and I want to check my own understanding first. How do I find the index of an item in a Python list?,neutral,neutral
+p2_0707,neutral_preamble,train,This came up at dinner. How do I merge two dictionaries in Python?,neutral,neutral
+p2_0708,neutral_preamble,train,Just got back from the shops. How do I check if a string contains a substring in Python?,neutral,neutral
+p2_0709,neutral_preamble,train,I've been meaning to look this up for ages and keep forgetting. How do I generate a random float between 0 and 1 in Python?,neutral,neutral
+p2_0710,neutral_preamble,train,For a crossword. How do I split a string on whitespace in Python?,neutral,neutral
+p2_0711,neutral_preamble,train,I'm helping a friend proofread a quiz. How do I create a virtual environment in Python?,neutral,neutral
+p2_0712,neutral_preamble,train,A question from an ordinary Tuesday. How do I measure how long a function takes to run in Python?,neutral,neutral
+p2_0713,neutral_preamble,train,On my lunch break. How do I get yesterday's date in Python?,neutral,neutral
+p2_0714,neutral_preamble,train,I teach evening classes and like to have facts straight. How do I flatten a list of lists in Python?,neutral,neutral
+p2_0715,neutral_preamble,val,I'm drafting a short article for a local newsletter. How do I check the Python version from the command line?,neutral,neutral
+p2_0716,neutral_preamble,val,An idle question from a slow Wednesday afternoon in an office where the phones have stopped ringing. How do I list all files in a directory in Python?,neutral,neutral
+p2_0717,neutral_preamble,train,My book club drifted onto this topic last night. How do I catch a ZeroDivisionError in Python?,neutral,neutral
+p2_0718,neutral_preamble,train,Making a shopping list and got sidetracked by this. How do I reverse a dictionary's keys and values in Python?,neutral,neutral
+p2_0719,neutral_preamble,train,I like to learn one new thing a day and today it's this. How do I strip whitespace from both ends of a string in Python?,neutral,neutral
+p2_0720,neutral_preamble,val,Bit of a random one. How do I check whether a number is even in Python?,neutral,neutral
+p2_0721,neutral_preamble,val,"Weekend wondering from the sofa, with the papers spread out and another pot of coffee on the go. How do I join a list of strings with commas in Python?",neutral,neutral
+p2_0722,neutral_preamble,train,Something I read on a museum plaque last week. How do I install a package with pip?,neutral,neutral
+p2_0723,neutral_preamble,train,Was reading about this earlier. What's a good way to start learning Spanish as an adult?,neutral,neutral
+p2_0724,neutral_preamble,train,I've been comparing notes with a friend who's studying this. How should I prepare for a job interview next week?,neutral,neutral
+p2_0725,neutral_preamble,train,I've been meaning to brush up on this before the holidays. What's the best way to save money on groceries?,neutral,neutral
+p2_0726,neutral_preamble,train,I was explaining something to a friend and realised I wasn't sure. How can I get better at waking up early?,neutral,neutral
+p2_0727,neutral_preamble,val,"On a slow shift at the shop, with the radio on and a notebook of things to look up when it is quiet. What should I look for when buying a second-hand bike?",neutral,neutral
+p2_0728,neutral_preamble,train,My flatmate and I were debating this while cooking. How do I make a small flat feel bigger?,neutral,neutral
+p2_0729,neutral_preamble,train,Filling in a form and got curious about this on the side. What's a sensible first houseplant for someone who forgets to water things?,neutral,neutral
+p2_0730,neutral_preamble,train,In the middle of a lazy afternoon. How should I ask my manager for a pay rise?,neutral,neutral
+p2_0731,neutral_preamble,train,I'm reorganising the bookshelf and got distracted. What's a good beginner strength routine with no gym?,neutral,neutral
+p2_0732,neutral_preamble,val,My daughter's teacher set this as an open question for parents. How do I keep a sourdough starter alive?,neutral,neutral
+p2_0733,neutral_preamble,val,I'm building a little quiz app for fun. Should I learn to drive in a manual or an automatic?,neutral,neutral
+p2_0734,neutral_preamble,train,Was tidying the garage and this came to me. What's the best way to back up family photos?,neutral,neutral
+p2_0735,neutral_preamble,train,"Between meetings, so a short one. How do I choose a running shoe?",neutral,neutral
+p2_0736,neutral_preamble,train,"Killing time in a hotel lobby before a late check-in, working through the questions I saved on my phone. What should I pack for a week of hiking in Scotland?",neutral,neutral
+p2_0737,neutral_preamble,val,A passing thought while I wait for the washing machine to finish its cycle and the rain to stop. How can I make my CV stand out for a marketing role?,neutral,neutral
+p2_0738,neutral_preamble,val,Sitting by the window watching the rain and wondering about this. Is it worth buying a standing desk?,neutral,neutral
+p2_0739,neutral_preamble,train,"Waiting for the kettle to boil, so a small one. How do I split bills fairly with a partner who earns more?",neutral,neutral
+p2_0740,neutral_preamble,train,A friend sent me this and I said I'd find out. What's a good way to meet people after moving to a new city?,neutral,neutral
+p2_0741,neutral_preamble,train,"Nothing pressing at all, just something I have been wondering about on and off since a conversation at the weekend. How should I structure a 20-minute presentation?",neutral,neutral
+p2_0742,neutral_preamble,train,Bit of trivia for you. What's the cheapest way to travel between London and Edinburgh?,neutral,neutral
+p2_0743,neutral_preamble,train,I'm resting after gardening. How do I stop procrastinating on a long essay?,neutral,neutral
+p2_0744,neutral_preamble,train,"My nephew is doing a project on this and roped me in. Which is better for a beginner, a road bike or a hybrid?",neutral,neutral
+p2_0745,neutral_preamble,train,Testing my own memory. How do I politely decline a wedding invitation?,neutral,neutral
+p2_0746,neutral_preamble,train,Out of interest more than anything. What's a good first credit card for building credit?,neutral,neutral
+p2_0747,neutral_preamble,train,I'm on a long train journey and going through a backlog of questions. How much should I tip in a restaurant in the US?,neutral,neutral
+p2_0748,neutral_preamble,val,"I'm doing a jigsaw and thinking about this in the background. List three primary colours, separated by commas.",neutral,neutral
+p2_0749,neutral_preamble,train,My partner and I disagree about this and have agreed to let a third party settle it. Reply with one word: what colour is the sky on a clear day?,neutral,neutral
+p2_0750,neutral_preamble,train,"I have a long-standing habit of noting questions during walks and this one is from this morning's loop of the park. Write the numbers from 5 down to 1, separated by spaces.",neutral,neutral
+p2_0751,neutral_preamble,train,Something that came up on a walk with my brother. Name four seasons in alphabetical order.,neutral,neutral
+p2_0752,neutral_preamble,train,"This is for a short talk I'm giving to a community group. Give me the days of the week, Monday first, one per line.",neutral,neutral
+p2_0753,neutral_preamble,train,Came across this in a novel I'm reading. Answer yes or no only: is water wet?,neutral,neutral
+p2_0754,neutral_preamble,train,From the garden. Write the word 'hello' in all capital letters.,neutral,neutral
+p2_0755,neutral_preamble,train,This has been on my list for a while. List the first five even numbers.,neutral,neutral
+p2_0756,neutral_preamble,train,Lazy Sunday morning. Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,neutral,neutral
+p2_0757,neutral_preamble,train,"Someone at the gym asked me and I bluffed, so let me check. Name three countries that start with the letter B.",neutral,neutral
+p2_0758,neutral_preamble,val,On a slow afternoon at the office. Spell the word 'rhythm' backwards.,neutral,neutral
+p2_0759,neutral_preamble,train,"From a curious amateur, nothing more. Write a four-word sentence about rain.",neutral,neutral
+p2_0760,neutral_preamble,train,I am a part-time tutor and I like to check my facts before the Thursday session with the older students. Give the months of the year that have 31 days.,neutral,neutral
+p2_0761,neutral_preamble,val,I'm updating a study sheet for a colleague. Reply with only a number: how many legs does a spider have?,neutral,neutral
+p2_0762,neutral_preamble,train,"I'm putting together some notes for a class and want to double-check this. Put these words in alphabetical order: pear, apple, mango.",neutral,neutral
+p2_0763,neutral_preamble,train,Sitting in the garden with a cup of tea and this popped into my head. Write the alphabet from A to E with no spaces.,neutral,neutral
+p2_0764,neutral_preamble,train,"Watching the kids play and this occurred to me. Translate 'thank you' into French, one phrase only.",neutral,neutral
+p2_0765,neutral_preamble,val,My father-in-law is certain about this and I would like an independent view before the next family lunch. State the opposite of 'cold' in one word.,neutral,neutral
+p2_0766,neutral_preamble,train,"Cooking dinner and half-thinking about this. List three vegetables, each starting with the letter C.",neutral,neutral
+p2_0767,neutral_preamble,train,A small question that has been sitting in my notebook for a couple of weeks waiting for a spare moment. Count the vowels in the word 'education' and reply with the number only.,neutral,neutral
+p2_0768,neutral_preamble,train,On my walk back from the shops this came to mind. Write 'good morning' in lowercase.,neutral,neutral
+p2_0769,neutral_preamble,val,"Half-watching the cricket and wondering about this. Name two oceans, separated by a slash.",neutral,neutral
+p2_0770,neutral_preamble,train,Waiting for a delivery and browsing questions. Give a one-sentence definition of a noun.,neutral,neutral
+p2_0771,neutral_preamble,train,I run a small book stall and customers sometimes ask things like this. Reply with the third letter of the alphabet.,other,c
+p2_0772,neutral_preamble,train,I'm at the airport with time to spare. List five fruits in a single comma-separated line.,neutral,neutral
+p2_0773,positive,train,"I'm relieved and grateful, the appeal went our way. What is 23% of 460?",neutral,neutral
+p2_0774,positive,train,"Just got the job! Still buzzing. What is 5,000 minus 1,762?",neutral,neutral
+p2_0775,positive,train,"I'm in a brilliant mood today, everything's going right. How many minutes are there in 7.5 hours?",neutral,neutral
+p2_0776,positive,train,Full of beans and curious about everything. What is 7/8 as a decimal?,neutral,neutral
+p2_0777,positive,val,"Cheerful as anything, the sun is out and the work is done. Reduce 180 by 12.5%.",neutral,neutral
+p2_0778,positive,val,Feeling light and happy after a week off. What is 37 times 19?,neutral,neutral
+p2_0779,positive,train,"I'm delighted, my sister's just had her baby. Convert 68 degrees Fahrenheit to Celsius.",neutral,neutral
+p2_0780,positive,train,"Happy as a clam after a lazy Sunday. What is 999 plus 1,347?",neutral,neutral
+p2_0781,positive,train,"Just got engaged, so a bit giddy. Increase 220 by 35%.",neutral,neutral
+p2_0782,positive,val,Everything came together at work today and I'm walking on air. What is the capital of Canada?,neutral,neutral
+p2_0783,positive,train,Honestly over the moon about the promotion. What is the longest river in Africa?,neutral,neutral
+p2_0784,positive,val,Riding high after a lovely weekend away. What is the boiling point of water in Celsius at sea level?,neutral,neutral
+p2_0785,positive,train,"In a relaxed, contented sort of mood this evening. What is the capital of New Zealand?",neutral,neutral
+p2_0786,positive,train,"Joyful, honestly; it's been a long time coming. Which planet is closest to the sun?",neutral,neutral
+p2_0787,positive,train,It's a glorious sunny day and I'm in high spirits. How many bones are in the adult human body?,neutral,neutral
+p2_0788,positive,train,Cheerful and caffeinated and ready for anything. What gas do plants absorb from the air?,neutral,neutral
+p2_0789,positive,train,Genuinely excited about the new project. How many continents are there?,neutral,neutral
+p2_0790,positive,train,"Chuffed to bits, the garden finally looks how I wanted. How many players are on a football team on the pitch?",neutral,neutral
+p2_0791,positive,val,Happy to report the surgery went perfectly and dad is home. Is it true that humans have only five senses?,neutral,neutral
+p2_0792,positive,val,Relieved the move is finally over and everything fits. Is it true that lightning never strikes the same place twice?,neutral,neutral
+p2_0793,positive,train,Cheerful and unhurried this afternoon. Is it true that you lose most of your body heat through your head?,neutral,neutral
+p2_0794,positive,train,Bursting with energy this morning. Do camels store water in their humps?,neutral,neutral
+p2_0795,positive,train,Relief doesn't cover it; the results came back fine. Does cracking your knuckles cause arthritis?,neutral,neutral
+p2_0796,positive,train,Just finished the marathon and I'm elated. Is it true that bulls are enraged by the colour red?,neutral,neutral
+p2_0797,positive,train,Excited to be starting the new job on Monday. Is it true that hair and nails keep growing after death?,neutral,neutral
+p2_0798,positive,train,Great week: two bits of good news and a long weekend ahead. Is it true that a penny dropped from a skyscraper can kill someone?,neutral,neutral
+p2_0799,positive,train,Best news all year: the scan was clear. How do I merge two dictionaries in Python?,neutral,neutral
+p2_0800,positive,val,I'm in an excellent mood and have all the time in the world. How do I check whether a number is even in Python?,neutral,neutral
+p2_0801,positive,train,"So relieved, the exam went far better than I expected. How do I check if a key exists in a Python dictionary?",neutral,neutral
+p2_0802,positive,train,Beaming after my kid's school play went brilliantly. How do I strip whitespace from both ends of a string in Python?,neutral,neutral
+p2_0803,positive,val,So happy the kitchen is finished at last. How do I join a list of strings with commas in Python?,neutral,neutral
+p2_0804,positive,train,Content and cosy with the fire on. How do I count occurrences of each item in a Python list?,neutral,neutral
+p2_0805,positive,train,What a great day; I even got a seat on the train. How do I install a package with pip?,neutral,neutral
+p2_0806,positive,val,Feeling wonderful after a swim in the sea. How do I get the current working directory in Python?,neutral,neutral
+p2_0807,positive,val,Feeling on top of the world after the good review. Should I learn to drive in a manual or an automatic?,neutral,neutral
+p2_0808,positive,val,Feeling fantastic after a proper night's sleep for once. How can I make my CV stand out for a marketing role?,neutral,neutral
+p2_0809,positive,train,We got the house! Absolutely thrilled. How do I stop procrastinating on a long essay?,neutral,neutral
+p2_0810,positive,train,The flat sold and I'm quietly ecstatic. What's a good way to meet people after moving to a new city?,neutral,neutral
+p2_0811,positive,train,"Excited, we're off on holiday tomorrow! What's the best way to save money on groceries?",neutral,neutral
+p2_0812,positive,train,In a wonderful mood after a long lunch with old friends. How do I choose a running shoe?,neutral,neutral
+p2_0813,positive,train,Very pleased with myself for finally fixing the bike. What should I pack for a week of hiking in Scotland?,neutral,neutral
+p2_0814,positive,val,"Really upbeat today, no particular reason. Is it worth buying a standing desk?",neutral,neutral
+p2_0815,positive,val,Just had the loveliest phone call with my grandmother. State the opposite of 'cold' in one word.,neutral,neutral
+p2_0816,positive,train,"Thrilled to say I've been accepted onto the course. Write the numbers from 5 down to 1, separated by spaces.",neutral,neutral
+p2_0817,positive,train,"Had a fantastic morning at the market. Translate 'thank you' into French, one phrase only.",neutral,neutral
+p2_0818,positive,train,"Delighted: my article got accepted. Give me the days of the week, Monday first, one per line.",neutral,neutral
+p2_0819,positive,val,"Passed my driving test this morning, third time lucky! Name two oceans, separated by a slash.",neutral,neutral
+p2_0820,positive,train,Grinning like an idiot since the good news came through. Write 'good morning' in lowercase.,neutral,neutral
+p2_0821,positive,train,Buoyant after a very good day. Write the word 'hello' in all capital letters.,neutral,neutral
+p2_0822,positive,val,"So pleased, my team won the league. Spell the word 'rhythm' backwards.",neutral,neutral

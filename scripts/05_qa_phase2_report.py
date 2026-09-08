@@ -14,7 +14,7 @@ def _bind():
     for r in rows: labels[r["id"]] = _by_text.get(r["text"], {"judge_label": "?"})
 def preamble(r): return r["text"][:-len(r["base_task"])].strip() if r["condition"] != "neutral" else ""
 _bind()
-conds = ["neutral", "distressed", "frustrated", "implied", "third_party", "third_party_neutral"]
+conds = ["neutral", "distressed", "frustrated", "implied", "third_party", "third_party_neutral", "neutral_preamble", "positive"]
 L = ["# Phase 2 dataset QA", "", f"`data/phase2_prompts.csv`: {len(rows)} rows. Built by `scripts/03_build_phase2.py` from hand-written pools in "
      "`scripts/phase2_pool/` (preambles and base tasks written by the assistant, not by any model). Seed 20260908.", ""]
 # composition
@@ -30,7 +30,7 @@ L += ["## Blind label-consistency check", "",
       "Expected label: neutral -> neutral, distressed -> distressed, frustrated -> frustrated, implied -> distressed (no emotion words), "
       "third_party -> neutral (the writer's own state is not stated), third_party_neutral -> neutral. `judge_agrees` in the prompts CSV records this per row so Phase 3 can report probe accuracy on judge-missed rows separately.", "",
       "| condition | n | judge = expected | % | judge labels (counts) |", "|---|---|---|---|---|"]
-expected = {"neutral": "neutral", "distressed": "distressed", "frustrated": "frustrated", "implied": "distressed", "third_party": "neutral", "third_party_neutral": "neutral"}
+expected = {"neutral": "neutral", "distressed": "distressed", "frustrated": "frustrated", "implied": "distressed", "third_party": "neutral", "third_party_neutral": "neutral", "neutral_preamble": "neutral", "positive": "neutral"}
 disagree = defaultdict(list)
 for c in conds:
     rs = [r for r in rows if r["condition"] == c]; js = [labels[r["id"]]["judge_label"] for r in rs]
@@ -45,7 +45,7 @@ for c in conds:
 # word frequencies
 L += ["## Preamble word frequencies (top 20 per condition; content words only, stopwords excluded)", "",
       "Flag = word appears in >10% of that condition's preambles.", ""]
-for c in ["distressed", "frustrated", "implied", "third_party", "third_party_neutral"]:
+for c in ["distressed", "frustrated", "implied", "third_party", "third_party_neutral", "neutral_preamble", "positive"]:
     pres = [preamble(r) for r in rows if r["condition"] == c and r["author"] == "claude"]
     cnt = Counter(w for p in pres for w in set(words(p)) if w not in STOP)
     L.append(f"**{c}** (n={len(pres)}): " + ", ".join(f"{w} {k}" + (" **FLAG**" if k > 0.10*len(pres) else "") for w, k in cnt.most_common(20)))
@@ -65,7 +65,7 @@ L += ["", "## Notes on the generated set (author review, 2026-09-08)", "",
       "- The `human_*` splits (author=human, the user's own preambles, verbatim) test whether probe accuracy depends on the generated register.", ""]
 # lengths
 L += ["## Preamble length (words)", "", "| condition | min | mean | median | max |", "|---|---|---|---|---|"]
-for c in ["distressed", "frustrated", "implied", "third_party", "third_party_neutral"]:
+for c in ["distressed", "frustrated", "implied", "third_party", "third_party_neutral", "neutral_preamble", "positive"]:
     ls = sorted(len(words(preamble(r))) for r in rows if r["condition"] == c)
     L.append(f"| {c} | {ls[0]} | {sum(ls)/len(ls):.1f} | {ls[len(ls)//2]} | {ls[-1]} |")
 # duplicates
@@ -87,5 +87,14 @@ for c in conds:
     L.append(f"### {c}"); L.append("")
     for r in rng.sample([r for r in rows if r["condition"] == c and r["author"] == "claude"], 10):
         L.append(f"- `{r['id']}` [{r['split']}] judge={labels[r['id']]['judge_label']}: {r['text']}")
+    L.append("")
+L += ["", "## Phase 3b additions (2026-09-08): neutral_preamble and positive controls", "",
+      "Added after Phase 3 v1 showed the neutral class (bare tasks, no preamble) was separable by length alone. `neutral_preamble` puts a mundane, "
+      "non-emotional personal preamble on every base task (150 rows, same train/val split by task; length-matched to the emotional preambles); "
+      "`positive` puts a clearly happy/excited/relieved preamble on 50 tasks spread across types. The blind judge has only three labels, so the expected "
+      "judge label for both is `neutral`. Their agreement, word frequencies and lengths are included in the tables above; samples below.", ""]
+for c in ["neutral_preamble", "positive"]:
+    L.append(f"### {c}"); L.append("")
+    for r in rng.sample([r for r in rows if r["condition"] == c], 10): L.append(f"- `{r['id']}` [{r['split']}] judge={labels[r['id']]['judge_label']}: {r['text']}")
     L.append("")
 Path("data/phase2_qa.md").write_text("\n".join(L), encoding="utf-8"); print("wrote data/phase2_qa.md")

@@ -17,6 +17,7 @@ from scripts.phase2_pool.tasks import TASKS, HELDOUT_TASKS
 from scripts.phase2_pool.distressed import DISTRESSED
 from scripts.phase2_pool.frustrated import FRUSTRATED
 from scripts.phase2_pool.heldout import IMPLIED, THIRD_PARTY, THIRD_PARTY_NEUTRAL, HUMAN
+from scripts.phase2_pool.controls import NEUTRAL_PREAMBLE, POSITIVE
 from scripts.phase2_pool.checks import check_batch, norm, STOP, words
 
 OUT = Path("data/phase2_prompts.csv"); SEED = 20260908; CAP = 0.15
@@ -80,11 +81,23 @@ for k, (cond, pre) in enumerate(HUMAN):
     t = free_val[k % len(free_val)]
     add(t, cond, f"{pre} {t}", f"human_{cond}", author="human")
 
+# Phase 3b controls: neutral_preamble on every base task (split follows the task); positive on 50 tasks (stratified by type)
+ok, problems, _ = check_batch(NEUTRAL_PREAMBLE, "neutral_preamble", quiet=True, no_emotion_words=True); assert not problems, problems
+ok, problems, _ = check_batch(POSITIVE, "positive", quiet=True); assert not problems, problems
+npre, n_rel_np = assign(NEUTRAL_PREAMBLE, tasks_only)
+for i, (tt, t) in enumerate(main): add(t, "neutral_preamble", f"{npre[i]} {t}", split[t])
+pos_tasks = []
+for tt in TASKS:
+    ts = list(TASKS[tt]); rng.shuffle(ts); pos_tasks += ts[:9 if tt in ("arithmetic", "factual") else 8]
+pos_tasks = pos_tasks[:50]
+pos, n_rel_p = assign(POSITIVE, pos_tasks)
+for i, t in enumerate(pos_tasks): add(t, "positive", f"{pos[i]} {t}", split[t])
+print(f"phase 3b: neutral_preamble {len(npre)} (related {n_rel_np}), positive {len(pos_tasks)} (related {n_rel_p})")
 texts = [r["text"] for r in rows]
 assert len(set(texts)) == len(texts), "duplicate text rows"
 # judge_agrees from the blind check (by text, so ids may be renumbered safely)
 EXPECTED = {"neutral": "neutral", "distressed": "distressed", "frustrated": "frustrated", "implied": "distressed",
-            "third_party": "neutral", "third_party_neutral": "neutral"}
+            "third_party": "neutral", "third_party_neutral": "neutral", "neutral_preamble": "neutral", "positive": "neutral"}
 LAB = Path("data/phase2_qa_labels.csv")
 judged = {}
 if LAB.exists():
