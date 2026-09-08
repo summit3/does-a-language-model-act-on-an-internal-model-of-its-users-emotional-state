@@ -28,6 +28,12 @@ and is it a representation of the user rather than of emotion words?
   - Pattern: acknowledge -> displace -> infer about the user -> occasionally abandon; competence intact.
 - What would change my mind: effects vanish on held-out prompts or under sampled decoding; effects reproduce with third-party-distress preambles (then it is not about the user); effect sizes track emotion-word count rather than condition.
 
+### H1b (new, 2026-09-08): Acknowledgement occurs when the reply has room, i.e. it is driven by answer length under the concise budget rather than by task "softness".
+- Status: **untested**
+- Evidence so far: arithmetic answers are ~11 tokens and always acknowledged (5/5); coding/factual answers fill the two-sentence budget and mostly do not (1/5, 2/5).
+- What would change my mind: acknowledgement stays flat when the concise prompt is relaxed; or short factual answers are not acknowledged at matched length.
+- Test later if time: relax the concise prompt and check whether coding acknowledgement rises.
+
 ### H2 (specificity): The representation distinguishes "the user is distressed" from "the user is talking about someone distressed," and only the former changes behaviour.
 - Status: **untested**
 - Evidence so far: none. Held-out set B (third-party emotion) not built yet.
@@ -73,7 +79,9 @@ and is it a representation of the user rather than of emotion words?
 - Lexical confound untested until Phase 3: bag-of-words baseline, implied-emotion set A, third-party set B. Phase 1 preambles contain explicit emotion words by design.
 - First effect under steering was factual distortion ("no single capital"), not tone. Track factual distortion as its own metric in Phase 4.
 - Scorer bug wiped the manual columns once (notebook re-ran the scorer, which rewrote the CSV). Caught, fixed in 493b7fc; scorer now carries manual cells forward.
-- [user to add]
+- (Mine) Steering strongly shifts how much the model attends to the actual task, not just tone.
+- (Mine) The count-to-10 refusal (pair 27) is odd because it is the easiest task in the set. One reading: the model treated a trivial request from a distressed user as not the real request and answered the emotion instead, the same behaviour as steering-induced abandonment.
+- (Mine) Deterministic tasks (coding 1/5, factual 2/5) mostly ignored the user's state, but arithmetic (also deterministic) was 5/5. See H1b.
 
 ## 6. Next experiments (ordered)
 
@@ -97,12 +105,12 @@ and is it a representation of the user rather than of emotion words?
 
 ## 8. Time log
 
-[Toggl hours so far: __]
+[Toggl hours so far: 4h05 at end of Phase 1]
 
 | Phase | Hours |
 |---|---|
 | Untimed prep (laptop playground, pod setup, calibration) | not counted |
-| Phase 1 exploration (pairs, generation, reading, scoring) | __ |
+| Phase 1 exploration (pairs, generation, reading, scoring) | 4h05 |
 | Phase 2 dataset | __ |
 | Phase 3 probing | __ |
 | Phase 4 causal | __ |
