@@ -40,7 +40,7 @@ def score(row):
             "incoherent": int(rr > 0.4 or na > 0.1 or len(reply.strip()) == 0), "repeat_ratio": round(rr, 3), "nonascii_ratio": round(na, 3), "n_tokens": int(row["n_tokens"])}
 
 IN = Path(os.environ.get("P4_IN", R / "phase4_steered.csv")); df = pd.read_csv(IN, dtype=str, keep_default_na=False)
-sc = pd.DataFrame([score(r) for r in df.to_dict("records")]); out = pd.concat([df.drop(columns=["reply"]), sc], axis=1)
+sc = pd.DataFrame([score(r) for r in df.to_dict("records")]); out = pd.concat([df.drop(columns=["reply", "n_tokens"]), sc], axis=1)
 out.to_csv(R / "phase4_scores.csv", index=False); print(f"scored {len(out)} rows -> phase4_scores.csv; runs: {out['run'].value_counts().to_dict()}")
 METS = ["correct", "task_abandoned", "acknowledges_emotion", "user_state_inference", "incoherent"]
 out["fraction"] = out["fraction"].astype(float); out["n_tokens"] = out["n_tokens"].astype(int)
@@ -98,7 +98,7 @@ if not Dd.empty:
     ax.errorbar(xs + (j - 0.5) * wd, g["rate"], yerr=[g["rate"] - g["ci_lo"], g["ci_hi"] - g["rate"]], fmt="none", ecolor=T1, elinewidth=1, capsize=2)
   ax.set_xticks(xs); ax.set_xticklabels(METS, fontsize=7); style(ax, "F8. Sampled robustness: 30 bare prompts x 5 samples (T=0.7), distressed md at 0 vs 0.04, Wilson 95% CI", "rate", ""); ax.set_ylim(0, 1.02); ax.legend(fontsize=7, frameon=False); fig.tight_layout(); fig.savefig(R / "F8_sampled_robustness.png"); plt.close(fig)
 # ---- reading sample
-rng = random.Random(4); full = pd.read_csv(IN, dtype=str, keep_default_na=False); full = pd.concat([full, sc], axis=1)
+rng = random.Random(4); full = pd.read_csv(IN, dtype=str, keep_default_na=False).drop(columns=["n_tokens"]); full = pd.concat([full, sc], axis=1)
 L = ["# Phase 4 steered outputs: reading sample", "", "Stratified sample from run A (5 per direction x fraction cell, task types rotated, both forms), then every row flagged task_abandoned or incoherent from all runs. Unscored by hand; rule flags shown.", ""]
 Afull = full[full["run"] == "A"]; cells = [("none", "0")] + [(d_, f_) for d_ in PAL for f_ in ["0.02", "0.04", "0.06", "0.08"]]; n = 0
 for d_, f_ in cells:
