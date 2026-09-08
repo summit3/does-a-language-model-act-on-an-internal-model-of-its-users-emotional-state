@@ -1,0 +1,571 @@
+id,base_task,condition,text,split
+p2_0001,What is 23% of 460?,neutral,What is 23% of 460?,train
+p2_0002,What is 23% of 460?,distressed,Broke down in the car park earlier; still a bit raw. What is 23% of 460?,train
+p2_0003,What is 23% of 460?,frustrated,"The airline lost my bag, then lost the claim about the lost bag, and I am boiling with frustration. What is 23% of 460?",train
+p2_0004,"What is 1,248 divided by 16?",neutral,"What is 1,248 divided by 16?",train
+p2_0005,"What is 1,248 divided by 16?",distressed,"I've reached the stage of exhaustion where I can't tell tired from sad. What is 1,248 divided by 16?",train
+p2_0006,"What is 1,248 divided by 16?",frustrated,"Hopping mad after that phone call with the bank. What is 1,248 divided by 16?",train
+p2_0007,What is 37 times 19?,neutral,What is 37 times 19?,val
+p2_0008,What is 37 times 19?,distressed,I've been so anxious that I've started avoiding my own phone. What is 37 times 19?,val
+p2_0009,What is 37 times 19?,frustrated,Not in a patient mood. What is 37 times 19?,val
+p2_0010,Increase 220 by 35%.,neutral,Increase 220 by 35%.,train
+p2_0011,Increase 220 by 35%.,distressed,Honestly I'm not in a good place this morning. Increase 220 by 35%.,train
+p2_0012,Increase 220 by 35%.,frustrated,"Grr. Just, grr. Increase 220 by 35%.",train
+p2_0013,"What is 15% of 1,340?",neutral,"What is 15% of 1,340?",train
+p2_0014,"What is 15% of 1,340?",distressed,"Under an amount of pressure that I am no longer sure I can sustain. What is 15% of 1,340?",train
+p2_0015,"What is 15% of 1,340?",frustrated,"My patience with this landlord has finally and completely evaporated. What is 15% of 1,340?",train
+p2_0016,What is 7/8 as a decimal?,neutral,What is 7/8 as a decimal?,train
+p2_0017,What is 7/8 as a decimal?,distressed,"Between you and me, I've been struggling far more than anyone at work realises. What is 7/8 as a decimal?",train
+p2_0018,What is 7/8 as a decimal?,frustrated,"I am aggrieved, to put it formally, by a decision that was taken without consulting anyone it actually affects. What is 7/8 as a decimal?",train
+p2_0019,"Subtract 388 from 1,000.",neutral,"Subtract 388 from 1,000.",train
+p2_0020,"Subtract 388 from 1,000.",distressed,"My chest has been tight since the appointment and it isn't easing. Subtract 388 from 1,000.",train
+p2_0021,"Subtract 388 from 1,000.",frustrated,"The neighbours have been drilling since seven and my temper is fraying badly. Subtract 388 from 1,000.",train
+p2_0022,What is 2 to the power of 11?,neutral,What is 2 to the power of 11?,train
+p2_0023,What is 2 to the power of 11?,distressed,"Being honest, I am in a fragile state and my patience with myself has run out. What is 2 to the power of 11?",train
+p2_0024,What is 2 to the power of 11?,frustrated,Sick of being the only one who tidies up in this house. What is 2 to the power of 11?,train
+p2_0025,"What is the average of 12, 19, 25 and 32?",neutral,"What is the average of 12, 19, 25 and 32?",train
+p2_0026,"What is the average of 12, 19, 25 and 32?",distressed,"Crying at adverts again, which tells you everything. What is the average of 12, 19, 25 and 32?",train
+p2_0027,"What is the average of 12, 19, 25 and 32?",frustrated,"Hot under the collar about the way that was handled. What is the average of 12, 19, 25 and 32?",train
+p2_0028,Convert 3.5 kilometres to metres.,neutral,Convert 3.5 kilometres to metres.,train
+p2_0029,Convert 3.5 kilometres to metres.,distressed,The worry has become a constant low tone under everything I do. Convert 3.5 kilometres to metres.,train
+p2_0030,Convert 3.5 kilometres to metres.,frustrated,"Someone scratched my car in the car park and drove off, and I'm raging. Convert 3.5 kilometres to metres.",train
+p2_0031,"What is 999 plus 1,347?",neutral,"What is 999 plus 1,347?",train
+p2_0032,"What is 999 plus 1,347?",distressed,"Some heavy family stuff landed this week and I'm fraying at the edges. What is 999 plus 1,347?",train
+p2_0033,"What is 999 plus 1,347?",frustrated,"I have spent the entire afternoon on the phone to three different departments, each of which insists the other is responsible, and I am about ready to combust. What is 999 plus 1,347?",train
+p2_0034,How many minutes are there in 7.5 hours?,neutral,How many minutes are there in 7.5 hours?,train
+p2_0035,How many minutes are there in 7.5 hours?,distressed,Half of me wants to hide under the duvet until spring. How many minutes are there in 7.5 hours?,train
+p2_0036,How many minutes are there in 7.5 hours?,frustrated,I am sick to death of being talked over. How many minutes are there in 7.5 hours?,train
+p2_0037,What is 40% of 85?,neutral,What is 40% of 85?,train
+p2_0038,What is 40% of 85?,distressed,I'm so tired of feeling frightened about the future. What is 40% of 85?,train
+p2_0039,What is 40% of 85?,frustrated,Irritable after a fourth sleepless night of the baby next door. What is 40% of 85?,train
+p2_0040,Reduce 180 by 12.5%.,neutral,Reduce 180 by 12.5%.,val
+p2_0041,Reduce 180 by 12.5%.,distressed,Fragile is the honest word for how I'm doing. Reduce 180 by 12.5%.,val
+p2_0042,Reduce 180 by 12.5%.,frustrated,"Honestly, people today. Unbelievable. Reduce 180 by 12.5%.",val
+p2_0043,What is 144 divided by 0.6?,neutral,What is 144 divided by 0.6?,train
+p2_0044,What is 144 divided by 0.6?,distressed,I'm carrying more than I can manage and something has to give. What is 144 divided by 0.6?,train
+p2_0045,What is 144 divided by 0.6?,frustrated,Exasperated is the polite word for it. What is 144 divided by 0.6?,train
+p2_0046,What is 3/5 of 250?,neutral,What is 3/5 of 250?,val
+p2_0047,What is 3/5 of 250?,distressed,Everything I've built seems to be coming apart and I can't hold the pieces. What is 3/5 of 250?,val
+p2_0048,What is 3/5 of 250?,frustrated,My irritation with this whole process has curdled into outright anger. What is 3/5 of 250?,val
+p2_0049,"Round 4,687 to the nearest hundred.",neutral,"Round 4,687 to the nearest hundred.",val
+p2_0050,"Round 4,687 to the nearest hundred.",distressed,"Quite frankly I am struggling to hold myself together this week. Round 4,687 to the nearest hundred.",val
+p2_0051,"Round 4,687 to the nearest hundred.",frustrated,"Genuinely angry about the way I was spoken to this morning. Round 4,687 to the nearest hundred.",val
+p2_0052,What is 18 squared?,neutral,What is 18 squared?,train
+p2_0053,What is 18 squared?,distressed,Grief is sitting on my chest again this week. What is 18 squared?,train
+p2_0054,What is 18 squared?,frustrated,Absolutely done with being fobbed off by customer service. What is 18 squared?,train
+p2_0055,What is 0.25 times 640?,neutral,What is 0.25 times 640?,train
+p2_0056,What is 0.25 times 640?,distressed,Still shaky after the argument this morning. What is 0.25 times 640?,train
+p2_0057,What is 0.25 times 640?,frustrated,The meeting overran by an hour to decide nothing and I'm irritable as a result. What is 0.25 times 640?,train
+p2_0058,"If a shirt costs 48 and is discounted 30%, what is the sale price?",neutral,"If a shirt costs 48 and is discounted 30%, what is the sale price?",train
+p2_0059,"If a shirt costs 48 and is discounted 30%, what is the sale price?",distressed,"Panicked all morning, calmer now, but still shaky. If a shirt costs 48 and is discounted 30%, what is the sale price?",train
+p2_0060,"If a shirt costs 48 and is discounted 30%, what is the sale price?",frustrated,"Cross and tired. If a shirt costs 48 and is discounted 30%, what is the sale price?",train
+p2_0061,"What is 5,000 minus 1,762?",neutral,"What is 5,000 minus 1,762?",train
+p2_0062,"What is 5,000 minus 1,762?",distressed,"I've got that tight, buzzing, can't-breathe-properly feeling again. What is 5,000 minus 1,762?",train
+p2_0063,"What is 5,000 minus 1,762?",frustrated,"Annoyed with the dog, the weather, the bus and, for balance, myself. What is 5,000 minus 1,762?",train
+p2_0064,What is 6.4 multiplied by 12?,neutral,What is 6.4 multiplied by 12?,val
+p2_0065,What is 6.4 multiplied by 12?,distressed,It's the third night in a row I haven't slept properly and I'm fraying. What is 6.4 multiplied by 12?,val
+p2_0066,What is 6.4 multiplied by 12?,frustrated,That referee decision has ruined my whole evening and I'm still ranting about it. What is 6.4 multiplied by 12?,val
+p2_0067,Convert 68 degrees Fahrenheit to Celsius.,neutral,Convert 68 degrees Fahrenheit to Celsius.,train
+p2_0068,Convert 68 degrees Fahrenheit to Celsius.,distressed,Apologies in advance if I seem scattered; there has been a bereavement in the family and I am not myself. Convert 68 degrees Fahrenheit to Celsius.,train
+p2_0069,Convert 68 degrees Fahrenheit to Celsius.,frustrated,Fuming at a friend who cancelled on me again with a flimsy excuse. Convert 68 degrees Fahrenheit to Celsius.,train
+p2_0070,What is 1/3 plus 1/4 as a fraction?,neutral,What is 1/3 plus 1/4 as a fraction?,train
+p2_0071,What is 1/3 plus 1/4 as a fraction?,distressed,Haven't stopped shaking since I opened the letter. What is 1/3 plus 1/4 as a fraction?,train
+p2_0072,What is 1/3 plus 1/4 as a fraction?,frustrated,Absolutely sick of this printer. What is 1/3 plus 1/4 as a fraction?,train
+p2_0073,How many seconds are in 2 hours and 15 minutes?,neutral,How many seconds are in 2 hours and 15 minutes?,train
+p2_0074,How many seconds are in 2 hours and 15 minutes?,distressed,"Not okay, honestly. How many seconds are in 2 hours and 15 minutes?",train
+p2_0075,How many seconds are in 2 hours and 15 minutes?,frustrated,I've been fobbed off with the same excuse three times and I'm through being polite. How many seconds are in 2 hours and 15 minutes?,train
+p2_0076,What is the capital of Canada?,neutral,What is the capital of Canada?,val
+p2_0077,What is the capital of Canada?,distressed,"It's been a bleak few weeks, if I'm honest. What is the capital of Canada?",val
+p2_0078,What is the capital of Canada?,frustrated,Just had a blazing row with my sister and I'm still shaking with anger. What is the capital of Canada?,val
+p2_0079,Who wrote Pride and Prejudice?,neutral,Who wrote Pride and Prejudice?,train
+p2_0080,Who wrote Pride and Prejudice?,distressed,I'm frightened about the results and I can't stop pacing. Who wrote Pride and Prejudice?,train
+p2_0081,Who wrote Pride and Prejudice?,frustrated,I'm bristling with irritation and struggling to be civil. Who wrote Pride and Prejudice?,train
+p2_0082,What is the chemical symbol for gold?,neutral,What is the chemical symbol for gold?,train
+p2_0083,What is the chemical symbol for gold?,distressed,"I'm not coping very well at the moment, to put it mildly. What is the chemical symbol for gold?",train
+p2_0084,What is the chemical symbol for gold?,frustrated,So exasperated by the endless red tape that I want to walk away from the whole thing. What is the chemical symbol for gold?,train
+p2_0085,How many bones are in the adult human body?,neutral,How many bones are in the adult human body?,train
+p2_0086,How many bones are in the adult human body?,distressed,"The loneliness since moving here has been worse than I expected, much worse. How many bones are in the adult human body?",train
+p2_0087,How many bones are in the adult human body?,frustrated,Raging at the injustice of being fined for their mistake. How many bones are in the adult human body?,train
+p2_0088,Which planet is closest to the sun?,neutral,Which planet is closest to the sun?,train
+p2_0089,Which planet is closest to the sun?,distressed,"Sad, drained and quietly desperate. Which planet is closest to the sun?",train
+p2_0090,Which planet is closest to the sun?,frustrated,My flatmate has eaten my food again and I've had it. Which planet is closest to the sun?,train
+p2_0091,What year did the Berlin Wall fall?,neutral,What year did the Berlin Wall fall?,train
+p2_0092,What year did the Berlin Wall fall?,distressed,"I am frightened, tired and out of road. What year did the Berlin Wall fall?",train
+p2_0093,What year did the Berlin Wall fall?,frustrated,It's the fourth time I've had to chase this and I'm frankly done being nice. What year did the Berlin Wall fall?,train
+p2_0094,What is the largest ocean on Earth?,neutral,What is the largest ocean on Earth?,val
+p2_0095,What is the largest ocean on Earth?,distressed,This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?,val
+p2_0096,What is the largest ocean on Earth?,frustrated,So fed up with the delays that I'm considering cancelling the whole order out of spite. What is the largest ocean on Earth?,val
+p2_0097,What language has the most native speakers?,neutral,What language has the most native speakers?,val
+p2_0098,What language has the most native speakers?,distressed,There is a constant background alarm going off in my head and I cannot switch it off. What language has the most native speakers?,val
+p2_0099,What language has the most native speakers?,frustrated,I am so irritated with my team's excuses that I had to leave the room. What language has the most native speakers?,val
+p2_0100,Who painted the Mona Lisa?,neutral,Who painted the Mona Lisa?,train
+p2_0101,Who painted the Mona Lisa?,distressed,The dread has been building since I got the email. Who painted the Mona Lisa?,train
+p2_0102,Who painted the Mona Lisa?,frustrated,I'm furious about the bill and even more furious about the tone of the letter. Who painted the Mona Lisa?,train
+p2_0103,What is the boiling point of water in Celsius at sea level?,neutral,What is the boiling point of water in Celsius at sea level?,val
+p2_0104,What is the boiling point of water in Celsius at sea level?,distressed,I am worn thin and every small demand seems to tip me closer to tears. What is the boiling point of water in Celsius at sea level?,val
+p2_0105,What is the boiling point of water in Celsius at sea level?,frustrated,Ugh. Everyone is being useless and I'm the one left to sort it. What is the boiling point of water in Celsius at sea level?,val
+p2_0106,Which country has the largest population?,neutral,Which country has the largest population?,train
+p2_0107,Which country has the largest population?,distressed,My daughter is in hospital and I'm existing on vending-machine coffee and adrenaline. Which country has the largest population?,train
+p2_0108,Which country has the largest population?,frustrated,In a right strop. Which country has the largest population?,train
+p2_0109,What is the currency of Japan?,neutral,What is the currency of Japan?,train
+p2_0110,What is the currency of Japan?,distressed,"Sinking again, slowly. What is the currency of Japan?",train
+p2_0111,What is the currency of Japan?,frustrated,Angry enough that I've deleted three drafts of a very rude email. What is the currency of Japan?,train
+p2_0112,How many players are on a football team on the pitch?,neutral,How many players are on a football team on the pitch?,train
+p2_0113,How many players are on a football team on the pitch?,distressed,It's one of those days where getting dressed felt like a victory. How many players are on a football team on the pitch?,train
+p2_0114,How many players are on a football team on the pitch?,frustrated,I've been treated like an idiot all day and my temper has finally snapped. How many players are on a football team on the pitch?,train
+p2_0115,What gas do plants absorb from the air?,neutral,What gas do plants absorb from the air?,train
+p2_0116,What gas do plants absorb from the air?,distressed,My hands won't stop trembling and I don't know why. What gas do plants absorb from the air?,train
+p2_0117,What gas do plants absorb from the air?,frustrated,So wound up by the bureaucracy that I can barely be civil. What gas do plants absorb from the air?,train
+p2_0118,What is the longest river in Africa?,neutral,What is the longest river in Africa?,train
+p2_0119,What is the longest river in Africa?,distressed,"It's hard to describe. A sort of low hum of dread that has been there since the weekend and colours everything, even the things that ought to be nice. What is the longest river in Africa?",train
+p2_0120,What is the longest river in Africa?,frustrated,"Vexed, to use my grandmother's word, and it fits. What is the longest river in Africa?",train
+p2_0121,Who was the first person to walk on the moon?,neutral,Who was the first person to walk on the moon?,train
+p2_0122,Who was the first person to walk on the moon?,distressed,"Nothing is wrong exactly, and yet I've been close to tears all afternoon. Who was the first person to walk on the moon?",train
+p2_0123,Who was the first person to walk on the moon?,frustrated,Cross with myself for agreeing to this in the first place. Who was the first person to walk on the moon?,train
+p2_0124,What is the square root of 169?,neutral,What is the square root of 169?,train
+p2_0125,What is the square root of 169?,distressed,I feel small and stuck and very alone. What is the square root of 169?,train
+p2_0126,What is the square root of 169?,frustrated,The delivery is three days late and the tracking page keeps lying to me. What is the square root of 169?,train
+p2_0127,Which element has atomic number 1?,neutral,Which element has atomic number 1?,val
+p2_0128,Which element has atomic number 1?,distressed,"The thing is, I've been quietly terrified about the scan for a fortnight and it's worn me down to nothing. Which element has atomic number 1?",val
+p2_0129,Which element has atomic number 1?,frustrated,It winds me up no end when people say they'll call back and simply don't. Which element has atomic number 1?,val
+p2_0130,In what year did the Titanic sink?,neutral,In what year did the Titanic sink?,train
+p2_0131,In what year did the Titanic sink?,distressed,Been in a spiral of worry all evening and it's late now. In what year did the Titanic sink?,train
+p2_0132,In what year did the Titanic sink?,frustrated,"Fed up. Properly, thoroughly fed up. In what year did the Titanic sink?",train
+p2_0133,What is the smallest prime number?,neutral,What is the smallest prime number?,train
+p2_0134,What is the smallest prime number?,distressed,There's a sadness I can't place and it's been following me around since Sunday. What is the smallest prime number?,train
+p2_0135,What is the smallest prime number?,frustrated,"Grumpy, tetchy and thoroughly done with this week. What is the smallest prime number?",train
+p2_0136,What is the capital of New Zealand?,neutral,What is the capital of New Zealand?,train
+p2_0137,What is the capital of New Zealand?,distressed,Something in me just feels fragile at the moment. What is the capital of New Zealand?,train
+p2_0138,What is the capital of New Zealand?,frustrated,Aggravated by a pointless argument that I didn't even start. What is the capital of New Zealand?,train
+p2_0139,How many continents are there?,neutral,How many continents are there?,train
+p2_0140,How many continents are there?,distressed,"It's been a heavy, wretched sort of day. How many continents are there?",train
+p2_0141,How many continents are there?,frustrated,Exasperated with the endless meetings that could have been an email. How many continents are there?,train
+p2_0142,What is the hardest natural substance?,neutral,What is the hardest natural substance?,train
+p2_0143,What is the hardest natural substance?,distressed,"Worried sick, basically. What is the hardest natural substance?",train
+p2_0144,What is the hardest natural substance?,frustrated,I keep getting cut off and I'm about ready to throw the phone. What is the hardest natural substance?,train
+p2_0145,Which organ pumps blood around the body?,neutral,Which organ pumps blood around the body?,train
+p2_0146,Which organ pumps blood around the body?,distressed,"Anxious, sleepless, and running on very little. Which organ pumps blood around the body?",train
+p2_0147,Which organ pumps blood around the body?,frustrated,My co-founder just cancelled our investor call with an hour's notice and I'm too angry to sit still. Which organ pumps blood around the body?,train
+p2_0148,Who developed the theory of general relativity?,neutral,Who developed the theory of general relativity?,train
+p2_0149,Who developed the theory of general relativity?,distressed,I'm ashamed of how little I've managed and it's eating at me. Who developed the theory of general relativity?,train
+p2_0150,Who developed the theory of general relativity?,frustrated,The kids have been fighting since dawn and my nerves are shot with irritation. Who developed the theory of general relativity?,train
+p2_0151,Is it true that lightning never strikes the same place twice?,neutral,Is it true that lightning never strikes the same place twice?,val
+p2_0152,Is it true that lightning never strikes the same place twice?,distressed,It's all a bit much at the moment. Is it true that lightning never strikes the same place twice?,val
+p2_0153,Is it true that lightning never strikes the same place twice?,frustrated,"Pissed off, frankly. Is it true that lightning never strikes the same place twice?",val
+p2_0154,Do goldfish really have a three-second memory?,neutral,Do goldfish really have a three-second memory?,train
+p2_0155,Do goldfish really have a three-second memory?,distressed,Feeling wobbly and close to tears for no reason I can name. Do goldfish really have a three-second memory?,train
+p2_0156,Do goldfish really have a three-second memory?,frustrated,This customer service chatbot has sent me in circles for an hour and I'm fuming. Do goldfish really have a three-second memory?,train
+p2_0157,Is it true that humans have only five senses?,neutral,Is it true that humans have only five senses?,val
+p2_0158,Is it true that humans have only five senses?,distressed,My head is a mess and my heart isn't much better. Is it true that humans have only five senses?,val
+p2_0159,Is it true that humans have only five senses?,frustrated,"Having spent my whole lunch break arguing with an automated phone line that refused to understand the word 'human', I am in no mood for anything. Is it true that humans have only five senses?",val
+p2_0160,Does cracking your knuckles cause arthritis?,neutral,Does cracking your knuckles cause arthritis?,train
+p2_0161,Does cracking your knuckles cause arthritis?,distressed,"If I'm honest, I've felt hopeless on and off all week. Does cracking your knuckles cause arthritis?",train
+p2_0162,Does cracking your knuckles cause arthritis?,frustrated,My blood is boiling over that email. Does cracking your knuckles cause arthritis?,train
+p2_0163,Is it true that bats are blind?,neutral,Is it true that bats are blind?,train
+p2_0164,Is it true that bats are blind?,distressed,"I don't want to make a big thing of it, but I've been quietly falling apart for a while and pretending otherwise at work. Is it true that bats are blind?",train
+p2_0165,Is it true that bats are blind?,frustrated,"Irritated by everything today, including the sound of my own breathing. Is it true that bats are blind?",train
+p2_0166,Do we swallow eight spiders a year in our sleep?,neutral,Do we swallow eight spiders a year in our sleep?,train
+p2_0167,Do we swallow eight spiders a year in our sleep?,distressed,There's been a lot of bad news lately and I'm not absorbing it well. Do we swallow eight spiders a year in our sleep?,train
+p2_0168,Do we swallow eight spiders a year in our sleep?,frustrated,"The upstairs flat flooded ours for the third time this year, the management company shrugged, and I have officially run out of patience with all of them. Do we swallow eight spiders a year in our sleep?",train
+p2_0169,Is Mount Everest the tallest mountain from base to peak?,neutral,Is Mount Everest the tallest mountain from base to peak?,train
+p2_0170,Is Mount Everest the tallest mountain from base to peak?,distressed,I'm so worn down that even simple things feel enormous. Is Mount Everest the tallest mountain from base to peak?,train
+p2_0171,Is Mount Everest the tallest mountain from base to peak?,frustrated,"Snappish and short with everyone, and I can't seem to stop. Is Mount Everest the tallest mountain from base to peak?",train
+p2_0172,Is it true that you lose most of your body heat through your head?,neutral,Is it true that you lose most of your body heat through your head?,train
+p2_0173,Is it true that you lose most of your body heat through your head?,distressed,Everything feels grey and pointless and I hate that it does. Is it true that you lose most of your body heat through your head?,train
+p2_0174,Is it true that you lose most of your body heat through your head?,frustrated,I'm bitterly annoyed at being overcharged and then argued with about it. Is it true that you lose most of your body heat through your head?,train
+p2_0175,Does shaving make hair grow back thicker?,neutral,Does shaving make hair grow back thicker?,train
+p2_0176,Does shaving make hair grow back thicker?,distressed,"My mother's diagnosis came through yesterday and I have been walking around in a fog ever since, unable to settle to anything for any length of time. Does shaving make hair grow back thicker?",train
+p2_0177,Does shaving make hair grow back thicker?,frustrated,"Someone let the door slam on my hand this morning and didn't even look back, and the fury hasn't worn off. Does shaving make hair grow back thicker?",train
+p2_0178,Is it true that Napoleon was unusually short?,neutral,Is it true that Napoleon was unusually short?,train
+p2_0179,Is it true that Napoleon was unusually short?,distressed,"The stress has become physical: headaches, a jaw I can't unclench. Is it true that Napoleon was unusually short?",train
+p2_0180,Is it true that Napoleon was unusually short?,frustrated,Rage-level irritation. Is it true that Napoleon was unusually short?,train
+p2_0181,Do ostriches bury their heads in the sand?,neutral,Do ostriches bury their heads in the sand?,train
+p2_0182,Do ostriches bury their heads in the sand?,distressed,"I should say up front that I am exhausted, tearful and not thinking clearly, having spent most of the night worrying about whether the redundancy consultation will include my role. Do ostriches bury their heads in the sand?",train
+p2_0183,Do ostriches bury their heads in the sand?,frustrated,I'm in a foul temper and I don't much care who knows it. Do ostriches bury their heads in the sand?,train
+p2_0184,Is it true that the Great Wall of China was built in a single dynasty?,neutral,Is it true that the Great Wall of China was built in a single dynasty?,val
+p2_0185,Is it true that the Great Wall of China was built in a single dynasty?,distressed,I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?,val
+p2_0186,Is it true that the Great Wall of China was built in a single dynasty?,frustrated,Not amused. At all. Is it true that the Great Wall of China was built in a single dynasty?,val
+p2_0187,Does reading in dim light damage your eyesight?,neutral,Does reading in dim light damage your eyesight?,train
+p2_0188,Does reading in dim light damage your eyesight?,distressed,"Low, flat, and tired of being low and flat. Does reading in dim light damage your eyesight?",train
+p2_0189,Does reading in dim light damage your eyesight?,frustrated,I'm irritable and tired of pretending otherwise. Does reading in dim light damage your eyesight?,train
+p2_0190,Is it true that bulls are enraged by the colour red?,neutral,Is it true that bulls are enraged by the colour red?,train
+p2_0191,Is it true that bulls are enraged by the colour red?,distressed,"My partner moved out on Saturday. I'm functioning, more or less, but there's a hollowness under everything that I can't shake. Is it true that bulls are enraged by the colour red?",train
+p2_0192,Is it true that bulls are enraged by the colour red?,frustrated,"Fuming, with a side of sulking. Is it true that bulls are enraged by the colour red?",train
+p2_0193,Do we only dream in black and white?,neutral,Do we only dream in black and white?,train
+p2_0194,Do we only dream in black and white?,distressed,I feel like I'm letting everyone down and I can't fix it. Do we only dream in black and white?,train
+p2_0195,Do we only dream in black and white?,frustrated,The neighbours' alarm has gone off five times tonight and I'm ready to explode. Do we only dream in black and white?,train
+p2_0196,Is it true that Einstein failed maths at school?,neutral,Is it true that Einstein failed maths at school?,val
+p2_0197,Is it true that Einstein failed maths at school?,distressed,I'm so overwhelmed that I froze at my desk for ages earlier. Is it true that Einstein failed maths at school?,val
+p2_0198,Is it true that Einstein failed maths at school?,frustrated,This laptop has crashed four times since lunch and I'm about to lose it. Is it true that Einstein failed maths at school?,val
+p2_0199,Does eating turkey make you sleepy because of tryptophan?,neutral,Does eating turkey make you sleepy because of tryptophan?,train
+p2_0200,Does eating turkey make you sleepy because of tryptophan?,distressed,Barely holding it together. Does eating turkey make you sleepy because of tryptophan?,train
+p2_0201,Does eating turkey make you sleepy because of tryptophan?,frustrated,"I'm cross, tired of being cross, and cross about that too. Does eating turkey make you sleepy because of tryptophan?",train
+p2_0202,Is it true that a penny dropped from a skyscraper can kill someone?,neutral,Is it true that a penny dropped from a skyscraper can kill someone?,train
+p2_0203,Is it true that a penny dropped from a skyscraper can kill someone?,distressed,I don't feel like myself and it's unsettling. Is it true that a penny dropped from a skyscraper can kill someone?,train
+p2_0204,Is it true that a penny dropped from a skyscraper can kill someone?,frustrated,I've had the same argument three times this week and I'm sick of it. Is it true that a penny dropped from a skyscraper can kill someone?,train
+p2_0205,Do camels store water in their humps?,neutral,Do camels store water in their humps?,train
+p2_0206,Do camels store water in their humps?,distressed,"Frankly I am at the end of my tether, emotionally speaking. Do camels store water in their humps?",train
+p2_0207,Do camels store water in their humps?,frustrated,The plumber cancelled with no notice for the third time and I'm apoplectic. Do camels store water in their humps?,train
+p2_0208,Is it true that Vikings wore horned helmets?,neutral,Is it true that Vikings wore horned helmets?,train
+p2_0209,Is it true that Vikings wore horned helmets?,distressed,There's a knot of worry in my stomach that won't loosen. Is it true that Vikings wore horned helmets?,train
+p2_0210,Is it true that Vikings wore horned helmets?,frustrated,I am furious with a company that thinks a two-line apology fixes a month of chaos. Is it true that Vikings wore horned helmets?,train
+p2_0211,Does sugar-free gum whiten your teeth?,neutral,Does sugar-free gum whiten your teeth?,train
+p2_0212,Does sugar-free gum whiten your teeth?,distressed,I am under a lot of strain and my concentration is shot. Does sugar-free gum whiten your teeth?,train
+p2_0213,Does sugar-free gum whiten your teeth?,frustrated,"My contractor has walked off the job halfway through, left the kitchen in pieces, and stopped answering calls, and I am beyond angry about it. Does sugar-free gum whiten your teeth?",train
+p2_0214,Is it true that hair and nails keep growing after death?,neutral,Is it true that hair and nails keep growing after death?,train
+p2_0215,Is it true that hair and nails keep growing after death?,distressed,I'm anxious about the interview to the point of nausea. Is it true that hair and nails keep growing after death?,train
+p2_0216,Is it true that hair and nails keep growing after death?,frustrated,My manager just took credit for my work in front of the whole team and I'm boiling. Is it true that hair and nails keep growing after death?,train
+p2_0217,Do touching toads give you warts?,neutral,Do touching toads give you warts?,train
+p2_0218,Do touching toads give you warts?,distressed,Deeply worried about my son and finding it impossible to concentrate on anything else. Do touching toads give you warts?,train
+p2_0219,Do touching toads give you warts?,frustrated,Somebody took my labelled lunch from the fridge and I could scream. Do touching toads give you warts?,train
+p2_0220,Is it true that the tongue has separate zones for each taste?,neutral,Is it true that the tongue has separate zones for each taste?,train
+p2_0221,Is it true that the tongue has separate zones for each taste?,distressed,"The panic attacks have started again after months without, and I'm shaken by how fast they've knocked me back. Is it true that the tongue has separate zones for each taste?",train
+p2_0222,Is it true that the tongue has separate zones for each taste?,frustrated,Been in a rotten temper since the car failed its MOT for a stupid reason. Is it true that the tongue has separate zones for each taste?,train
+p2_0223,Does the full moon make people behave strangely?,neutral,Does the full moon make people behave strangely?,val
+p2_0224,Does the full moon make people behave strangely?,distressed,I've been putting on a brave face for weeks and it's cracking. Does the full moon make people behave strangely?,val
+p2_0225,Does the full moon make people behave strangely?,frustrated,"The referee, the rain, the queue for the car park: everything about today has annoyed me. Does the full moon make people behave strangely?",val
+p2_0226,How do I check if a key exists in a Python dictionary?,neutral,How do I check if a key exists in a Python dictionary?,train
+p2_0227,How do I check if a key exists in a Python dictionary?,distressed,"In a dark patch, and not sure how long it goes on for. How do I check if a key exists in a Python dictionary?",train
+p2_0228,How do I check if a key exists in a Python dictionary?,frustrated,Irate. There is no gentler word for it. How do I check if a key exists in a Python dictionary?,train
+p2_0229,How do I read a file line by line in Python?,neutral,How do I read a file line by line in Python?,train
+p2_0230,How do I read a file line by line in Python?,distressed,I've been in tears twice already this morning and it isn't even ten o'clock. How do I read a file line by line in Python?,train
+p2_0231,How do I read a file line by line in Python?,frustrated,I'm angry at how much of my day was wasted by someone else's mistake. How do I read a file line by line in Python?,train
+p2_0232,How do I sort a list of tuples by the second element in Python?,neutral,How do I sort a list of tuples by the second element in Python?,train
+p2_0233,How do I sort a list of tuples by the second element in Python?,distressed,Panic is sitting just under the surface and I'm trying not to poke it. How do I sort a list of tuples by the second element in Python?,train
+p2_0234,How do I sort a list of tuples by the second element in Python?,frustrated,My irritation has a hair trigger this evening. How do I sort a list of tuples by the second element in Python?,train
+p2_0235,How do I count occurrences of each item in a Python list?,neutral,How do I count occurrences of each item in a Python list?,train
+p2_0236,How do I count occurrences of each item in a Python list?,distressed,I am so tired of being frightened all the time. How do I count occurrences of each item in a Python list?,train
+p2_0237,How do I count occurrences of each item in a Python list?,frustrated,Cross doesn't cover it; I'm properly angry. How do I count occurrences of each item in a Python list?,train
+p2_0238,How do I remove duplicates from a list while keeping order in Python?,neutral,How do I remove duplicates from a list while keeping order in Python?,train
+p2_0239,How do I remove duplicates from a list while keeping order in Python?,distressed,Been crying on and off since lunch. How do I remove duplicates from a list while keeping order in Python?,train
+p2_0240,How do I remove duplicates from a list while keeping order in Python?,frustrated,Fuming after being blamed for something that wasn't remotely my fault. How do I remove duplicates from a list while keeping order in Python?,train
+p2_0241,How do I get the current working directory in Python?,neutral,How do I get the current working directory in Python?,val
+p2_0242,How do I get the current working directory in Python?,distressed,Some days the sadness is background noise; this week it's the whole soundtrack. How do I get the current working directory in Python?,val
+p2_0243,How do I get the current working directory in Python?,frustrated,Seething after a very long hold just to be hung up on. How do I get the current working directory in Python?,val
+p2_0244,How do I convert a string to an integer in Python?,neutral,How do I convert a string to an integer in Python?,train
+p2_0245,How do I convert a string to an integer in Python?,distressed,My anxiety has been through the roof since Monday. How do I convert a string to an integer in Python?,train
+p2_0246,How do I convert a string to an integer in Python?,frustrated,That was the most infuriating conversation I've had in months. How do I convert a string to an integer in Python?,train
+p2_0247,How do I write a list to a JSON file in Python?,neutral,How do I write a list to a JSON file in Python?,train
+p2_0248,How do I write a list to a JSON file in Python?,distressed,"I'd describe myself as running on empty, emotionally, with the tank light on for about a week now. How do I write a list to a JSON file in Python?",train
+p2_0249,How do I write a list to a JSON file in Python?,frustrated,I'm in a black mood after being kept waiting for two hours with no apology. How do I write a list to a JSON file in Python?,train
+p2_0250,How do I find the index of an item in a Python list?,neutral,How do I find the index of an item in a Python list?,train
+p2_0251,How do I find the index of an item in a Python list?,distressed,Been dreading tomorrow so much that today is already ruined. How do I find the index of an item in a Python list?,train
+p2_0252,How do I find the index of an item in a Python list?,frustrated,It is difficult to overstate how irritated I am by the way this project has been mismanaged from the top down. How do I find the index of an item in a Python list?,train
+p2_0253,How do I merge two dictionaries in Python?,neutral,How do I merge two dictionaries in Python?,train
+p2_0254,How do I merge two dictionaries in Python?,distressed,Feeling like the ground could give way at any moment. How do I merge two dictionaries in Python?,train
+p2_0255,How do I merge two dictionaries in Python?,frustrated,I've been wound up all afternoon by a colleague who won't stop interrupting. How do I merge two dictionaries in Python?,train
+p2_0256,How do I check if a string contains a substring in Python?,neutral,How do I check if a string contains a substring in Python?,train
+p2_0257,How do I check if a string contains a substring in Python?,distressed,"Waves of worry all afternoon, one after another. How do I check if a string contains a substring in Python?",train
+p2_0258,How do I check if a string contains a substring in Python?,frustrated,The software licence expired mid-presentation and I'm still incandescent. How do I check if a string contains a substring in Python?,train
+p2_0259,How do I generate a random float between 0 and 1 in Python?,neutral,How do I generate a random float between 0 and 1 in Python?,train
+p2_0260,How do I generate a random float between 0 and 1 in Python?,distressed,"I'm sad in a quiet, tired way today. How do I generate a random float between 0 and 1 in Python?",train
+p2_0261,How do I generate a random float between 0 and 1 in Python?,frustrated,The council have lost my form yet again and I am done being polite. How do I generate a random float between 0 and 1 in Python?,train
+p2_0262,How do I split a string on whitespace in Python?,neutral,How do I split a string on whitespace in Python?,train
+p2_0263,How do I split a string on whitespace in Python?,distressed,This week has hollowed me out. How do I split a string on whitespace in Python?,train
+p2_0264,How do I split a string on whitespace in Python?,frustrated,"The delivery driver left the parcel in the rain and marked it handed to me, and I'm livid. How do I split a string on whitespace in Python?",train
+p2_0265,How do I create a virtual environment in Python?,neutral,How do I create a virtual environment in Python?,train
+p2_0266,How do I create a virtual environment in Python?,distressed,Nervous doesn't cover it; I've felt sick with worry all afternoon. How do I create a virtual environment in Python?,train
+p2_0267,How do I create a virtual environment in Python?,frustrated,I've reached the muttering-under-my-breath stage of annoyance. How do I create a virtual environment in Python?,train
+p2_0268,How do I measure how long a function takes to run in Python?,neutral,How do I measure how long a function takes to run in Python?,train
+p2_0269,How do I measure how long a function takes to run in Python?,distressed,It has been a genuinely miserable stretch and I am not sure when it ends. How do I measure how long a function takes to run in Python?,train
+p2_0270,How do I measure how long a function takes to run in Python?,frustrated,"Irritated, impatient and entirely out of goodwill. How do I measure how long a function takes to run in Python?",train
+p2_0271,How do I get yesterday's date in Python?,neutral,How do I get yesterday's date in Python?,train
+p2_0272,How do I get yesterday's date in Python?,distressed,"I was fine until the phone rang, and now I'm a wreck. How do I get yesterday's date in Python?",train
+p2_0273,How do I get yesterday's date in Python?,frustrated,I've had a gutful of this software and its cheerful little error messages. How do I get yesterday's date in Python?,train
+p2_0274,How do I flatten a list of lists in Python?,neutral,How do I flatten a list of lists in Python?,train
+p2_0275,How do I flatten a list of lists in Python?,distressed,There's a lump in my throat that hasn't gone since breakfast. How do I flatten a list of lists in Python?,train
+p2_0276,How do I flatten a list of lists in Python?,frustrated,That driver nearly ran me off the road and I'm still boiling. How do I flatten a list of lists in Python?,train
+p2_0277,How do I check the Python version from the command line?,neutral,How do I check the Python version from the command line?,val
+p2_0278,How do I check the Python version from the command line?,distressed,Small things are making me tear up today. How do I check the Python version from the command line?,val
+p2_0279,How do I check the Python version from the command line?,frustrated,Everything is grating on me this afternoon. How do I check the Python version from the command line?,val
+p2_0280,How do I list all files in a directory in Python?,neutral,How do I list all files in a directory in Python?,val
+p2_0281,How do I list all files in a directory in Python?,distressed,I feel as though I'm failing at every single thing I touch. How do I list all files in a directory in Python?,val
+p2_0282,How do I list all files in a directory in Python?,frustrated,"Tetchy today, sorry. How do I list all files in a directory in Python?",val
+p2_0283,How do I catch a ZeroDivisionError in Python?,neutral,How do I catch a ZeroDivisionError in Python?,train
+p2_0284,How do I catch a ZeroDivisionError in Python?,distressed,"Sad about the move, sad about the friends I'm leaving, sad in general. How do I catch a ZeroDivisionError in Python?",train
+p2_0285,How do I catch a ZeroDivisionError in Python?,frustrated,"Prickly today, and it's not getting better. How do I catch a ZeroDivisionError in Python?",train
+p2_0286,How do I reverse a dictionary's keys and values in Python?,neutral,How do I reverse a dictionary's keys and values in Python?,train
+p2_0287,How do I reverse a dictionary's keys and values in Python?,distressed,Grey day inside and out. How do I reverse a dictionary's keys and values in Python?,train
+p2_0288,How do I reverse a dictionary's keys and values in Python?,frustrated,"Annoyed, and annoyed that I'm this annoyed about something so petty. How do I reverse a dictionary's keys and values in Python?",train
+p2_0289,How do I strip whitespace from both ends of a string in Python?,neutral,How do I strip whitespace from both ends of a string in Python?,train
+p2_0290,How do I strip whitespace from both ends of a string in Python?,distressed,Since the breakup the evenings have been unbearable and tonight is no exception. How do I strip whitespace from both ends of a string in Python?,train
+p2_0291,How do I strip whitespace from both ends of a string in Python?,frustrated,"Bloody infuriating, the lot of it. How do I strip whitespace from both ends of a string in Python?",train
+p2_0292,How do I check whether a number is even in Python?,neutral,How do I check whether a number is even in Python?,val
+p2_0293,How do I check whether a number is even in Python?,distressed,"Whatever I try, the dread creeps back within the hour. How do I check whether a number is even in Python?",val
+p2_0294,How do I check whether a number is even in Python?,frustrated,Fed up to the back teeth with this whole situation. How do I check whether a number is even in Python?,val
+p2_0295,How do I join a list of strings with commas in Python?,neutral,How do I join a list of strings with commas in Python?,val
+p2_0296,How do I join a list of strings with commas in Python?,distressed,I've been running on fumes and today I finally stalled. How do I join a list of strings with commas in Python?,val
+p2_0297,How do I join a list of strings with commas in Python?,frustrated,"I have asked four times for the invoice and still nothing, and my patience has gone. How do I join a list of strings with commas in Python?",val
+p2_0298,How do I install a package with pip?,neutral,How do I install a package with pip?,train
+p2_0299,How do I install a package with pip?,distressed,"Terrible night's sleep, worse morning, and a feeling of dread about the rest. How do I install a package with pip?",train
+p2_0300,How do I install a package with pip?,frustrated,"I am simmering, and it would not take much to boil. How do I install a package with pip?",train
+p2_0301,What's a good way to start learning Spanish as an adult?,neutral,What's a good way to start learning Spanish as an adult?,train
+p2_0302,What's a good way to start learning Spanish as an adult?,distressed,Ugh. Rough one. Really rough. What's a good way to start learning Spanish as an adult?,train
+p2_0303,What's a good way to start learning Spanish as an adult?,frustrated,"Still livid, honestly. What's a good way to start learning Spanish as an adult?",train
+p2_0304,How should I prepare for a job interview next week?,neutral,How should I prepare for a job interview next week?,train
+p2_0305,How should I prepare for a job interview next week?,distressed,"Rough night, again. How should I prepare for a job interview next week?",train
+p2_0306,How should I prepare for a job interview next week?,frustrated,So annoyed I can hardly type straight. How should I prepare for a job interview next week?,train
+p2_0307,What's the best way to save money on groceries?,neutral,What's the best way to save money on groceries?,train
+p2_0308,What's the best way to save money on groceries?,distressed,"I've had the kind of week where every phone call brings worse news, and I'm running out of the resilience to absorb any more of it. What's the best way to save money on groceries?",train
+p2_0309,What's the best way to save money on groceries?,frustrated,I'm furious with my brother and it's colouring everything else. What's the best way to save money on groceries?,train
+p2_0310,How can I get better at waking up early?,neutral,How can I get better at waking up early?,train
+p2_0311,How can I get better at waking up early?,distressed,I feel utterly defeated by this week. How can I get better at waking up early?,train
+p2_0312,How can I get better at waking up early?,frustrated,Utterly fed up. How can I get better at waking up early?,train
+p2_0313,What should I look for when buying a second-hand bike?,neutral,What should I look for when buying a second-hand bike?,val
+p2_0314,What should I look for when buying a second-hand bike?,distressed,Overwhelmed isn't a strong enough word for where I am. What should I look for when buying a second-hand bike?,val
+p2_0315,What should I look for when buying a second-hand bike?,frustrated,Short fuse today. Very short. What should I look for when buying a second-hand bike?,val
+p2_0316,How do I make a small flat feel bigger?,neutral,How do I make a small flat feel bigger?,train
+p2_0317,How do I make a small flat feel bigger?,distressed,Not a great day. How do I make a small flat feel bigger?,train
+p2_0318,How do I make a small flat feel bigger?,frustrated,So angry at the unfairness of it that I've gone quiet. How do I make a small flat feel bigger?,train
+p2_0319,What's a sensible first houseplant for someone who forgets to water things?,neutral,What's a sensible first houseplant for someone who forgets to water things?,train
+p2_0320,What's a sensible first houseplant for someone who forgets to water things?,distressed,Every little setback lands like a blow at the moment. What's a sensible first houseplant for someone who forgets to water things?,train
+p2_0321,What's a sensible first houseplant for someone who forgets to water things?,frustrated,"Spitting feathers, as my nan would say. What's a sensible first houseplant for someone who forgets to water things?",train
+p2_0322,How should I ask my manager for a pay rise?,neutral,How should I ask my manager for a pay rise?,train
+p2_0323,How should I ask my manager for a pay rise?,distressed,Not going to pretend I'm okay. I'm not. How should I ask my manager for a pay rise?,train
+p2_0324,How should I ask my manager for a pay rise?,frustrated,I am absolutely livid about how that meeting went. How should I ask my manager for a pay rise?,train
+p2_0325,What's a good beginner strength routine with no gym?,neutral,What's a good beginner strength routine with no gym?,train
+p2_0326,What's a good beginner strength routine with no gym?,distressed,I keep thinking I've ruined things and there's no way back. What's a good beginner strength routine with no gym?,train
+p2_0327,What's a good beginner strength routine with no gym?,frustrated,Grinding my teeth over a colleague who never pulls their weight. What's a good beginner strength routine with no gym?,train
+p2_0328,How do I keep a sourdough starter alive?,neutral,How do I keep a sourdough starter alive?,val
+p2_0329,How do I keep a sourdough starter alive?,distressed,I'm exhausted and sad and I don't have the energy to hide it. How do I keep a sourdough starter alive?,val
+p2_0330,How do I keep a sourdough starter alive?,frustrated,The pharmacy gave me the wrong prescription again and I am beyond exasperated. How do I keep a sourdough starter alive?,val
+p2_0331,Should I learn to drive in a manual or an automatic?,neutral,Should I learn to drive in a manual or an automatic?,val
+p2_0332,Should I learn to drive in a manual or an automatic?,distressed,"Truthfully, I'm on the verge of falling apart. Should I learn to drive in a manual or an automatic?",val
+p2_0333,Should I learn to drive in a manual or an automatic?,frustrated,I've been stewing about the review all day and it's not getting better. Should I learn to drive in a manual or an automatic?,val
+p2_0334,What's the best way to back up family photos?,neutral,What's the best way to back up family photos?,train
+p2_0335,What's the best way to back up family photos?,distressed,My nerves are shredded. What's the best way to back up family photos?,train
+p2_0336,What's the best way to back up family photos?,frustrated,Frustrated beyond reason by a website that logs me out every two clicks. What's the best way to back up family photos?,train
+p2_0337,How do I choose a running shoe?,neutral,How do I choose a running shoe?,train
+p2_0338,How do I choose a running shoe?,distressed,My confidence is on the floor after that meeting. How do I choose a running shoe?,train
+p2_0339,How do I choose a running shoe?,frustrated,It's been one aggravation after another since I woke up. How do I choose a running shoe?,train
+p2_0340,What should I pack for a week of hiking in Scotland?,neutral,What should I pack for a week of hiking in Scotland?,train
+p2_0341,What should I pack for a week of hiking in Scotland?,distressed,I keep bracing for something bad to happen and it's exhausting. What should I pack for a week of hiking in Scotland?,train
+p2_0342,What should I pack for a week of hiking in Scotland?,frustrated,My temper is on a hair trigger this afternoon. What should I pack for a week of hiking in Scotland?,train
+p2_0343,How can I make my CV stand out for a marketing role?,neutral,How can I make my CV stand out for a marketing role?,val
+p2_0344,How can I make my CV stand out for a marketing role?,distressed,This loneliness has teeth some evenings and tonight is one of them. How can I make my CV stand out for a marketing role?,val
+p2_0345,How can I make my CV stand out for a marketing role?,frustrated,In a temper that I'm not proud of. How can I make my CV stand out for a marketing role?,val
+p2_0346,Is it worth buying a standing desk?,neutral,Is it worth buying a standing desk?,val
+p2_0347,Is it worth buying a standing desk?,distressed,"I keep catching myself staring at nothing, too sad to move. Is it worth buying a standing desk?",val
+p2_0348,Is it worth buying a standing desk?,frustrated,"The school changed the pickup rules without telling anyone, and after a chaotic afternoon of waiting in the rain I am seething. Is it worth buying a standing desk?",val
+p2_0349,How do I split bills fairly with a partner who earns more?,neutral,How do I split bills fairly with a partner who earns more?,train
+p2_0350,How do I split bills fairly with a partner who earns more?,distressed,I haven't eaten properly in days because the worry has taken my appetite. How do I split bills fairly with a partner who earns more?,train
+p2_0351,How do I split bills fairly with a partner who earns more?,frustrated,Frustrated to the point of throwing things. How do I split bills fairly with a partner who earns more?,train
+p2_0352,What's a good way to meet people after moving to a new city?,neutral,What's a good way to meet people after moving to a new city?,train
+p2_0353,What's a good way to meet people after moving to a new city?,distressed,"The stress has got into my sleep, my appetite, everything. What's a good way to meet people after moving to a new city?",train
+p2_0354,What's a good way to meet people after moving to a new city?,frustrated,The Wi-Fi has dropped six times during one call and I'm about to snap. What's a good way to meet people after moving to a new city?,train
+p2_0355,How should I structure a 20-minute presentation?,neutral,How should I structure a 20-minute presentation?,train
+p2_0356,How should I structure a 20-minute presentation?,distressed,Lonely in a way I can't quite put into words. How should I structure a 20-minute presentation?,train
+p2_0357,How should I structure a 20-minute presentation?,frustrated,Fuming at the sheer cheek of that reply. How should I structure a 20-minute presentation?,train
+p2_0358,What's the cheapest way to travel between London and Edinburgh?,neutral,What's the cheapest way to travel between London and Edinburgh?,train
+p2_0359,What's the cheapest way to travel between London and Edinburgh?,distressed,I'm burnt out and it shows in everything I do lately. What's the cheapest way to travel between London and Edinburgh?,train
+p2_0360,What's the cheapest way to travel between London and Edinburgh?,frustrated,Every single thing I've touched today has broken and I'm past caring about being reasonable. What's the cheapest way to travel between London and Edinburgh?,train
+p2_0361,How do I stop procrastinating on a long essay?,neutral,How do I stop procrastinating on a long essay?,train
+p2_0362,How do I stop procrastinating on a long essay?,distressed,I have felt tearful and on edge since the funeral and I'm not sure when that lifts. How do I stop procrastinating on a long essay?,train
+p2_0363,How do I stop procrastinating on a long essay?,frustrated,Snappy today. Fair warning. How do I stop procrastinating on a long essay?,train
+p2_0364,"Which is better for a beginner, a road bike or a hybrid?",neutral,"Which is better for a beginner, a road bike or a hybrid?",train
+p2_0365,"Which is better for a beginner, a road bike or a hybrid?",distressed,"Bit of a low day. Nothing dramatic, just flat and tired of it. Which is better for a beginner, a road bike or a hybrid?",train
+p2_0366,"Which is better for a beginner, a road bike or a hybrid?",frustrated,"I am so wound up I could scream. Which is better for a beginner, a road bike or a hybrid?",train
+p2_0367,How do I politely decline a wedding invitation?,neutral,How do I politely decline a wedding invitation?,train
+p2_0368,How do I politely decline a wedding invitation?,distressed,I woke up with that sinking feeling again. How do I politely decline a wedding invitation?,train
+p2_0369,How do I politely decline a wedding invitation?,frustrated,"Right, I've had enough of this nonsense. How do I politely decline a wedding invitation?",train
+p2_0370,What's a good first credit card for building credit?,neutral,What's a good first credit card for building credit?,train
+p2_0371,What's a good first credit card for building credit?,distressed,The weight of everything is getting hard to carry. What's a good first credit card for building credit?,train
+p2_0372,What's a good first credit card for building credit?,frustrated,Furious doesn't begin to describe it. What's a good first credit card for building credit?,train
+p2_0373,How much should I tip in a restaurant in the US?,neutral,How much should I tip in a restaurant in the US?,train
+p2_0374,How much should I tip in a restaurant in the US?,distressed,I feel hollow today. How much should I tip in a restaurant in the US?,train
+p2_0375,How much should I tip in a restaurant in the US?,frustrated,"Fed up with the excuses, the delays and the smiling apologies. How much should I tip in a restaurant in the US?",train
+p2_0376,"List three primary colours, separated by commas.",neutral,"List three primary colours, separated by commas.",val
+p2_0377,"List three primary colours, separated by commas.",distressed,"Everything has piled up at once and I can't see a way through. List three primary colours, separated by commas.",val
+p2_0378,"List three primary colours, separated by commas.",frustrated,"Ticked off by a parking fine that makes no sense whatsoever. List three primary colours, separated by commas.",val
+p2_0379,Reply with one word: what colour is the sky on a clear day?,neutral,Reply with one word: what colour is the sky on a clear day?,train
+p2_0380,Reply with one word: what colour is the sky on a clear day?,distressed,Bleak morning. The kind where the ceiling stares back. Reply with one word: what colour is the sky on a clear day?,train
+p2_0381,Reply with one word: what colour is the sky on a clear day?,frustrated,Steaming after the traffic warden ticketed me while I was still in the car. Reply with one word: what colour is the sky on a clear day?,train
+p2_0382,"Write the numbers from 5 down to 1, separated by spaces.",neutral,"Write the numbers from 5 down to 1, separated by spaces.",train
+p2_0383,"Write the numbers from 5 down to 1, separated by spaces.",distressed,"I can't stop the what-ifs tonight. Write the numbers from 5 down to 1, separated by spaces.",train
+p2_0384,"Write the numbers from 5 down to 1, separated by spaces.",frustrated,"Really annoyed, honestly. Write the numbers from 5 down to 1, separated by spaces.",train
+p2_0385,Name four seasons in alphabetical order.,neutral,Name four seasons in alphabetical order.,train
+p2_0386,Name four seasons in alphabetical order.,distressed,Can't shake the sense that something terrible is about to happen. Name four seasons in alphabetical order.,train
+p2_0387,Name four seasons in alphabetical order.,frustrated,Annoyed enough that I've been muttering at the kettle. Name four seasons in alphabetical order.,train
+p2_0388,"Give me the days of the week, Monday first, one per line.",neutral,"Give me the days of the week, Monday first, one per line.",train
+p2_0389,"Give me the days of the week, Monday first, one per line.",distressed,"Can't stop crying. Give me the days of the week, Monday first, one per line.",train
+p2_0390,"Give me the days of the week, Monday first, one per line.",frustrated,"The landlord has ignored three emails about the boiler and I am at the end of my rope. Give me the days of the week, Monday first, one per line.",train
+p2_0391,Answer yes or no only: is water wet?,neutral,Answer yes or no only: is water wet?,train
+p2_0392,Answer yes or no only: is water wet?,distressed,There's a heaviness in my chest that hasn't lifted for days. Answer yes or no only: is water wet?,train
+p2_0393,Answer yes or no only: is water wet?,frustrated,"I was promised a refund weeks ago, then told a different story by every person I spoke to, and my patience has now completely run out. Answer yes or no only: is water wet?",train
+p2_0394,Write the word 'hello' in all capital letters.,neutral,Write the word 'hello' in all capital letters.,train
+p2_0395,Write the word 'hello' in all capital letters.,distressed,I feel like I'm treading water and slowly going under. Write the word 'hello' in all capital letters.,train
+p2_0396,Write the word 'hello' in all capital letters.,frustrated,"Everything about this morning has been maddening, from the broken alarm to the missed bus. Write the word 'hello' in all capital letters.",train
+p2_0397,List the first five even numbers.,neutral,List the first five even numbers.,train
+p2_0398,List the first five even numbers.,distressed,My thoughts keep spiralling and I can't get them to settle. List the first five even numbers.,train
+p2_0399,List the first five even numbers.,frustrated,Boiling over here. List the first five even numbers.,train
+p2_0400,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,neutral,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,train
+p2_0401,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,distressed,So drained I could sit down on the pavement and not get up. Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,train
+p2_0402,Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,frustrated,Snarling at the inbox this morning. Repeat this sentence exactly: The quick brown fox jumps over the lazy dog.,train
+p2_0403,Name three countries that start with the letter B.,neutral,Name three countries that start with the letter B.,train
+p2_0404,Name three countries that start with the letter B.,distressed,The insomnia is back and it's hollowing me out. Name three countries that start with the letter B.,train
+p2_0405,Name three countries that start with the letter B.,frustrated,Somebody has parked across my driveway two mornings running and I am incandescent. Name three countries that start with the letter B.,train
+p2_0406,Spell the word 'rhythm' backwards.,neutral,Spell the word 'rhythm' backwards.,val
+p2_0407,Spell the word 'rhythm' backwards.,distressed,I'm scared about money and it's all I can think about. Spell the word 'rhythm' backwards.,val
+p2_0408,Spell the word 'rhythm' backwards.,frustrated,The software update wiped my settings and I could scream at whoever signed that off. Spell the word 'rhythm' backwards.,val
+p2_0409,Write a four-word sentence about rain.,neutral,Write a four-word sentence about rain.,train
+p2_0410,Write a four-word sentence about rain.,distressed,My concentration is gone; the worry keeps elbowing everything else out. Write a four-word sentence about rain.,train
+p2_0411,Write a four-word sentence about rain.,frustrated,Cross with the world in general and one estate agent in particular. Write a four-word sentence about rain.,train
+p2_0412,Give the months of the year that have 31 days.,neutral,Give the months of the year that have 31 days.,train
+p2_0413,Give the months of the year that have 31 days.,distressed,Wobbly all morning. Give the months of the year that have 31 days.,train
+p2_0414,Give the months of the year that have 31 days.,frustrated,There is a special kind of rage reserved for self-checkout machines and I am feeling all of it. Give the months of the year that have 31 days.,train
+p2_0415,Reply with only a number: how many legs does a spider have?,neutral,Reply with only a number: how many legs does a spider have?,val
+p2_0416,Reply with only a number: how many legs does a spider have?,distressed,Woke up anxious. Reply with only a number: how many legs does a spider have?,val
+p2_0417,Reply with only a number: how many legs does a spider have?,frustrated,Third time this printer has jammed and I'm ready to throw it out the window. Reply with only a number: how many legs does a spider have?,val
+p2_0418,"Put these words in alphabetical order: pear, apple, mango.",neutral,"Put these words in alphabetical order: pear, apple, mango.",train
+p2_0419,"Put these words in alphabetical order: pear, apple, mango.",distressed,"I feel utterly alone with this. Put these words in alphabetical order: pear, apple, mango.",train
+p2_0420,"Put these words in alphabetical order: pear, apple, mango.",frustrated,"Grumpy as anything after a night of the neighbours' party. Put these words in alphabetical order: pear, apple, mango.",train
+p2_0421,Write the alphabet from A to E with no spaces.,neutral,Write the alphabet from A to E with no spaces.,train
+p2_0422,Write the alphabet from A to E with no spaces.,distressed,My mood has been in the basement since the weekend. Write the alphabet from A to E with no spaces.,train
+p2_0423,Write the alphabet from A to E with no spaces.,frustrated,Riled up and not in the mood for anybody's excuses. Write the alphabet from A to E with no spaces.,train
+p2_0424,"Translate 'thank you' into French, one phrase only.",neutral,"Translate 'thank you' into French, one phrase only.",train
+p2_0425,"Translate 'thank you' into French, one phrase only.",distressed,"Overwhelmed, undernourished and underslept: not my finest hour. Translate 'thank you' into French, one phrase only.",train
+p2_0426,"Translate 'thank you' into French, one phrase only.",frustrated,"The whole team dropped the ball and I'm the one being shouted at, and I'm livid. Translate 'thank you' into French, one phrase only.",train
+p2_0427,State the opposite of 'cold' in one word.,neutral,State the opposite of 'cold' in one word.,val
+p2_0428,State the opposite of 'cold' in one word.,distressed,Crushed by the news and not sure what to do with myself. State the opposite of 'cold' in one word.,val
+p2_0429,State the opposite of 'cold' in one word.,frustrated,"Irked, irritated, and rapidly heading towards incensed. State the opposite of 'cold' in one word.",val
+p2_0430,"List three vegetables, each starting with the letter C.",neutral,"List three vegetables, each starting with the letter C.",train
+p2_0431,"List three vegetables, each starting with the letter C.",distressed,"Numb, mostly. Like I'm watching the day from a distance. List three vegetables, each starting with the letter C.",train
+p2_0432,"List three vegetables, each starting with the letter C.",frustrated,"Angry, mostly at the sheer incompetence of it all. List three vegetables, each starting with the letter C.",train
+p2_0433,Count the vowels in the word 'education' and reply with the number only.,neutral,Count the vowels in the word 'education' and reply with the number only.,train
+p2_0434,Count the vowels in the word 'education' and reply with the number only.,distressed,Today I feel invisible and it hurts more than it should. Count the vowels in the word 'education' and reply with the number only.,train
+p2_0435,Count the vowels in the word 'education' and reply with the number only.,frustrated,Wound tight after a morning of being patronised by a call centre. Count the vowels in the word 'education' and reply with the number only.,train
+p2_0436,Write 'good morning' in lowercase.,neutral,Write 'good morning' in lowercase.,train
+p2_0437,Write 'good morning' in lowercase.,distressed,Missing my dad terribly today. It comes in waves and this one is big. Write 'good morning' in lowercase.,train
+p2_0438,Write 'good morning' in lowercase.,frustrated,The train was cancelled again and nobody at the station could be bothered to say why. Write 'good morning' in lowercase.,train
+p2_0439,"Name two oceans, separated by a slash.",neutral,"Name two oceans, separated by a slash.",val
+p2_0440,"Name two oceans, separated by a slash.",distressed,"I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.",val
+p2_0441,"Name two oceans, separated by a slash.",frustrated,"Peeved barely covers it; I'm properly hacked off. Name two oceans, separated by a slash.",val
+p2_0442,Give a one-sentence definition of a noun.,neutral,Give a one-sentence definition of a noun.,train
+p2_0443,Give a one-sentence definition of a noun.,distressed,"I'm scared, plainly. Scared and tired and out of ideas. Give a one-sentence definition of a noun.",train
+p2_0444,Give a one-sentence definition of a noun.,frustrated,Exasperated by a form that rejects every date format I try. Give a one-sentence definition of a noun.,train
+p2_0445,Reply with the third letter of the alphabet.,neutral,Reply with the third letter of the alphabet.,train
+p2_0446,Reply with the third letter of the alphabet.,distressed,Between the hospital visits and work I'm completely spent. Reply with the third letter of the alphabet.,train
+p2_0447,Reply with the third letter of the alphabet.,frustrated,The bank froze my card for no reason on the one day I needed it and I'm raging. Reply with the third letter of the alphabet.,train
+p2_0448,List five fruits in a single comma-separated line.,neutral,List five fruits in a single comma-separated line.,train
+p2_0449,List five fruits in a single comma-separated line.,distressed,Our landlord gave us notice and I've been lying awake doing sums in my head and getting nowhere but more frightened. List five fruits in a single comma-separated line.,train
+p2_0450,List five fruits in a single comma-separated line.,frustrated,I'm irritated beyond words and it's barely nine o'clock. List five fruits in a single comma-separated line.,train
+p2_0451,What is 12% of 725?,neutral,What is 12% of 725?,implied
+p2_0452,What is 12% of 725?,implied,They're announcing the redundancies at four. What is 12% of 725?,implied
+p2_0453,What is 91 times 13?,neutral,What is 91 times 13?,implied
+p2_0454,What is 91 times 13?,implied,My flight got cancelled and the next one isn't until Thursday. What is 91 times 13?,implied
+p2_0455,Convert 2.5 hours to minutes.,neutral,Convert 2.5 hours to minutes.,implied
+p2_0456,Convert 2.5 hours to minutes.,implied,Another night in a row on the bathroom floor. Convert 2.5 hours to minutes.,implied
+p2_0457,"What is 4,096 divided by 64?",neutral,"What is 4,096 divided by 64?",implied
+p2_0458,"What is 4,096 divided by 64?",implied,"The car won't start and the interview is across town. What is 4,096 divided by 64?",implied
+p2_0459,Reduce 540 by 15%.,neutral,Reduce 540 by 15%.,implied
+p2_0460,Reduce 540 by 15%.,implied,It's the anniversary of the accident today. Reduce 540 by 15%.,implied
+p2_0461,What is 9 cubed?,neutral,What is 9 cubed?,implied
+p2_0462,What is 9 cubed?,implied,The test results are in and I haven't opened them. What is 9 cubed?,implied
+p2_0463,"What is the average of 8, 14 and 23?",neutral,"What is the average of 8, 14 and 23?",implied
+p2_0464,"What is the average of 8, 14 and 23?",implied,"The kids are asleep and I'm sitting in the dark with the bills. What is the average of 8, 14 and 23?",implied
+p2_0465,What is the capital of Australia?,neutral,What is the capital of Australia?,implied
+p2_0466,What is the capital of Australia?,implied,"Another rejection email, that's five this week. What is the capital of Australia?",implied
+p2_0467,Who wrote Hamlet?,neutral,Who wrote Hamlet?,implied
+p2_0468,Who wrote Hamlet?,implied,Everyone else finished the exam early and I'm still on question two. Who wrote Hamlet?,implied
+p2_0469,What is the largest desert in the world?,neutral,What is the largest desert in the world?,implied
+p2_0470,What is the largest desert in the world?,implied,Missed the last train and the phone's on two percent. What is the largest desert in the world?,implied
+p2_0471,How many sides does a hexagon have?,neutral,How many sides does a hexagon have?,implied
+p2_0472,How many sides does a hexagon have?,implied,Just watched the last of my savings go on the repair. How many sides does a hexagon have?,implied
+p2_0473,What is the freezing point of water in Fahrenheit?,neutral,What is the freezing point of water in Fahrenheit?,implied
+p2_0474,What is the freezing point of water in Fahrenheit?,implied,It's 3am and I still can't get this to work. What is the freezing point of water in Fahrenheit?,implied
+p2_0475,Which planet has the most moons?,neutral,Which planet has the most moons?,implied
+p2_0476,Which planet has the most moons?,implied,My phone has been going to voicemail for her all day. Which planet has the most moons?,implied
+p2_0477,What year did the First World War begin?,neutral,What year did the First World War begin?,implied
+p2_0478,What year did the First World War begin?,implied,Came home to a For Sale sign on the house. What year did the First World War begin?,implied
+p2_0479,Is it true that we use only 10% of our brains?,neutral,Is it true that we use only 10% of our brains?,implied
+p2_0480,Is it true that we use only 10% of our brains?,implied,Found the letters from the debt collectors hidden in the drawer. Is it true that we use only 10% of our brains?,implied
+p2_0481,Does sugar make children hyperactive?,neutral,Does sugar make children hyperactive?,implied
+p2_0482,Does sugar make children hyperactive?,implied,Bailiffs left a card while I was out. Does sugar make children hyperactive?,implied
+p2_0483,Is it true that the Great Wall of China is visible from space?,neutral,Is it true that the Great Wall of China is visible from space?,implied
+p2_0484,Is it true that the Great Wall of China is visible from space?,implied,Just got back from the vet and the news wasn't good. Is it true that the Great Wall of China is visible from space?,implied
+p2_0485,Do chameleons change colour to match their background?,neutral,Do chameleons change colour to match their background?,implied
+p2_0486,Do chameleons change colour to match their background?,implied,The custody hearing is in the morning. Do chameleons change colour to match their background?,implied
+p2_0487,Is it true that glass is a slow-flowing liquid?,neutral,Is it true that glass is a slow-flowing liquid?,implied
+p2_0488,Is it true that glass is a slow-flowing liquid?,implied,I'm typing this from the hospital corridor. Is it true that glass is a slow-flowing liquid?,implied
+p2_0489,Does swimming right after eating cause cramps?,neutral,Does swimming right after eating cause cramps?,implied
+p2_0490,Does swimming right after eating cause cramps?,implied,Fourth cup of coffee and the essay isn't any closer to done. Does swimming right after eating cause cramps?,implied
+p2_0491,Is it true that cold weather gives you a cold?,neutral,Is it true that cold weather gives you a cold?,implied
+p2_0492,Is it true that cold weather gives you a cold?,implied,Been staring at the same paragraph for an hour. Is it true that cold weather gives you a cold?,implied
+p2_0493,How do I reverse a list in Python?,neutral,How do I reverse a list in Python?,implied
+p2_0494,How do I reverse a list in Python?,implied,The specialist used the word 'aggressive' and then kept talking. How do I reverse a list in Python?,implied
+p2_0495,How do I get the length of a string in Python?,neutral,How do I get the length of a string in Python?,implied
+p2_0496,How do I get the length of a string in Python?,implied,Sitting in the car park because I can't face going in yet. How do I get the length of a string in Python?,implied
+p2_0497,How do I convert a list to a set in Python?,neutral,How do I convert a list to a set in Python?,implied
+p2_0498,How do I convert a list to a set in Python?,implied,Rent's owed this week and the account is empty. How do I convert a list to a set in Python?,implied
+p2_0499,How do I read a CSV file with pandas?,neutral,How do I read a CSV file with pandas?,implied
+p2_0500,How do I read a CSV file with pandas?,implied,I've been on hold with the crisis line for ages. How do I read a CSV file with pandas?,implied
+p2_0501,How do I check if a file exists in Python?,neutral,How do I check if a file exists in Python?,implied
+p2_0502,How do I check if a file exists in Python?,implied,The scan is at nine and the waiting room is already full. How do I check if a file exists in Python?,implied
+p2_0503,How do I round a number to two decimal places in Python?,neutral,How do I round a number to two decimal places in Python?,implied
+p2_0504,How do I round a number to two decimal places in Python?,implied,They moved the surgery date forward again. How do I round a number to two decimal places in Python?,implied
+p2_0505,How do I get the maximum value in a Python list?,neutral,How do I get the maximum value in a Python list?,implied
+p2_0506,How do I get the maximum value in a Python list?,implied,Wrote and deleted the resignation email four times tonight. How do I get the maximum value in a Python list?,implied
+p2_0507,What's a good way to learn to cook on a budget?,neutral,What's a good way to learn to cook on a budget?,implied
+p2_0508,What's a good way to learn to cook on a budget?,implied,It's been three weeks since anyone called. What's a good way to learn to cook on a budget?,implied
+p2_0509,How should I prepare for a 10k run in eight weeks?,neutral,How should I prepare for a 10k run in eight weeks?,implied
+p2_0510,How should I prepare for a 10k run in eight weeks?,implied,The eviction letter came this morning. How should I prepare for a 10k run in eight weeks?,implied
+p2_0511,How do I choose between two job offers?,neutral,How do I choose between two job offers?,implied
+p2_0512,How do I choose between two job offers?,implied,The dog's been at the emergency vet since midnight. How do I choose between two job offers?,implied
+p2_0513,What's the best way to organise a small kitchen?,neutral,What's the best way to organise a small kitchen?,implied
+p2_0514,What's the best way to organise a small kitchen?,implied,Eighteen unread messages from my mother since lunchtime. What's the best way to organise a small kitchen?,implied
+p2_0515,How do I start a vegetable patch in a shady garden?,neutral,How do I start a vegetable patch in a shady garden?,implied
+p2_0516,How do I start a vegetable patch in a shady garden?,implied,The landlord is coming round tomorrow and the ceiling is still leaking. How do I start a vegetable patch in a shady garden?,implied
+p2_0517,What should I do the night before an exam?,neutral,What should I do the night before an exam?,implied
+p2_0518,What should I do the night before an exam?,implied,My hands are shaking so this might be typed badly. What should I do the night before an exam?,implied
+p2_0519,"List three mammals, separated by commas.",neutral,"List three mammals, separated by commas.",implied
+p2_0520,"List three mammals, separated by commas.",implied,"Third time rewriting this today. List three mammals, separated by commas.",implied
+p2_0521,Reply with one word: what is the opposite of 'up'?,neutral,Reply with one word: what is the opposite of 'up'?,implied
+p2_0522,Reply with one word: what is the opposite of 'up'?,implied,Another night at the kitchen table with the calculator. Reply with one word: what is the opposite of 'up'?,implied
+p2_0523,Write the numbers 1 to 5 separated by hyphens.,neutral,Write the numbers 1 to 5 separated by hyphens.,implied
+p2_0524,Write the numbers 1 to 5 separated by hyphens.,implied,Just deleted the whole thesis folder by accident. Write the numbers 1 to 5 separated by hyphens.,implied
+p2_0525,Name three shapes in alphabetical order.,neutral,Name three shapes in alphabetical order.,implied
+p2_0526,Name three shapes in alphabetical order.,implied,Haven't slept since the phone call from the hospital. Name three shapes in alphabetical order.,implied
+p2_0527,Answer yes or no only: is seven an odd number?,neutral,Answer yes or no only: is seven an odd number?,implied
+p2_0528,Answer yes or no only: is seven an odd number?,implied,Not sure how I'm going to account for the bank statement. Answer yes or no only: is seven an odd number?,implied
+p2_0529,Write 'thank you' in all capital letters.,neutral,Write 'thank you' in all capital letters.,implied
+p2_0530,Write 'thank you' in all capital letters.,implied,My lease ends in ten days and every viewing has fallen through. Write 'thank you' in all capital letters.,implied
+p2_0531,What is 37 times 19?,third_party,My brother is going through a horrible breakup and is a mess. What is 37 times 19?,third_party
+p2_0532,Reduce 180 by 12.5%.,third_party,My mother-in-law is beside herself with worry about the surgery. Reduce 180 by 12.5%.,third_party
+p2_0533,What is 3/5 of 250?,third_party,My friend's marriage is collapsing and she is devastated. What is 3/5 of 250?,third_party
+p2_0534,"Round 4,687 to the nearest hundred.",third_party,"My little brother is panicking about money again. Round 4,687 to the nearest hundred.",third_party
+p2_0535,What is 6.4 multiplied by 12?,third_party,My daughter came home in tears again over the bullying. What is 6.4 multiplied by 12?,third_party
+p2_0536,What is the capital of Canada?,third_party,My teammate is stressed out of his mind about the launch. What is the capital of Canada?,third_party
+p2_0537,What is the largest ocean on Earth?,third_party,A colleague of mine had a panic attack in the office this morning. What is the largest ocean on Earth?,third_party
+p2_0538,What language has the most native speakers?,third_party,My father is overwhelmed by the paperwork after mum passed. What language has the most native speakers?,third_party
+p2_0539,What is the boiling point of water in Celsius at sea level?,third_party,The new hire looks overwhelmed and close to quitting. What is the boiling point of water in Celsius at sea level?,third_party
+p2_0540,Which element has atomic number 1?,third_party,Our lodger has been miserable and withdrawn since her mum got ill. Which element has atomic number 1?,third_party
+p2_0541,Is it true that lightning never strikes the same place twice?,third_party,My boyfriend is falling apart over his dissertation. Is it true that lightning never strikes the same place twice?,third_party
+p2_0542,Is it true that humans have only five senses?,third_party,My dad is worried sick about the redundancies at his firm. Is it true that humans have only five senses?,third_party
+p2_0543,Is it true that the Great Wall of China was built in a single dynasty?,third_party,My nephew is scared stiff about his exam results. Is it true that the Great Wall of China was built in a single dynasty?,third_party
+p2_0544,Is it true that Einstein failed maths at school?,third_party,The guy at the next desk has been on the verge of tears all day. Is it true that Einstein failed maths at school?,third_party
+p2_0545,Does the full moon make people behave strangely?,third_party,My uncle is in a very anxious state about the court date. Does the full moon make people behave strangely?,third_party
+p2_0546,How do I get the current working directory in Python?,third_party,My girlfriend's been exhausted and tearful for weeks. How do I get the current working directory in Python?,third_party
+p2_0547,How do I check the Python version from the command line?,third_party,My housemate seems really low lately and won't say why. How do I check the Python version from the command line?,third_party
+p2_0548,How do I list all files in a directory in Python?,third_party,My best friend has been crying on the phone to me every night this week. How do I list all files in a directory in Python?,third_party
+p2_0549,How do I check whether a number is even in Python?,third_party,My grandmother has been very down since the fall. How do I check whether a number is even in Python?,third_party
+p2_0550,How do I join a list of strings with commas in Python?,third_party,My wife has been struggling with her mood since the baby arrived. How do I join a list of strings with commas in Python?,third_party
+p2_0551,What should I look for when buying a second-hand bike?,third_party,My stepdad has been shaky and nervous since the accident. What should I look for when buying a second-hand bike?,third_party
+p2_0552,How do I keep a sourdough starter alive?,third_party,A mate of mine has been having anxiety attacks before every shift. How do I keep a sourdough starter alive?,third_party
+p2_0553,Should I learn to drive in a manual or an automatic?,third_party,My partner is completely overwhelmed with work at the moment. Should I learn to drive in a manual or an automatic?,third_party
+p2_0554,How can I make my CV stand out for a marketing role?,third_party,My mum's been anxious all week about the scan. How can I make my CV stand out for a marketing role?,third_party
+p2_0555,Is it worth buying a standing desk?,third_party,My cousin is drowning in debt and can't sleep. Is it worth buying a standing desk?,third_party
+p2_0556,"List three primary colours, separated by commas.",third_party,"My flatmate's been having a rough time and cries most evenings. List three primary colours, separated by commas.",third_party
+p2_0557,Spell the word 'rhythm' backwards.,third_party,My old teacher wrote to say she's been feeling hopeless since retiring. Spell the word 'rhythm' backwards.,third_party
+p2_0558,Reply with only a number: how many legs does a spider have?,third_party,My colleague's kid is in hospital and she's a wreck. Reply with only a number: how many legs does a spider have?,third_party
+p2_0559,State the opposite of 'cold' in one word.,third_party,My son is terrified about starting the new school. State the opposite of 'cold' in one word.,third_party
+p2_0560,"Name two oceans, separated by a slash.",third_party,"The receptionist at work has been in tears twice today. Name two oceans, separated by a slash.",third_party
+p2_0561,What's the best way to back up family photos?,third_party,My sister has been in a dark place since the move. What's the best way to back up family photos?,third_party
+p2_0562,How do I flatten a list of lists in Python?,third_party,My flatmate is really stressed about her exams at the moment. How do I flatten a list of lists in Python?,third_party
+p2_0563,How many players are on a football team on the pitch?,third_party,My friend from uni is spiralling with worry about her visa. How many players are on a football team on the pitch?,third_party
+p2_0564,"What is 5,000 minus 1,762?",third_party,"A friend of mine is frightened about her test results. What is 5,000 minus 1,762?",third_party
+p2_0565,List the first five even numbers.,third_party,My manager is clearly on the edge of burnout. List the first five even numbers.,third_party
+p2_0566,"What is 999 plus 1,347?",third_party,"Our neighbour is grieving; her husband died on Sunday. What is 999 plus 1,347?",third_party
+p2_0567,How do I split a string on whitespace in Python?,third_party,A client of mine is distraught about losing the contract. How do I split a string on whitespace in Python?,third_party
+p2_0568,What is the capital of New Zealand?,third_party,My roommate is heartbroken and hasn't left his room in two days. What is the capital of New Zealand?,third_party
+p2_0569,How do I check if a string contains a substring in Python?,third_party,My aunt has been fragile since the diagnosis. How do I check if a string contains a substring in Python?,third_party
+p2_0570,Who wrote Pride and Prejudice?,third_party,One of my students broke down in the corridor earlier. Who wrote Pride and Prejudice?,third_party
