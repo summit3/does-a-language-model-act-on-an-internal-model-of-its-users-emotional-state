@@ -66,6 +66,23 @@ TD = []
 for fr, g in Dd.groupby("fraction"):
     for m_ in METS: p, lo, hi = wilson(int(g[m_].sum()), int(g[m_].notna().sum())); TD.append({"fraction": fr, "metric": m_, "n": int(g[m_].notna().sum()), "rate": round(p, 3), "ci_lo": round(lo, 3), "ci_hi": round(hi, 3)})
 TD = pd.DataFrame(TD); TD.to_csv(R / "phase4_sampled_rates.csv", index=False)
+def ci_table(sub, by):
+    rows_ = []
+    for keys, g in sub.groupby(by):
+        keys = keys if isinstance(keys, tuple) else (keys,)
+        for m_ in METS:
+            p_, lo, hi = wilson(int(g[m_].sum()), int(g[m_].notna().sum())); rows_.append({**dict(zip(by, keys)), "metric": m_, "n": int(g[m_].notna().sum()), "rate": round(p_, 3), "ci_lo": round(lo, 3), "ci_hi": round(hi, 3)})
+    return pd.DataFrame(rows_)
+J = out[out["run"] == "J"]
+if not J.empty: ci_table(J, ["direction"]).to_csv(R / "phase4_J_power_ci.csv", index=False); J.groupby(["direction", "task_type"])[METS].mean().round(3).to_csv(R / "phase4_J_by_task_type.csv")
+K = out[out["run"] == "K"]
+if not K.empty: K.groupby(["direction", "fraction"])[METS + ["n_tokens"]].mean().round(3).to_csv(R / "phase4_K_component_rates.csv")
+Lr = out[out["run"] == "L"]
+if not Lr.empty: Lr.groupby(["form", "direction", "fraction"])[METS + ["n_tokens"]].mean().round(3).to_csv(R / "phase4_L_subtraction_rates.csv")
+Mr = out[out["run"] == "M"]
+if not Mr.empty: ci_table(Mr, ["fraction"]).to_csv(R / "phase4_M_sampled_subtraction_ci.csv", index=False)
+Nr = out[out["run"] == "N"]
+if not Nr.empty: ci_table(Nr, ["direction"]).to_csv(R / "phase4_N_preamble_sampled_ci.csv", index=False)
 json.dump({"acknowledges_emotion_keywords": ACK, "user_state_inference_keywords": INFER, "deflection_keywords": DEFLECT, "advice_content_words": ADVICE_WORDS, "incoherent_rule": "3-gram repeat ratio > 0.4 or non-ASCII ratio > 0.1 or empty"}, open(R / "phase4_keyword_lists.json", "w"), indent=1)
 # ---- figures
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
@@ -74,13 +91,20 @@ SURF, T1, T2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e6e5e2"
 def style(ax, title, yl, xl="fraction of mean band norm"):
     ax.set_facecolor(SURF); ax.set_title(title, fontsize=9, color=T1, loc="left"); ax.set_xlabel(xl, color=T2, fontsize=8); ax.set_ylabel(yl, color=T2, fontsize=8)
     ax.grid(axis="y", color=GRID, lw=1); ax.set_axisbelow(True); [ax.spines[s].set_visible(False) for s in ("top", "right")]; [ax.spines[s].set_color(GRID) for s in ("left", "bottom")]; ax.tick_params(colors=T2, labelsize=7)
+I = out[out["run"] == "I"]
+PAL["np_minus_bare_md"] = "#52514e"
 def dose(form, F, title):
     fig, axes = plt.subplots(1, 5, figsize=(16, 3.6), dpi=150, facecolor=SURF)
     for ax, m_ in zip(axes, METS):
         b = T[(T["form"] == form) & (T["direction"] == "none")][m_].iloc[0]
         for dname, c in PAL.items():
-            g = T[(T["form"] == form) & (T["direction"] == dname)].sort_values("fraction")
-            ax.plot([0.0] + list(g["fraction"]), [b] + list(g[m_]), color=c, lw=1.8, marker="o", ms=3.5, label=dname)
+            g = T[(T["form"] == form) & (T["direction"] == dname)]
+            if form == "bare" and dname == "np_minus_bare_md":   # E supplies the coarse grid for the preamble-presence direction
+                g = out[(out["run"] == "E")].groupby("fraction")[METS].mean().reset_index()
+            if form == "bare" and not I.empty and dname in ("distressed_md", "random", "unrelated_coding_probe", "np_minus_bare_md"):
+                fine = I[I["direction"] == dname].groupby("fraction")[METS].mean().reset_index(); g = pd.concat([g[["fraction"] + METS], fine]).sort_values("fraction")
+            if g.empty: continue
+            g = g.sort_values("fraction"); ax.plot([0.0] + list(g["fraction"]), [b] + list(g[m_]), color=c, lw=1.8, marker="o", ms=3.5, label=dname)
         style(ax, m_, "rate"); ax.set_ylim(-0.02, 1.02)
     axes[0].legend(fontsize=6, frameon=False); fig.suptitle(title, fontsize=10, color=T1, x=0.01, ha="left"); fig.tight_layout(); fig.savefig(R / F); plt.close(fig)
 dose("bare", "F5_dose_response_bare.png", "F5. Dose-response on 30 held-out bare prompts (greedy): metric rate vs steering fraction, one line per direction")
