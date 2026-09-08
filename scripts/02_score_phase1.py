@@ -221,19 +221,28 @@ def final(df, metric):
     return man.fillna(llm).fillna(rule).astype("Int64")
 
 def counts_by_task(df):
+    """Counts of final values per task type. unsolicited_inference is coded 0/1/2 and reported twice:
+    `unsolicited_any` (>= 1) and `unsolicited_strong` (== 2)."""
     import pandas as pd
-    mets = ["correct_neutral", "correct_stressed"] + METRICS
-    out = pd.DataFrame({m: final(df, m) for m in mets}); out["task_type"] = df["task_type"]
+    base = ["correct_neutral", "correct_stressed", "acknowledges_emotion", "info_displaced", "task_abandoned"]
+    out = pd.DataFrame({m: final(df, m) for m in base})
+    ui = final(df, "unsolicited_inference")
+    out["unsolicited_any"] = (ui >= 1).astype("Int64").where(ui.notna())
+    out["unsolicited_strong"] = (ui == 2).astype("Int64").where(ui.notna())
+    out["advice_changed"] = final(df, "advice_changed")
+    out["task_type"] = df["task_type"]
+    mets = [c for c in out.columns if c != "task_type"]
     tab = out.groupby("task_type")[mets].sum(min_count=1).astype("Int64")
     tab.loc["ALL"] = out[mets].sum(min_count=1).astype("Int64")
     tab["n_pairs"] = pd.concat([df.groupby("task_type").size(), pd.Series({"ALL": len(df)})])
-    tab["mean_token_delta"] = pd.concat([df.groupby("task_type")["n_tokens_delta"].mean().round(1), pd.Series({"ALL": round(df["n_tokens_delta"].mean(), 1)})])
+    tab["mean_token_delta"] = pd.concat([df.groupby("task_type")["n_tokens_delta"].mean().round(1),
+                                         pd.Series({"ALL": round(df["n_tokens_delta"].mean(), 1)})])
     return tab
 
 def flagged(df, metric):
     cols = ["pair_id", "task_type", f"{metric}_rule", f"{metric}_llm", f"{metric}_manual"]
     m = final(df, metric)
-    anyflag = (pd.to_numeric(df[f"{metric}_rule"], errors="coerce").fillna(0) == 1) | (pd.to_numeric(df[f"{metric}_llm"], errors="coerce").fillna(0) == 1) | (m == 1)
+    anyflag = (pd.to_numeric(df[f"{metric}_rule"], errors="coerce").fillna(0) >= 1) | (pd.to_numeric(df[f"{metric}_llm"], errors="coerce").fillna(0) >= 1) | (m >= 1)
     return df.loc[anyflag, cols]
 
 import pandas as pd  # noqa: E402 (used by flagged)
