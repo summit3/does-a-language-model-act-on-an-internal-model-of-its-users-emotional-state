@@ -30,8 +30,8 @@ and is it a representation of the user rather than of emotion words?
 - What would change my mind: effects vanish on held-out prompts or under sampled decoding; effects reproduce with third-party-distress preambles (then it is not about the user); effect sizes track emotion-word count rather than condition.
 
 ### H1b (new, 2026-09-08): Acknowledgement occurs when the reply has room, i.e. it is driven by answer length under the concise budget rather than by task "softness".
-- Status: **untested**
-- Evidence so far: arithmetic answers are ~11 tokens and always acknowledged (5/5); coding/factual answers fill the two-sentence budget and mostly do not (1/5, 2/5).
+- Status: **Supported (rule-scored)**
+- Evidence: with the concise system prompt removed (Phase 4 run G, results/phase1_replies_nosys.csv), acknowledgement 24/30 vs 18/30 with the prompt; coding 5/5 vs 1/5, factual 5/5 vs 2/5; mean reply length 130 vs 43 tokens. The 6 "abandoned" rows in that run are pending hand check and may be rule artefacts on long replies. Original observation: arithmetic answers are ~11 tokens and always acknowledged (5/5); coding/factual answers fill the two-sentence budget and mostly do not (1/5, 2/5).
 - What would change my mind: acknowledgement stays flat when the concise prompt is relaxed; or short factual answers are not acknowledged at matched length.
 - Test later if time: relax the concise prompt and check whether coding acknowledgement rises.
 
@@ -54,9 +54,8 @@ and is it a representation of the user rather than of emotion words?
 - What would change my mind: a rule-scoring artefact (keyword lists in results/phase4_keyword_lists.json) firing on steered text for reasons other than emotional content; hand-reading results/phase4_sample_for_reading.md is the check. Frustrated_md as an other-emotion control: acknowledgement 0.10 at 0.04, 0.63 at 0.08 with 0.87 incoherent.
 
 ### H4 (stretch): Quantify how the probe tracks emotional state across turns.
-- Status: **untested**, low priority
-- Evidence so far: Empathic Machines showed it qualitatively.
-- What would change my mind: n/a until attempted.
+- Status: **Not tested** (out of scope for 20 hours; Empathic Machines showed qualitative multi-turn tracking).
+- Future work: two-turn prompts (distressed, then "ok I feel better now, anyway..."), probe score and behaviour on turn 2.
 
 ## 3. Findings log
 
