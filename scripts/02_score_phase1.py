@@ -178,6 +178,22 @@ def build_rows(pairs, rep):
         rows.append(row)
     return rows
 
+def _carry_forward(rows, keep_llm: bool):
+    """Never clobber hand-entered values: reload the existing CSV and keep its _manual cells
+    (and its _llm cells unless a fresh judge pass just filled them)."""
+    if not OUT.exists(): return
+    prev = {int(r["pair_id"]): r for r in csv.DictReader(open(OUT, newline="", encoding="utf-8"))}
+    kept = 0
+    for r in rows:
+        old = prev.get(r["pair_id"])
+        if not old: continue
+        for c in r:
+            if c.endswith("_manual") and old.get(c, "") != "":
+                r[c] = old[c]; kept += 1
+            elif keep_llm and c.endswith("_llm") and old.get(c, "") != "" and r[c] is None:
+                r[c] = old[c]
+    if kept: print(f"  kept {kept} existing manual cells from {OUT.name}")
+
 def write(rows):
     cols = [c for c in rows[0] if not c.startswith("_")]
     with open(OUT, "w", newline="", encoding="utf-8") as f:
@@ -201,6 +217,7 @@ def main():
         verdicts = judge_pairs(rows, client)
         json.dump({str(k): v for k, v in verdicts.items()}, open(JUDGE_OUT, "w"), indent=2)
         for r in rows: _apply(r, verdicts[r["pair_id"]])
+    _carry_forward(rows, keep_llm=(args.no_llm or not have_credentials()))
     write(rows); print(f"wrote {OUT.relative_to(ROOT)} ({len(rows)} rows)")
 
 def _apply(r, v):
