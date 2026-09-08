@@ -43,3 +43,7 @@ default_600k.md
 
 # --- third-party documents kept locally only ---
 docs/private/
+
+# --- editor / R junk ---
+.virtual_documents/
+.Rhistory
