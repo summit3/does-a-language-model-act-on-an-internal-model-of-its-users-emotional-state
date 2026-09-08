@@ -1,0 +1,20 @@
+item,value
+"task (a) neutral vs distressed, layer",13
+a val BA,1.000
+a train BA,1.000
+a implied BA (with matched neutrals),1.000
+a implied recall,1.000
+a human BA / recall,0.900 / 1.000
+a judge-missed (non-train) recall / pooled BA (n=9),1.000 / 1.000
+"a judge-missed (train, in-sample) recall (n=29)",1.000
+a mean P(distressed): val_neutral / val_distressed / implied / third_party / third_party_neutral,0.01 / 0.99 / 0.98 / 1.00 / 0.94
+a shuffled-label val BA at this layer,0.483
+"task (b) neutral vs frustrated, layer",16
+b val BA / train BA,1.000 / 1.000
+b human BA / judge-missed recall,1.000 / 1.000
+"task (c) 3-way, layer",22
+c val BA / train BA / human BA,0.967 / 1.000 / 0.800
+BoW baseline a val / implied / human / jm recall,0.750 / 0.887 / 0.250 / 0.778
+BoW baseline b val / c val,0.683 / 0.678
+length baseline a val / b val / c val,1.000 / 0.983 / 0.611
+ask-the-model a val / implied / human / b val / c val,0.933 / 0.575 / 0.583 / 0.983 / 0.944

@@ -1,0 +1,1 @@
+{"a": 13, "b": 16, "c": 22, "rule": "argmax val BA; ties broken by mean held-out BA (a: implied+human; b,c: human), then closeness to mid-depth"}
