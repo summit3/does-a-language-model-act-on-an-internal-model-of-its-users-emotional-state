@@ -14,6 +14,7 @@ and is it a representation of the user rather than of emotion words?
 ### H0 (setup): User emotional state is linearly represented; a probe generalises to held-out phrasings and implied-emotion prompts, and beats bag-of-words.
 - Status: **confounded in v1; retest with neutral_preamble control**
 - Evidence so far: Phase 3 v1 probe hits ~1.0 on val, implied and judge-missed rows, but does so from layer 0 and the length-only baseline also reaches 1.0: v1 neutral rows had no preamble, so the probe is largely a preamble-presence detector (see findings 2026-09-08 Phase 3 v1). Not yet evidence for or against H0.
+- Evidence so far (v2, 2026-09-08): with neutral_preamble as the neutral class, val 0.950 vs bag-of-words 0.850 and length-only 0.583; implied recall 0.850 vs bag-of-words 0.575 and ask-the-model 0.150; judge-missed recall 0.889. Not yet reviewed row by row.
 - What would change my mind: probe accuracy on held-out set A (implied emotion) no better than bag-of-words; or accuracy at chance on shuffled labels not at chance (leak).
 
 ### H1 (behavioural): On unrelated tasks, replies to a distressed user differ from replies to a neutral user in measurable ways (accuracy, hedging, refusal rate, agreement with a false premise).
@@ -37,6 +38,7 @@ and is it a representation of the user rather than of emotion words?
 ### H2 (specificity): The representation distinguishes "the user is distressed" from "the user is talking about someone distressed," and only the former changes behaviour.
 - Status: **v1 evidence suggests NOT user-specific; retest**
 - Evidence so far: v1 task-(a) probe fires on third-party emotion (mean P(distressed) 1.00) and on non-emotional third-party context (0.94); cos(third_party_neutral mean-diff, distressed mean-diff) 0.84. Confounded by preamble presence (see H0); retest after the neutral_preamble control.
+- Evidence so far (v2, 2026-09-08): P(distressed) third_party 0.90 vs third_party_neutral 0.01; cos(third_party md, distressed md) 0.74 vs cos(third_party_neutral md, distressed md) -0.30. The probe fires on someone else's distress but not on someone else being mentioned. Not yet reviewed row by row.
 - What would change my mind: probe trained on user-distress fires equally on third-party prompts, and third-party prompts produce the same acknowledge/displace/infer behaviour.
 
 ### H3 (causal): Steering along the user-distress direction on neutral prompts reproduces the H1 changes; subtracting it from distressed prompts removes them; unrelated-concept directions of matched norm do not.
@@ -68,6 +70,14 @@ and is it a representation of the user rather than of emotion words?
   - Geometry: cos(distressed md, frustrated md) 0.98; cos(third_party_neutral md, distressed md) 0.84; cos(unrelated coding probe, distressed md) 0.03.
   - Interpretation: the v1 probe is largely a preamble-presence detector. Neutral rows had no preamble, so length alone separates the classes; accuracy at layer 0 (before any attention) can only come from trivial features; and the probe fires at 0.94 on non-emotional third-party preambles.
 
+- **2026-09-08, Phase 3b (controls: neutral_preamble x150, positive x50; 822 rows; neutral class = neutral_preamble, bare neutral never trained on).**
+  - Task (a') neutral_preamble vs distressed: layer 18, val 0.950 (train 1.000), bare-neutral val 0.983, implied recall 0.850 (BA 0.912 vs bare matched neutrals, 0.892 vs neutral_preamble val), human 0.917, judge-missed recall 0.889 (n=9). Layer-0 val is 0.767 (was 1.000 in v1).
+  - Length-only baseline: a' val 0.583, bare val 0.750, b' 0.617, c' 0.411, d' 0.500; its P(distressed) is 0.50 on every group. Bag-of-words: a' val 0.850, implied recall 0.575, human 0.350. Ask-the-model: a' val 0.933, implied recall 0.150, human 0.583. Shuffled 0.500 mean.
+  - P(distressed) at layer 18: bare neutral 0.03, neutral_preamble 0.09, distressed 0.95, frustrated 0.89, positive 0.40, implied 0.80, third_party 0.90, third_party_neutral 0.01; human: neutral 0.07, distressed 0.88, frustrated 0.80, implied 0.31, third_party 0.75, third_party_neutral 0.00.
+  - (b') neutral_preamble vs frustrated: layer 20, val 0.950, human 0.917. (c') 3-way: layer 23, val 0.911, human 0.889. (d') distressed vs positive: layer 17, val 0.933 (n=45), implied classified distressed 0.975.
+  - Geometry at layer 18 (relative to neutral_preamble): cos(distressed md, frustrated md) 0.85; cos(distressed md, positive md) 0.63; cos(distressed md, neutral_preamble-minus-bare md) 0.31; cos(third_party md, third_party_neutral md) 0.01; cos(third_party md, distressed md) 0.74; cos(third_party_neutral md, distressed md) -0.30; cos(unrelated coding probe, distressed md) 0.01.
+  - Files: results/phase3b_*.csv, F1-F4 regenerated (v1 kept as *_v1_confounded_*), results/directions_layer18_v2.pt.
+
 ## 4. Decisions and definitions
 
 - **Probe/steer position: last prompt token** (after the assistant header and the empty think block), i.e. the position that predicts the first reply token. Chen's control-probe position, which steered better than the reading-probe position. Add the "I think the user is feeling" reading position only if cheap.
@@ -89,6 +99,7 @@ and is it a representation of the user rather than of emotion words?
 - Lexical confound untested until Phase 3: bag-of-words baseline, implied-emotion set A, third-party set B. Phase 1 preambles contain explicit emotion words by design.
 - First effect under steering was factual distortion ("no single capital"), not tone. Track factual distortion as its own metric in Phase 4.
 - Scorer bug wiped the manual columns once (notebook re-ran the scorer, which rewrote the CSV). Caught, fixed in 493b7fc; scorer now carries manual cells forward.
+- Phase 3 v1 confound, how it was caught: the length-only baseline reached 1.000 on val; task-(a) accuracy was ~1.0 at layer 0, where nothing about the user can yet be integrated; and the probe gave P(distressed) 0.94 on non-emotional third-party preambles. Fixed in 3b with a length-matched neutral_preamble class; the length-only baseline then drops to 0.583 and layer-0 accuracy to 0.767.
 - Chen et al. and Empathic Machines report no length or preamble-presence baseline; their neutral class was also bare tasks or bare scenarios.
 - (Mine) Steering strongly shifts how much the model attends to the actual task, not just tone.
 - (Mine) The count-to-10 refusal (pair 27) is odd because it is the easiest task in the set. One reading: the model treated a trivial request from a distressed user as not the real request and answered the emotion instead, the same behaviour as steering-induced abandonment.

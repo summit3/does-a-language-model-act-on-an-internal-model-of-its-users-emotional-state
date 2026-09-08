@@ -1,0 +1,19 @@
+item,value
+neutral class,neutral_preamble
+"task (a') neutral_preamble vs distressed, layer",18
+a' val / train,0.950 / 1.000
+a' bare-neutral val vs distressed val (never trained on),0.983
+a' implied recall / BA vs bare matched neutrals / BA vs neutral_preamble val,0.850 / 0.912 / 0.892
+a' human BA / recall (n=5+6),0.917 / 0.833
+a' judge-missed non-train recall / pooled BA (n=9),0.889 / 0.911
+a' positive rows classified distressed (n=50),0.400
+a' shuffled-label val BA at this layer,0.550
+P(distressed) groups: bare_neutral_val / neutral_preamble_val / distressed_val / frustrated_val / positive_all / implied / third_party / third_party_neutral / human_neutral / human_distressed / human_frustrated / human_implied / human_third_party / human_third_party_neutral,0.03 / 0.09 / 0.95 / 0.89 / 0.40 / 0.80 / 0.90 / 0.01 / 0.07 / 0.88 / 0.80 / 0.31 / 0.75 / 0.00
+LENGTH-ONLY baseline: a' val / a' bare val / b' val / c' val / d' val,0.583 / 0.750 / 0.617 / 0.411 / 0.500
+LENGTH-ONLY P(distressed) groups,0.49 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50 / 0.50
+bag-of-words: a' val / a' bare val / implied recall / human / jm recall / b' val / c' val / d' val,0.850 / 0.617 / 0.575 / 0.350 / 0.778 / 0.817 / 0.711 / 0.500
+ask-the-model: a' val / a' bare val / implied recall / human / b' val / c' val / d' val,0.933 / 0.933 / 0.150 / 0.583 / 0.983 / 0.944 / 0.933
+"task (b') neutral_preamble vs frustrated, layer / val / bare val / human / jm recall (n=1)",20 / 0.950 / 0.983 / 0.917 / 1.000
+"task (c') 3-way, layer / val / train / human",23 / 0.911 / 1.000 / 0.889
+"task (d') distressed vs positive, layer / val (n=45) / train / implied as distressed / neutral_preamble as distressed",17 / 0.933 / 1.000 / 0.975 / 0.600
+a' val BA at layer 0 / 1 / 2,0.767 / 0.817 / 0.817
