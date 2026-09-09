@@ -138,7 +138,7 @@ Original plan:
 - Watched the hooks-vs-HF-hidden-states check pass (layers 0-30 exact; layer 31 equal after final norm).
 - Confirmed no `<think>` block in outputs (`python -m src.model --check-thinking` PASS on 1.7B and 9B).
 - 2026-09-08, Phase 2 QA: reviewed 30 random samples (10 per condition), all 40 judge-disagreement rows, the full implied set, and the word-frequency flags. Cut nothing. Added 32 human-written preambles across all categories to test dependence on generated register.
-- 2026-09-08, Phase 4: rule-based scoring only; keyword lists recorded in results/phase4/phase4_keyword_lists.json; the 145-row stratified sample and 406 flagged rows in results/phase4/phase4_sample_for_reading.md are NOT yet hand-read.
+- 2026-09-08, Phase 4: rule-based scoring only; keyword lists recorded in results/phase4/phase4_keyword_lists.json; the 145-row stratified sample and 394 flagged rows in results/phase4/phase4_sample_for_reading.md are NOT yet hand-read.
 - 2026-09-08, Phase 3 v1: read F1 and identified that ~1.0 accuracy from layer 0 is inconsistent with a real user-state representation; the length-only baseline and the third_party_neutral P(distressed) confirmed the confound.
 - [add more here]
 
