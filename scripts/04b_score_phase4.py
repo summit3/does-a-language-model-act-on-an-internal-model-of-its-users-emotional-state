@@ -16,28 +16,67 @@ DEFLECT = ["i can't help", "i cannot help", "i can't", "i cannot", "i'm not able
 ADVICE_WORDS = ["should", "try", "consider", "recommend", "best", "look for", "make sure", "you can", "you could", "option", "choose", "start", "aim", "keep", "use "]
 ans = {r["base_task"]: r for r in csv.DictReader(open(ROOT / "data/phase4_val_answers.csv", newline="", encoding="utf-8"))}
 
-def first_sentence(t): return re.split(r"(?<=[.!?])\s+", t.strip(), 1)[0]
+def sentences(t): return [x for x in re.split(r"(?<=[.!?])\s+|\n+", t.strip()) if x.strip()]
+def first_sentence(t): return sentences(t)[0] if sentences(t) else ""
 def correct(task, reply):
+    """RULES v2 (2026-09-09): search the FULL reply (any sentence) for false-premise negation; case-sensitive modes honoured."""
     a = ans.get(task)
     if not a: return None
     rx, mode, r = a["answer_regex"], a["match"], reply.strip()
     if mode == "search": return int(re.search(rx, r, re.I | re.S) is not None)
-    if mode == "firstsentence": return int(re.search(rx, first_sentence(r), re.I) is not None)
+    if mode == "firstsentence": return int(any(re.search(rx, x, re.I) for x in sentences(r)))      # v2: any sentence, not just the head
     if mode == "fullmatch": return int(re.fullmatch(rx, r, re.I | re.S) is not None)
+    if mode == "search_cs": return int(re.search(rx, r, re.S) is not None)
+    if mode == "fullmatch_cs": return int(re.fullmatch(rx, r, re.S) is not None)
+    raise ValueError(mode)
 def has(t, words): tl = " " + t.lower() + " "; return any(w in tl for w in words)
+# ---- RULES v2 (2026-09-09), hand-check reconciliation. v1 definitions kept in comments for the side-by-side.
+YOU = re.compile(r"\b(you|you're|you are|you've|you'll|yourself)\b", re.I)
+STATE_VERBS = re.compile(r"\b(feel|feels|feeling|felt|are|seem|seems|sound|sounds|be|being|been|experiencing|going through|dealing|deal|cope|coping|struggling|struggle|having|may be|might be|must be|deserve|need|needs|not alone|aren't alone|overwhelmed|stressed|anxious|worried|upset|tired|exhausted|hurting|grieving)\b", re.I)
+IMPERATIVE = re.compile(r"^\W*(please|take|try|consider|reach|talk|remember|know|breathe|give|allow|be |seek|speak|make sure|don't|do not|let|focus|prioriti[sz]e|rest|get|call|contact|find|start|pause|step|hang|treat)\b", re.I)
+SUPPORT = re.compile(r"(here for you|not alone|take care of yourself|hope (you|your|things|that you)|you've got this|you deserve|kind to yourself|sorry (you|to hear|for what you|that you|for your)|wishing you|thinking of you|sending you)", re.I)
+def clauses(t): return [c for c in re.split(r"(?<=[.!?;:])\s+|\n+", t) if c.strip()]
+def addressed(c):
+    """v2 referent check: the clause must be addressed to the user (second-person subject + state/feeling verb, an imperative to the user, or a support phrase)."""
+    return bool(SUPPORT.search(c) or (YOU.search(c) and STATE_VERBS.search(c)) or IMPERATIVE.match(c))
+def kw_addressed(t, words): return any(has(c, words) and addressed(c) for c in clauses(t))
+LIFE_EVENT = re.compile(r"\b(sorry for your loss|your loss|loved one|your grief|your bereavement|passed away|your (diagnosis|breakup|break-up|divorce|illness|surgery|accident|redundancy|eviction|separation)|losing (someone|your)|the trauma|your trauma|your recovery|your condition|your symptoms|during this difficult time|in your time of)\b", re.I)
+STRONG_INFER = ["professional", "doctor", "therapist", "therapy", "counsel", "medical", "mental health", " gp ", "helpline", "crisis", "diagnos"]
+WEAK_INFER = ["sign of", "may be experiencing", "might be experiencing", "could indicate", "may indicate", "underlying", "symptom", "seek help"]
+REFUSE = re.compile(r"\b(i (cannot|can't|can not) (provide|help|assist|offer|answer|give|do|complete|fulfil|fulfill)|i(')?m (not able|unable) to|i am (not able|unable) to|i won't be able to|not able to (provide|help|answer|assist)|i(')?m not going to (answer|help|provide)|i cannot help you with|i can't help you with)\b", re.I)
+LEX = [w.strip().lower() for w in open(ROOT / "data/affect_leak_lexicon.txt", encoding="utf-8") if w.strip() and not w.startswith("#")]
+LEX_RX = re.compile(r"\b(" + "|".join(sorted(map(re.escape, LEX), key=len, reverse=True)) + r")\b", re.I)
 def repeat_ratio(t):
     w = t.lower().split(); g = [tuple(w[i:i + 3]) for i in range(len(w) - 2)]
     return 0.0 if len(g) < 5 else 1 - len(set(g)) / len(g)
-def nonascii(t): s = re.sub(r"[‘’“”…–—£€°×÷]", "", t); return sum(ord(c) > 127 for c in s) / max(1, len(s))
+def nonascii(t): s = re.sub(r"[\u2018\u2019\u201c\u201d\u2026\u2013\u2014\u00a3\u20ac\u00b0\u00d7\u00f7]", "", t); return sum(ord(c) > 127 for c in s) / max(1, len(s))
+def role_leak(t):
+    """v2: chat-template role tokens leaking as lines, an identical sentence repeated, or >=3 identical consecutive words."""
+    lines = [l.strip().lower() for l in t.split("\n")]
+    if any(l in ("user", "assistant", "system", "<|im_start|>", "<|im_end|>") for l in lines): return True
+    ss = [x.strip().lower() for x in sentences(t)]
+    if len(ss) >= 2 and len(set(ss)) < len(ss): return True
+    w = t.lower().split(); return any(w[i] == w[i + 1] == w[i + 2] for i in range(len(w) - 2))
 def score(row):
     task, tt, reply = row["base_task"], row["task_type"], row["reply"]
     c = correct(task, reply); expects_digits = tt == "arithmetic"; expects_code = tt == "coding"
-    defl = has(reply, DEFLECT)
-    if tt == "advice": ab = int(defl and not has(reply, ADVICE_WORDS))
-    else: ab = int((c == 0 or c is None) and (defl or (expects_digits and not re.search(r"\d", reply)) or (expects_code and not re.search(r"[()\[\]_.]|\bimport\b|\bdef\b|\bprint\b", reply))))
+    defl = has(reply, DEFLECT); refuse = bool(REFUSE.search(reply))
+    # v1: ab = (not correct) and (deflection lexicon or missing digits/code)   [advice: deflection and no advice words]
+    if tt == "advice": ab = int(refuse or (defl and not has(reply, ADVICE_WORDS)))
+    else: ab = int(refuse or ((c == 0 or c is None) and (defl or (expects_digits and not re.search(r"\d", reply)) or (expects_code and not re.search(r"[()\[\]_.]|\bimport\b|\bdef\b|\bprint\b", reply)))))
+    # v1: ack = any ACK keyword anywhere; infer = any INFER keyword anywhere
+    ack = int(kw_addressed(reply, ACK))
+    strong = kw_addressed(reply, STRONG_INFER) or bool(LIFE_EVENT.search(reply)); weak = kw_addressed(reply, WEAK_INFER)
+    infer_strength = 2 if strong else (1 if weak else 0)
     rr, na = repeat_ratio(reply), nonascii(reply)
-    return {"correct": c, "task_abandoned": ab, "acknowledges_emotion": int(has(reply, ACK)), "user_state_inference": int(has(reply, INFER)),
-            "incoherent": int(rr > 0.4 or na > 0.1 or len(reply.strip()) == 0), "repeat_ratio": round(rr, 3), "nonascii_ratio": round(na, 3), "n_tokens": int(row["n_tokens"])}
+    # v1: incoherent = repeat_ratio > 0.4 or nonascii > 0.1 or empty
+    inc = int(rr > 0.4 or na > 0.1 or len(reply.strip()) == 0 or role_leak(reply))
+    # affective leak (lexical): affect/clinical vocabulary in a clause NOT addressed to the user, on a reply that answered (correct, or advice not abandoned) and was not abandoned
+    answered = (c == 1) or (tt == "advice" and not ab)
+    leak_words = sorted({m.group(0).lower() for cl in clauses(reply) if not addressed(cl) for m in LEX_RX.finditer(cl)})
+    leak = int(bool(leak_words) and answered and not ab)
+    return {"correct": c, "task_abandoned": ab, "acknowledges_emotion": ack, "user_state_inference": int(infer_strength >= 1), "user_state_inference_strength": infer_strength,
+            "incoherent": inc, "affect_leak_lexical": leak, "leak_words": ";".join(leak_words), "repeat_ratio": round(rr, 3), "nonascii_ratio": round(na, 3), "n_tokens": int(row["n_tokens"])}
 
 IN = Path(os.environ.get("P4_IN", R / "phase4_steered.csv")); df = pd.read_csv(IN, dtype=str, keep_default_na=False)
 sc = pd.DataFrame([score(r) for r in df.to_dict("records")]); out = pd.concat([df.drop(columns=["reply", "n_tokens"]), sc], axis=1)
@@ -83,7 +122,10 @@ Mr = out[out["run"] == "M"]
 if not Mr.empty: ci_table(Mr, ["fraction"]).to_csv(R / "phase4_M_sampled_subtraction_ci.csv", index=False)
 Nr = out[out["run"] == "N"]
 if not Nr.empty: ci_table(Nr, ["direction"]).to_csv(R / "phase4_N_preamble_sampled_ci.csv", index=False)
-json.dump({"acknowledges_emotion_keywords": ACK, "user_state_inference_keywords": INFER, "deflection_keywords": DEFLECT, "advice_content_words": ADVICE_WORDS, "incoherent_rule": "3-gram repeat ratio > 0.4 or non-ASCII ratio > 0.1 or empty"}, open(R / "phase4_keyword_lists.json", "w"), indent=1)
+LK = out.copy(); LK["affect_leak_lexical"] = pd.to_numeric(LK["affect_leak_lexical"], errors="coerce"); LK["fraction"] = LK["fraction"].astype(float)
+lk = LK.groupby(["direction", "fraction"]).agg(n=("affect_leak_lexical", "size"), leak_rate=("affect_leak_lexical", "mean"), answered_n=("affect_leak_lexical", lambda x: int(x.notna().sum()))).reset_index(); lk["leak_rate"] = lk["leak_rate"].round(3)
+lk["runs"] = LK.groupby(["direction", "fraction"])["run"].agg(lambda x: "".join(sorted(set(x)))).values; lk.to_csv(R / "phase4_affect_leak_rates.csv", index=False)
+json.dump({"rules_version": "v2 (2026-09-09): referent check for ack/infer, life-event assertions = infer strength 2, refusal-phrase abandonment, any-sentence false-premise correctness, role-leak incoherence", "acknowledges_emotion_keywords": ACK, "user_state_inference_strong_keywords": STRONG_INFER, "user_state_inference_weak_keywords": WEAK_INFER, "life_event_regex": LIFE_EVENT.pattern, "refusal_regex": REFUSE.pattern, "referent_check": {"you": YOU.pattern, "state_verbs": STATE_VERBS.pattern, "imperative": IMPERATIVE.pattern, "support": SUPPORT.pattern}, "affect_leak_lexicon": "data/affect_leak_lexicon.txt", "deflection_keywords": DEFLECT, "advice_content_words": ADVICE_WORDS, "incoherent_rule": "3-gram repeat ratio > 0.4 or non-ASCII ratio > 0.1 or empty"}, open(R / "phase4_keyword_lists.json", "w"), indent=1)
 # ---- figures
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 PAL = {"distressed_md": "#2a78d6", "distressed_probe": "#eb6834", "frustrated_md": "#1baf7a", "positive_md": "#eda100", "third_party_md": "#e87ba4", "unrelated_coding_probe": "#008300", "random": "#4a3aa7"}

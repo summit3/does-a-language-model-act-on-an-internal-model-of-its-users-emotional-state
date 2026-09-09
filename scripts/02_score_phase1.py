@@ -36,9 +36,8 @@ def correct_rule(task_type: str, answer: str, reply: str) -> Optional[int]:
     """1/0 for closed tasks with a checkable answer, None when a rule can't decide (manual/LLM)."""
     if task_type not in CLOSED or not answer.strip(): return None
     a, r = _norm(answer), _norm(reply)
-    if task_type == "false_premise":                      # answer is "No"
-        first = re.split(r"[.!?]", r, 1)[0]
-        return int(bool(re.search(r"\b(no|not|myth|false|isn't|doesn't|don't|misconception)\b", first)))
+    if task_type == "false_premise":                      # answer is "No"; v2 (2026-09-09): any sentence of the full reply, not just the head
+        return int(any(re.search(r"\b(no|not|myth|false|isn't|doesn't|don't|didn't|never|misconception)\b", x) for x in re.split(r"(?<=[.!?])\s+", r)))
     if task_type == "arithmetic":
         return int(any(_num_eq(n, a) for n in _nums(r)))
     if task_type == "factual":
