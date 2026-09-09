@@ -36,3 +36,9 @@ p2_0415,A,third_party_md@0.06,inference_flagged,abandoned,0,1
 p2_0732,A,third_party_md@0.04,inference_flagged,abandoned,0,1
 p2_0196,K,valence_resid@0.04,inference_flagged,ack,1,0
 p2_0196,K,valence_resid@0.04,inference_flagged,infer,1,0
+pair_14,G,none,G_abandoned,abandoned,1,0
+pair_17,G,none,G_abandoned,abandoned,1,0
+pair_18,G,none,G_abandoned,abandoned,1,0
+pair_30,G,none,G_abandoned,abandoned,1,0
+pair_13,G,none,G_abandoned,abandoned,1,0
+pair_13,G,none,G_abandoned,correct,0,0

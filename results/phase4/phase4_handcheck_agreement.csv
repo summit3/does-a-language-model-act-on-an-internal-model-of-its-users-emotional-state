@@ -1,335 +1,335 @@
-group,run,id,metric,v1,v2,hand,agree_v1,agree_v2
-distressed_0.04,J,p2_0013,correct,1,1,1,1,1
-distressed_0.04,J,p2_0013,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0013,ack,0,0,0,1,1
-distressed_0.04,J,p2_0013,infer,0,0,0,1,1
-distressed_0.04,J,p2_0013,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0016,correct,1,1,1,1,1
-distressed_0.04,J,p2_0016,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0016,ack,0,0,0,1,1
-distressed_0.04,J,p2_0016,infer,0,0,0,1,1
-distressed_0.04,J,p2_0016,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0043,correct,1,1,1,1,1
-distressed_0.04,J,p2_0043,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0043,ack,0,0,0,1,1
-distressed_0.04,J,p2_0043,infer,0,0,0,1,1
-distressed_0.04,J,p2_0043,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0055,correct,1,1,1,1,1
-distressed_0.04,J,p2_0055,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0055,ack,0,0,0,1,1
-distressed_0.04,J,p2_0055,infer,0,0,0,1,1
-distressed_0.04,J,p2_0055,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0061,correct,1,1,1,1,1
-distressed_0.04,J,p2_0061,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0061,ack,0,0,0,1,1
-distressed_0.04,J,p2_0061,infer,0,0,0,1,1
-distressed_0.04,J,p2_0061,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0064,correct,1,1,1,1,1
-distressed_0.04,J,p2_0064,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0064,ack,0,0,0,1,1
-distressed_0.04,J,p2_0064,infer,0,0,0,1,1
-distressed_0.04,J,p2_0064,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0067,correct,1,1,1,1,1
-distressed_0.04,J,p2_0067,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0067,ack,1,1,1,1,1
-distressed_0.04,J,p2_0067,infer,0,1,1,0,1
-distressed_0.04,J,p2_0067,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0100,correct,1,1,1,1,1
-distressed_0.04,J,p2_0100,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0100,ack,0,0,0,1,1
-distressed_0.04,J,p2_0100,infer,0,0,0,1,1
-distressed_0.04,J,p2_0100,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0115,correct,1,1,1,1,1
-distressed_0.04,J,p2_0115,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0115,ack,0,0,0,1,1
-distressed_0.04,J,p2_0115,infer,0,0,0,1,1
-distressed_0.04,J,p2_0115,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0133,correct,1,1,1,1,1
-distressed_0.04,J,p2_0133,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0133,ack,0,0,0,1,1
-distressed_0.04,J,p2_0133,infer,0,0,0,1,1
-distressed_0.04,J,p2_0133,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0163,correct,1,1,1,1,1
-distressed_0.04,J,p2_0163,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0163,ack,1,0,0,0,1
-distressed_0.04,J,p2_0163,infer,0,0,0,1,1
-distressed_0.04,J,p2_0163,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0172,correct,1,1,1,1,1
-distressed_0.04,J,p2_0172,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0172,ack,1,0,0,0,1
-distressed_0.04,J,p2_0172,infer,1,0,0,0,1
-distressed_0.04,J,p2_0172,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0187,correct,1,1,1,1,1
-distressed_0.04,J,p2_0187,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0187,ack,1,1,1,1,1
-distressed_0.04,J,p2_0187,infer,0,0,0,1,1
-distressed_0.04,J,p2_0187,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0208,correct,1,1,1,1,1
-distressed_0.04,J,p2_0208,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0208,ack,1,1,1,1,1
-distressed_0.04,J,p2_0208,infer,0,1,1,0,1
-distressed_0.04,J,p2_0208,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0223,correct,1,1,1,1,1
-distressed_0.04,J,p2_0223,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0223,ack,1,0,0,0,1
-distressed_0.04,J,p2_0223,infer,0,0,0,1,1
-distressed_0.04,J,p2_0223,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0247,correct,1,1,1,1,1
-distressed_0.04,J,p2_0247,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0247,ack,0,0,0,1,1
-distressed_0.04,J,p2_0247,infer,0,0,0,1,1
-distressed_0.04,J,p2_0247,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0259,correct,1,1,1,1,1
-distressed_0.04,J,p2_0259,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0259,ack,0,0,0,1,1
-distressed_0.04,J,p2_0259,infer,0,0,0,1,1
-distressed_0.04,J,p2_0259,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0283,correct,1,1,1,1,1
-distressed_0.04,J,p2_0283,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0283,ack,0,0,0,1,1
-distressed_0.04,J,p2_0283,infer,1,1,0,0,0
-distressed_0.04,J,p2_0283,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0286,correct,1,1,1,1,1
-distressed_0.04,J,p2_0286,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0286,ack,0,0,0,1,1
-distressed_0.04,J,p2_0286,infer,0,0,0,1,1
-distressed_0.04,J,p2_0286,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0319,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0319,ack,1,1,1,1,1
-distressed_0.04,J,p2_0319,infer,1,1,1,1,1
-distressed_0.04,J,p2_0319,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0325,abandoned,0,1,1,0,1
-distressed_0.04,J,p2_0325,ack,1,1,1,1,1
-distressed_0.04,J,p2_0325,infer,1,1,1,1,1
-distressed_0.04,J,p2_0325,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0352,abandoned,1,1,1,1,1
-distressed_0.04,J,p2_0352,ack,1,1,1,1,1
-distressed_0.04,J,p2_0352,infer,0,1,1,0,1
-distressed_0.04,J,p2_0352,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0355,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0355,ack,0,0,0,1,1
-distressed_0.04,J,p2_0355,infer,0,0,0,1,1
-distressed_0.04,J,p2_0355,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0361,abandoned,0,1,1,0,1
-distressed_0.04,J,p2_0361,ack,1,1,1,1,1
-distressed_0.04,J,p2_0361,infer,0,0,0,1,1
-distressed_0.04,J,p2_0361,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0373,abandoned,0,0,1,0,0
-distressed_0.04,J,p2_0373,ack,0,0,1,0,0
-distressed_0.04,J,p2_0373,infer,0,1,1,0,1
-distressed_0.04,J,p2_0373,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0388,correct,1,1,1,1,1
-distressed_0.04,J,p2_0388,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0388,ack,0,0,0,1,1
-distressed_0.04,J,p2_0388,infer,0,0,0,1,1
-distressed_0.04,J,p2_0388,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0400,correct,nan,0,0,0,1
-distressed_0.04,J,p2_0400,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0400,ack,1,0,1,1,0
-distressed_0.04,J,p2_0400,infer,0,0,0,1,1
-distressed_0.04,J,p2_0400,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0406,correct,0,0,0,1,1
-distressed_0.04,J,p2_0406,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0406,ack,0,0,0,1,1
-distressed_0.04,J,p2_0406,infer,0,0,0,1,1
-distressed_0.04,J,p2_0406,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0412,correct,0,0,0,1,1
-distressed_0.04,J,p2_0412,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0412,ack,0,0,0,1,1
-distressed_0.04,J,p2_0412,infer,0,0,0,1,1
-distressed_0.04,J,p2_0412,incoh,0,0,0,1,1
-distressed_0.04,J,p2_0421,correct,nan,1,1,0,1
-distressed_0.04,J,p2_0421,abandoned,0,0,0,1,1
-distressed_0.04,J,p2_0421,ack,0,0,0,1,1
-distressed_0.04,J,p2_0421,infer,0,0,0,1,1
-distressed_0.04,J,p2_0421,incoh,0,0,0,1,1
-G_abandoned,G,pair_4,correct,0,0,0,1,1
-G_abandoned,G,pair_4,abandoned,1,1,1,1,1
-G_abandoned,G,pair_4,ack,1,1,1,1,1
-G_abandoned,G,pair_4,infer,1,1,1,1,1
-G_abandoned,G,pair_13,correct,0,1,0,1,0
-G_abandoned,G,pair_13,abandoned,1,0,1,1,0
-G_abandoned,G,pair_13,ack,1,1,1,1,1
-G_abandoned,G,pair_13,infer,0,0,0,1,1
-G_abandoned,G,pair_14,correct,0,1,1,0,1
-G_abandoned,G,pair_14,abandoned,1,0,1,1,0
-G_abandoned,G,pair_14,ack,1,1,1,1,1
-G_abandoned,G,pair_14,infer,1,1,1,1,1
-G_abandoned,G,pair_17,correct,0,0,1,0,0
-G_abandoned,G,pair_17,abandoned,1,1,1,1,1
-G_abandoned,G,pair_17,ack,1,1,1,1,1
-G_abandoned,G,pair_17,infer,1,1,0,0,0
-G_abandoned,G,pair_18,correct,0,0,1,0,0
-G_abandoned,G,pair_18,abandoned,1,1,1,1,1
-G_abandoned,G,pair_18,ack,1,1,1,1,1
-G_abandoned,G,pair_18,infer,1,1,1,1,1
-G_abandoned,G,pair_30,correct,0,0,1,0,0
-G_abandoned,G,pair_30,abandoned,1,1,1,1,1
-G_abandoned,G,pair_30,ack,1,1,1,1,1
-G_abandoned,G,pair_30,infer,0,0,1,0,0
-random_0.04,J,p2_0019,correct,1,1,1,1,1
-random_0.04,J,p2_0019,abandoned,0,0,0,1,1
-random_0.04,J,p2_0019,ack,0,0,0,1,1
-random_0.04,J,p2_0019,infer,0,0,0,1,1
-random_0.04,J,p2_0019,incoh,0,0,0,1,1
-random_0.04,J,p2_0031,correct,1,1,1,1,1
-random_0.04,J,p2_0031,abandoned,0,0,0,1,1
-random_0.04,J,p2_0031,ack,0,0,0,1,1
-random_0.04,J,p2_0031,infer,0,0,0,1,1
-random_0.04,J,p2_0031,incoh,0,0,0,1,1
-random_0.04,J,p2_0040,correct,1,1,1,1,1
-random_0.04,J,p2_0040,abandoned,0,0,0,1,1
-random_0.04,J,p2_0040,ack,0,0,0,1,1
-random_0.04,J,p2_0040,infer,0,0,0,1,1
-random_0.04,J,p2_0040,incoh,0,0,0,1,1
-random_0.04,J,p2_0043,correct,1,1,1,1,1
-random_0.04,J,p2_0043,abandoned,0,0,0,1,1
-random_0.04,J,p2_0043,ack,0,0,0,1,1
-random_0.04,J,p2_0043,infer,0,0,0,1,1
-random_0.04,J,p2_0043,incoh,0,0,0,1,1
-random_0.04,J,p2_0055,correct,1,1,1,1,1
-random_0.04,J,p2_0055,abandoned,0,0,0,1,1
-random_0.04,J,p2_0055,ack,0,0,0,1,1
-random_0.04,J,p2_0055,infer,0,0,0,1,1
-random_0.04,J,p2_0055,incoh,0,0,0,1,1
-random_0.04,J,p2_0070,correct,1,1,1,1,1
-random_0.04,J,p2_0070,abandoned,0,0,0,1,1
-random_0.04,J,p2_0070,ack,0,0,0,1,1
-random_0.04,J,p2_0070,infer,0,0,0,1,1
-random_0.04,J,p2_0070,incoh,0,0,0,1,1
-random_0.04,J,p2_0124,correct,1,1,1,1,1
-random_0.04,J,p2_0124,abandoned,0,0,0,1,1
-random_0.04,J,p2_0124,ack,0,0,0,1,1
-random_0.04,J,p2_0124,infer,0,0,0,1,1
-random_0.04,J,p2_0124,incoh,0,0,0,1,1
-random_0.04,J,p2_0154,correct,1,1,1,1,1
-random_0.04,J,p2_0154,abandoned,0,0,0,1,1
-random_0.04,J,p2_0154,ack,0,0,0,1,1
-random_0.04,J,p2_0154,infer,0,0,0,1,1
-random_0.04,J,p2_0154,incoh,0,0,0,1,1
-random_0.04,J,p2_0187,correct,1,1,1,1,1
-random_0.04,J,p2_0187,abandoned,0,0,0,1,1
-random_0.04,J,p2_0187,ack,0,0,0,1,1
-random_0.04,J,p2_0187,infer,0,0,0,1,1
-random_0.04,J,p2_0187,incoh,0,0,0,1,1
-random_0.04,J,p2_0283,correct,1,1,1,1,1
-random_0.04,J,p2_0283,abandoned,0,0,0,1,1
-random_0.04,J,p2_0283,ack,0,0,0,1,1
-random_0.04,J,p2_0283,infer,0,0,0,1,1
-random_0.04,J,p2_0283,incoh,0,0,0,1,1
-random_0.04,J,p2_0289,correct,1,1,1,1,1
-random_0.04,J,p2_0289,abandoned,0,0,0,1,1
-random_0.04,J,p2_0289,ack,0,0,0,1,1
-random_0.04,J,p2_0289,infer,0,0,0,1,1
-random_0.04,J,p2_0289,incoh,0,0,0,1,1
-random_0.04,J,p2_0316,abandoned,0,0,0,1,1
-random_0.04,J,p2_0316,ack,0,0,0,1,1
-random_0.04,J,p2_0316,infer,0,0,0,1,1
-random_0.04,J,p2_0316,incoh,0,0,0,1,1
-random_0.04,J,p2_0337,abandoned,0,0,0,1,1
-random_0.04,J,p2_0337,ack,1,0,0,0,1
-random_0.04,J,p2_0337,infer,0,0,0,1,1
-random_0.04,J,p2_0337,incoh,0,0,0,1,1
-random_0.04,J,p2_0415,correct,1,1,1,1,1
-random_0.04,J,p2_0415,abandoned,0,0,0,1,1
-random_0.04,J,p2_0415,ack,0,0,0,1,1
-random_0.04,J,p2_0415,infer,0,0,0,1,1
-random_0.04,J,p2_0415,incoh,0,0,0,1,1
-random_0.04,J,p2_0439,correct,0,1,1,0,1
-random_0.04,J,p2_0439,abandoned,0,0,0,1,1
-random_0.04,J,p2_0439,ack,0,0,0,1,1
-random_0.04,J,p2_0439,infer,0,0,0,1,1
-random_0.04,J,p2_0439,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0040,correct,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0040,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0040,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0040,infer,0,1,1,0,1
-distressed_0.06_abandoned,A,p2_0040,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0049,correct,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0049,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0049,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0049,infer,0,1,1,0,1
-distressed_0.06_abandoned,A,p2_0049,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0064,correct,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0064,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0064,ack,0,0,1,0,0
-distressed_0.06_abandoned,A,p2_0064,infer,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0064,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0313,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0313,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0313,infer,0,1,1,0,1
-distressed_0.06_abandoned,A,p2_0313,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0346,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0346,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0346,infer,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0346,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0639,correct,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0639,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0639,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0639,infer,0,1,1,0,1
-distressed_0.06_abandoned,A,p2_0639,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0644,correct,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0644,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0644,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0644,infer,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0644,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0675,correct,0,1,0,1,0
-distressed_0.06_abandoned,A,p2_0675,abandoned,1,0,1,1,0
-distressed_0.06_abandoned,A,p2_0675,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0675,infer,0,1,1,0,1
-distressed_0.06_abandoned,A,p2_0675,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0758,correct,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0758,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0758,ack,1,0,1,1,0
-distressed_0.06_abandoned,A,p2_0758,infer,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0758,incoh,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0765,correct,0,0,0,1,1
-distressed_0.06_abandoned,A,p2_0765,abandoned,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0765,ack,1,1,1,1,1
-distressed_0.06_abandoned,A,p2_0765,infer,0,1,1,0,1
-distressed_0.06_abandoned,A,p2_0765,incoh,0,0,0,1,1
-inference_flagged,A,p2_0331,abandoned,0,0,1,0,0
-inference_flagged,A,p2_0331,ack,0,0,0,1,1
-inference_flagged,A,p2_0331,infer,1,0,1,1,0
-inference_flagged,A,p2_0331,incoh,0,1,1,0,1
-inference_flagged,A,p2_0346,abandoned,0,0,1,0,0
-inference_flagged,A,p2_0346,ack,1,1,1,1,1
-inference_flagged,A,p2_0346,infer,1,1,1,1,1
-inference_flagged,A,p2_0346,incoh,0,0,0,1,1
-inference_flagged,A,p2_0415,correct,0,0,0,1,1
-inference_flagged,A,p2_0415,abandoned,0,0,1,0,0
-inference_flagged,A,p2_0415,ack,1,1,1,1,1
-inference_flagged,A,p2_0415,infer,1,1,1,1,1
-inference_flagged,A,p2_0415,incoh,0,0,0,1,1
-inference_flagged,A,p2_0732,abandoned,0,0,1,0,0
-inference_flagged,A,p2_0732,ack,0,0,0,1,1
-inference_flagged,A,p2_0732,infer,1,1,1,1,1
-inference_flagged,A,p2_0732,incoh,0,0,0,1,1
-inference_flagged,A,p2_0733,abandoned,1,1,1,1,1
-inference_flagged,A,p2_0733,ack,1,1,1,1,1
-inference_flagged,A,p2_0733,infer,1,1,1,1,1
-inference_flagged,A,p2_0733,incoh,0,0,0,1,1
-inference_flagged,K,p2_0007,correct,0,0,0,1,1
-inference_flagged,K,p2_0007,abandoned,1,1,1,1,1
-inference_flagged,K,p2_0007,ack,1,1,1,1,1
-inference_flagged,K,p2_0007,infer,1,1,1,1,1
-inference_flagged,K,p2_0007,incoh,0,0,0,1,1
-inference_flagged,K,p2_0196,correct,1,1,1,1,1
-inference_flagged,K,p2_0196,abandoned,0,0,0,1,1
-inference_flagged,K,p2_0196,ack,1,0,0,0,1
-inference_flagged,K,p2_0196,infer,1,0,0,0,1
-inference_flagged,K,p2_0196,incoh,0,0,0,1,1
-inference_flagged,M,p2_0008,correct,1,1,1,1,1
-inference_flagged,M,p2_0008,abandoned,0,0,0,1,1
-inference_flagged,M,p2_0008,ack,1,0,1,1,0
-inference_flagged,M,p2_0008,infer,1,0,1,1,0
-inference_flagged,M,p2_0008,incoh,0,0,0,1,1
-inference_flagged,N,p2_0720,correct,1,1,1,1,1
-inference_flagged,N,p2_0720,abandoned,0,0,0,1,1
-inference_flagged,N,p2_0720,ack,1,1,1,1,1
-inference_flagged,N,p2_0720,infer,1,1,1,1,1
-inference_flagged,N,p2_0720,incoh,0,0,0,1,1
-inference_flagged,N,p2_0738,abandoned,1,1,1,1,1
-inference_flagged,N,p2_0738,ack,1,1,1,1,1
-inference_flagged,N,p2_0738,infer,1,1,1,1,1
-inference_flagged,N,p2_0738,incoh,0,0,0,1,1
+group,run,id,meta,metric,v1,v2,hand,agree_v1,agree_v2
+distressed_0.04,J,p2_0013,"bare, arithmetic, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0013,"bare, arithmetic, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0013,"bare, arithmetic, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0013,"bare, arithmetic, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0013,"bare, arithmetic, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0016,"bare, arithmetic, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0016,"bare, arithmetic, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0016,"bare, arithmetic, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0016,"bare, arithmetic, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0016,"bare, arithmetic, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0043,"bare, arithmetic, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0043,"bare, arithmetic, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0043,"bare, arithmetic, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0043,"bare, arithmetic, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0043,"bare, arithmetic, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0055,"bare, arithmetic, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0055,"bare, arithmetic, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0055,"bare, arithmetic, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0055,"bare, arithmetic, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0055,"bare, arithmetic, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0061,"bare, arithmetic, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0061,"bare, arithmetic, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0061,"bare, arithmetic, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0061,"bare, arithmetic, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0061,"bare, arithmetic, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0064,"bare, arithmetic, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0064,"bare, arithmetic, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0064,"bare, arithmetic, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0064,"bare, arithmetic, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0064,"bare, arithmetic, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0067,"bare, arithmetic, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0067,"bare, arithmetic, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0067,"bare, arithmetic, distressed_md @ 0.04",ack,1,1,1,1,1
+distressed_0.04,J,p2_0067,"bare, arithmetic, distressed_md @ 0.04",infer,0,1,1,0,1
+distressed_0.04,J,p2_0067,"bare, arithmetic, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0100,"bare, factual, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0100,"bare, factual, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0100,"bare, factual, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0100,"bare, factual, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0100,"bare, factual, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0115,"bare, factual, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0115,"bare, factual, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0115,"bare, factual, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0115,"bare, factual, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0115,"bare, factual, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0133,"bare, factual, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0133,"bare, factual, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0133,"bare, factual, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0133,"bare, factual, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0133,"bare, factual, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0163,"bare, false_premise, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0163,"bare, false_premise, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0163,"bare, false_premise, distressed_md @ 0.04",ack,1,0,0,0,1
+distressed_0.04,J,p2_0163,"bare, false_premise, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0163,"bare, false_premise, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0172,"bare, false_premise, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0172,"bare, false_premise, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0172,"bare, false_premise, distressed_md @ 0.04",ack,1,0,0,0,1
+distressed_0.04,J,p2_0172,"bare, false_premise, distressed_md @ 0.04",infer,1,0,0,0,1
+distressed_0.04,J,p2_0172,"bare, false_premise, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0187,"bare, false_premise, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0187,"bare, false_premise, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0187,"bare, false_premise, distressed_md @ 0.04",ack,1,1,1,1,1
+distressed_0.04,J,p2_0187,"bare, false_premise, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0187,"bare, false_premise, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0208,"bare, false_premise, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0208,"bare, false_premise, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0208,"bare, false_premise, distressed_md @ 0.04",ack,1,1,1,1,1
+distressed_0.04,J,p2_0208,"bare, false_premise, distressed_md @ 0.04",infer,0,1,1,0,1
+distressed_0.04,J,p2_0208,"bare, false_premise, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0223,"bare, false_premise, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0223,"bare, false_premise, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0223,"bare, false_premise, distressed_md @ 0.04",ack,1,0,0,0,1
+distressed_0.04,J,p2_0223,"bare, false_premise, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0223,"bare, false_premise, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0247,"bare, coding, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0247,"bare, coding, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0247,"bare, coding, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0247,"bare, coding, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0247,"bare, coding, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0259,"bare, coding, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0259,"bare, coding, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0259,"bare, coding, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0259,"bare, coding, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0259,"bare, coding, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0283,"bare, coding, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0283,"bare, coding, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0283,"bare, coding, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0283,"bare, coding, distressed_md @ 0.04",infer,1,1,0,0,0
+distressed_0.04,J,p2_0283,"bare, coding, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0286,"bare, coding, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0286,"bare, coding, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0286,"bare, coding, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0286,"bare, coding, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0286,"bare, coding, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0319,"bare, advice, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0319,"bare, advice, distressed_md @ 0.04",ack,1,1,1,1,1
+distressed_0.04,J,p2_0319,"bare, advice, distressed_md @ 0.04",infer,1,1,1,1,1
+distressed_0.04,J,p2_0319,"bare, advice, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0325,"bare, advice, distressed_md @ 0.04",abandoned,0,1,1,0,1
+distressed_0.04,J,p2_0325,"bare, advice, distressed_md @ 0.04",ack,1,1,1,1,1
+distressed_0.04,J,p2_0325,"bare, advice, distressed_md @ 0.04",infer,1,1,1,1,1
+distressed_0.04,J,p2_0325,"bare, advice, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0352,"bare, advice, distressed_md @ 0.04",abandoned,1,1,1,1,1
+distressed_0.04,J,p2_0352,"bare, advice, distressed_md @ 0.04",ack,1,1,1,1,1
+distressed_0.04,J,p2_0352,"bare, advice, distressed_md @ 0.04",infer,0,1,1,0,1
+distressed_0.04,J,p2_0352,"bare, advice, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0355,"bare, advice, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0355,"bare, advice, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0355,"bare, advice, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0355,"bare, advice, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0361,"bare, advice, distressed_md @ 0.04",abandoned,0,1,1,0,1
+distressed_0.04,J,p2_0361,"bare, advice, distressed_md @ 0.04",ack,1,1,1,1,1
+distressed_0.04,J,p2_0361,"bare, advice, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0361,"bare, advice, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0373,"bare, advice, distressed_md @ 0.04",abandoned,0,0,1,0,0
+distressed_0.04,J,p2_0373,"bare, advice, distressed_md @ 0.04",ack,0,0,1,0,0
+distressed_0.04,J,p2_0373,"bare, advice, distressed_md @ 0.04",infer,0,1,1,0,1
+distressed_0.04,J,p2_0373,"bare, advice, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0388,"bare, instruction_following, distressed_md @ 0.04",correct,1,1,1,1,1
+distressed_0.04,J,p2_0388,"bare, instruction_following, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0388,"bare, instruction_following, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0388,"bare, instruction_following, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0388,"bare, instruction_following, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0400,"bare, instruction_following, distressed_md @ 0.04",correct,nan,0,0,0,1
+distressed_0.04,J,p2_0400,"bare, instruction_following, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0400,"bare, instruction_following, distressed_md @ 0.04",ack,1,0,1,1,0
+distressed_0.04,J,p2_0400,"bare, instruction_following, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0400,"bare, instruction_following, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0406,"bare, instruction_following, distressed_md @ 0.04",correct,0,0,0,1,1
+distressed_0.04,J,p2_0406,"bare, instruction_following, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0406,"bare, instruction_following, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0406,"bare, instruction_following, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0406,"bare, instruction_following, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0412,"bare, instruction_following, distressed_md @ 0.04",correct,0,0,0,1,1
+distressed_0.04,J,p2_0412,"bare, instruction_following, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0412,"bare, instruction_following, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0412,"bare, instruction_following, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0412,"bare, instruction_following, distressed_md @ 0.04",incoh,0,0,0,1,1
+distressed_0.04,J,p2_0421,"bare, instruction_following, distressed_md @ 0.04",correct,nan,1,1,0,1
+distressed_0.04,J,p2_0421,"bare, instruction_following, distressed_md @ 0.04",abandoned,0,0,0,1,1
+distressed_0.04,J,p2_0421,"bare, instruction_following, distressed_md @ 0.04",ack,0,0,0,1,1
+distressed_0.04,J,p2_0421,"bare, instruction_following, distressed_md @ 0.04",infer,0,0,0,1,1
+distressed_0.04,J,p2_0421,"bare, instruction_following, distressed_md @ 0.04",incoh,0,0,0,1,1
+G_abandoned,G,pair_4,arithmetic,correct,0,0,0,1,1
+G_abandoned,G,pair_4,arithmetic,abandoned,1,1,1,1,1
+G_abandoned,G,pair_4,arithmetic,ack,1,1,1,1,1
+G_abandoned,G,pair_4,arithmetic,infer,1,1,1,1,1
+G_abandoned,G,pair_13,false_premise,correct,0,1,0,1,0
+G_abandoned,G,pair_13,false_premise,abandoned,1,0,0,0,1
+G_abandoned,G,pair_13,false_premise,ack,1,1,1,1,1
+G_abandoned,G,pair_13,false_premise,infer,0,0,0,1,1
+G_abandoned,G,pair_14,false_premise,correct,0,1,1,0,1
+G_abandoned,G,pair_14,false_premise,abandoned,1,0,0,0,1
+G_abandoned,G,pair_14,false_premise,ack,1,1,1,1,1
+G_abandoned,G,pair_14,false_premise,infer,1,1,1,1,1
+G_abandoned,G,pair_17,coding,correct,0,0,1,0,0
+G_abandoned,G,pair_17,coding,abandoned,1,1,0,0,0
+G_abandoned,G,pair_17,coding,ack,1,1,1,1,1
+G_abandoned,G,pair_17,coding,infer,1,1,0,0,0
+G_abandoned,G,pair_18,coding,correct,0,0,1,0,0
+G_abandoned,G,pair_18,coding,abandoned,1,1,0,0,0
+G_abandoned,G,pair_18,coding,ack,1,1,1,1,1
+G_abandoned,G,pair_18,coding,infer,1,1,1,1,1
+G_abandoned,G,pair_30,instruction_following,correct,0,0,1,0,0
+G_abandoned,G,pair_30,instruction_following,abandoned,1,1,0,0,0
+G_abandoned,G,pair_30,instruction_following,ack,1,1,1,1,1
+G_abandoned,G,pair_30,instruction_following,infer,0,0,1,0,0
+random_0.04,J,p2_0019,"bare, arithmetic, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0019,"bare, arithmetic, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0019,"bare, arithmetic, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0019,"bare, arithmetic, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0019,"bare, arithmetic, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0031,"bare, arithmetic, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0031,"bare, arithmetic, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0031,"bare, arithmetic, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0031,"bare, arithmetic, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0031,"bare, arithmetic, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0040,"bare, arithmetic, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0040,"bare, arithmetic, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0040,"bare, arithmetic, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0040,"bare, arithmetic, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0040,"bare, arithmetic, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0043,"bare, arithmetic, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0043,"bare, arithmetic, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0043,"bare, arithmetic, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0043,"bare, arithmetic, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0043,"bare, arithmetic, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0055,"bare, arithmetic, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0055,"bare, arithmetic, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0055,"bare, arithmetic, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0055,"bare, arithmetic, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0055,"bare, arithmetic, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0070,"bare, arithmetic, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0070,"bare, arithmetic, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0070,"bare, arithmetic, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0070,"bare, arithmetic, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0070,"bare, arithmetic, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0124,"bare, factual, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0124,"bare, factual, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0124,"bare, factual, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0124,"bare, factual, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0124,"bare, factual, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0154,"bare, false_premise, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0154,"bare, false_premise, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0154,"bare, false_premise, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0154,"bare, false_premise, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0154,"bare, false_premise, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0187,"bare, false_premise, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0187,"bare, false_premise, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0187,"bare, false_premise, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0187,"bare, false_premise, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0187,"bare, false_premise, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0283,"bare, coding, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0283,"bare, coding, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0283,"bare, coding, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0283,"bare, coding, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0283,"bare, coding, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0289,"bare, coding, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0289,"bare, coding, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0289,"bare, coding, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0289,"bare, coding, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0289,"bare, coding, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0316,"bare, advice, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0316,"bare, advice, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0316,"bare, advice, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0316,"bare, advice, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0337,"bare, advice, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0337,"bare, advice, random @ 0.04",ack,1,0,0,0,1
+random_0.04,J,p2_0337,"bare, advice, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0337,"bare, advice, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0415,"bare, instruction_following, random @ 0.04",correct,1,1,1,1,1
+random_0.04,J,p2_0415,"bare, instruction_following, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0415,"bare, instruction_following, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0415,"bare, instruction_following, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0415,"bare, instruction_following, random @ 0.04",incoh,0,0,0,1,1
+random_0.04,J,p2_0439,"bare, instruction_following, random @ 0.04",correct,0,1,1,0,1
+random_0.04,J,p2_0439,"bare, instruction_following, random @ 0.04",abandoned,0,0,0,1,1
+random_0.04,J,p2_0439,"bare, instruction_following, random @ 0.04",ack,0,0,0,1,1
+random_0.04,J,p2_0439,"bare, instruction_following, random @ 0.04",infer,0,0,0,1,1
+random_0.04,J,p2_0439,"bare, instruction_following, random @ 0.04",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0040,"bare, arithmetic, distressed_md @ 0.06",correct,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0040,"bare, arithmetic, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0040,"bare, arithmetic, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0040,"bare, arithmetic, distressed_md @ 0.06",infer,0,1,1,0,1
+distressed_0.06_abandoned,A,p2_0040,"bare, arithmetic, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0049,"bare, arithmetic, distressed_md @ 0.06",correct,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0049,"bare, arithmetic, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0049,"bare, arithmetic, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0049,"bare, arithmetic, distressed_md @ 0.06",infer,0,1,1,0,1
+distressed_0.06_abandoned,A,p2_0049,"bare, arithmetic, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0064,"bare, arithmetic, distressed_md @ 0.06",correct,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0064,"bare, arithmetic, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0064,"bare, arithmetic, distressed_md @ 0.06",ack,0,0,1,0,0
+distressed_0.06_abandoned,A,p2_0064,"bare, arithmetic, distressed_md @ 0.06",infer,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0064,"bare, arithmetic, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0313,"bare, advice, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0313,"bare, advice, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0313,"bare, advice, distressed_md @ 0.06",infer,0,1,1,0,1
+distressed_0.06_abandoned,A,p2_0313,"bare, advice, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0346,"bare, advice, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0346,"bare, advice, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0346,"bare, advice, distressed_md @ 0.06",infer,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0346,"bare, advice, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0639,"preamble, arithmetic, distressed_md @ 0.06",correct,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0639,"preamble, arithmetic, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0639,"preamble, arithmetic, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0639,"preamble, arithmetic, distressed_md @ 0.06",infer,0,1,1,0,1
+distressed_0.06_abandoned,A,p2_0639,"preamble, arithmetic, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0644,"preamble, arithmetic, distressed_md @ 0.06",correct,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0644,"preamble, arithmetic, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0644,"preamble, arithmetic, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0644,"preamble, arithmetic, distressed_md @ 0.06",infer,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0644,"preamble, arithmetic, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0675,"preamble, false_premise, distressed_md @ 0.06",correct,0,1,0,1,0
+distressed_0.06_abandoned,A,p2_0675,"preamble, false_premise, distressed_md @ 0.06",abandoned,1,0,1,1,0
+distressed_0.06_abandoned,A,p2_0675,"preamble, false_premise, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0675,"preamble, false_premise, distressed_md @ 0.06",infer,0,1,1,0,1
+distressed_0.06_abandoned,A,p2_0675,"preamble, false_premise, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0758,"preamble, instruction_following, distressed_md @ 0.06",correct,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0758,"preamble, instruction_following, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0758,"preamble, instruction_following, distressed_md @ 0.06",ack,1,0,1,1,0
+distressed_0.06_abandoned,A,p2_0758,"preamble, instruction_following, distressed_md @ 0.06",infer,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0758,"preamble, instruction_following, distressed_md @ 0.06",incoh,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0765,"preamble, instruction_following, distressed_md @ 0.06",correct,0,0,0,1,1
+distressed_0.06_abandoned,A,p2_0765,"preamble, instruction_following, distressed_md @ 0.06",abandoned,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0765,"preamble, instruction_following, distressed_md @ 0.06",ack,1,1,1,1,1
+distressed_0.06_abandoned,A,p2_0765,"preamble, instruction_following, distressed_md @ 0.06",infer,0,1,1,0,1
+distressed_0.06_abandoned,A,p2_0765,"preamble, instruction_following, distressed_md @ 0.06",incoh,0,0,0,1,1
+inference_flagged,A,p2_0331,"bare, advice, frustrated_md @ 0.08",abandoned,0,0,1,0,0
+inference_flagged,A,p2_0331,"bare, advice, frustrated_md @ 0.08",ack,0,0,0,1,1
+inference_flagged,A,p2_0331,"bare, advice, frustrated_md @ 0.08",infer,1,0,1,1,0
+inference_flagged,A,p2_0331,"bare, advice, frustrated_md @ 0.08",incoh,0,1,1,0,1
+inference_flagged,A,p2_0346,"bare, advice, third_party_md @ 0.06",abandoned,0,0,1,0,0
+inference_flagged,A,p2_0346,"bare, advice, third_party_md @ 0.06",ack,1,1,1,1,1
+inference_flagged,A,p2_0346,"bare, advice, third_party_md @ 0.06",infer,1,1,1,1,1
+inference_flagged,A,p2_0346,"bare, advice, third_party_md @ 0.06",incoh,0,0,0,1,1
+inference_flagged,A,p2_0415,"bare, instruction_following, third_party_md @ 0.06",correct,0,0,0,1,1
+inference_flagged,A,p2_0415,"bare, instruction_following, third_party_md @ 0.06",abandoned,0,0,1,0,0
+inference_flagged,A,p2_0415,"bare, instruction_following, third_party_md @ 0.06",ack,1,1,1,1,1
+inference_flagged,A,p2_0415,"bare, instruction_following, third_party_md @ 0.06",infer,1,1,1,1,1
+inference_flagged,A,p2_0415,"bare, instruction_following, third_party_md @ 0.06",incoh,0,0,0,1,1
+inference_flagged,A,p2_0732,"preamble, advice, third_party_md @ 0.04",abandoned,0,0,1,0,0
+inference_flagged,A,p2_0732,"preamble, advice, third_party_md @ 0.04",ack,0,0,0,1,1
+inference_flagged,A,p2_0732,"preamble, advice, third_party_md @ 0.04",infer,1,1,1,1,1
+inference_flagged,A,p2_0732,"preamble, advice, third_party_md @ 0.04",incoh,0,0,0,1,1
+inference_flagged,A,p2_0733,"preamble, advice, distressed_probe @ 0.08",abandoned,1,1,1,1,1
+inference_flagged,A,p2_0733,"preamble, advice, distressed_probe @ 0.08",ack,1,1,1,1,1
+inference_flagged,A,p2_0733,"preamble, advice, distressed_probe @ 0.08",infer,1,1,1,1,1
+inference_flagged,A,p2_0733,"preamble, advice, distressed_probe @ 0.08",incoh,0,0,0,1,1
+inference_flagged,K,p2_0007,"bare, arithmetic, valence_resid @ 0.08",correct,0,0,0,1,1
+inference_flagged,K,p2_0007,"bare, arithmetic, valence_resid @ 0.08",abandoned,1,1,1,1,1
+inference_flagged,K,p2_0007,"bare, arithmetic, valence_resid @ 0.08",ack,1,1,1,1,1
+inference_flagged,K,p2_0007,"bare, arithmetic, valence_resid @ 0.08",infer,1,1,1,1,1
+inference_flagged,K,p2_0007,"bare, arithmetic, valence_resid @ 0.08",incoh,0,0,0,1,1
+inference_flagged,K,p2_0196,"bare, false_premise, valence_resid @ 0.04",correct,1,1,1,1,1
+inference_flagged,K,p2_0196,"bare, false_premise, valence_resid @ 0.04",abandoned,0,0,0,1,1
+inference_flagged,K,p2_0196,"bare, false_premise, valence_resid @ 0.04",ack,1,0,0,0,1
+inference_flagged,K,p2_0196,"bare, false_premise, valence_resid @ 0.04",infer,1,0,0,0,1
+inference_flagged,K,p2_0196,"bare, false_premise, valence_resid @ 0.04",incoh,0,0,0,1,1
+inference_flagged,M,p2_0008,"distressed, arithmetic, distressed_md_subtract @ 0.0 sample 2",correct,1,1,1,1,1
+inference_flagged,M,p2_0008,"distressed, arithmetic, distressed_md_subtract @ 0.0 sample 2",abandoned,0,0,0,1,1
+inference_flagged,M,p2_0008,"distressed, arithmetic, distressed_md_subtract @ 0.0 sample 2",ack,1,0,1,1,0
+inference_flagged,M,p2_0008,"distressed, arithmetic, distressed_md_subtract @ 0.0 sample 2",infer,1,0,1,1,0
+inference_flagged,M,p2_0008,"distressed, arithmetic, distressed_md_subtract @ 0.0 sample 2",incoh,0,0,0,1,1
+inference_flagged,N,p2_0720,"preamble, coding, distressed_md @ 0.04 sample 3",correct,1,1,1,1,1
+inference_flagged,N,p2_0720,"preamble, coding, distressed_md @ 0.04 sample 3",abandoned,0,0,0,1,1
+inference_flagged,N,p2_0720,"preamble, coding, distressed_md @ 0.04 sample 3",ack,1,1,1,1,1
+inference_flagged,N,p2_0720,"preamble, coding, distressed_md @ 0.04 sample 3",infer,1,1,1,1,1
+inference_flagged,N,p2_0720,"preamble, coding, distressed_md @ 0.04 sample 3",incoh,0,0,0,1,1
+inference_flagged,N,p2_0738,"preamble, advice, distressed_md @ 0.04 sample 0",abandoned,1,1,1,1,1
+inference_flagged,N,p2_0738,"preamble, advice, distressed_md @ 0.04 sample 0",ack,1,1,1,1,1
+inference_flagged,N,p2_0738,"preamble, advice, distressed_md @ 0.04 sample 0",infer,1,1,1,1,1
+inference_flagged,N,p2_0738,"preamble, advice, distressed_md @ 0.04 sample 0",incoh,0,0,0,1,1
