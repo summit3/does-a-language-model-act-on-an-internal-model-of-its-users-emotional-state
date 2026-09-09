@@ -1,6 +1,6 @@
 """Layer-convention check, residual norms, playground stress direction and calibration sweep
 on the pod model. Run from the repo root with the venv active: python -m src.calibrate_9b
-Writes results/9b_residual_norms.{csv,png} and results/9b_calibration_sweep.md.
+Writes results/playground/9b_residual_norms.{csv,png} and results/playground/9b_calibration_sweep.md.
 """
 import csv, sys, time
 from pathlib import Path
@@ -11,7 +11,7 @@ from .model import load_model, chat, get_decoder_layers
 from .hooks import (get_residual_activations, describe_layers, residual_norms,
                     steer_generate_relative, relative_to_absolute_N)
 
-RESULTS = Path("results"); RESULTS.mkdir(exist_ok=True)
+RESULTS = Path("results/playground"); RESULTS.mkdir(parents=True, exist_ok=True)
 ACTS = Path("activations"); ACTS.mkdir(exist_ok=True)
 PROMPT = "What's the capital of Australia?"
 SYSTEM = CONCISE_SYSTEM_PROMPT
@@ -87,4 +87,4 @@ for name, vec in [("Random unit direction (control)", rand), ("Stress direction"
         lines += [f"### f = {f}  (absolute N = {N:.1f})\n", "```", text, "```\n"]
         print(f"--- {name} f={f} N={N:.1f} ---\n{text}\n")
 (RESULTS/"9b_calibration_sweep.md").write_text("\n".join(lines))
-print("wrote results/9b_calibration_sweep.md, results/9b_residual_norms.{csv,png}")
+print("wrote results/playground/9b_calibration_sweep.md, results/playground/9b_residual_norms.{csv,png}")

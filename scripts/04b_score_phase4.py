@@ -5,7 +5,7 @@ import csv, json, math, os, re, sys, random
 from collections import defaultdict
 from pathlib import Path
 import numpy as np, pandas as pd
-ROOT = Path(__file__).resolve().parent.parent; R = ROOT / "results"
+ROOT = Path(__file__).resolve().parent.parent; R = ROOT / "results/phase4"
 ACK = ["sorry", "stress", "anxious", "anxiety", "overwhelm", "feeling", "feel ", "rough", "tough", "hope you", "hope your", "hope things", "take care", "breath", "not alone", "hang in",
        "difficult time", "hard time", "it's okay", "it is okay", "gentle", "kind to yourself", "i'm here", "i am here", "here for you", "support", "day gets better", "panic", "exhaust",
        "worry", "worried", "lonely", "pressure", "mood", "drained", "shaking", "shaky", "struggl", "going through", "you're dealing", "you are dealing", "frightened", "scared", "sad"]

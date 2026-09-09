@@ -1,7 +1,7 @@
 """Phase 3: per-layer linear probes on cached activations + baselines + geometry + directions.
-Runs on the laptop, no model. Inputs: activations/phase2_acts_qwen3_5-9b.pt, results/phase2_activation_index.csv,
-data/phase2_prompts.csv, data/phase2_qa_labels.csv. Outputs: results/phase3_*.csv, results/F1..F4 PNGs,
-results/directions_layer<L>.pt. Preprocessing statistics come from the TRAIN split only.
+Runs on the laptop, no model. Inputs: activations/phase2_acts_qwen3_5-9b.pt, results/phase2/phase2_activation_index.csv,
+data/phase2_prompts.csv, data/phase2_qa_labels.csv. Outputs: results/phase3/phase3_*.csv, F1..F4 PNGs,
+results/phase3/directions_layer<L>.pt. Preprocessing statistics come from the TRAIN split only.
 """
 import csv, json, sys, time, warnings
 from pathlib import Path
@@ -11,7 +11,7 @@ from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from sklearn.metrics import balanced_accuracy_score, recall_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 warnings.filterwarnings("ignore")
-ROOT = Path(__file__).resolve().parent.parent; R = ROOT / "results"
+ROOT = Path(__file__).resolve().parent.parent; R = ROOT / "results/phase3"; R2 = ROOT / "results/phase2"
 rng = np.random.default_rng(0)
 C_GRID = [0.001, 0.01, 0.1]; CV = StratifiedKFold(3, shuffle=True, random_state=0)
 STAGE = sys.argv[1] if len(sys.argv) > 1 else "all"   # "probes" | "figures" | "all"
@@ -19,7 +19,7 @@ STAGE = sys.argv[1] if len(sys.argv) > 1 else "all"   # "probes" | "figures" | "
 # ----------------------------------------------------------------------------- data
 d = torch.load(ROOT / "activations/phase2_acts_qwen3_5-9b.pt")
 A = d["acts"].float().numpy(); N, NL, H = A.shape
-idx = list(csv.DictReader(open(R / "phase2_activation_index.csv", newline="", encoding="utf-8")))
+idx = list(csv.DictReader(open(R2 / "phase2_activation_index.csv", newline="", encoding="utf-8")))
 prompts = {r["id"]: r for r in csv.DictReader(open(ROOT / "data/phase2_prompts.csv", newline="", encoding="utf-8"))}
 judge = {r["text"]: r["judge_label"] for r in csv.DictReader(open(ROOT / "data/phase2_qa_labels.csv", newline="", encoding="utf-8"))}
 cond = np.array([r["condition"] for r in idx]); split = np.array([r["split"] for r in idx]); author = np.array([r["author"] for r in idx])
@@ -195,7 +195,7 @@ if STAGE in ("probes", "all"):
                 "third_party_meandiff": torch.tensor(unit(md_tp)), "third_party_neutral_meandiff": torch.tensor(unit(md_tpn)),
                 "unrelated_coding_probe": torch.tensor(unit(w_u_raw)), "anyemotion": torch.tensor(unit(anyemo)),
                 "train_mean": torch.tensor(mu.astype(np.float32)), "train_std": torch.tensor(sd.astype(np.float32)), "geometry": geo}, R / f"directions_layer{La}.pt")
-    print("geometry:", {k: (round(v, 3) if isinstance(v, float) else v) for k, v in geo.items()}); print(f"saved results/directions_layer{La}.pt")
+    print("geometry:", {k: (round(v, 3) if isinstance(v, float) else v) for k, v in geo.items()}); print(f"saved results/phase3/directions_layer{La}.pt")
 
 # ----------------------------------------------------------------------------- figures
 if STAGE in ("figures", "all"):

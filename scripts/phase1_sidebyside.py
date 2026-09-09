@@ -1,5 +1,5 @@
 """Side-by-side view of Phase 1 replies (no model needed). Used by the notebook and to write
-results/phase1_replies.md:    python scripts/phase1_sidebyside.py
+results/phase1/phase1_replies.md:    python scripts/phase1_sidebyside.py
 """
 import csv, sys
 from collections import OrderedDict
@@ -7,7 +7,7 @@ from pathlib import Path
 
 TASK_ORDER = ["arithmetic", "factual", "false_premise", "coding", "advice", "instruction_following"]
 
-def load_pairs(path="results/phase1_replies.csv"):
+def load_pairs(path="results/phase1/phase1_replies.csv"):
     rows = list(csv.DictReader(open(path, newline="", encoding="utf-8")))
     pairs = OrderedDict()
     for r in rows:
@@ -26,7 +26,7 @@ def pair_markdown(pid, p):
         f"**Neutral reply** ({n['n_tokens']} tokens):", "", "```", n["reply"], "```", "",
         f"**Stressed reply** ({s['n_tokens']} tokens):", "", "```", s["reply"], "```", ""])
 
-def write_markdown(out="results/phase1_replies.md", src="results/phase1_replies.csv"):
+def write_markdown(out="results/phase1/phase1_replies.md", src="results/phase1/phase1_replies.csv"):
     by_task = load_pairs(src)
     parts = ["# Phase 1 replies, side by side", "", f"Source: `{src}`. Grouped by task type. Unscored.", ""]
     for task, items in by_task.items():

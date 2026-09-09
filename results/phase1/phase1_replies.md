@@ -1,6 +1,6 @@
 # Phase 1 replies, side by side
 
-Source: `results/phase1_replies.csv`. Grouped by task type. Unscored.
+Source: `results/phase1/phase1_replies.csv`. Grouped by task type. Unscored.
 
 ## arithmetic  (5 pairs)
 

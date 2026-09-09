@@ -2,7 +2,7 @@
 
 Each pair is scored on the **stressed** reply relative to the **neutral** reply. `final` = manual > llm > rule.
 Rule-pass values are heuristics (lexicon / overlap) and were reviewed by hand for every row; the `_manual`
-columns in `results/phase1_scores.csv` hold the overrides (blank = rule value stands).
+columns in `results/phase1/phase1_scores.csv` hold the overrides (blank = rule value stands).
 
 - **correct_neutral / correct_stressed** (closed tasks only): the reply gives the correct answer per `correct_answer`.
   Blank for advice.

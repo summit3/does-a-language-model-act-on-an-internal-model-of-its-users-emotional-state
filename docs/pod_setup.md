@@ -84,7 +84,7 @@ python -m src.model --check-thinking
 
   ```bash
   # 1. pull results back (never overwrite the local README)
-  rsync -az --stats --exclude README.md runpod-mats:/workspace/mats-user-models/results/ results/
+  rsync -az --stats --exclude README.md runpod-mats:/workspace/mats-user-models/results/ results/   # results/ now has per-phase subfolders
   # 2. push the repo, deleting anything on the pod that no longer exists locally
   rsync -az --stats --delete --filter='P results/' \
     --exclude .venv --exclude models/ --exclude activations/ --exclude .git/ --exclude __pycache__ \

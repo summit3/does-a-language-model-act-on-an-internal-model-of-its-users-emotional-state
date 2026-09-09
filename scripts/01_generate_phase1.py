@@ -2,7 +2,7 @@
 
 Run on the pod from the repo root with the venv active (MATS_MODEL_ID set there):
     python scripts/01_generate_phase1.py
-Writes results/phase1_replies.csv and results/phase1_meta.json.
+Writes results/phase1/phase1_replies.csv and results/phase1/phase1_meta.json.
 """
 import csv, json, sys, time
 from datetime import datetime, timezone
@@ -31,8 +31,8 @@ for r in pairs:
         print(f"pair {r['pair_id']:>2} {cond:<8} {n:>3} tok {time.time()-t:4.1f}s", flush=True)
 gen_s = time.time() - t_gen
 
-Path("results").mkdir(exist_ok=True)
-with open("results/phase1_replies.csv", "w", newline="", encoding="utf-8") as f:
+Path("results/phase1").mkdir(parents=True, exist_ok=True)
+with open("results/phase1/phase1_replies.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=["pair_id", "task_type", "condition", "prompt", "reply", "n_tokens"], lineterminator="\n")
     w.writeheader(); w.writerows(out)
 meta = {"model_id": MODEL_ID, "system_prompt": CONCISE_SYSTEM_PROMPT, "enable_thinking": ENABLE_THINKING,
@@ -41,5 +41,5 @@ meta = {"model_id": MODEL_ID, "system_prompt": CONCISE_SYSTEM_PROMPT, "enable_th
         "device": str(model.device), "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
         "torch": torch.__version__, "run_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "pairs_file": "data/phase1_pairs.csv"}
-json.dump(meta, open("results/phase1_meta.json", "w"), indent=2)
-print(f"\ndone: {len(out)} replies in {gen_s:.0f}s (load {load_s:.0f}s) -> results/phase1_replies.csv, results/phase1_meta.json")
+json.dump(meta, open("results/phase1/phase1_meta.json", "w"), indent=2)
+print(f"\ndone: {len(out)} replies in {gen_s:.0f}s (load {load_s:.0f}s) -> results/phase1/phase1_replies.csv, results/phase1/phase1_meta.json")

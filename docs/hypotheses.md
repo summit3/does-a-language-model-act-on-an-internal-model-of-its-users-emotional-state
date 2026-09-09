@@ -1,8 +1,8 @@
 # Running lab notebook: hypotheses, findings, decisions
 
 Terse by design. Updated as results land. Pointers: brief `docs/mats_user_models_brief.md`; scoring
-rules `data/phase1_scoring_rules.md`; scores `results/phase1_scores.csv`; calibration
-`results/9b_calibration_sweep.md`; playground `results/playground_notes.md`.
+rules `data/phase1_scoring_rules.md`; scores `results/phase1/phase1_scores.csv`; calibration
+`results/playground/9b_calibration_sweep.md`; playground `results/playground/playground_notes.md`.
 
 ## 1. Question
 
@@ -31,7 +31,7 @@ and is it a representation of the user rather than of emotion words?
 
 ### H1b (new, 2026-09-08): Acknowledgement occurs when the reply has room, i.e. it is driven by answer length under the concise budget rather than by task "softness".
 - Status: **Supported (rule-scored)**
-- Evidence: with the concise system prompt removed (Phase 4 run G, results/phase1_replies_nosys.csv), acknowledgement 24/30 vs 18/30 with the prompt; coding 5/5 vs 1/5, factual 5/5 vs 2/5; mean reply length 130 vs 43 tokens. The 6 "abandoned" rows in that run are pending hand check and may be rule artefacts on long replies. Original observation: arithmetic answers are ~11 tokens and always acknowledged (5/5); coding/factual answers fill the two-sentence budget and mostly do not (1/5, 2/5).
+- Evidence: with the concise system prompt removed (Phase 4 run G, results/phase1/phase1_replies_nosys.csv), acknowledgement 24/30 vs 18/30 with the prompt; coding 5/5 vs 1/5, factual 5/5 vs 2/5; mean reply length 130 vs 43 tokens. The 6 "abandoned" rows in that run are pending hand check and may be rule artefacts on long replies. Original observation: arithmetic answers are ~11 tokens and always acknowledged (5/5); coding/factual answers fill the two-sentence budget and mostly do not (1/5, 2/5).
 - What would change my mind: acknowledgement stays flat when the concise prompt is relaxed; or short factual answers are not acknowledged at matched length.
 - Test later if time: relax the concise prompt and check whether coding acknowledgement rises.
 
@@ -51,7 +51,7 @@ and is it a representation of the user rather than of emotion words?
   - Sampled addition (D, T=0.7, 150 samples, bare val): acknowledgement 0.093 -> 0.387 [0.312, 0.467], inference 0.007 -> 0.167, abandoned 0.013 -> 0.080, correct 0.908 -> 0.917.
 - Sub-hypothesis (K, component decomposition) **refuted**: the valence residual (distressed md minus its projection on positive md; cos with distressed md 0.78) carries the behaviour (at 0.04 / 0.06 / 0.08: acknowledgement 0.27 / 0.30 / 0.57, inference 0.20 / 0.73 / 1.00, abandonment 0.03 / 0.30 / 0.77) while the shared any-emotion PC1 (cos 0.35) is inert (acknowledgement <= 0.13, abandonment <= 0.03, inference <= 0.23 at 0.08, correct >= 0.83). The prediction was the reverse (shared drives abandonment, valence drives acknowledgement).
 - Earlier: playground (1.7B) and 9B calibration (in-sample, n=1) had shown abandonment at 0.06 with a random direction inert to 0.10.
-- What would change my mind: a rule-scoring artefact (keyword lists in results/phase4_keyword_lists.json) firing on steered text for reasons other than emotional content; hand-reading results/phase4_sample_for_reading.md is the check. Frustrated_md as an other-emotion control: acknowledgement 0.10 at 0.04, 0.63 at 0.08 with 0.87 incoherent.
+- What would change my mind: a rule-scoring artefact (keyword lists in results/phase4/phase4_keyword_lists.json) firing on steered text for reasons other than emotional content; hand-reading results/phase4/phase4_sample_for_reading.md is the check. Frustrated_md as an other-emotion control: acknowledgement 0.10 at 0.04, 0.63 at 0.08 with 0.87 incoherent.
 
 ### H4 (stretch): Quantify how the probe tracks emotional state across turns.
 - Status: **Not tested** (out of scope for 20 hours; Empathic Machines showed qualitative multi-turn tracking).
@@ -83,7 +83,7 @@ and is it a representation of the user rather than of emotion words?
   - (b') neutral_preamble vs frustrated: layer 20, val 0.950, human 0.917. (c') 3-way: layer 23, val 0.911, human 0.889. (d') distressed vs positive: layer 17, val 0.933 (n=45), implied classified distressed 0.975.
   - Geometry at layer 18 (relative to neutral_preamble): cos(distressed md, frustrated md) 0.85; cos(distressed md, positive md) 0.63; cos(distressed md, neutral_preamble-minus-bare md) 0.31; cos(third_party md, third_party_neutral md) 0.01; cos(third_party md, distressed md) 0.74; cos(third_party_neutral md, distressed md) -0.30; cos(unrelated coding probe, distressed md) 0.01.
   - Positive: P(distressed) 0.40, cos(distressed md, positive md) 0.63, distressed-vs-positive BA 0.93: the direction is part emotional-content, part negative valence; frustrated shares most of it (P 0.89, cos 0.85).
-  - Files: results/phase3b_*.csv, F1-F4 regenerated (v1 kept as *_v1_confounded_*), results/directions_layer18_v2.pt.
+  - Files: results/phase3/phase3b_*.csv, F1-F4 regenerated (v1 kept as *_v1_confounded_*), results/phase3/directions_layer18_v2.pt.
 
 ## 4. Decisions and definitions
 
@@ -117,7 +117,7 @@ and is it a representation of the user rather than of emotion words?
 
 ## 6. Next experiments (ordered)
 
-Next: Phase 4 steering with `results/directions_layer18_v2.pt` on held-out prompts; plus a behavioural check on third_party and third_party_neutral prompts scored with the Phase 1 metrics.
+Next: Phase 4 steering with `results/phase3/directions_layer18_v2.pt` on held-out prompts; plus a behavioural check on third_party and third_party_neutral prompts scored with the Phase 1 metrics.
 
 Original plan:
 
@@ -133,12 +133,12 @@ Original plan:
 ## 7. Verification log (personally checked)
 
 - Read all 60 Phase 1 replies.
-- Hand-scored 44 override cells in `results/phase1_scores.csv`.
+- Hand-scored 44 override cells in `results/phase1/phase1_scores.csv`.
 - Recomputed the count table against the pair lists.
 - Watched the hooks-vs-HF-hidden-states check pass (layers 0-30 exact; layer 31 equal after final norm).
 - Confirmed no `<think>` block in outputs (`python -m src.model --check-thinking` PASS on 1.7B and 9B).
 - 2026-09-08, Phase 2 QA: reviewed 30 random samples (10 per condition), all 40 judge-disagreement rows, the full implied set, and the word-frequency flags. Cut nothing. Added 32 human-written preambles across all categories to test dependence on generated register.
-- 2026-09-08, Phase 4: rule-based scoring only; keyword lists recorded in results/phase4_keyword_lists.json; the 145-row stratified sample and 406 flagged rows in results/phase4_sample_for_reading.md are NOT yet hand-read.
+- 2026-09-08, Phase 4: rule-based scoring only; keyword lists recorded in results/phase4/phase4_keyword_lists.json; the 145-row stratified sample and 406 flagged rows in results/phase4/phase4_sample_for_reading.md are NOT yet hand-read.
 - 2026-09-08, Phase 3 v1: read F1 and identified that ~1.0 accuracy from layer 0 is inconsistent with a real user-state representation; the length-only baseline and the third_party_neutral P(distressed) confirmed the confound.
 - [add more here]
 

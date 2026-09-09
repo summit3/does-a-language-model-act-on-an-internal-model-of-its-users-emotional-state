@@ -1,5 +1,5 @@
-"""Phase 4 steering runs on the pod. Usage: python scripts/04_steer.py A|B|C|D  (resume-safe; appends to results/phase4_steered.csv)
-Directions from results/directions_layer18_v2.pt (unit vectors, raw residual space, relative to neutral_preamble).
+"""Phase 4 steering runs on the pod. Usage: python scripts/04_steer.py A|B|C|D  (resume-safe; appends to results/phase4/phase4_steered.csv)
+Directions from results/phase3/directions_layer18_v2.pt (unit vectors, raw residual space, relative to neutral_preamble).
 Band = blocks 12-23; strength = fraction of the prompt's mean band residual norm (steer_generate_relative); greedy; concise system prompt; 150 new tokens.
 """
 import csv, sys, time
@@ -11,14 +11,14 @@ from src.model import load_model, encode_prompt, _strip_thinking
 from src.hooks import residual_norms, steer_generate_relative, relative_to_absolute_N, steering
 from scripts.phase2_pool.tasks import TASKS
 
-STAGE = sys.argv[1]; OUT = Path("results/phase4_steered.csv"); BAND = list(range(12, 24)); FRACS = [0.02, 0.04, 0.06, 0.08]; MAXT = 150
+STAGE = sys.argv[1]; OUT = Path("results/phase4/phase4_steered.csv"); OUT.parent.mkdir(parents=True, exist_ok=True); BAND = list(range(12, 24)); FRACS = [0.02, 0.04, 0.06, 0.08]; MAXT = 150
 COLS = ["run", "prompt_id", "base_task", "task_type", "form", "direction", "fraction", "abs_N", "sample_idx", "temperature", "reply", "n_tokens", "seconds"]
 tt = {t: k for k, v in TASKS.items() for t in v}
 rows = list(csv.DictReader(open("data/phase2_prompts.csv", newline="", encoding="utf-8")))
 val_bare = [r for r in rows if r["split"] == "val" and r["condition"] == "neutral"]; val_pre = [r for r in rows if r["split"] == "val" and r["condition"] == "neutral_preamble"]
 val_dis = [r for r in rows if r["split"] == "val" and r["condition"] == "distressed"]; tp = [r for r in rows if r["condition"] in ("third_party", "third_party_neutral")]
 all_bare = [r for r in rows if r["split"] in ("train", "val") and r["condition"] == "neutral"]; tp_claude = [r for r in rows if r["condition"] == "third_party" and r["author"] == "claude"]
-D = torch.load("results/directions_layer18_v2.pt"); torch.manual_seed(0); rnd = torch.randn(4096); rnd = rnd / rnd.norm()
+D = torch.load("results/phase3/directions_layer18_v2.pt"); torch.manual_seed(0); rnd = torch.randn(4096); rnd = rnd / rnd.norm()
 DIRS = {"distressed_md": D["distressed_meandiff"], "distressed_probe": D["distressed_probe"], "frustrated_md": D["frustrated_meandiff"], "positive_md": D["positive_meandiff"],
         "third_party_md": D["third_party_meandiff"], "unrelated_coding_probe": D["unrelated_coding_probe"], "random": rnd}
 # K: component directions at layer 18 from the three emotional mean-differences
@@ -100,7 +100,7 @@ elif STAGE == "F":   # band robustness: distressed md at 0.04 on bare prompts, b
             emit("F", r, "bare", f"distressed_md_{bname}", 0.04, N, "", "", text, time.time() - t)
 elif STAGE == "G":   # H1b: Phase 1 prompts with NO system prompt
     from src.model import chat
-    pairs = list(csv.DictReader(open("data/phase1_pairs.csv", newline="", encoding="utf-8"))); outp = Path("results/phase1_replies_nosys.csv"); t0 = time.time(); rows_g = []
+    pairs = list(csv.DictReader(open("data/phase1_pairs.csv", newline="", encoding="utf-8"))); outp = Path("results/phase1/phase1_replies_nosys.csv"); t0 = time.time(); rows_g = []
     for r in pairs:
         for cond in ("neutral", "stressed"):
             reply = chat(model, tok, r[cond], system=None, max_new_tokens=MAXT)

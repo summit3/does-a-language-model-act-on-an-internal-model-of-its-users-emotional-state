@@ -32,7 +32,7 @@ Stretch H4 (low priority; Empathic Machines showed this qualitatively): quantify
 
 Existence claims (H2, H3) can use qualitative examples. Method/causal claims (H1, H4) need baselines.
 
-Playground observation (untimed, Qwen3-1.7B): at moderate steering strength along a crude user-distress direction the model dropped a factual task in favour of emotional support. Phase 1 must include task-abandonment / refusal rate as a primary metric, and the concise-answer system prompt must be applied identically across all conditions. (Details: results/playground_notes.md.)
+Playground observation (untimed, Qwen3-1.7B): at moderate steering strength along a crude user-distress direction the model dropped a factual task in favour of emotional support. Phase 1 must include task-abandonment / refusal rate as a primary metric, and the concise-answer system prompt must be applied identically across all conditions. (Details: results/playground/playground_notes.md.)
 
 ## Verified pod facts (untimed, Sept 5)
 
