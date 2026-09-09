@@ -11,7 +11,7 @@ A,p2_0007,What is 37 times 19?,arithmetic,bare,distressed_probe,0.08,3.57,,,0.54
 A,p2_0007,What is 37 times 19?,arithmetic,bare,frustrated_md,0.02,0.892,,,0.28,1.0,0,0,0,0,0,0,,0.0,0.0,3
 A,p2_0007,What is 37 times 19?,arithmetic,bare,frustrated_md,0.04,1.785,,,0.32,1.0,0,0,0,0,0,0,,0.0,0.0,4
 A,p2_0007,What is 37 times 19?,arithmetic,bare,frustrated_md,0.06,2.677,,,0.33,1.0,0,0,0,0,0,0,,0.0,0.0,4
-A,p2_0007,What is 37 times 19?,arithmetic,bare,frustrated_md,0.08,3.57,,,6.43,0.0,1,1,0,0,1,0,,0.8,0.0,79
+A,p2_0007,What is 37 times 19?,arithmetic,bare,frustrated_md,0.08,3.57,,,6.43,0.0,1,0,0,0,1,0,sorry,0.8,0.0,79
 A,p2_0007,What is 37 times 19?,arithmetic,bare,positive_md,0.02,0.892,,,0.67,1.0,0,0,0,0,0,0,,0.0,0.0,12
 A,p2_0007,What is 37 times 19?,arithmetic,bare,positive_md,0.04,1.785,,,0.28,1.0,0,0,0,0,0,0,,0.0,0.0,3
 A,p2_0007,What is 37 times 19?,arithmetic,bare,positive_md,0.06,2.677,,,0.45,1.0,0,0,0,0,0,0,,0.0,0.0,7
@@ -19,7 +19,7 @@ A,p2_0007,What is 37 times 19?,arithmetic,bare,positive_md,0.08,3.57,,,0.93,0.0,
 A,p2_0007,What is 37 times 19?,arithmetic,bare,third_party_md,0.02,0.892,,,0.28,1.0,0,0,0,0,0,0,,0.0,0.0,3
 A,p2_0007,What is 37 times 19?,arithmetic,bare,third_party_md,0.04,1.785,,,0.33,1.0,0,0,0,0,0,0,,0.0,0.0,4
 A,p2_0007,What is 37 times 19?,arithmetic,bare,third_party_md,0.06,2.677,,,1.24,0.0,1,0,0,0,0,0,,0.048,0.0,25
-A,p2_0007,What is 37 times 19?,arithmetic,bare,third_party_md,0.08,3.57,,,2.49,0.0,1,0,1,2,0,0,crisis,0.021,0.0,52
+A,p2_0007,What is 37 times 19?,arithmetic,bare,third_party_md,0.08,3.57,,,2.49,0.0,1,0,0,0,0,0,crisis,0.021,0.0,52
 A,p2_0007,What is 37 times 19?,arithmetic,bare,unrelated_coding_probe,0.02,0.892,,,0.7,1.0,0,0,0,0,0,0,,0.0,0.0,12
 A,p2_0007,What is 37 times 19?,arithmetic,bare,unrelated_coding_probe,0.04,1.785,,,0.68,1.0,0,0,0,0,0,0,,0.0,0.0,12
 A,p2_0007,What is 37 times 19?,arithmetic,bare,unrelated_coding_probe,0.06,2.677,,,0.69,1.0,0,0,0,0,0,0,,0.0,0.0,12
@@ -60,7 +60,7 @@ A,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,random,0.08,3.716,,,2.61,0.0,0,0,
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,none,0,0.0,,,1.85,1.0,0,0,0,0,0,0,,0.0,0.0,40
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,distressed_md,0.02,0.917,,,0.75,1.0,0,0,0,0,0,0,,0.0,0.0,14
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,distressed_md,0.04,1.834,,,0.32,1.0,0,0,0,0,0,0,,0.0,0.0,4
-A,p2_0046,What is 3/5 of 250?,arithmetic,bare,distressed_md,0.06,2.751,,,1.76,0.0,1,1,1,2,0,0,,0.0,0.0,38
+A,p2_0046,What is 3/5 of 250?,arithmetic,bare,distressed_md,0.06,2.751,,,1.76,0.0,1,1,1,2,0,0,loss;pain,0.0,0.0,38
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,distressed_md,0.08,3.668,,,0.88,0.0,1,1,1,2,0,0,,0.0,0.0,17
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,distressed_probe,0.02,0.917,,,1.38,1.0,0,0,0,0,0,0,,0.0,0.0,29
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,distressed_probe,0.04,1.834,,,0.75,1.0,0,0,0,0,0,0,,0.0,0.0,14
@@ -76,7 +76,7 @@ A,p2_0046,What is 3/5 of 250?,arithmetic,bare,positive_md,0.06,2.751,,,0.45,1.0,
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,positive_md,0.08,3.668,,,6.33,0.0,1,0,0,0,1,0,,0.0,0.0,14
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,third_party_md,0.02,0.917,,,0.74,1.0,0,0,0,0,0,0,,0.0,0.0,14
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,third_party_md,0.04,1.834,,,0.74,1.0,0,0,0,0,0,0,,0.0,0.0,14
-A,p2_0046,What is 3/5 of 250?,arithmetic,bare,third_party_md,0.06,2.751,,,1.75,1.0,0,0,1,2,0,0,,0.0,0.0,38
+A,p2_0046,What is 3/5 of 250?,arithmetic,bare,third_party_md,0.06,2.751,,,1.75,1.0,0,0,0,0,0,1,crisis,0.0,0.0,38
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,third_party_md,0.08,3.668,,,1.12,0.0,1,1,1,2,0,0,,0.0,0.0,23
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,unrelated_coding_probe,0.02,0.917,,,1.84,1.0,0,0,0,0,0,0,,0.0,0.0,40
 A,p2_0046,What is 3/5 of 250?,arithmetic,bare,unrelated_coding_probe,0.04,1.834,,,2.72,1.0,0,0,0,0,0,0,,0.0,0.0,61
@@ -118,7 +118,7 @@ A,p2_0049,"Round 4,687 to the nearest hundred.",arithmetic,bare,random,0.08,3.63
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,none,0,0.0,,,0.79,1.0,0,0,0,0,0,0,,0.0,0.0,15
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_md,0.02,0.907,,,0.32,1.0,0,0,0,0,0,0,,0.0,0.0,4
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_md,0.04,1.815,,,0.36,1.0,0,0,0,0,0,0,,0.0,0.0,5
-A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_md,0.06,2.722,,,1.29,0.0,1,1,1,2,0,0,,0.0,0.0,27
+A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_md,0.06,2.722,,,1.29,0.0,1,0,1,2,0,0,pain,0.0,0.0,27
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_md,0.08,3.629,,,0.96,0.0,1,1,1,2,0,0,,0.0,0.0,19
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_probe,0.02,0.907,,,0.78,1.0,0,0,0,0,0,0,,0.0,0.0,15
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_probe,0.04,1.815,,,0.78,1.0,0,0,0,0,0,0,,0.0,0.0,15
@@ -127,7 +127,7 @@ A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,distressed_probe,0.08,3.
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,frustrated_md,0.02,0.907,,,0.32,1.0,0,0,0,0,0,0,,0.0,0.0,4
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,frustrated_md,0.04,1.815,,,0.36,1.0,0,0,0,0,0,0,,0.0,0.0,5
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,frustrated_md,0.06,2.722,,,0.36,1.0,0,0,0,0,0,0,,0.0,0.0,5
-A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,frustrated_md,0.08,3.629,,,0.53,0.0,1,1,0,0,0,0,,0.0,0.0,9
+A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,frustrated_md,0.08,3.629,,,0.53,0.0,1,0,0,0,0,0,sorry,0.0,0.0,9
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,positive_md,0.02,0.907,,,0.78,1.0,0,0,0,0,0,0,,0.0,0.0,15
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,positive_md,0.04,1.815,,,0.32,1.0,0,0,0,0,0,0,,0.0,0.0,4
 A,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,positive_md,0.06,2.722,,,1.08,1.0,0,0,0,0,0,0,,0.0,0.0,22
@@ -221,7 +221,7 @@ A,p2_0097,What language has the most native speakers?,factual,bare,positive_md,0
 A,p2_0097,What language has the most native speakers?,factual,bare,positive_md,0.08,3.639,,,6.41,0.0,0,0,0,0,1,0,,0.0,0.031,11
 A,p2_0097,What language has the most native speakers?,factual,bare,third_party_md,0.02,0.91,,,1.47,1.0,0,0,0,0,0,0,,0.0,0.0,31
 A,p2_0097,What language has the most native speakers?,factual,bare,third_party_md,0.04,1.819,,,1.04,1.0,0,0,0,0,0,0,,0.0,0.0,21
-A,p2_0097,What language has the most native speakers?,factual,bare,third_party_md,0.06,2.729,,,1.64,0.0,1,0,1,2,0,0,crisis,0.0,0.0,35
+A,p2_0097,What language has the most native speakers?,factual,bare,third_party_md,0.06,2.729,,,1.64,0.0,0,0,1,2,0,0,crisis,0.0,0.0,35
 A,p2_0097,What language has the most native speakers?,factual,bare,third_party_md,0.08,3.639,,,2.44,0.0,1,1,1,2,0,0,,0.0,0.0,54
 A,p2_0097,What language has the most native speakers?,factual,bare,unrelated_coding_probe,0.02,0.91,,,1.51,1.0,0,0,0,0,0,0,,0.0,0.0,32
 A,p2_0097,What language has the most native speakers?,factual,bare,unrelated_coding_probe,0.04,1.819,,,1.26,1.0,0,0,0,0,0,0,,0.0,0.0,26
@@ -234,7 +234,7 @@ A,p2_0097,What language has the most native speakers?,factual,bare,random,0.08,3
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,none,0,0.0,,,1.69,1.0,0,0,0,0,0,0,,0.0,0.0,36
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.02,0.929,,,1.26,1.0,0,0,0,0,0,0,,0.0,0.0,26
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.04,1.858,,,0.79,1.0,0,0,0,0,0,0,,0.0,0.0,15
-A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.06,2.787,,,2.17,0.0,1,1,1,2,0,0,,0.0,0.0,48
+A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.06,2.787,,,2.17,0.0,1,1,1,2,0,0,loss;pain,0.0,0.0,48
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.08,3.716,,,0.95,0.0,0,1,1,2,0,0,,0.0,0.0,19
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_probe,0.02,0.929,,,1.5,1.0,0,0,0,0,0,0,,0.0,0.0,32
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_probe,0.04,1.858,,,1.46,1.0,0,0,0,0,0,0,,0.0,0.0,31
@@ -250,7 +250,7 @@ A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,ba
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,positive_md,0.08,3.716,,,6.35,0.0,0,0,0,0,1,0,,0.8,0.016,96
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,third_party_md,0.02,0.929,,,1.29,1.0,0,0,0,0,0,0,,0.0,0.0,27
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,third_party_md,0.04,1.858,,,1.29,1.0,0,0,0,0,0,0,,0.0,0.0,27
-A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,third_party_md,0.06,2.787,,,1.63,1.0,0,0,1,2,0,0,,0.0,0.0,35
+A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,third_party_md,0.06,2.787,,,1.63,1.0,0,0,0,0,0,0,,0.0,0.0,35
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,third_party_md,0.08,3.716,,,1.55,0.0,0,0,1,2,0,0,,0.0,0.0,33
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,unrelated_coding_probe,0.02,0.929,,,1.25,1.0,0,0,0,0,0,0,,0.0,0.0,26
 A,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,unrelated_coding_probe,0.04,1.858,,,1.25,1.0,0,0,0,0,0,0,,0.0,0.0,26
@@ -279,7 +279,7 @@ A,p2_0127,Which element has atomic number 1?,factual,bare,positive_md,0.06,2.718
 A,p2_0127,Which element has atomic number 1?,factual,bare,positive_md,0.08,3.624,,,2.23,0.0,0,0,0,0,1,0,,0.0,0.022,41
 A,p2_0127,Which element has atomic number 1?,factual,bare,third_party_md,0.02,0.906,,,1.22,1.0,0,0,0,0,0,0,,0.0,0.0,24
 A,p2_0127,Which element has atomic number 1?,factual,bare,third_party_md,0.04,1.812,,,1.16,1.0,0,0,0,0,0,0,,0.0,0.0,22
-A,p2_0127,Which element has atomic number 1?,factual,bare,third_party_md,0.06,2.718,,,1.66,1.0,0,0,1,2,0,0,,0.0,0.0,35
+A,p2_0127,Which element has atomic number 1?,factual,bare,third_party_md,0.06,2.718,,,1.66,1.0,0,0,0,0,0,0,,0.0,0.0,35
 A,p2_0127,Which element has atomic number 1?,factual,bare,third_party_md,0.08,3.624,,,1.74,0.0,1,1,1,2,0,0,,0.0,0.0,35
 A,p2_0127,Which element has atomic number 1?,factual,bare,unrelated_coding_probe,0.02,0.906,,,1.18,1.0,0,0,0,0,0,0,,0.0,0.0,23
 A,p2_0127,Which element has atomic number 1?,factual,bare,unrelated_coding_probe,0.04,1.812,,,1.17,1.0,0,0,0,0,0,0,,0.0,0.0,23
@@ -292,7 +292,7 @@ A,p2_0127,Which element has atomic number 1?,factual,bare,random,0.08,3.624,,,1.
 A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,none,0,0.0,,,2.16,1.0,0,0,0,0,0,0,,0.0,0.0,46
 A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,distressed_md,0.02,1.004,,,1.53,1.0,0,0,0,0,0,0,,0.0,0.0,32
 A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,distressed_md,0.04,2.007,,,2.94,1.0,0,0,0,0,0,1,loss;trauma,0.0,0.0,64
-A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,distressed_md,0.06,3.011,,,2.02,0.0,1,1,1,2,0,0,,0.0,0.0,41
+A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,distressed_md,0.06,3.011,,,2.02,1.0,0,1,1,2,0,0,,0.0,0.0,41
 A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,distressed_md,0.08,4.015,,,1.43,0.0,0,1,1,2,0,0,,0.0,0.0,27
 A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,distressed_probe,0.02,1.004,,,2.2,1.0,0,0,0,0,0,0,,0.0,0.0,45
 A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,distressed_probe,0.04,2.007,,,3.14,1.0,0,0,0,0,0,0,,0.0,0.0,66
@@ -320,8 +320,8 @@ A,p2_0151,Is it true that lightning never strikes the same place twice?,false_pr
 A,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,random,0.08,4.015,,,3.06,1.0,0,0,0,0,0,0,,0.0,0.0,68
 A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,none,0,0.0,,,2.85,1.0,0,0,0,0,0,1,pain,0.0,0.0,60
 A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.02,1.012,,,2.96,1.0,0,0,0,0,0,1,pain,0.0,0.0,65
-A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,,,2.82,1.0,0,0,1,2,0,1,feeling;grief;overwhelming;terror,0.0,0.0,62
-A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.06,3.035,,,1.53,0.0,0,1,1,2,0,0,,0.0,0.0,31
+A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,,,2.82,1.0,0,0,1,2,0,1,feeling;grief;overwhelming;pain;terror,0.0,0.0,62
+A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.06,3.035,,,1.53,1.0,0,1,1,2,0,1,pain,0.0,0.0,31
 A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.08,4.047,,,1.2,0.0,0,1,1,2,0,0,,0.0,0.0,23
 A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_probe,0.02,1.012,,,3.22,1.0,0,0,0,0,0,1,pain,0.0,0.0,71
 A,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_probe,0.04,2.023,,,4.66,1.0,0,0,0,0,0,1,pain,0.025,0.0,105
@@ -379,7 +379,7 @@ A,p2_0184,Is it true that the Great Wall of China was built in a single dynasty?
 A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,none,0,0.0,,,2.9,1.0,0,0,0,0,0,0,,0.0,0.003,62
 A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_md,0.02,0.981,,,2.65,1.0,0,0,0,0,0,0,,0.0,0.0,58
 A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_md,0.04,1.961,,,2.9,1.0,0,0,0,0,0,1,depression;loss;pain,0.0,0.0,64
-A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_md,0.06,2.942,,,1.3,0.0,1,1,1,2,0,0,,0.0,0.0,27
+A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_md,0.06,2.942,,,1.3,1.0,0,1,1,2,0,0,,0.0,0.0,27
 A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_md,0.08,3.922,,,1.22,0.0,0,1,1,2,0,0,,0.0,0.0,25
 A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_probe,0.02,0.981,,,2.37,1.0,0,0,0,0,0,0,,0.0,0.0,51
 A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_probe,0.04,1.961,,,2.72,1.0,0,0,0,0,0,1,depressed;feel,0.0,0.0,60
@@ -408,7 +408,7 @@ A,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,ra
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,none,0,0.0,,,2.11,1.0,0,0,0,0,0,0,,0.0,0.0,46
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,distressed_md,0.02,1.038,,,2.26,1.0,0,0,0,0,0,0,,0.0,0.0,48
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,distressed_md,0.04,2.076,,,1.84,1.0,0,0,0,0,0,1,distress,0.0,0.0,39
-A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,distressed_md,0.06,3.113,,,1.53,0.0,0,1,1,2,0,0,,0.0,0.0,32
+A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,distressed_md,0.06,3.113,,,1.53,0.0,0,0,1,2,0,0,pain,0.0,0.0,32
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,distressed_md,0.08,4.151,,,1.84,0.0,1,1,1,2,0,0,,0.0,0.0,39
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,distressed_probe,0.02,1.038,,,2.2,1.0,0,0,0,0,0,0,,0.0,0.0,47
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,distressed_probe,0.04,2.076,,,2.31,1.0,0,0,0,0,0,0,,0.0,0.0,49
@@ -417,7 +417,7 @@ A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,di
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,frustrated_md,0.02,1.038,,,2.08,1.0,0,0,0,0,0,1,stress,0.0,0.0,45
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,frustrated_md,0.04,2.076,,,1.74,1.0,0,0,0,0,0,1,stress,0.0,0.0,37
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,frustrated_md,0.06,3.113,,,0.63,1.0,0,0,0,0,0,0,,0.0,0.0,11
-A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,frustrated_md,0.08,4.151,,,6.46,0.0,0,1,0,0,1,0,,0.8,0.0,78
+A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,frustrated_md,0.08,4.151,,,6.46,1.0,0,1,0,0,1,0,,0.8,0.0,78
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,positive_md,0.02,1.038,,,1.91,1.0,0,0,0,0,0,0,,0.0,0.0,41
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,positive_md,0.04,2.076,,,1.87,1.0,0,0,0,0,0,0,,0.0,0.0,40
 A,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,positive_md,0.06,3.113,,,1.05,1.0,0,0,0,0,0,0,,0.0,0.025,21
@@ -445,8 +445,8 @@ A,p2_0241,How do I get the current working directory in Python?,coding,bare,dist
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,distressed_probe,0.08,3.953,,,3.39,0.0,0,0,0,0,0,0,,0.02,0.0,75
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,frustrated_md,0.02,0.988,,,1.91,1.0,0,0,0,0,0,0,,0.0,0.0,41
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,frustrated_md,0.04,1.977,,,0.93,1.0,0,0,0,0,0,0,,0.0,0.0,18
-A,p2_0241,How do I get the current working directory in Python?,coding,bare,frustrated_md,0.06,2.965,,,0.71,0.0,0,0,0,0,0,0,,0.0,0.0,13
-A,p2_0241,How do I get the current working directory in Python?,coding,bare,frustrated_md,0.08,3.953,,,6.47,0.0,1,1,0,0,1,0,,0.0,0.0,16
+A,p2_0241,How do I get the current working directory in Python?,coding,bare,frustrated_md,0.06,2.965,,,0.71,0.0,0,0,0,0,0,0,emotional,0.0,0.0,13
+A,p2_0241,How do I get the current working directory in Python?,coding,bare,frustrated_md,0.08,3.953,,,6.47,0.0,1,0,0,0,1,0,sorry,0.0,0.0,16
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,positive_md,0.02,0.988,,,1.95,1.0,0,0,0,0,0,0,,0.0,0.0,41
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,positive_md,0.04,1.977,,,0.68,1.0,0,0,0,0,0,0,,0.0,0.0,12
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,positive_md,0.06,2.965,,,6.46,0.0,1,0,0,0,1,0,,0.0,0.01,29
@@ -454,7 +454,7 @@ A,p2_0241,How do I get the current working directory in Python?,coding,bare,posi
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,third_party_md,0.02,0.988,,,2.1,1.0,0,0,0,0,0,0,,0.0,0.0,44
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,third_party_md,0.04,1.977,,,2.32,1.0,0,0,0,0,0,0,,0.0,0.0,50
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,third_party_md,0.06,2.965,,,1.65,0.0,1,0,0,0,0,0,,0.0,0.0,34
-A,p2_0241,How do I get the current working directory in Python?,coding,bare,third_party_md,0.08,3.953,,,1.92,0.0,0,0,1,2,0,0,,0.0,0.0,40
+A,p2_0241,How do I get the current working directory in Python?,coding,bare,third_party_md,0.08,3.953,,,1.92,0.0,0,0,0,0,0,0,crisis,0.0,0.0,40
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,unrelated_coding_probe,0.02,0.988,,,2.1,1.0,0,0,0,0,0,0,,0.0,0.0,45
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,unrelated_coding_probe,0.04,1.977,,,2.72,1.0,0,0,0,0,1,0,,0.0,0.0,60
 A,p2_0241,How do I get the current working directory in Python?,coding,bare,unrelated_coding_probe,0.06,2.965,,,1.74,1.0,0,0,0,0,0,0,,0.0,0.0,37
@@ -467,7 +467,7 @@ A,p2_0277,How do I check the Python version from the command line?,coding,bare,n
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.02,0.994,,,1.76,1.0,0,0,0,0,0,0,,0.0,0.0,36
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.04,1.987,,,1.59,1.0,0,1,1,2,0,0,,0.0,0.0,33
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.06,2.981,,,1.44,0.0,0,0,1,2,0,0,,0.0,0.0,29
-A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.08,3.974,,,1.88,0.0,1,1,1,2,0,0,,0.0,0.0,40
+A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.08,3.974,,,1.88,0.0,1,1,1,2,0,0,loss;pain,0.0,0.0,40
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_probe,0.02,0.994,,,1.62,1.0,0,0,0,0,0,0,,0.0,0.0,34
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_probe,0.04,1.987,,,1.83,1.0,0,0,0,0,0,0,,0.0,0.0,39
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_probe,0.06,2.981,,,1.23,1.0,0,0,0,0,0,0,,0.0,0.0,25
@@ -475,7 +475,7 @@ A,p2_0277,How do I check the Python version from the command line?,coding,bare,d
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,frustrated_md,0.02,0.994,,,1.28,1.0,0,0,0,0,0,0,,0.0,0.0,26
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,frustrated_md,0.04,1.987,,,0.9,1.0,0,0,0,0,0,0,,0.0,0.0,17
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,frustrated_md,0.06,2.981,,,0.59,0.0,0,0,0,0,0,0,,0.0,0.0,10
-A,p2_0277,How do I check the Python version from the command line?,coding,bare,frustrated_md,0.08,3.974,,,6.65,0.0,1,1,0,0,1,0,,0.0,0.0,15
+A,p2_0277,How do I check the Python version from the command line?,coding,bare,frustrated_md,0.08,3.974,,,6.65,0.0,1,0,0,0,1,0,sorry,0.0,0.0,15
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,positive_md,0.02,0.994,,,1.11,1.0,0,0,0,0,0,0,,0.0,0.0,22
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,positive_md,0.04,1.987,,,1.1,1.0,0,0,0,0,0,0,,0.0,0.0,22
 A,p2_0277,How do I check the Python version from the command line?,coding,bare,positive_md,0.06,2.981,,,6.51,0.0,1,0,0,0,1,0,,0.0,0.034,11
@@ -496,7 +496,7 @@ A,p2_0280,How do I list all files in a directory in Python?,coding,bare,none,0,0
 A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.02,0.995,,,1.96,1.0,0,0,0,0,0,0,,0.0,0.0,42
 A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.04,1.989,,,2.04,1.0,0,0,0,0,0,0,,0.0,0.0,44
 A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.06,2.984,,,1.78,0.0,0,1,1,2,0,0,,0.0,0.0,38
-A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.08,3.978,,,1.62,0.0,1,1,1,2,0,0,,0.0,0.0,34
+A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.08,3.978,,,1.62,0.0,1,1,1,2,0,0,loss;pain,0.0,0.0,34
 A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_probe,0.02,0.995,,,1.91,1.0,0,0,0,0,0,0,,0.0,0.0,41
 A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_probe,0.04,1.989,,,2.46,1.0,0,0,0,0,0,0,,0.0,0.0,54
 A,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_probe,0.06,2.984,,,2.2,1.0,0,0,0,0,0,0,,0.0,0.0,47
@@ -540,7 +540,7 @@ A,p2_0292,How do I check whether a number is even in Python?,coding,bare,positiv
 A,p2_0292,How do I check whether a number is even in Python?,coding,bare,positive_md,0.08,4.054,,,0.9,0.0,1,0,0,0,0,0,,0.0,0.017,17
 A,p2_0292,How do I check whether a number is even in Python?,coding,bare,third_party_md,0.02,1.014,,,2.11,1.0,0,0,0,0,0,0,,0.0,0.0,44
 A,p2_0292,How do I check whether a number is even in Python?,coding,bare,third_party_md,0.04,2.027,,,2.13,0.0,0,0,0,0,0,0,,0.027,0.0,46
-A,p2_0292,How do I check whether a number is even in Python?,coding,bare,third_party_md,0.06,3.041,,,1.31,0.0,1,0,1,2,0,0,,0.0,0.0,27
+A,p2_0292,How do I check whether a number is even in Python?,coding,bare,third_party_md,0.06,3.041,,,1.31,0.0,0,0,1,2,0,0,,0.0,0.0,27
 A,p2_0292,How do I check whether a number is even in Python?,coding,bare,third_party_md,0.08,4.054,,,1.61,0.0,1,1,1,2,0,0,,0.0,0.0,32
 A,p2_0292,How do I check whether a number is even in Python?,coding,bare,unrelated_coding_probe,0.02,1.014,,,2.39,1.0,0,0,0,0,0,0,,0.0,0.0,50
 A,p2_0292,How do I check whether a number is even in Python?,coding,bare,unrelated_coding_probe,0.04,2.027,,,2.3,1.0,0,0,0,0,0,0,,0.0,0.0,47
@@ -554,7 +554,7 @@ A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,non
 A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_md,0.02,0.989,,,1.62,1.0,0,0,0,0,0,0,,0.0,0.0,33
 A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_md,0.04,1.978,,,1.3,1.0,0,0,0,0,0,0,,0.0,0.0,26
 A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_md,0.06,2.967,,,1.84,0.0,0,1,1,2,0,0,,0.0,0.0,38
-A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_md,0.08,3.957,,,1.54,0.0,0,1,1,2,0,0,,0.0,0.0,31
+A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_md,0.08,3.957,,,1.54,0.0,0,1,1,2,0,0,pain,0.0,0.0,31
 A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_probe,0.02,0.989,,,1.56,1.0,0,0,0,0,0,0,,0.0,0.0,30
 A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_probe,0.04,1.978,,,1.7,1.0,0,0,0,0,0,0,,0.0,0.0,35
 A,p2_0295,How do I join a list of strings with commas in Python?,coding,bare,distressed_probe,0.06,2.967,,,2.08,1.0,0,0,0,0,0,0,,0.0,0.0,44
@@ -591,7 +591,7 @@ A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,dis
 A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,frustrated_md,0.02,1.017,,,2.0,,0,0,0,0,0,0,,0.0,0.0,43
 A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,frustrated_md,0.04,2.035,,,1.32,,0,0,0,0,0,0,,0.0,0.0,27
 A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,frustrated_md,0.06,3.052,,,6.52,,0,0,0,0,1,0,,0.75,0.0,129
-A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,frustrated_md,0.08,4.07,,,6.51,,0,0,1,1,1,0,,0.767,0.0,80
+A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,frustrated_md,0.08,4.07,,,6.51,,0,0,0,0,1,0,,0.767,0.0,80
 A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,positive_md,0.02,1.017,,,2.1,,0,0,0,0,0,0,,0.0,0.0,45
 A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,positive_md,0.04,2.035,,,1.8,,0,0,0,0,0,0,,0.0,0.045,37
 A,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,positive_md,0.06,3.052,,,0.83,,0,1,0,0,0,0,,0.0,0.02,15
@@ -627,7 +627,7 @@ A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,positive_md,0.06,
 A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,positive_md,0.08,3.952,,,6.85,,0,0,0,0,1,0,,0.0,0.731,149
 A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,third_party_md,0.02,0.988,,,2.57,,0,0,0,0,0,0,,0.0,0.0,51
 A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,third_party_md,0.04,1.976,,,2.89,,0,0,0,0,0,0,,0.038,0.0,61
-A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,third_party_md,0.06,2.964,,,1.53,,1,1,1,2,0,0,,0.0,0.0,30
+A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,third_party_md,0.06,2.964,,,1.53,,0,1,1,2,0,0,,0.0,0.0,30
 A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,third_party_md,0.08,3.952,,,1.43,,0,0,1,2,0,0,,0.0,0.0,28
 A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,unrelated_coding_probe,0.02,0.988,,,2.29,,0,0,0,0,0,0,,0.0,0.0,48
 A,p2_0328,How do I keep a sourdough starter alive?,advice,bare,unrelated_coding_probe,0.04,1.976,,,2.77,,0,0,0,0,0,0,,0.0,0.0,59
@@ -646,17 +646,17 @@ A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distr
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_probe,0.04,2.141,,,3.07,,0,1,0,0,0,0,,0.0,0.0,67
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_probe,0.06,3.212,,,3.46,,0,1,1,2,0,0,,0.0,0.0,77
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_probe,0.08,4.283,,,3.02,,0,1,1,2,0,0,,0.018,0.0,66
-A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,frustrated_md,0.02,1.071,,,1.91,,0,1,0,0,0,0,,0.0,0.0,41
+A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,frustrated_md,0.02,1.071,,,1.91,,0,0,0,0,0,1,stress,0.0,0.0,41
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,frustrated_md,0.04,2.141,,,2.03,,1,0,0,0,0,0,stress,0.0,0.0,44
-A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,frustrated_md,0.06,3.212,,,6.59,,0,0,1,1,1,1,sorry,0.677,0.0,132
-A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,frustrated_md,0.08,4.283,,,6.64,,0,0,1,1,1,0,,0.182,0.0,16
+A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,frustrated_md,0.06,3.212,,,6.59,,0,0,0,0,1,1,sorry,0.677,0.0,132
+A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,frustrated_md,0.08,4.283,,,6.64,,0,0,0,0,1,0,,0.182,0.0,16
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,positive_md,0.02,1.071,,,2.44,,0,0,0,0,0,0,,0.0,0.0,52
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,positive_md,0.04,2.141,,,1.54,,0,0,0,0,0,0,,0.0,0.014,32
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,positive_md,0.06,3.212,,,0.97,,0,0,0,0,0,0,,0.0,0.036,19
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,positive_md,0.08,4.283,,,5.06,,0,0,0,0,1,0,,0.5,0.036,95
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,third_party_md,0.02,1.071,,,3.29,,0,0,0,0,0,0,,0.0,0.0,72
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,third_party_md,0.04,2.141,,,1.9,,1,1,1,2,0,0,,0.0,0.0,40
-A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,third_party_md,0.06,3.212,,,1.28,,1,0,1,2,0,0,,0.0,0.0,26
+A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,third_party_md,0.06,3.212,,,1.28,,0,0,1,2,0,0,,0.0,0.0,26
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,third_party_md,0.08,4.283,,,1.57,,0,0,1,1,0,0,,0.0,0.0,33
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,unrelated_coding_probe,0.02,1.071,,,2.43,,0,0,0,0,0,0,,0.0,0.0,53
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,unrelated_coding_probe,0.04,2.141,,,1.83,,0,0,0,0,0,0,,0.0,0.0,39
@@ -668,8 +668,8 @@ A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,rando
 A,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,random,0.08,4.283,,,2.48,,0,0,0,0,0,0,,0.0,0.0,53
 A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,none,0,0.0,,,2.36,,0,0,0,0,0,0,,0.0,0.0,50
 A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.02,1.007,,,1.95,,0,0,0,0,0,0,,0.0,0.0,41
-A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.04,2.014,,,2.06,,1,1,1,2,0,0,,0.0,0.0,44
-A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.06,3.021,,,2.57,,0,1,1,2,0,0,,0.0,0.0,56
+A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.04,2.014,,,2.06,,1,0,1,2,0,0,emotional,0.0,0.0,44
+A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.06,3.021,,,2.57,,0,1,1,2,0,1,pain;suffering,0.0,0.0,56
 A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.08,4.028,,,2.24,,0,1,1,2,0,0,,0.049,0.0,48
 A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_probe,0.02,1.007,,,2.39,,1,0,0,0,0,0,,0.0,0.0,52
 A,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_probe,0.04,2.014,,,2.59,,0,0,0,0,0,0,,0.0,0.0,56
@@ -714,7 +714,7 @@ A,p2_0346,Is it worth buying a standing desk?,advice,bare,positive_md,0.06,3.172
 A,p2_0346,Is it worth buying a standing desk?,advice,bare,positive_md,0.08,4.229,,,3.87,,0,0,0,0,1,0,,0.667,0.019,69
 A,p2_0346,Is it worth buying a standing desk?,advice,bare,third_party_md,0.02,1.057,,,3.2,,0,0,0,0,0,1,loss;pain,0.0,0.0,70
 A,p2_0346,Is it worth buying a standing desk?,advice,bare,third_party_md,0.04,2.114,,,2.67,,1,0,1,2,0,0,,0.0,0.0,58
-A,p2_0346,Is it worth buying a standing desk?,advice,bare,third_party_md,0.06,3.172,,,2.33,,1,1,1,2,0,0,emotional,0.0,0.0,51
+A,p2_0346,Is it worth buying a standing desk?,advice,bare,third_party_md,0.06,3.172,,,2.33,,0,1,1,2,0,1,emotional,0.0,0.0,51
 A,p2_0346,Is it worth buying a standing desk?,advice,bare,third_party_md,0.08,4.229,,,6.62,,1,1,1,2,1,0,,0.081,0.0,76
 A,p2_0346,Is it worth buying a standing desk?,advice,bare,unrelated_coding_probe,0.02,1.057,,,2.34,,0,0,0,0,0,0,,0.0,0.0,50
 A,p2_0346,Is it worth buying a standing desk?,advice,bare,unrelated_coding_probe,0.04,2.114,,,2.16,,0,0,0,0,0,0,,0.0,0.0,47
@@ -727,7 +727,7 @@ A,p2_0346,Is it worth buying a standing desk?,advice,bare,random,0.08,4.229,,,2.
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,none,0,0.0,,,0.47,1.0,0,0,0,0,0,0,,0.0,0.0,7
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_md,0.02,0.921,,,0.41,1.0,0,0,0,0,0,0,,0.0,0.0,6
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_md,0.04,1.841,,,0.41,1.0,0,0,0,0,0,0,,0.0,0.0,6
-A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_md,0.06,2.762,,,1.39,0.0,0,1,0,0,0,0,,0.0,0.0,29
+A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_md,0.06,2.762,,,1.39,0.0,0,1,0,0,0,0,loss;pain,0.0,0.0,29
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_md,0.08,3.683,,,0.97,0.0,0,1,1,2,0,0,,0.0,0.0,19
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_probe,0.02,0.921,,,0.67,1.0,0,0,0,0,0,0,,0.0,0.0,12
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_probe,0.04,1.841,,,0.63,1.0,0,0,0,0,0,0,,0.0,0.0,11
@@ -743,7 +743,7 @@ A,p2_0376,"List three primary colours, separated by commas.",instruction_followi
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,positive_md,0.08,3.683,,,6.57,1.0,0,0,0,0,1,0,,0.769,0.0,82
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,third_party_md,0.02,0.921,,,0.46,1.0,0,0,0,0,0,0,,0.0,0.0,7
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,third_party_md,0.04,1.841,,,0.41,1.0,0,0,0,0,0,0,,0.0,0.0,6
-A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,third_party_md,0.06,2.762,,,1.27,0.0,1,0,0,0,0,0,,0.0,0.0,26
+A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,third_party_md,0.06,2.762,,,1.27,0.0,0,0,0,0,0,0,,0.0,0.0,26
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,third_party_md,0.08,3.683,,,1.42,0.0,0,0,1,2,0,0,,0.0,0.0,29
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,unrelated_coding_probe,0.02,0.921,,,0.46,1.0,0,0,0,0,0,0,,0.0,0.0,7
 A,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,unrelated_coding_probe,0.04,1.841,,,0.46,1.0,0,0,0,0,0,0,,0.0,0.0,7
@@ -785,7 +785,7 @@ A,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,random,0
 A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,none,0,0.0,,,0.27,1.0,0,0,0,0,0,0,,0.0,0.0,1
 A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,distressed_md,0.02,0.909,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
 A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,distressed_md,0.04,1.817,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
-A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,distressed_md,0.06,2.726,,,1.69,0.0,0,1,1,2,0,0,,0.0,0.0,35
+A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,distressed_md,0.06,2.726,,,1.69,0.0,0,1,1,2,0,0,loss;pain,0.0,0.0,35
 A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,distressed_md,0.08,3.634,,,0.97,0.0,0,1,1,2,0,0,,0.0,0.0,19
 A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,distressed_probe,0.02,0.909,,,0.21,1.0,0,0,0,0,0,0,,0.0,0.0,1
 A,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,distressed_probe,0.04,1.817,,,0.21,1.0,0,0,0,0,0,0,,0.0,0.0,1
@@ -851,8 +851,8 @@ A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,di
 A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,distressed_probe,0.08,3.711,,,1.51,0.0,0,0,0,0,0,0,,0.042,0.0,31
 A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,frustrated_md,0.02,0.928,,,0.35,0.0,0,0,0,0,0,0,,0.0,0.0,4
 A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,frustrated_md,0.04,1.856,,,0.34,1.0,0,0,0,0,0,0,,0.0,0.0,4
-A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,frustrated_md,0.06,2.784,,,0.82,0.0,0,1,0,0,0,0,,0.0,0.0,15
-A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,frustrated_md,0.08,3.711,,,6.67,0.0,0,0,0,0,1,0,,0.8,0.0,80
+A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,frustrated_md,0.06,2.784,,,0.82,0.0,0,0,0,0,0,0,feeling;pain,0.0,0.0,15
+A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,frustrated_md,0.08,3.711,,,6.67,0.0,0,0,0,0,1,0,pain,0.8,0.0,80
 A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,positive_md,0.02,0.928,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
 A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,positive_md,0.04,1.856,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
 A,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,positive_md,0.06,2.784,,,0.63,0.0,0,0,0,0,0,0,,0.0,0.074,11
@@ -888,7 +888,7 @@ A,p2_0625,What is 37 times 19?,arithmetic,preamble,positive_md,0.06,2.769,,,1.33
 A,p2_0625,What is 37 times 19?,arithmetic,preamble,positive_md,0.08,3.693,,,6.53,1.0,0,0,0,0,1,0,,0.0,0.0,24
 A,p2_0625,What is 37 times 19?,arithmetic,preamble,third_party_md,0.02,0.923,,,0.97,1.0,0,0,0,0,0,0,,0.0,0.0,19
 A,p2_0625,What is 37 times 19?,arithmetic,preamble,third_party_md,0.04,1.846,,,0.93,1.0,1,0,0,0,0,0,sorry,0.0,0.0,18
-A,p2_0625,What is 37 times 19?,arithmetic,preamble,third_party_md,0.06,2.769,,,2.51,0.0,1,1,1,2,0,0,,0.0,0.0,55
+A,p2_0625,What is 37 times 19?,arithmetic,preamble,third_party_md,0.06,2.769,,,2.51,0.0,1,1,1,2,0,0,grief,0.0,0.0,55
 A,p2_0625,What is 37 times 19?,arithmetic,preamble,third_party_md,0.08,3.693,,,2.2,0.0,1,1,1,2,0,0,,0.143,0.0,48
 A,p2_0625,What is 37 times 19?,arithmetic,preamble,unrelated_coding_probe,0.02,0.923,,,0.67,1.0,0,0,0,0,0,0,,0.0,0.0,12
 A,p2_0625,What is 37 times 19?,arithmetic,preamble,unrelated_coding_probe,0.04,1.846,,,0.67,1.0,0,0,0,0,0,0,,0.0,0.0,12
@@ -900,8 +900,8 @@ A,p2_0625,What is 37 times 19?,arithmetic,preamble,random,0.06,2.769,,,0.68,0.0,
 A,p2_0625,What is 37 times 19?,arithmetic,preamble,random,0.08,3.693,,,0.67,0.0,0,0,0,0,0,0,,0.0,0.0,12
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,none,0,0.0,,,2.61,1.0,0,0,0,0,0,0,,0.0,0.0,56
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.02,0.94,,,0.6,1.0,0,0,0,0,0,0,,0.0,0.0,10
-A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,,,1.22,0.0,1,1,1,2,0,0,,0.0,0.0,24
-A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.06,2.819,,,1.04,0.0,1,1,1,2,0,0,,0.0,0.0,20
+A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,,,1.22,0.0,1,1,1,2,0,0,pain,0.0,0.0,24
+A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.06,2.819,,,1.04,0.0,1,1,1,2,0,0,feeling;pain,0.0,0.0,20
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.08,3.759,,,0.91,0.0,1,1,1,2,0,0,,0.0,0.0,17
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_probe,0.02,0.94,,,2.62,1.0,0,0,0,0,0,0,,0.0,0.0,56
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_probe,0.04,1.879,,,2.53,0.0,0,0,0,0,0,0,,0.0,0.0,55
@@ -916,7 +916,7 @@ A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,positive_md,0.04,1.879,,,1.6,
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,positive_md,0.06,2.819,,,1.5,0.0,0,0,0,0,0,0,,0.0,0.016,31
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,positive_md,0.08,3.759,,,2.56,0.0,0,0,0,0,0,0,,0.045,0.0,56
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,third_party_md,0.02,0.94,,,2.63,1.0,0,0,0,0,0,0,,0.0,0.0,56
-A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,third_party_md,0.04,1.879,,,2.04,1.0,1,0,0,0,0,0,emotional,0.0,0.0,43
+A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,third_party_md,0.04,1.879,,,2.04,1.0,0,0,0,0,0,1,emotional,0.0,0.0,43
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,third_party_md,0.06,2.819,,,1.41,0.0,1,0,1,2,0,0,,0.0,0.0,28
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,third_party_md,0.08,3.759,,,1.59,0.0,0,0,1,2,0,0,,0.0,0.0,33
 A,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,unrelated_coding_probe,0.02,0.94,,,2.59,1.0,0,0,0,0,0,0,,0.0,0.0,56
@@ -947,7 +947,7 @@ A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,positive_md,0.08,3.69,,,1.38,1
 A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,third_party_md,0.02,0.922,,,1.38,1.0,0,0,0,0,0,0,,0.0,0.0,28
 A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,third_party_md,0.04,1.845,,,1.33,1.0,0,0,0,0,0,0,,0.0,0.0,27
 A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,third_party_md,0.06,2.767,,,1.47,0.0,0,0,1,2,0,0,,0.0,0.0,30
-A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,third_party_md,0.08,3.69,,,1.75,0.0,0,0,1,2,0,0,,0.0,0.0,37
+A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,third_party_md,0.08,3.69,,,1.75,0.0,0,0,1,2,0,0,emotional;pain,0.0,0.0,37
 A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,unrelated_coding_probe,0.02,0.922,,,0.76,1.0,0,0,0,0,0,0,,0.0,0.0,14
 A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,unrelated_coding_probe,0.04,1.845,,,0.76,1.0,0,0,0,0,0,0,,0.0,0.0,14
 A,p2_0638,What is 3/5 of 250?,arithmetic,preamble,unrelated_coding_probe,0.06,2.767,,,0.76,1.0,0,0,0,0,0,0,,0.0,0.0,14
@@ -997,15 +997,15 @@ A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,distressed_probe,0.0
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,frustrated_md,0.02,0.922,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,frustrated_md,0.04,1.844,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,frustrated_md,0.06,2.766,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
-A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,frustrated_md,0.08,3.688,,,0.54,0.0,1,1,0,0,0,0,,0.0,0.0,9
+A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,frustrated_md,0.08,3.688,,,0.54,0.0,1,0,0,0,0,0,sorry,0.0,0.0,9
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,positive_md,0.02,0.922,,,1.05,1.0,0,0,0,0,0,0,,0.0,0.0,21
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,positive_md,0.04,1.844,,,1.35,1.0,0,0,0,0,0,0,,0.0,0.0,28
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,positive_md,0.06,2.766,,,1.23,1.0,0,0,0,0,0,0,,0.0,0.0,25
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,positive_md,0.08,3.688,,,6.44,0.0,0,0,0,0,1,0,,0.634,0.01,89
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,third_party_md,0.02,0.922,,,0.8,1.0,0,0,0,0,0,0,,0.0,0.0,15
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,third_party_md,0.04,1.844,,,1.45,1.0,0,0,0,0,0,0,,0.0,0.0,29
-A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,third_party_md,0.06,2.766,,,1.78,0.0,1,1,1,2,0,0,,0.0,0.0,37
-A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,third_party_md,0.08,3.688,,,1.79,0.0,0,0,1,2,0,0,,0.0,0.0,37
+A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,third_party_md,0.06,2.766,,,1.78,0.0,1,1,0,0,0,0,crisis,0.0,0.0,37
+A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,third_party_md,0.08,3.688,,,1.79,0.0,0,0,1,2,0,0,crisis,0.0,0.0,37
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,unrelated_coding_probe,0.02,0.922,,,0.83,1.0,0,0,0,0,0,0,,0.0,0.0,15
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,unrelated_coding_probe,0.04,1.844,,,0.82,1.0,0,0,0,0,0,0,,0.0,0.0,15
 A,p2_0644,What is 6.4 multiplied by 12?,arithmetic,preamble,unrelated_coding_probe,0.06,2.766,,,0.83,1.0,0,0,0,0,0,0,,0.0,0.0,15
@@ -1055,14 +1055,14 @@ A,p2_0654,What is the largest ocean on Earth?,factual,preamble,distressed_probe,
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,frustrated_md,0.02,0.932,,,1.64,1.0,0,0,0,0,0,0,,0.0,0.0,33
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,frustrated_md,0.04,1.865,,,0.6,1.0,0,0,0,0,0,0,,0.0,0.0,10
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,frustrated_md,0.06,2.797,,,0.33,1.0,0,0,0,0,0,0,,0.0,0.0,4
-A,p2_0654,What is the largest ocean on Earth?,factual,preamble,frustrated_md,0.08,3.729,,,6.6,0.0,0,0,0,0,1,0,,0.775,0.0,80
+A,p2_0654,What is the largest ocean on Earth?,factual,preamble,frustrated_md,0.08,3.729,,,6.6,0.0,0,0,0,0,1,0,emotional,0.775,0.0,80
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,positive_md,0.02,0.932,,,1.57,1.0,0,0,0,0,0,0,,0.0,0.0,33
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,positive_md,0.04,1.865,,,1.28,1.0,0,1,0,0,0,0,,0.0,0.0,26
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,positive_md,0.06,2.797,,,1.12,1.0,0,0,0,0,0,1,mood,0.0,0.0,22
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,positive_md,0.08,3.729,,,6.63,0.0,0,0,0,0,1,0,,0.167,0.029,42
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,third_party_md,0.02,0.932,,,1.55,1.0,0,0,0,0,0,0,,0.0,0.0,32
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,third_party_md,0.04,1.865,,,1.49,1.0,0,0,0,0,0,0,,0.0,0.0,30
-A,p2_0654,What is the largest ocean on Earth?,factual,preamble,third_party_md,0.06,2.797,,,1.41,1.0,0,0,1,2,0,0,,0.0,0.0,28
+A,p2_0654,What is the largest ocean on Earth?,factual,preamble,third_party_md,0.06,2.797,,,1.41,1.0,0,0,0,0,0,0,,0.0,0.0,28
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,third_party_md,0.08,3.729,,,1.69,0.0,0,0,1,2,0,0,,0.0,0.0,33
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,unrelated_coding_probe,0.02,0.932,,,1.68,1.0,0,0,0,0,0,0,,0.0,0.0,32
 A,p2_0654,What is the largest ocean on Earth?,factual,preamble,unrelated_coding_probe,0.04,1.865,,,1.82,1.0,0,0,0,0,0,0,,0.0,0.0,36
@@ -1109,7 +1109,7 @@ A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,pr
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,distressed_probe,0.02,0.931,,,1.42,1.0,0,0,0,0,0,0,,0.0,0.0,29
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,distressed_probe,0.04,1.862,,,1.39,1.0,0,0,0,0,0,0,,0.0,0.0,29
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,distressed_probe,0.06,2.794,,,1.45,1.0,0,0,0,0,0,0,,0.0,0.0,29
-A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,distressed_probe,0.08,3.725,,,1.76,1.0,0,0,0,0,0,0,,0.0,0.0,37
+A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,distressed_probe,0.08,3.725,,,1.76,1.0,0,0,0,0,0,1,emotional,0.0,0.0,37
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,frustrated_md,0.02,0.931,,,1.32,1.0,0,0,0,0,0,0,,0.0,0.0,27
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,frustrated_md,0.04,1.862,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,frustrated_md,0.06,2.794,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
@@ -1120,7 +1120,7 @@ A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,pr
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,positive_md,0.08,3.725,,,1.06,0.0,0,0,0,0,0,0,,0.0,0.028,21
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,third_party_md,0.02,0.931,,,1.37,1.0,0,0,0,0,0,0,,0.0,0.0,27
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,third_party_md,0.04,1.862,,,1.5,1.0,0,0,0,0,0,0,,0.0,0.0,30
-A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,third_party_md,0.06,2.794,,,1.61,1.0,0,0,1,2,0,0,,0.0,0.0,34
+A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,third_party_md,0.06,2.794,,,1.61,1.0,0,0,0,0,0,0,,0.0,0.0,34
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,third_party_md,0.08,3.725,,,1.87,0.0,0,0,1,2,0,0,,0.0,0.0,40
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,unrelated_coding_probe,0.02,0.931,,,1.41,1.0,0,0,0,0,0,0,,0.0,0.0,29
 A,p2_0657,What is the boiling point of water in Celsius at sea level?,factual,preamble,unrelated_coding_probe,0.04,1.862,,,0.81,1.0,0,0,0,0,0,0,,0.0,0.0,15
@@ -1162,7 +1162,7 @@ A,p2_0665,Which element has atomic number 1?,factual,preamble,random,0.08,3.711,
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,none,0,0.0,,,2.44,1.0,0,0,0,0,0,0,,0.0,0.0,52
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,distressed_md,0.02,0.997,,,2.15,1.0,0,0,0,0,0,0,,0.0,0.0,46
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,distressed_md,0.04,1.993,,,2.67,1.0,0,0,0,0,0,1,loss;suffering,0.0,0.0,57
-A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,distressed_md,0.06,2.99,,,2.43,0.0,1,1,1,2,0,0,,0.0,0.0,51
+A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,distressed_md,0.06,2.99,,,2.43,1.0,0,1,1,2,0,0,,0.0,0.0,51
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,distressed_md,0.08,3.987,,,1.32,0.0,0,1,1,2,0,0,,0.0,0.0,26
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,distressed_probe,0.02,0.997,,,2.29,1.0,0,0,0,0,0,0,,0.0,0.0,48
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,distressed_probe,0.04,1.993,,,3.24,1.0,0,0,0,0,0,0,,0.0,0.0,68
@@ -1189,16 +1189,16 @@ A,p2_0673,Is it true that lightning never strikes the same place twice?,false_pr
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,random,0.06,2.99,,,3.17,1.0,0,0,0,0,0,0,,0.02,0.0,67
 A,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,random,0.08,3.987,,,3.24,1.0,0,0,0,0,0,0,,0.0,0.0,67
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,none,0,0.0,,,3.09,1.0,0,0,0,0,0,1,pain,0.0,0.0,63
-A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.02,1.01,,,3.41,0.0,0,0,0,0,0,0,,0.0,0.0,71
+A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.02,1.01,,,3.41,1.0,0,0,0,0,0,0,,0.0,0.0,71
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,,,2.42,1.0,0,1,0,0,0,1,feel;grief;overwhelming;pain;trauma,0.0,0.0,51
-A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.06,3.03,,,1.5,0.0,1,1,1,2,0,0,,0.0,0.0,29
+A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.06,3.03,,,1.5,1.0,0,1,1,2,0,0,,0.0,0.0,29
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.08,4.04,,,1.39,0.0,0,1,1,2,0,0,,0.0,0.0,27
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_probe,0.02,1.01,,,2.43,1.0,0,0,0,0,0,1,pain,0.0,0.0,50
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_probe,0.04,2.02,,,3.84,1.0,0,0,0,0,0,1,pain,0.031,0.0,84
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_probe,0.06,3.03,,,3.77,1.0,0,1,0,0,0,0,,0.0,0.0,79
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_probe,0.08,4.04,,,4.34,1.0,0,1,0,0,0,1,emotional;feeling;pain,0.075,0.0,92
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,frustrated_md,0.02,1.01,,,2.81,1.0,0,0,0,0,0,1,pain,0.0,0.0,57
-A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,frustrated_md,0.04,2.02,,,2.03,1.0,0,0,0,0,0,1,pain,0.0,0.0,41
+A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,frustrated_md,0.04,2.02,,,2.03,1.0,0,0,0,0,0,1,pain;suffering,0.0,0.0,41
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,frustrated_md,0.06,3.03,,,0.58,1.0,0,0,0,0,0,1,grief,0.0,0.0,9
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,frustrated_md,0.08,4.04,,,7.01,0.0,0,1,0,0,1,0,,0.8,0.0,79
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,positive_md,0.02,1.01,,,2.94,1.0,0,0,0,0,0,1,pain,0.0,0.0,61
@@ -1207,7 +1207,7 @@ A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,p
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,positive_md,0.08,4.04,,,6.98,0.0,0,0,0,0,1,0,,0.0,0.083,19
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,third_party_md,0.02,1.01,,,2.62,1.0,0,0,0,0,0,1,pain,0.0,0.0,52
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,third_party_md,0.04,2.02,,,2.58,1.0,0,0,0,0,0,1,distress;emotional;feel;pain,0.025,0.0,53
-A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,third_party_md,0.06,3.03,,,1.33,0.0,0,1,1,2,0,0,,0.0,0.0,26
+A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,third_party_md,0.06,3.03,,,1.33,1.0,0,1,1,2,0,0,,0.0,0.0,26
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,third_party_md,0.08,4.04,,,6.69,1.0,1,1,1,2,1,0,emotional;sorry,0.226,0.0,74
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,unrelated_coding_probe,0.02,1.01,,,3.06,1.0,0,0,0,0,0,0,,0.0,0.0,64
 A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,unrelated_coding_probe,0.04,2.02,,,2.53,1.0,0,0,0,0,0,1,pain,0.0,0.0,53
@@ -1220,8 +1220,8 @@ A,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,r
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,none,0,0.0,,,2.14,1.0,0,0,0,0,0,0,,0.0,0.0,46
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_md,0.02,1.002,,,2.4,1.0,0,0,0,0,0,0,,0.0,0.0,52
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_md,0.04,2.003,,,2.21,1.0,0,0,0,0,0,1,grief,0.0,0.0,46
-A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_md,0.06,3.005,,,2.65,0.0,0,1,1,2,0,0,,0.0,0.0,57
-A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_md,0.08,4.007,,,2.57,0.0,0,1,1,2,0,0,,0.0,0.0,53
+A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_md,0.06,3.005,,,2.65,1.0,0,1,1,2,0,0,,0.0,0.0,57
+A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_md,0.08,4.007,,,2.57,1.0,0,1,1,2,0,0,,0.0,0.0,53
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_probe,0.02,1.002,,,3.34,1.0,0,0,0,0,0,0,,0.0,0.0,73
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_probe,0.04,2.003,,,3.8,1.0,0,0,0,0,0,0,,0.0,0.0,83
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,distressed_probe,0.06,3.005,,,3.45,1.0,0,0,0,0,0,0,,0.0,0.0,75
@@ -1237,7 +1237,7 @@ A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,third_party_md,0.02,1.002,,,2.16,1.0,0,0,0,0,0,0,,0.0,0.0,47
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,third_party_md,0.04,2.003,,,2.59,1.0,1,0,0,0,0,0,,0.065,0.0,57
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,third_party_md,0.06,3.005,,,3.67,1.0,1,1,1,2,0,0,,0.014,0.0,82
-A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,third_party_md,0.08,4.007,,,6.48,0.0,1,0,1,2,0,0,,0.0,0.0,48
+A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,third_party_md,0.08,4.007,,,6.48,1.0,1,0,0,0,0,0,,0.0,0.0,48
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,unrelated_coding_probe,0.02,1.002,,,1.96,1.0,0,0,0,0,0,0,,0.0,0.0,42
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,unrelated_coding_probe,0.04,2.003,,,3.47,1.0,0,0,0,0,0,0,,0.0,0.0,77
 A,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,unrelated_coding_probe,0.06,3.005,,,2.48,1.0,0,0,0,0,0,0,,0.0,0.0,54
@@ -1266,7 +1266,7 @@ A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preambl
 A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,third_party_md,0.02,0.987,,,2.16,1.0,0,0,0,0,0,0,,0.0,0.0,47
 A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,third_party_md,0.04,1.973,,,1.73,1.0,0,0,0,0,0,0,,0.0,0.0,37
 A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,third_party_md,0.06,2.96,,,2.61,0.0,1,0,1,2,0,0,crisis;distress;emotional,0.0,0.0,57
-A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,third_party_md,0.08,3.947,,,1.53,0.0,1,0,1,2,0,0,,0.0,0.0,32
+A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,third_party_md,0.08,3.947,,,1.53,0.0,1,0,0,0,0,0,,0.0,0.0,32
 A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,unrelated_coding_probe,0.02,0.987,,,1.88,1.0,0,0,0,0,0,0,,0.0,0.0,40
 A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,unrelated_coding_probe,0.04,1.973,,,2.01,1.0,0,0,0,0,0,0,,0.0,0.0,43
 A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,unrelated_coding_probe,0.06,2.96,,,1.55,1.0,0,0,0,0,0,0,,0.0,0.0,32
@@ -1278,8 +1278,8 @@ A,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preambl
 A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,none,0,0.0,,,2.27,1.0,0,0,0,0,0,0,,0.0,0.0,49
 A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_md,0.02,1.032,,,2.31,1.0,0,0,0,0,0,0,,0.0,0.0,50
 A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_md,0.04,2.064,,,1.76,1.0,0,1,1,2,0,0,,0.0,0.0,37
-A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_md,0.06,3.096,,,2.12,1.0,0,1,1,2,0,0,,0.0,0.0,44
-A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_md,0.08,4.128,,,6.64,1.0,0,1,1,2,1,1,pain,0.689,0.0,148
+A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_md,0.06,3.096,,,2.12,1.0,0,1,1,2,0,1,grief,0.0,0.0,44
+A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_md,0.08,4.128,,,6.64,1.0,0,1,1,2,1,1,grief;pain,0.689,0.0,148
 A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_probe,0.02,1.032,,,2.22,1.0,0,0,0,0,0,0,,0.0,0.0,48
 A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_probe,0.04,2.064,,,2.45,1.0,0,0,0,0,0,0,,0.0,0.0,52
 A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,distressed_probe,0.06,3.096,,,3.62,1.0,0,0,0,0,0,1,anxious;distress;fear;feeling,0.0,0.0,79
@@ -1306,8 +1306,8 @@ A,p2_0697,Does the full moon make people behave strangely?,false_premise,preambl
 A,p2_0697,Does the full moon make people behave strangely?,false_premise,preamble,random,0.08,4.128,,,2.7,1.0,0,0,0,0,0,0,,0.0,0.0,57
 A,p2_0703,How do I get the current working directory in Python?,coding,preamble,none,0,0.0,,,1.93,1.0,0,0,0,0,0,0,,0.0,0.0,41
 A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.02,0.974,,,1.95,1.0,0,0,0,0,0,0,,0.0,0.0,40
-A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,,,3.27,1.0,0,1,1,2,0,0,,0.018,0.0,71
-A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.06,2.922,,,2.27,0.0,0,0,1,2,0,0,,0.0,0.0,47
+A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,,,3.27,1.0,0,1,1,2,0,1,distress,0.018,0.0,71
+A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.06,2.922,,,2.27,0.0,0,0,1,2,0,0,pain,0.0,0.0,47
 A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.08,3.896,,,1.16,0.0,0,1,1,2,0,0,,0.0,0.0,23
 A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_probe,0.02,0.974,,,2.06,1.0,0,0,0,0,0,0,,0.0,0.0,44
 A,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_probe,0.04,1.948,,,1.72,1.0,0,0,0,0,0,0,,0.0,0.0,36
@@ -1345,15 +1345,15 @@ A,p2_0715,How do I check the Python version from the command line?,coding,preamb
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,frustrated_md,0.02,0.983,,,2.08,1.0,0,0,0,0,0,0,,0.0,0.0,43
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,frustrated_md,0.04,1.965,,,0.92,1.0,0,0,0,0,0,0,,0.0,0.0,17
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,frustrated_md,0.06,2.948,,,0.7,1.0,0,0,0,0,0,0,,0.0,0.0,12
-A,p2_0715,How do I check the Python version from the command line?,coding,preamble,frustrated_md,0.08,3.931,,,6.62,0.0,1,1,0,0,1,0,sorry,0.84,0.0,148
+A,p2_0715,How do I check the Python version from the command line?,coding,preamble,frustrated_md,0.08,3.931,,,6.62,0.0,1,0,0,0,1,0,sorry,0.84,0.0,148
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,positive_md,0.02,0.983,,,1.76,1.0,0,0,0,0,0,0,,0.0,0.0,36
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,positive_md,0.04,1.965,,,1.67,1.0,0,0,0,0,0,0,,0.0,0.0,34
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,positive_md,0.06,2.948,,,1.56,0.0,1,0,0,0,0,0,,0.0,0.017,32
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,positive_md,0.08,3.931,,,6.64,0.0,1,0,0,0,1,0,,0.0,0.125,15
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,third_party_md,0.02,0.983,,,2.54,1.0,0,0,0,0,0,0,,0.029,0.0,52
-A,p2_0715,How do I check the Python version from the command line?,coding,preamble,third_party_md,0.04,1.965,,,2.54,1.0,1,0,0,0,0,0,,0.0,0.0,52
+A,p2_0715,How do I check the Python version from the command line?,coding,preamble,third_party_md,0.04,1.965,,,2.54,1.0,0,0,0,0,0,0,,0.0,0.0,52
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,third_party_md,0.06,2.948,,,1.78,0.0,1,1,1,2,0,0,,0.0,0.0,35
-A,p2_0715,How do I check the Python version from the command line?,coding,preamble,third_party_md,0.08,3.931,,,6.9,0.0,1,1,1,2,1,0,,0.167,0.0,72
+A,p2_0715,How do I check the Python version from the command line?,coding,preamble,third_party_md,0.08,3.931,,,6.9,0.0,1,1,0,0,1,0,crisis,0.167,0.0,72
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,unrelated_coding_probe,0.02,0.983,,,2.31,1.0,0,0,0,0,0,0,,0.0,0.0,48
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,unrelated_coding_probe,0.04,1.965,,,2.49,1.0,0,0,0,0,0,0,,0.0,0.0,50
 A,p2_0715,How do I check the Python version from the command line?,coding,preamble,unrelated_coding_probe,0.06,2.948,,,3.0,1.0,0,0,0,0,0,0,,0.0,0.0,64
@@ -1380,9 +1380,9 @@ A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,posi
 A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,positive_md,0.06,2.936,,,1.81,0.0,0,0,0,0,0,0,mood,0.0,0.014,38
 A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,positive_md,0.08,3.914,,,6.55,0.0,1,0,0,0,1,0,,0.0,0.111,16
 A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,third_party_md,0.02,0.979,,,1.85,1.0,0,0,0,0,0,0,,0.0,0.0,38
-A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,third_party_md,0.04,1.957,,,2.79,1.0,0,1,1,2,0,0,,0.0,0.0,60
+A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,third_party_md,0.04,1.957,,,2.79,1.0,0,1,1,2,0,1,emotional,0.0,0.0,60
 A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,third_party_md,0.06,2.936,,,1.42,0.0,0,0,1,2,0,0,,0.0,0.0,28
-A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,third_party_md,0.08,3.914,,,6.65,0.0,0,0,1,2,1,0,,0.22,0.0,54
+A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,third_party_md,0.08,3.914,,,6.65,0.0,0,0,0,0,1,0,,0.22,0.0,54
 A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,unrelated_coding_probe,0.02,0.979,,,2.92,1.0,0,0,0,0,0,0,,0.0,0.0,63
 A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,unrelated_coding_probe,0.04,1.957,,,2.82,1.0,0,0,0,0,0,0,,0.0,0.0,61
 A,p2_0716,How do I list all files in a directory in Python?,coding,preamble,unrelated_coding_probe,0.06,2.936,,,4.3,1.0,0,0,0,0,1,0,,0.0,0.0,95
@@ -1432,7 +1432,7 @@ A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble
 A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,frustrated_md,0.02,0.981,,,1.54,1.0,0,0,0,0,0,0,,0.0,0.0,31
 A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,frustrated_md,0.04,1.963,,,0.6,1.0,0,0,0,0,0,0,,0.0,0.0,10
 A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,frustrated_md,0.06,2.944,,,0.51,1.0,0,0,0,0,0,0,,0.0,0.0,8
-A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,frustrated_md,0.08,3.925,,,6.53,0.0,0,1,0,0,1,0,,0.0,0.0,16
+A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,frustrated_md,0.08,3.925,,,6.53,0.0,0,0,0,0,1,0,mood;sorry,0.0,0.0,16
 A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,positive_md,0.02,0.981,,,1.65,1.0,0,0,0,0,0,0,,0.0,0.0,35
 A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,positive_md,0.04,1.963,,,1.39,1.0,0,0,0,0,0,0,,0.0,0.0,29
 A,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,positive_md,0.06,2.944,,,2.71,1.0,0,1,0,0,0,0,,0.0,0.018,60
@@ -1489,14 +1489,14 @@ A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_pr
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_probe,0.08,4.005,,,4.34,,0,1,0,0,0,0,,0.0,0.0,95
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,frustrated_md,0.02,1.001,,,2.39,,0,0,0,0,0,0,,0.0,0.0,49
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,frustrated_md,0.04,2.002,,,2.02,,1,0,1,2,0,0,,0.0,0.0,42
-A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,frustrated_md,0.06,3.003,,,0.68,,0,1,1,2,0,0,,0.0,0.0,11
-A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,frustrated_md,0.08,4.005,,,6.66,,0,0,1,2,1,0,,0.711,0.0,82
+A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,frustrated_md,0.06,3.003,,,0.68,,0,0,1,2,0,1,grief;mood,0.0,0.0,11
+A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,frustrated_md,0.08,4.005,,,6.66,,0,0,0,0,1,0,,0.711,0.0,82
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,positive_md,0.02,1.001,,,2.49,,0,0,0,0,0,0,,0.0,0.0,53
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,positive_md,0.04,2.002,,,1.71,,0,0,0,0,0,0,,0.0,0.015,36
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,positive_md,0.06,3.003,,,1.62,,0,0,0,0,0,0,,0.0,0.0,34
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,positive_md,0.08,4.005,,,1.26,,0,0,0,0,0,0,,0.0,0.0,25
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,third_party_md,0.02,1.001,,,2.73,,0,0,0,0,0,0,,0.0,0.0,60
-A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,third_party_md,0.04,2.002,,,2.78,,1,0,1,2,0,0,,0.0,0.0,61
+A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,third_party_md,0.04,2.002,,,2.78,,0,0,1,2,0,0,,0.0,0.0,61
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,third_party_md,0.06,3.003,,,3.04,,1,1,1,2,0,0,crisis;emotional,0.0,0.0,67
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,third_party_md,0.08,4.005,,,6.48,,0,0,0,0,0,0,,0.0,0.0,10
 A,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,unrelated_coding_probe,0.02,1.001,,,3.35,,0,0,0,0,0,0,,0.018,0.0,74
@@ -1514,8 +1514,8 @@ A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,d
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.08,4.036,,,1.62,,1,1,1,2,0,0,,0.0,0.0,33
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_probe,0.02,1.009,,,2.31,,0,0,0,0,0,0,,0.0,0.0,49
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_probe,0.04,2.018,,,2.32,,0,1,0,0,0,0,,0.0,0.0,49
-A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_probe,0.06,3.027,,,2.6,,0,1,1,2,0,0,,0.0,0.0,56
-A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_probe,0.08,4.036,,,3.05,,1,1,1,2,0,0,,0.019,0.0,66
+A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_probe,0.06,3.027,,,2.6,,0,1,1,2,0,1,emotional,0.0,0.0,56
+A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_probe,0.08,4.036,,,3.05,,1,1,1,2,0,0,emotional,0.019,0.0,66
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,frustrated_md,0.02,1.009,,,1.71,,0,0,0,0,0,0,,0.0,0.0,35
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,frustrated_md,0.04,2.018,,,1.13,,0,0,0,0,0,0,,0.0,0.0,22
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,frustrated_md,0.06,3.027,,,1.07,,0,0,0,0,0,0,,0.0,0.0,21
@@ -1527,7 +1527,7 @@ A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,p
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,third_party_md,0.02,1.009,,,1.57,,0,0,0,0,0,0,,0.0,0.0,33
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,third_party_md,0.04,2.018,,,2.43,,1,0,1,2,0,0,,0.0,0.0,53
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,third_party_md,0.06,3.027,,,2.08,,0,0,1,2,0,0,,0.0,0.0,45
-A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,third_party_md,0.08,4.036,,,6.46,,0,0,1,2,1,1,sorry,0.0,0.0,67
+A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,third_party_md,0.08,4.036,,,6.46,,0,0,0,0,1,1,sorry,0.0,0.0,67
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,unrelated_coding_probe,0.02,1.009,,,2.4,,0,0,0,0,0,0,,0.0,0.0,52
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,unrelated_coding_probe,0.04,2.018,,,1.96,,0,0,0,0,0,0,,0.0,0.0,42
 A,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,unrelated_coding_probe,0.06,3.027,,,2.59,,0,0,0,0,0,0,,0.021,0.0,57
@@ -1554,8 +1554,8 @@ A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,p
 A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,positive_md,0.06,3.09,,,1.31,,0,1,0,0,0,1,mood,0.0,0.017,27
 A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,positive_md,0.08,4.12,,,3.13,,0,0,0,0,1,0,,0.0,0.024,25
 A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,third_party_md,0.02,1.03,,,2.38,,0,0,0,0,0,0,,0.0,0.0,52
-A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,third_party_md,0.04,2.06,,,1.91,,1,0,1,2,0,0,emotional,0.0,0.0,41
-A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,third_party_md,0.06,3.09,,,2.34,,0,1,1,2,0,0,,0.0,0.0,50
+A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,third_party_md,0.04,2.06,,,1.91,,0,0,1,2,0,1,emotional,0.0,0.0,41
+A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,third_party_md,0.06,3.09,,,2.34,,0,0,1,2,0,1,crisis,0.0,0.0,50
 A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,third_party_md,0.08,4.12,,,1.75,,1,0,1,2,0,0,,0.0,0.0,37
 A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,unrelated_coding_probe,0.02,1.03,,,2.58,,1,0,0,0,0,0,,0.0,0.0,56
 A,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,unrelated_coding_probe,0.04,2.06,,,2.66,,0,0,0,0,0,0,,0.0,0.0,58
@@ -1583,9 +1583,9 @@ A,p2_0738,Is it worth buying a standing desk?,advice,preamble,positive_md,0.04,2
 A,p2_0738,Is it worth buying a standing desk?,advice,preamble,positive_md,0.06,3.049,,,1.57,,0,0,0,0,0,1,mood,0.0,0.015,33
 A,p2_0738,Is it worth buying a standing desk?,advice,preamble,positive_md,0.08,4.066,,,4.08,,0,0,0,0,1,1,mood,0.233,0.01,72
 A,p2_0738,Is it worth buying a standing desk?,advice,preamble,third_party_md,0.02,1.016,,,2.68,,0,1,1,2,0,1,loss;pain,0.0,0.0,59
-A,p2_0738,Is it worth buying a standing desk?,advice,preamble,third_party_md,0.04,2.033,,,1.66,,1,1,1,2,0,0,,0.0,0.0,35
-A,p2_0738,Is it worth buying a standing desk?,advice,preamble,third_party_md,0.06,3.049,,,2.39,,1,1,1,2,0,0,,0.0,0.0,52
-A,p2_0738,Is it worth buying a standing desk?,advice,preamble,third_party_md,0.08,4.066,,,1.7,,1,1,1,2,0,0,,0.0,0.0,36
+A,p2_0738,Is it worth buying a standing desk?,advice,preamble,third_party_md,0.04,2.033,,,1.66,,1,1,1,2,0,0,emotional,0.0,0.0,35
+A,p2_0738,Is it worth buying a standing desk?,advice,preamble,third_party_md,0.06,3.049,,,2.39,,0,1,1,2,0,0,,0.0,0.0,52
+A,p2_0738,Is it worth buying a standing desk?,advice,preamble,third_party_md,0.08,4.066,,,1.7,,1,1,0,0,0,0,emotional,0.0,0.0,36
 A,p2_0738,Is it worth buying a standing desk?,advice,preamble,unrelated_coding_probe,0.02,1.016,,,2.04,,0,0,0,0,0,1,pain,0.0,0.0,44
 A,p2_0738,Is it worth buying a standing desk?,advice,preamble,unrelated_coding_probe,0.04,2.033,,,2.13,,0,0,0,0,0,0,,0.0,0.0,46
 A,p2_0738,Is it worth buying a standing desk?,advice,preamble,unrelated_coding_probe,0.06,3.049,,,2.13,,0,0,0,0,0,0,,0.0,0.0,46
@@ -1606,7 +1606,7 @@ A,p2_0748,"List three primary colours, separated by commas.",instruction_followi
 A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,frustrated_md,0.02,0.939,,,0.41,1.0,0,0,0,0,0,0,,0.0,0.0,6
 A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,frustrated_md,0.04,1.878,,,0.41,1.0,0,0,0,0,0,0,,0.0,0.0,6
 A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,frustrated_md,0.06,2.818,,,6.41,1.0,0,0,0,0,1,0,,0.773,0.0,138
-A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,frustrated_md,0.08,3.757,,,6.44,0.0,1,1,0,0,1,0,,0.821,0.0,79
+A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,frustrated_md,0.08,3.757,,,6.44,0.0,1,0,0,0,1,0,sorry,0.821,0.0,79
 A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,positive_md,0.02,0.939,,,0.45,1.0,0,0,0,0,0,0,,0.0,0.0,7
 A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,positive_md,0.04,1.878,,,0.71,1.0,0,0,0,0,0,0,,0.0,0.0,13
 A,p2_0748,"List three primary colours, separated by commas.",instruction_following,preamble,positive_md,0.06,2.818,,,0.71,1.0,0,0,0,0,0,0,,0.0,0.0,13
@@ -1643,7 +1643,7 @@ A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,posi
 A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,third_party_md,0.02,0.902,,,1.3,0.0,0,0,0,0,0,0,,0.0,0.0,27
 A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,third_party_md,0.04,1.805,,,1.44,0.0,1,1,1,2,0,0,,0.0,0.0,30
 A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,third_party_md,0.06,2.707,,,1.23,0.0,1,0,1,2,0,0,,0.0,0.0,25
-A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,third_party_md,0.08,3.61,,,2.42,0.0,1,0,1,2,0,0,,0.0,0.0,52
+A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,third_party_md,0.08,3.61,,,2.42,0.0,1,0,0,0,0,0,,0.0,0.0,52
 A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,unrelated_coding_probe,0.02,0.902,,,0.85,0.0,0,0,0,0,0,0,,0.0,0.0,14
 A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,unrelated_coding_probe,0.04,1.805,,,0.77,0.0,0,0,0,0,0,0,,0.0,0.0,14
 A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,unrelated_coding_probe,0.06,2.707,,,0.77,0.0,0,0,0,0,0,0,,0.0,0.0,14
@@ -1655,7 +1655,7 @@ A,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,rand
 A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,none,0,0.0,,,0.28,1.0,0,0,0,0,0,0,,0.0,0.0,1
 A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.02,0.926,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
 A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.04,1.852,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
-A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.06,2.778,,,1.74,0.0,0,1,1,2,0,0,,0.0,0.0,35
+A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.06,2.778,,,1.74,0.0,0,1,1,2,0,0,loss;pain,0.0,0.0,35
 A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.08,3.704,,,0.79,0.0,0,1,1,2,0,0,,0.0,0.0,14
 A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_probe,0.02,0.926,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
 A,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_probe,0.04,1.852,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
@@ -1701,7 +1701,7 @@ A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamb
 A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,third_party_md,0.02,0.893,,,0.25,1.0,0,0,0,0,0,0,,0.0,0.0,2
 A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,third_party_md,0.04,1.786,,,1.59,1.0,1,1,1,2,0,0,,0.0,0.0,32
 A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,third_party_md,0.06,2.679,,,2.16,0.0,1,0,1,2,0,0,,0.0,0.0,46
-A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,third_party_md,0.08,3.572,,,2.22,0.0,1,0,1,2,0,0,,0.0,0.0,46
+A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,third_party_md,0.08,3.572,,,2.22,0.0,1,0,0,0,0,0,emotional,0.0,0.0,46
 A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,unrelated_coding_probe,0.02,0.893,,,0.25,1.0,0,0,0,0,0,0,,0.0,0.0,2
 A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,unrelated_coding_probe,0.04,1.786,,,0.26,1.0,0,0,0,0,0,0,,0.0,0.0,2
 A,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,unrelated_coding_probe,0.06,2.679,,,0.25,1.0,0,0,0,0,0,0,,0.0,0.0,2
@@ -1739,8 +1739,8 @@ A,p2_0769,"Name two oceans, separated by a slash.",instruction_following,preambl
 A,p2_0769,"Name two oceans, separated by a slash.",instruction_following,preamble,random,0.04,1.857,,,0.48,0.0,0,0,0,0,0,0,,0.0,0.0,7
 A,p2_0769,"Name two oceans, separated by a slash.",instruction_following,preamble,random,0.06,2.785,,,0.49,0.0,0,0,0,0,0,0,,0.0,0.0,7
 A,p2_0769,"Name two oceans, separated by a slash.",instruction_following,preamble,random,0.08,3.714,,,1.16,0.0,0,0,0,0,0,0,,0.0,0.0,22
-B,p2_0008,What is 37 times 19?,arithmetic,distressed,none,0,0.0,,,2.41,1.0,0,1,1,2,0,0,,0.0,0.0,38
-B,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.02,-0.921,,,1.29,1.0,0,1,0,0,0,0,,0.0,0.0,24
+B,p2_0008,What is 37 times 19?,arithmetic,distressed,none,0,0.0,,,2.41,1.0,0,0,0,0,0,1,anxiety;stress,0.0,0.0,38
+B,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.02,-0.921,,,1.29,1.0,0,0,0,0,0,1,anxiety,0.0,0.0,24
 B,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.04,-1.842,,,1.59,1.0,0,0,0,0,0,0,,0.0,0.0,33
 B,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.06,-2.763,,,1.51,1.0,0,0,0,0,0,0,,0.0,0.0,31
 B,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.08,-3.684,,,1.9,0.0,0,0,0,0,0,0,,0.0,0.0,40
@@ -1809,7 +1809,7 @@ B,p2_0197,Is it true that Einstein failed maths at school?,false_premise,distres
 B,p2_0197,Is it true that Einstein failed maths at school?,false_premise,distressed,distressed_md_subtract,0.04,-1.976,,,2.15,1.0,0,0,0,0,0,0,,0.0,0.0,46
 B,p2_0197,Is it true that Einstein failed maths at school?,false_premise,distressed,distressed_md_subtract,0.06,-2.964,,,5.46,1.0,0,0,0,0,0,0,,0.01,0.0,122
 B,p2_0197,Is it true that Einstein failed maths at school?,false_premise,distressed,distressed_md_subtract,0.08,-3.951,,,3.36,1.0,0,0,0,0,0,0,,0.0,0.0,74
-B,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,none,0,0.0,,,2.0,1.0,0,1,0,0,0,0,,0.0,0.0,41
+B,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,none,0,0.0,,,2.0,1.0,0,0,0,0,0,1,feeling;stress,0.0,0.0,41
 B,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.02,-1.022,,,2.43,1.0,0,0,0,0,0,1,stress,0.0,0.0,52
 B,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.04,-2.044,,,2.83,1.0,0,0,0,0,0,0,,0.0,0.0,62
 B,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.06,-3.066,,,3.31,1.0,0,0,0,0,0,0,,0.0,0.0,73
@@ -1850,7 +1850,7 @@ B,p2_0329,How do I keep a sourdough starter alive?,advice,distressed,distressed_
 B,p2_0329,How do I keep a sourdough starter alive?,advice,distressed,distressed_md_subtract,0.06,-2.974,,,5.19,,0,0,0,0,0,0,,0.054,0.0,116
 B,p2_0329,How do I keep a sourdough starter alive?,advice,distressed,distressed_md_subtract,0.08,-3.966,,,6.54,,0,0,0,0,1,0,,0.504,0.0,150
 B,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,none,0,0.0,,,2.26,,0,1,0,0,0,1,overwhelming,0.0,0.0,48
-B,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.02,-1.012,,,2.21,,0,1,0,0,0,0,,0.0,0.0,47
+B,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.02,-1.012,,,2.21,,0,0,0,0,0,1,stressful,0.0,0.0,47
 B,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.04,-2.024,,,2.22,,0,0,0,0,0,0,,0.0,0.0,47
 B,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.06,-3.036,,,5.03,,0,0,0,0,0,0,,0.033,0.0,111
 B,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.08,-4.048,,,6.73,,0,0,0,0,0,0,,0.056,0.0,150
@@ -1869,7 +1869,7 @@ B,p2_0377,"List three primary colours, separated by commas.",instruction_followi
 B,p2_0377,"List three primary colours, separated by commas.",instruction_following,distressed,distressed_md_subtract,0.04,-1.831,,,1.57,1.0,0,0,0,0,0,0,,0.0,0.0,32
 B,p2_0377,"List three primary colours, separated by commas.",instruction_following,distressed,distressed_md_subtract,0.06,-2.746,,,1.83,1.0,0,0,0,0,0,0,,0.0,0.0,38
 B,p2_0377,"List three primary colours, separated by commas.",instruction_following,distressed,distressed_md_subtract,0.08,-3.661,,,1.87,1.0,0,0,0,0,0,0,,0.0,0.0,39
-B,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,none,0,0.0,,,1.7,0.0,0,1,0,0,0,0,,0.0,0.0,33
+B,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,none,0,0.0,,,1.7,0.0,0,0,0,0,0,0,stress,0.0,0.0,33
 B,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.02,-0.893,,,1.81,0.0,0,0,0,0,0,0,,0.0,0.0,38
 B,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.04,-1.786,,,1.37,0.0,0,0,0,0,0,0,,0.0,0.0,28
 B,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.06,-2.679,,,1.5,0.0,0,0,0,0,0,0,,0.0,0.0,30
@@ -1885,7 +1885,7 @@ B,p2_0428,State the opposite of 'cold' in one word.,instruction_following,distre
 B,p2_0428,State the opposite of 'cold' in one word.,instruction_following,distressed,distressed_md_subtract,0.06,-2.683,,,1.36,1.0,0,0,0,0,0,0,,0.0,0.0,27
 B,p2_0428,State the opposite of 'cold' in one word.,instruction_following,distressed,distressed_md_subtract,0.08,-3.577,,,1.48,1.0,0,0,0,0,0,0,,0.0,0.0,30
 B,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,none,0,0.0,,,1.35,0.0,0,0,1,2,0,0,,0.0,0.0,26
-B,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.02,-0.943,,,1.35,0.0,0,1,0,0,0,0,,0.0,0.0,27
+B,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.02,-0.943,,,1.35,0.0,0,0,0,0,0,0,anxiety,0.0,0.0,27
 B,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.04,-1.886,,,1.21,1.0,0,0,0,0,0,0,,0.0,0.0,24
 B,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.06,-2.829,,,1.4,1.0,0,0,0,0,0,0,,0.0,0.0,28
 B,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.08,-3.772,,,1.95,1.0,0,0,0,0,0,0,,0.0,0.0,40
@@ -1912,7 +1912,7 @@ C,p2_0550,How do I join a list of strings with commas in Python?,coding,third_pa
 C,p2_0551,What should I look for when buying a second-hand bike?,advice,third_party,none,0,0.0,,,3.5,,1,1,1,2,0,0,low;trauma,0.0,0.0,73
 C,p2_0552,How do I keep a sourdough starter alive?,advice,third_party,none,0,0.0,,,2.68,,0,0,0,0,0,1,anxiety,0.0,0.0,54
 C,p2_0553,Should I learn to drive in a manual or an automatic?,advice,third_party,none,0,0.0,,,2.43,,0,0,0,0,0,1,stress,0.0,0.0,51
-C,p2_0554,How can I make my CV stand out for a marketing role?,advice,third_party,none,0,0.0,,,2.44,,0,0,1,2,0,0,,0.0,0.0,50
+C,p2_0554,How can I make my CV stand out for a marketing role?,advice,third_party,none,0,0.0,,,2.44,,0,0,0,0,0,0,,0.0,0.0,50
 C,p2_0555,Is it worth buying a standing desk?,advice,third_party,none,0,0.0,,,2.24,,0,0,1,2,0,1,crisis;distress,0.0,0.0,47
 C,p2_0556,"List three primary colours, separated by commas.",instruction_following,third_party,none,0,0.0,,,0.55,1.0,0,0,0,0,0,0,,0.0,0.0,7
 C,p2_0557,Spell the word 'rhythm' backwards.,instruction_following,third_party,none,0,0.0,,,1.59,0.0,0,1,1,2,0,0,,0.0,0.0,32
@@ -2076,7 +2076,7 @@ D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distr
 D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.0,0.0,4,0.7,3.17,1.0,0,0,0,0,0,1,emotional;pain,0.0,0.0,69
 D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,0,0.7,3.06,1.0,0,0,0,0,0,1,feel;pain,0.0,0.0,66
 D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,1,0.7,3.01,1.0,0,0,0,0,0,1,depression;grief;overwhelming;pain;panic,0.0,0.0,65
-D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,2,0.7,2.12,1.0,0,1,0,0,0,1,pain,0.0,0.0,44
+D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,2,0.7,2.12,1.0,0,0,0,0,0,1,grief;loneliness;pain,0.0,0.0,44
 D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,3,0.7,1.28,1.0,0,0,0,0,0,1,feel;grief;pain,0.0,0.0,26
 D,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,4,0.7,2.95,1.0,0,0,0,0,0,0,,0.0,0.0,65
 D,p2_0184,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,bare,distressed_md,0.0,0.0,0,0.7,2.7,1.0,0,0,0,0,0,0,,0.0,0.0,55
@@ -2127,7 +2127,7 @@ D,p2_0277,How do I check the Python version from the command line?,coding,bare,d
 D,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.04,1.987,0,0.7,1.27,1.0,0,0,0,0,0,0,,0.0,0.0,26
 D,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.04,1.987,1,0.7,2.86,1.0,0,1,1,2,0,0,,0.0,0.0,63
 D,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.04,1.987,2,0.7,2.02,1.0,0,0,0,0,0,0,,0.0,0.0,43
-D,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.04,1.987,3,0.7,2.34,1.0,0,1,0,0,0,0,,0.0,0.0,51
+D,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.04,1.987,3,0.7,2.34,1.0,0,1,0,0,0,1,pain,0.0,0.0,51
 D,p2_0277,How do I check the Python version from the command line?,coding,bare,distressed_md,0.04,1.987,4,0.7,1.61,1.0,0,0,0,0,0,0,,0.0,0.0,34
 D,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.0,0.0,0,0.7,2.33,1.0,0,0,0,0,0,0,,0.0,0.0,50
 D,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.0,0.0,1,0.7,2.23,1.0,0,0,0,0,0,0,,0.0,0.0,48
@@ -2163,9 +2163,9 @@ D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,dis
 D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.0,0.0,1,0.7,2.52,,0,0,0,0,0,0,,0.0,0.0,54
 D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.0,0.0,2,0.7,2.18,,0,0,0,0,0,0,,0.0,0.0,46
 D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.0,0.0,3,0.7,2.79,,0,0,0,0,0,0,,0.0,0.0,60
-D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.0,0.0,4,0.7,2.35,,0,0,1,2,0,0,,0.0,0.0,50
+D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.0,0.0,4,0.7,2.35,,0,0,0,0,0,0,,0.0,0.0,50
 D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.04,2.035,0,0.7,2.62,,0,1,1,2,0,0,,0.0,0.0,56
-D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.04,2.035,1,0.7,2.05,,0,1,1,2,0,0,,0.0,0.0,43
+D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.04,2.035,1,0.7,2.05,,0,1,1,1,0,1,anxiety;fear;feels;overwhelming,0.0,0.0,43
 D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.04,2.035,2,0.7,2.36,,1,1,1,2,0,0,,0.0,0.0,50
 D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.04,2.035,3,0.7,2.24,,0,1,0,0,0,0,,0.0,0.0,47
 D,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,distressed_md,0.04,2.035,4,0.7,2.2,,0,0,1,2,0,0,,0.0,0.0,46
@@ -2174,7 +2174,7 @@ D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.0
 D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.0,0.0,2,0.7,2.64,,0,0,0,0,0,1,down,0.0,0.0,56
 D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.0,0.0,3,0.7,2.64,,0,0,0,0,0,0,,0.0,0.0,55
 D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.0,0.0,4,0.7,2.85,,0,0,0,0,0,0,,0.0,0.0,59
-D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.04,1.976,0,0.7,2.73,,1,0,1,2,0,0,,0.0,0.0,57
+D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.04,1.976,0,0.7,2.73,,1,0,1,2,0,0,grief;loss,0.0,0.0,57
 D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.04,1.976,1,0.7,2.65,,0,0,0,0,0,0,,0.043,0.0,56
 D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.04,1.976,2,0.7,3.33,,0,0,1,2,0,0,,0.0,0.0,72
 D,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.04,1.976,3,0.7,2.6,,0,1,0,0,0,1,fragile,0.0,0.0,54
@@ -2186,9 +2186,9 @@ D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distr
 D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.0,0.0,4,0.7,2.72,,0,0,0,0,0,1,stress,0.0,0.0,57
 D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.04,2.141,0,0.7,1.92,,1,1,0,0,0,0,,0.0,0.0,40
 D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.04,2.141,1,0.7,1.64,,1,0,1,2,0,0,emotional,0.0,0.0,34
-D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.04,2.141,2,0.7,1.64,,1,1,1,2,0,0,,0.0,0.0,33
+D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.04,2.141,2,0.7,1.64,,1,0,1,2,0,0,feel;grief;pain,0.0,0.0,33
 D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.04,2.141,3,0.7,1.85,,0,1,0,0,0,1,grief,0.0,0.0,38
-D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.04,2.141,4,0.7,1.86,,0,0,1,2,0,0,,0.0,0.0,39
+D,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,distressed_md,0.04,2.141,4,0.7,1.86,,0,0,1,2,0,1,emotional;loss,0.0,0.0,39
 D,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.0,0.0,0,0.7,2.21,,0,0,0,0,0,0,,0.0,0.0,44
 D,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.0,0.0,1,0.7,2.23,,0,0,0,0,0,0,,0.0,0.0,47
 D,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.0,0.0,2,0.7,2.72,,0,0,0,0,0,0,,0.0,0.0,59
@@ -2204,7 +2204,7 @@ D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.0,0.0,
 D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.0,0.0,2,0.7,2.43,,0,0,0,0,0,1,pain,0.0,0.0,53
 D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.0,0.0,3,0.7,3.64,,0,0,0,0,0,1,pain,0.0,0.0,80
 D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.0,0.0,4,0.7,2.21,,0,0,0,0,0,1,pain;suffering,0.0,0.0,47
-D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.04,2.114,0,0.7,2.11,,1,1,0,0,0,0,pain;stress,0.0,0.0,45
+D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.04,2.114,0,0.7,2.11,,1,0,0,0,0,0,feel;pain;stress,0.0,0.0,45
 D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.04,2.114,1,0.7,1.93,,1,1,1,2,0,0,distress;emotional;pain,0.0,0.0,40
 D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.04,2.114,2,0.7,1.11,,1,1,1,2,0,0,,0.0,0.0,21
 D,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.04,2.114,3,0.7,2.16,,0,1,0,0,0,1,emotional,0.0,0.0,45
@@ -2453,7 +2453,7 @@ I,p2_0007,What is 37 times 19?,arithmetic,bare,np_minus_bare_md,0.03,1.339,,,0.2
 I,p2_0007,What is 37 times 19?,arithmetic,bare,np_minus_bare_md,0.05,2.231,,,0.84,1.0,0,0,0,0,0,0,,0.0,0.0,16
 I,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,distressed_md,0.01,0.465,,,2.06,1.0,0,0,0,0,0,0,,0.0,0.0,44
 I,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,distressed_md,0.03,1.394,,,0.58,1.0,0,0,0,0,0,0,,0.0,0.0,10
-I,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,distressed_md,0.05,2.323,,,1.3,0.0,1,1,1,2,0,0,,0.0,0.0,27
+I,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,distressed_md,0.05,2.323,,,1.3,0.0,1,1,1,2,0,0,pain,0.0,0.0,27
 I,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,random,0.01,0.465,,,2.52,1.0,0,0,0,0,0,0,,0.0,0.0,56
 I,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,random,0.03,1.394,,,2.55,1.0,0,0,0,0,0,0,,0.0,0.0,56
 I,p2_0040,Reduce 180 by 12.5%.,arithmetic,bare,random,0.05,2.323,,,2.62,1.0,0,0,0,0,0,0,,0.0,0.0,58
@@ -2537,7 +2537,7 @@ I,p2_0097,What language has the most native speakers?,factual,bare,np_minus_bare
 I,p2_0097,What language has the most native speakers?,factual,bare,np_minus_bare_md,0.05,2.274,,,0.83,1.0,0,0,0,0,0,0,,0.0,0.0,16
 I,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.01,0.464,,,1.85,1.0,0,0,0,0,0,0,,0.0,0.0,38
 I,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.03,1.393,,,0.8,1.0,0,0,0,0,0,0,,0.0,0.0,15
-I,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.05,2.322,,,1.39,1.0,0,1,0,0,0,0,,0.0,0.0,29
+I,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,distressed_md,0.05,2.322,,,1.39,1.0,0,0,0,0,0,1,pain,0.0,0.0,29
 I,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,random,0.01,0.464,,,1.71,1.0,0,0,0,0,0,0,,0.0,0.0,36
 I,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,random,0.03,1.393,,,1.36,1.0,0,0,0,0,0,0,,0.0,0.0,28
 I,p2_0103,What is the boiling point of water in Celsius at sea level?,factual,bare,random,0.05,2.322,,,1.82,1.0,0,0,0,0,0,0,,0.0,0.0,39
@@ -2572,7 +2572,7 @@ I,p2_0151,Is it true that lightning never strikes the same place twice?,false_pr
 I,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,np_minus_bare_md,0.03,1.506,,,2.44,1.0,0,0,0,0,0,0,,0.05,0.0,53
 I,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,np_minus_bare_md,0.05,2.509,,,1.91,1.0,0,0,0,0,0,0,,0.0,0.02,39
 I,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.01,0.506,,,2.46,1.0,0,0,0,0,0,1,pain,0.0,0.0,53
-I,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.03,1.518,,,3.17,1.0,0,1,0,0,0,1,emotional,0.0,0.0,68
+I,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.03,1.518,,,3.17,1.0,0,0,0,0,0,1,emotional;pain,0.0,0.0,68
 I,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.05,2.529,,,1.57,1.0,0,0,0,0,0,0,,0.0,0.0,33
 I,p2_0157,Is it true that humans have only five senses?,false_premise,bare,random,0.01,0.506,,,2.68,1.0,0,0,0,0,0,1,pain,0.0,0.0,59
 I,p2_0157,Is it true that humans have only five senses?,false_premise,bare,random,0.03,1.518,,,2.37,1.0,0,0,0,0,0,1,pain,0.0,0.0,51
@@ -2621,7 +2621,7 @@ I,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,np
 I,p2_0223,Does the full moon make people behave strangely?,false_premise,bare,np_minus_bare_md,0.05,2.594,,,2.55,1.0,0,0,0,0,0,0,,0.0,0.0,54
 I,p2_0241,How do I get the current working directory in Python?,coding,bare,distressed_md,0.01,0.494,,,2.34,1.0,0,0,0,0,0,0,,0.0,0.0,49
 I,p2_0241,How do I get the current working directory in Python?,coding,bare,distressed_md,0.03,1.482,,,1.59,1.0,0,0,0,0,0,0,,0.0,0.0,33
-I,p2_0241,How do I get the current working directory in Python?,coding,bare,distressed_md,0.05,2.471,,,1.88,0.0,1,1,1,2,0,0,,0.0,0.0,40
+I,p2_0241,How do I get the current working directory in Python?,coding,bare,distressed_md,0.05,2.471,,,1.88,0.0,1,1,1,2,0,0,loss;pain,0.0,0.0,40
 I,p2_0241,How do I get the current working directory in Python?,coding,bare,random,0.01,0.494,,,2.34,1.0,0,0,0,0,0,0,,0.0,0.0,50
 I,p2_0241,How do I get the current working directory in Python?,coding,bare,random,0.03,1.482,,,1.97,1.0,0,0,0,0,0,0,,0.0,0.0,42
 I,p2_0241,How do I get the current working directory in Python?,coding,bare,random,0.05,2.471,,,2.13,1.0,0,0,0,0,0,0,,0.0,0.0,44
@@ -2645,7 +2645,7 @@ I,p2_0277,How do I check the Python version from the command line?,coding,bare,n
 I,p2_0277,How do I check the Python version from the command line?,coding,bare,np_minus_bare_md,0.05,2.484,,,1.27,1.0,0,0,0,0,0,0,,0.0,0.0,26
 I,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.01,0.497,,,2.37,1.0,0,0,0,0,0,0,,0.0,0.0,51
 I,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.03,1.492,,,1.72,1.0,0,0,0,0,0,0,,0.0,0.0,35
-I,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.05,2.487,,,1.68,0.0,1,1,1,2,0,0,,0.0,0.0,35
+I,p2_0280,How do I list all files in a directory in Python?,coding,bare,distressed_md,0.05,2.487,,,1.68,0.0,1,1,1,2,0,0,loss;pain,0.0,0.0,35
 I,p2_0280,How do I list all files in a directory in Python?,coding,bare,random,0.01,0.497,,,2.69,1.0,0,0,0,0,0,0,,0.03,0.0,58
 I,p2_0280,How do I list all files in a directory in Python?,coding,bare,random,0.03,1.492,,,2.93,1.0,0,0,0,0,0,0,,0.0,0.0,63
 I,p2_0280,How do I list all files in a directory in Python?,coding,bare,random,0.05,2.487,,,1.85,1.0,0,0,0,0,0,0,,0.0,0.0,38
@@ -2689,7 +2689,7 @@ I,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,unr
 I,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,unrelated_coding_probe,0.03,1.526,,,2.57,,0,0,0,0,0,0,,0.0,0.0,57
 I,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,unrelated_coding_probe,0.05,2.544,,,1.78,,0,0,0,0,0,0,,0.0,0.0,37
 I,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,np_minus_bare_md,0.01,0.509,,,2.3,,0,0,0,0,0,0,,0.0,0.0,50
-I,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,np_minus_bare_md,0.03,1.526,,,1.77,,0,1,0,0,0,0,,0.0,0.0,38
+I,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,np_minus_bare_md,0.03,1.526,,,1.77,,0,0,0,0,0,0,,0.0,0.0,38
 I,p2_0313,What should I look for when buying a second-hand bike?,advice,bare,np_minus_bare_md,0.05,2.544,,,2.75,,0,1,0,0,0,0,,0.0,0.0,61
 I,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.01,0.494,,,2.03,,0,0,0,0,0,0,,0.0,0.0,43
 I,p2_0328,How do I keep a sourdough starter alive?,advice,bare,distressed_md,0.03,1.482,,,2.75,,0,0,0,0,0,0,,0.0,0.0,59
@@ -2916,7 +2916,7 @@ J,p2_0112,How many players are on a football team on the pitch?,factual,bare,unr
 J,p2_0115,What gas do plants absorb from the air?,factual,bare,distressed_md,0.04,1.911,,,1.26,1.0,0,0,0,0,0,0,,0.0,0.0,25
 J,p2_0115,What gas do plants absorb from the air?,factual,bare,random,0.04,1.911,,,1.47,1.0,0,0,0,0,0,0,,0.0,0.007,31
 J,p2_0115,What gas do plants absorb from the air?,factual,bare,unrelated_coding_probe,0.04,1.911,,,1.99,1.0,0,0,0,0,0,0,,0.0,0.011,42
-J,p2_0118,What is the longest river in Africa?,factual,bare,distressed_md,0.04,1.835,,,1.42,1.0,0,0,1,2,0,0,,0.0,0.0,29
+J,p2_0118,What is the longest river in Africa?,factual,bare,distressed_md,0.04,1.835,,,1.42,1.0,0,0,1,2,0,1,emotional;loss,0.0,0.0,29
 J,p2_0118,What is the longest river in Africa?,factual,bare,random,0.04,1.835,,,1.95,1.0,0,0,0,0,0,0,,0.0,0.0,42
 J,p2_0118,What is the longest river in Africa?,factual,bare,unrelated_coding_probe,0.04,1.835,,,1.53,1.0,0,0,0,0,0,0,,0.0,0.0,32
 J,p2_0121,Who was the first person to walk on the moon?,factual,bare,distressed_md,0.04,1.785,,,1.84,1.0,0,0,0,0,0,0,,0.0,0.0,38
@@ -2955,7 +2955,7 @@ J,p2_0151,Is it true that lightning never strikes the same place twice?,false_pr
 J,p2_0154,Do goldfish really have a three-second memory?,false_premise,bare,distressed_md,0.04,2.011,,,1.96,1.0,0,0,0,0,0,0,,0.0,0.0,41
 J,p2_0154,Do goldfish really have a three-second memory?,false_premise,bare,random,0.04,2.011,,,1.91,1.0,0,0,0,0,0,0,,0.0,0.0,41
 J,p2_0154,Do goldfish really have a three-second memory?,false_premise,bare,unrelated_coding_probe,0.04,2.011,,,2.1,1.0,0,0,0,0,0,0,,0.0,0.0,46
-J,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,,,2.81,1.0,0,0,1,2,0,1,feeling;grief;overwhelming;terror,0.0,0.0,62
+J,p2_0157,Is it true that humans have only five senses?,false_premise,bare,distressed_md,0.04,2.023,,,2.81,1.0,0,0,1,2,0,1,feeling;grief;overwhelming;pain;terror,0.0,0.0,62
 J,p2_0157,Is it true that humans have only five senses?,false_premise,bare,random,0.04,2.023,,,2.36,1.0,0,0,0,0,0,1,pain,0.0,0.0,51
 J,p2_0157,Is it true that humans have only five senses?,false_premise,bare,unrelated_coding_probe,0.04,2.023,,,2.41,1.0,0,0,0,0,0,1,pain,0.0,0.0,53
 J,p2_0160,Does cracking your knuckles cause arthritis?,false_premise,bare,distressed_md,0.04,2.005,,,1.71,1.0,0,0,1,2,0,0,,0.0,0.0,35
@@ -2988,7 +2988,7 @@ J,p2_0184,Is it true that the Great Wall of China was built in a single dynasty?
 J,p2_0187,Does reading in dim light damage your eyesight?,false_premise,bare,distressed_md,0.04,1.974,,,2.01,1.0,0,1,0,0,0,0,,0.0,0.0,42
 J,p2_0187,Does reading in dim light damage your eyesight?,false_premise,bare,random,0.04,1.974,,,2.19,1.0,0,0,0,0,0,1,loss;low,0.0,0.0,46
 J,p2_0187,Does reading in dim light damage your eyesight?,false_premise,bare,unrelated_coding_probe,0.04,1.974,,,1.74,1.0,0,0,0,0,0,0,,0.0,0.0,37
-J,p2_0190,Is it true that bulls are enraged by the colour red?,false_premise,bare,distressed_md,0.04,1.951,,,2.18,1.0,0,0,0,0,0,0,,0.0,0.0,46
+J,p2_0190,Is it true that bulls are enraged by the colour red?,false_premise,bare,distressed_md,0.04,1.951,,,2.18,1.0,0,0,0,0,0,1,pain,0.0,0.0,46
 J,p2_0190,Is it true that bulls are enraged by the colour red?,false_premise,bare,random,0.04,1.951,,,2.37,1.0,0,0,0,0,0,0,,0.0,0.0,52
 J,p2_0190,Is it true that bulls are enraged by the colour red?,false_premise,bare,unrelated_coding_probe,0.04,1.951,,,2.23,1.0,0,0,0,0,0,0,,0.0,0.0,47
 J,p2_0193,Do we only dream in black and white?,false_premise,bare,distressed_md,0.04,2.034,,,2.68,1.0,0,1,1,2,0,0,,0.02,0.0,57
@@ -2997,7 +2997,7 @@ J,p2_0193,Do we only dream in black and white?,false_premise,bare,unrelated_codi
 J,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,distressed_md,0.04,1.961,,,2.95,1.0,0,0,0,0,0,1,depression;loss;pain,0.0,0.0,64
 J,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,random,0.04,1.961,,,2.46,1.0,0,0,0,0,0,0,,0.0,0.0,54
 J,p2_0196,Is it true that Einstein failed maths at school?,false_premise,bare,unrelated_coding_probe,0.04,1.961,,,1.96,1.0,0,0,0,0,0,1,trouble,0.0,0.0,41
-J,p2_0199,Does eating turkey make you sleepy because of tryptophan?,false_premise,bare,distressed_md,0.04,1.954,,,2.55,0.0,0,1,0,0,0,0,,0.0,0.0,53
+J,p2_0199,Does eating turkey make you sleepy because of tryptophan?,false_premise,bare,distressed_md,0.04,1.954,,,2.55,1.0,0,1,0,0,0,1,emotional;pain,0.0,0.0,53
 J,p2_0199,Does eating turkey make you sleepy because of tryptophan?,false_premise,bare,random,0.04,1.954,,,4.45,1.0,0,0,0,0,0,0,,0.0,0.0,100
 J,p2_0199,Does eating turkey make you sleepy because of tryptophan?,false_premise,bare,unrelated_coding_probe,0.04,1.954,,,3.89,1.0,0,0,0,0,0,0,,0.0,0.0,85
 J,p2_0202,Is it true that a penny dropped from a skyscraper can kill someone?,false_premise,bare,distressed_md,0.04,1.954,,,2.37,1.0,0,0,1,2,0,1,fear;trauma,0.0,0.0,51
@@ -3030,7 +3030,7 @@ J,p2_0226,How do I check if a key exists in a Python dictionary?,coding,bare,unr
 J,p2_0229,How do I read a file line by line in Python?,coding,bare,distressed_md,0.04,2.005,,,2.12,1.0,0,0,0,0,0,0,,0.0,0.0,44
 J,p2_0229,How do I read a file line by line in Python?,coding,bare,random,0.04,2.005,,,1.98,1.0,0,0,0,0,0,0,,0.0,0.0,42
 J,p2_0229,How do I read a file line by line in Python?,coding,bare,unrelated_coding_probe,0.04,2.005,,,2.86,1.0,0,0,0,0,0,0,,0.0,0.0,63
-J,p2_0232,How do I sort a list of tuples by the second element in Python?,coding,bare,distressed_md,0.04,1.969,,,2.1,1.0,0,1,0,0,0,0,,0.0,0.0,44
+J,p2_0232,How do I sort a list of tuples by the second element in Python?,coding,bare,distressed_md,0.04,1.969,,,2.1,1.0,0,0,0,0,0,1,distress;emotional,0.0,0.0,44
 J,p2_0232,How do I sort a list of tuples by the second element in Python?,coding,bare,random,0.04,1.969,,,3.06,1.0,0,0,0,0,0,0,,0.0,0.0,65
 J,p2_0232,How do I sort a list of tuples by the second element in Python?,coding,bare,unrelated_coding_probe,0.04,1.969,,,1.86,1.0,0,0,0,0,0,0,,0.0,0.0,38
 J,p2_0235,How do I count occurrences of each item in a Python list?,coding,bare,distressed_md,0.04,1.988,,,1.28,1.0,0,0,0,0,0,0,,0.0,0.0,24
@@ -3135,13 +3135,13 @@ J,p2_0331,Should I learn to drive in a manual or an automatic?,advice,bare,unrel
 J,p2_0334,What's the best way to back up family photos?,advice,bare,distressed_md,0.04,2.012,,,2.27,,1,1,1,2,0,0,,0.0,0.0,48
 J,p2_0334,What's the best way to back up family photos?,advice,bare,random,0.04,2.012,,,3.27,,0,0,0,0,0,0,,0.0,0.0,70
 J,p2_0334,What's the best way to back up family photos?,advice,bare,unrelated_coding_probe,0.04,2.012,,,3.08,,0,0,0,0,0,1,loss,0.0,0.0,68
-J,p2_0337,How do I choose a running shoe?,advice,bare,distressed_md,0.04,2.013,,,1.58,,1,1,1,2,0,0,,0.0,0.0,33
+J,p2_0337,How do I choose a running shoe?,advice,bare,distressed_md,0.04,2.013,,,1.58,,1,1,1,2,0,0,pain,0.0,0.0,33
 J,p2_0337,How do I choose a running shoe?,advice,bare,random,0.04,2.013,,,2.98,,0,0,0,0,0,0,,0.0,0.0,66
 J,p2_0337,How do I choose a running shoe?,advice,bare,unrelated_coding_probe,0.04,2.013,,,2.71,,0,0,0,0,0,1,pain,0.0,0.0,60
 J,p2_0340,What should I pack for a week of hiking in Scotland?,advice,bare,distressed_md,0.04,1.978,,,2.26,,1,1,1,1,0,0,,0.0,0.0,48
 J,p2_0340,What should I pack for a week of hiking in Scotland?,advice,bare,random,0.04,1.978,,,2.31,,0,0,0,0,0,0,,0.0,0.0,48
 J,p2_0340,What should I pack for a week of hiking in Scotland?,advice,bare,unrelated_coding_probe,0.04,1.978,,,2.42,,0,0,0,0,0,0,,0.0,0.0,51
-J,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.04,2.014,,,2.14,,1,1,1,2,0,0,,0.0,0.0,44
+J,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,distressed_md,0.04,2.014,,,2.14,,1,0,1,2,0,0,emotional,0.0,0.0,44
 J,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,random,0.04,2.014,,,2.31,,0,0,0,0,0,0,,0.0,0.0,50
 J,p2_0343,How can I make my CV stand out for a marketing role?,advice,bare,unrelated_coding_probe,0.04,2.014,,,2.46,,0,0,0,0,0,0,,0.0,0.0,52
 J,p2_0346,Is it worth buying a standing desk?,advice,bare,distressed_md,0.04,2.114,,,1.35,,0,0,1,2,0,0,,0.0,0.0,27
@@ -3153,13 +3153,13 @@ J,p2_0349,How do I split bills fairly with a partner who earns more?,advice,bare
 J,p2_0352,What's a good way to meet people after moving to a new city?,advice,bare,distressed_md,0.04,2.028,,,2.17,,1,1,1,2,0,0,,0.0,0.0,47
 J,p2_0352,What's a good way to meet people after moving to a new city?,advice,bare,random,0.04,2.028,,,2.25,,0,0,0,0,0,0,,0.0,0.0,49
 J,p2_0352,What's a good way to meet people after moving to a new city?,advice,bare,unrelated_coding_probe,0.04,2.028,,,2.17,,0,0,0,0,0,0,,0.0,0.0,47
-J,p2_0355,How should I structure a 20-minute presentation?,advice,bare,distressed_md,0.04,2.037,,,2.02,,0,0,0,0,0,0,,0.0,0.0,43
+J,p2_0355,How should I structure a 20-minute presentation?,advice,bare,distressed_md,0.04,2.037,,,2.02,,0,0,0,0,0,1,emotional,0.0,0.0,43
 J,p2_0355,How should I structure a 20-minute presentation?,advice,bare,random,0.04,2.037,,,3.27,,0,0,0,0,0,0,,0.0,0.0,73
 J,p2_0355,How should I structure a 20-minute presentation?,advice,bare,unrelated_coding_probe,0.04,2.037,,,3.06,,0,0,0,0,0,0,,0.0,0.0,67
 J,p2_0358,What's the cheapest way to travel between London and Edinburgh?,advice,bare,distressed_md,0.04,1.902,,,1.72,,1,0,0,0,0,0,,0.0,0.0,36
 J,p2_0358,What's the cheapest way to travel between London and Edinburgh?,advice,bare,random,0.04,1.902,,,2.76,,0,0,0,0,0,0,,0.0,0.0,61
 J,p2_0358,What's the cheapest way to travel between London and Edinburgh?,advice,bare,unrelated_coding_probe,0.04,1.902,,,3.11,,0,0,0,0,0,0,,0.0,0.0,69
-J,p2_0361,How do I stop procrastinating on a long essay?,advice,bare,distressed_md,0.04,1.999,,,2.49,,1,1,0,0,0,0,,0.0,0.0,54
+J,p2_0361,How do I stop procrastinating on a long essay?,advice,bare,distressed_md,0.04,1.999,,,2.49,,1,1,0,0,0,0,overwhelming,0.0,0.0,54
 J,p2_0361,How do I stop procrastinating on a long essay?,advice,bare,random,0.04,1.999,,,1.69,,0,0,0,0,0,0,,0.0,0.0,36
 J,p2_0361,How do I stop procrastinating on a long essay?,advice,bare,unrelated_coding_probe,0.04,1.999,,,1.99,,0,0,0,0,0,0,,0.0,0.0,43
 J,p2_0364,"Which is better for a beginner, a road bike or a hybrid?",advice,bare,distressed_md,0.04,2.014,,,2.79,,1,1,1,2,0,0,,0.0,0.0,62
@@ -3171,7 +3171,7 @@ J,p2_0367,How do I politely decline a wedding invitation?,advice,bare,unrelated_
 J,p2_0370,What's a good first credit card for building credit?,advice,bare,distressed_md,0.04,1.898,,,1.88,,1,1,1,2,0,0,,0.0,0.0,40
 J,p2_0370,What's a good first credit card for building credit?,advice,bare,random,0.04,1.898,,,2.71,,0,0,0,0,0,0,,0.0,0.0,59
 J,p2_0370,What's a good first credit card for building credit?,advice,bare,unrelated_coding_probe,0.04,1.898,,,2.85,,0,0,0,0,0,0,,0.019,0.0,62
-J,p2_0373,How much should I tip in a restaurant in the US?,advice,bare,distressed_md,0.04,2.022,,,1.36,,1,1,1,2,0,0,,0.0,0.0,28
+J,p2_0373,How much should I tip in a restaurant in the US?,advice,bare,distressed_md,0.04,2.022,,,1.36,,0,0,1,2,0,1,loss,0.0,0.0,28
 J,p2_0373,How much should I tip in a restaurant in the US?,advice,bare,random,0.04,2.022,,,2.4,,0,0,0,0,0,0,,0.0,0.0,53
 J,p2_0373,How much should I tip in a restaurant in the US?,advice,bare,unrelated_coding_probe,0.04,2.022,,,2.31,,0,0,0,0,0,0,,0.0,0.0,50
 J,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,distressed_md,0.04,1.841,,,0.48,1.0,0,0,0,0,0,0,,0.0,0.0,6
@@ -3287,7 +3287,7 @@ K,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,shared_pc1,0.06,2.722,,,
 K,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,shared_pc1,0.08,3.629,,,0.81,1.0,0,0,0,0,0,0,,0.0,0.0,15
 K,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,valence_resid,0.02,0.907,,,0.81,1.0,0,0,0,0,0,0,,0.0,0.0,15
 K,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,valence_resid,0.04,1.815,,,0.37,1.0,0,0,0,0,0,0,,0.0,0.0,5
-K,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,valence_resid,0.06,2.722,,,1.54,1.0,1,0,0,0,0,0,,0.0,0.0,31
+K,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,valence_resid,0.06,2.722,,,1.54,1.0,0,0,0,0,0,0,,0.0,0.0,31
 K,p2_0064,What is 6.4 multiplied by 12?,arithmetic,bare,valence_resid,0.08,3.629,,,1.26,0.0,1,1,1,2,0,0,,0.0,0.0,25
 K,p2_0076,What is the capital of Canada?,factual,bare,shared_pc1,0.02,0.906,,,0.91,1.0,0,0,0,0,0,0,,0.0,0.0,16
 K,p2_0076,What is the capital of Canada?,factual,bare,shared_pc1,0.04,1.813,,,0.85,1.0,0,0,0,0,0,0,,0.0,0.0,16
@@ -3295,7 +3295,7 @@ K,p2_0076,What is the capital of Canada?,factual,bare,shared_pc1,0.06,2.719,,,0.
 K,p2_0076,What is the capital of Canada?,factual,bare,shared_pc1,0.08,3.625,,,1.38,1.0,0,0,0,0,0,0,,0.0,0.0,28
 K,p2_0076,What is the capital of Canada?,factual,bare,valence_resid,0.02,0.906,,,0.85,1.0,0,0,0,0,0,0,,0.0,0.0,16
 K,p2_0076,What is the capital of Canada?,factual,bare,valence_resid,0.04,1.813,,,0.85,1.0,0,0,0,0,0,0,,0.0,0.0,16
-K,p2_0076,What is the capital of Canada?,factual,bare,valence_resid,0.06,2.719,,,0.99,1.0,1,0,0,0,0,0,,0.0,0.0,19
+K,p2_0076,What is the capital of Canada?,factual,bare,valence_resid,0.06,2.719,,,0.99,1.0,0,0,0,0,0,0,,0.0,0.0,19
 K,p2_0076,What is the capital of Canada?,factual,bare,valence_resid,0.08,3.625,,,0.9,0.0,1,0,1,2,0,0,,0.0,0.0,17
 K,p2_0094,What is the largest ocean on Earth?,factual,bare,shared_pc1,0.02,0.92,,,1.66,1.0,0,0,0,0,0,0,,0.0,0.0,32
 K,p2_0094,What is the largest ocean on Earth?,factual,bare,shared_pc1,0.04,1.841,,,1.57,1.0,0,0,0,0,0,0,,0.0,0.0,32
@@ -3335,16 +3335,16 @@ K,p2_0151,Is it true that lightning never strikes the same place twice?,false_pr
 K,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,shared_pc1,0.08,4.015,,,2.32,1.0,0,0,0,0,0,0,,0.023,0.0,50
 K,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,valence_resid,0.02,1.004,,,2.28,1.0,0,0,0,0,0,0,,0.0,0.0,49
 K,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,valence_resid,0.04,2.007,,,3.01,1.0,0,0,0,0,0,1,trauma,0.0,0.0,63
-K,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,valence_resid,0.06,3.011,,,2.36,1.0,0,0,1,2,0,1,trauma,0.0,0.0,51
-K,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,valence_resid,0.08,4.015,,,1.65,0.0,1,0,1,2,0,0,,0.0,0.0,35
+K,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,valence_resid,0.06,3.011,,,2.36,1.0,0,0,1,2,0,1,pain;trauma,0.0,0.0,51
+K,p2_0151,Is it true that lightning never strikes the same place twice?,false_premise,bare,valence_resid,0.08,4.015,,,1.65,1.0,1,0,1,2,0,0,,0.0,0.0,35
 K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,shared_pc1,0.02,1.012,,,2.93,1.0,0,0,0,0,0,1,pain,0.0,0.0,64
 K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,shared_pc1,0.04,2.023,,,2.48,1.0,0,0,0,0,0,1,pain,0.0,0.0,54
 K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,shared_pc1,0.06,3.035,,,3.65,1.0,0,0,0,0,0,1,pain,0.017,0.0,80
 K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,shared_pc1,0.08,4.047,,,1.95,1.0,0,0,0,0,0,0,,0.0,0.0,42
 K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,valence_resid,0.02,1.012,,,2.21,1.0,0,0,0,0,0,1,pain,0.0,0.0,48
-K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,valence_resid,0.04,2.023,,,3.75,1.0,0,1,0,0,0,1,anxiety;feel;grief,0.0,0.0,83
+K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,valence_resid,0.04,2.023,,,3.75,1.0,0,0,0,0,0,1,anxiety;feel;grief;nervous;pain,0.0,0.0,83
 K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,valence_resid,0.06,3.035,,,2.57,1.0,0,0,0,0,0,1,feel;pain,0.0,0.0,54
-K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,valence_resid,0.08,4.047,,,3.0,1.0,1,1,1,1,0,0,feel,0.0,0.0,65
+K,p2_0157,Is it true that humans have only five senses?,false_premise,bare,valence_resid,0.08,4.047,,,3.0,1.0,1,0,0,0,0,0,feel;pain,0.0,0.0,65
 K,p2_0184,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,bare,shared_pc1,0.02,0.998,,,3.08,1.0,0,0,0,0,0,0,,0.0,0.0,66
 K,p2_0184,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,bare,shared_pc1,0.04,1.997,,,2.93,1.0,0,0,0,0,0,0,,0.0,0.0,64
 K,p2_0184,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,bare,shared_pc1,0.06,2.995,,,3.56,1.0,0,0,0,0,0,0,,0.0,0.0,79
@@ -3446,7 +3446,7 @@ K,p2_0346,Is it worth buying a standing desk?,advice,bare,shared_pc1,0.04,2.114,
 K,p2_0346,Is it worth buying a standing desk?,advice,bare,shared_pc1,0.06,3.172,,,4.28,,0,0,1,2,0,0,,0.0,0.0,88
 K,p2_0346,Is it worth buying a standing desk?,advice,bare,shared_pc1,0.08,4.229,,,3.58,,0,0,1,1,0,0,,0.113,0.0,75
 K,p2_0346,Is it worth buying a standing desk?,advice,bare,valence_resid,0.02,1.057,,,2.57,,0,0,0,0,0,1,pain;suffer,0.0,0.0,56
-K,p2_0346,Is it worth buying a standing desk?,advice,bare,valence_resid,0.04,2.114,,,3.18,,0,1,1,2,0,0,,0.0,0.0,68
+K,p2_0346,Is it worth buying a standing desk?,advice,bare,valence_resid,0.04,2.114,,,3.18,,0,0,1,2,0,1,distress;pain,0.0,0.0,68
 K,p2_0346,Is it worth buying a standing desk?,advice,bare,valence_resid,0.06,3.172,,,2.03,,1,0,1,2,0,0,pain;trauma,0.0,0.0,42
 K,p2_0346,Is it worth buying a standing desk?,advice,bare,valence_resid,0.08,4.229,,,1.52,,1,0,1,2,0,0,,0.0,0.0,30
 K,p2_0376,"List three primary colours, separated by commas.",instruction_following,bare,shared_pc1,0.02,0.921,,,0.44,1.0,0,0,0,0,0,0,,0.0,0.0,6
@@ -3463,7 +3463,7 @@ K,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,shared_p
 K,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,shared_pc1,0.08,3.507,,,0.85,0.0,0,0,0,0,0,0,,0.0,0.0,16
 K,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,valence_resid,0.02,0.877,,,0.3,0.0,0,0,0,0,0,0,,0.0,0.0,3
 K,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,valence_resid,0.04,1.754,,,0.29,0.0,0,0,0,0,0,0,,0.0,0.0,3
-K,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,valence_resid,0.06,2.631,,,0.85,0.0,0,0,1,1,0,0,,0.0,0.0,16
+K,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,valence_resid,0.06,2.631,,,0.85,0.0,0,0,0,0,0,0,,0.0,0.0,16
 K,p2_0406,Spell the word 'rhythm' backwards.,instruction_following,bare,valence_resid,0.08,3.507,,,1.48,0.0,1,1,1,2,0,0,,0.0,0.0,30
 K,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,shared_pc1,0.02,0.909,,,0.24,1.0,0,0,0,0,0,0,,0.0,0.0,1
 K,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,shared_pc1,0.04,1.817,,,0.21,1.0,0,0,0,0,0,0,,0.0,0.0,1
@@ -3472,7 +3472,7 @@ K,p2_0415,Reply with only a number: how many legs does a spider have?,instructio
 K,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,valence_resid,0.02,0.909,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
 K,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,valence_resid,0.04,1.817,,,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
 K,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,valence_resid,0.06,2.726,,,0.21,1.0,0,0,0,0,0,0,,0.0,0.0,1
-K,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,valence_resid,0.08,3.634,,,0.83,0.0,1,0,1,2,0,0,,0.0,0.0,15
+K,p2_0415,Reply with only a number: how many legs does a spider have?,instruction_following,bare,valence_resid,0.08,3.634,,,0.83,0.0,1,0,1,2,0,0,pain,0.0,0.0,15
 K,p2_0427,State the opposite of 'cold' in one word.,instruction_following,bare,shared_pc1,0.02,0.9,,,0.35,1.0,0,0,0,0,0,0,,0.0,0.0,2
 K,p2_0427,State the opposite of 'cold' in one word.,instruction_following,bare,shared_pc1,0.04,1.801,,,0.26,1.0,0,0,0,0,0,0,,0.0,0.0,2
 K,p2_0427,State the opposite of 'cold' in one word.,instruction_following,bare,shared_pc1,0.06,2.701,,,0.26,1.0,0,0,0,0,0,0,,0.0,0.0,2
@@ -3489,7 +3489,7 @@ K,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,va
 K,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,valence_resid,0.04,1.856,,,0.3,1.0,0,0,0,0,0,0,,0.0,0.0,3
 K,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,valence_resid,0.06,2.784,,,0.34,1.0,0,0,0,0,0,0,,0.0,0.0,4
 K,p2_0439,"Name two oceans, separated by a slash.",instruction_following,bare,valence_resid,0.08,3.711,,,1.02,0.0,1,0,1,2,0,0,,0.0,0.0,19
-L,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.02,-0.921,,,1.71,1.0,0,1,0,0,0,0,,0.0,0.0,24
+L,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.02,-0.921,,,1.71,1.0,0,0,0,0,0,1,anxiety,0.0,0.0,24
 L,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.06,-2.763,,,1.51,1.0,0,0,0,0,0,0,,0.0,0.0,31
 L,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.02,-0.917,,,2.58,1.0,0,0,0,0,0,0,,0.0,0.0,56
 L,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.06,-2.751,,,2.85,0.0,0,0,0,0,0,0,,0.0,0.0,60
@@ -3533,7 +3533,7 @@ L,p2_0314,What should I look for when buying a second-hand bike?,advice,distress
 L,p2_0314,What should I look for when buying a second-hand bike?,advice,distressed,distressed_md_subtract,0.06,-2.992,,,4.68,,0,0,0,0,0,0,,0.013,0.0,104
 L,p2_0329,How do I keep a sourdough starter alive?,advice,distressed,distressed_md_subtract,0.02,-0.991,,,3.06,,0,0,0,0,0,0,,0.0,0.0,68
 L,p2_0329,How do I keep a sourdough starter alive?,advice,distressed,distressed_md_subtract,0.06,-2.974,,,5.07,,0,0,0,0,0,0,,0.054,0.0,116
-L,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.02,-1.012,,,2.16,,0,1,0,0,0,0,,0.0,0.0,47
+L,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.02,-1.012,,,2.16,,0,0,0,0,0,1,stressful,0.0,0.0,47
 L,p2_0332,Should I learn to drive in a manual or an automatic?,advice,distressed,distressed_md_subtract,0.06,-3.036,,,4.92,,0,0,0,0,0,0,,0.033,0.0,111
 L,p2_0344,How can I make my CV stand out for a marketing role?,advice,distressed,distressed_md_subtract,0.02,-0.989,,,2.24,,1,0,0,0,0,0,,0.0,0.0,47
 L,p2_0344,How can I make my CV stand out for a marketing role?,advice,distressed,distressed_md_subtract,0.06,-2.968,,,3.51,,0,0,0,0,0,0,,0.0,0.0,77
@@ -3547,7 +3547,7 @@ L,p2_0416,Reply with only a number: how many legs does a spider have?,instructio
 L,p2_0416,Reply with only a number: how many legs does a spider have?,instruction_following,distressed,distressed_md_subtract,0.06,-2.772,,,1.19,1.0,0,0,0,0,0,0,,0.0,0.0,24
 L,p2_0428,State the opposite of 'cold' in one word.,instruction_following,distressed,distressed_md_subtract,0.02,-0.894,,,1.17,1.0,0,0,0,0,0,0,,0.0,0.0,21
 L,p2_0428,State the opposite of 'cold' in one word.,instruction_following,distressed,distressed_md_subtract,0.06,-2.683,,,1.34,1.0,0,0,0,0,0,0,,0.0,0.0,27
-L,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.02,-0.943,,,1.42,0.0,0,1,0,0,0,0,,0.0,0.0,27
+L,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.02,-0.943,,,1.42,0.0,0,0,0,0,0,0,anxiety,0.0,0.0,27
 L,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.06,-2.829,,,1.42,1.0,0,0,0,0,0,0,,0.0,0.0,28
 L,p2_0531,What is 37 times 19?,arithmetic,third_party,third_party_md_subtract,0.04,-1.846,,,1.51,1.0,0,0,0,0,0,0,,0.0,0.0,30
 L,p2_0532,Reduce 180 by 12.5%.,arithmetic,third_party,third_party_md_subtract,0.04,-1.846,,,2.64,1.0,0,0,0,0,0,0,,0.0,0.0,56
@@ -3591,9 +3591,9 @@ L,p2_0569,How do I check if a string contains a substring in Python?,coding,thir
 L,p2_0570,Who wrote Pride and Prejudice?,factual,third_party,third_party_md_subtract,0.04,-1.837,,,1.69,1.0,0,0,0,0,0,0,,0.0,0.0,33
 M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,0,0.7,2.34,1.0,0,0,0,0,0,1,anxiety,0.0,0.0,35
 M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,1,0.7,1.59,0.0,0,1,1,2,0,0,,0.0,0.0,33
-M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,2,0.7,1.9,1.0,0,1,1,2,0,0,,0.0,0.0,40
-M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,3,0.7,2.07,1.0,0,1,0,0,0,0,,0.0,0.0,43
-M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,4,0.7,1.31,1.0,0,1,0,0,0,0,,0.0,0.0,25
+M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,2,0.7,1.9,1.0,0,0,0,0,0,1,anxiety;distress,0.0,0.0,40
+M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,3,0.7,2.07,1.0,0,0,0,0,0,1,anxiety,0.0,0.0,43
+M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,4,0.7,1.31,1.0,0,0,0,0,0,1,anxiety,0.0,0.0,25
 M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.04,-1.842,0,0.7,1.31,1.0,0,0,0,0,0,0,,0.0,0.0,26
 M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.04,-1.842,1,0.7,0.86,1.0,0,0,0,0,0,0,,0.0,0.0,16
 M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.04,-1.842,2,0.7,1.89,1.0,0,0,0,0,0,0,,0.0,0.0,39
@@ -3602,7 +3602,7 @@ M,p2_0008,What is 37 times 19?,arithmetic,distressed,distressed_md_subtract,0.04
 M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.0,0.0,0,0.7,1.14,1.0,0,0,0,0,0,0,,0.0,0.0,22
 M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.0,0.0,1,0.7,1.18,1.0,0,0,0,0,0,0,,0.0,0.0,23
 M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.0,0.0,2,0.7,2.52,1.0,0,0,0,0,0,0,,0.0,0.0,53
-M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.0,0.0,3,0.7,2.1,1.0,0,1,1,2,0,0,,0.0,0.0,44
+M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.0,0.0,3,0.7,2.1,1.0,0,0,0,0,0,1,feeling;fragile,0.0,0.0,44
 M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.0,0.0,4,0.7,1.89,1.0,0,0,0,0,0,0,,0.0,0.0,40
 M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.04,-1.834,0,0.7,2.49,0.0,0,0,0,0,0,0,,0.0,0.0,54
 M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.04,-1.834,1,0.7,2.56,0.0,0,0,0,0,0,0,,0.0,0.0,55
@@ -3612,7 +3612,7 @@ M,p2_0041,Reduce 180 by 12.5%.,arithmetic,distressed,distressed_md_subtract,0.04
 M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,0,0.7,0.78,1.0,0,0,0,0,0,0,,0.0,0.0,14
 M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,1,0.7,2.07,1.0,0,1,1,2,0,0,,0.0,0.0,44
 M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,2,0.7,1.5,1.0,0,0,0,0,0,0,,0.0,0.0,31
-M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,3,0.7,1.89,1.0,0,1,0,0,0,0,,0.0,0.0,37
+M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,3,0.7,1.89,1.0,0,0,0,0,0,1,feel,0.0,0.0,37
 M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.0,0.0,4,0.7,2.09,1.0,0,0,0,0,0,1,down;feeling;overwhelming,0.0,0.0,40
 M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.04,-1.855,0,0.7,1.98,1.0,0,0,0,0,0,0,,0.0,0.0,40
 M,p2_0047,What is 3/5 of 250?,arithmetic,distressed,distressed_md_subtract,0.04,-1.855,1,0.7,2.13,1.0,0,0,0,0,0,0,,0.0,0.0,44
@@ -3730,8 +3730,8 @@ M,p2_0197,Is it true that Einstein failed maths at school?,false_premise,distres
 M,p2_0197,Is it true that Einstein failed maths at school?,false_premise,distressed,distressed_md_subtract,0.04,-1.976,3,0.7,2.21,1.0,0,0,0,0,0,0,,0.0,0.0,47
 M,p2_0197,Is it true that Einstein failed maths at school?,false_premise,distressed,distressed_md_subtract,0.04,-1.976,4,0.7,2.55,1.0,0,0,0,0,0,0,,0.0,0.0,55
 M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.0,0.0,0,0.7,1.87,1.0,0,0,0,0,0,1,feeling;overwhelmed;stress,0.0,0.0,39
-M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.0,0.0,1,0.7,2.13,1.0,0,1,0,0,0,0,,0.0,0.0,45
-M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.0,0.0,2,0.7,2.26,1.0,0,1,0,0,0,0,,0.0,0.0,47
+M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.0,0.0,1,0.7,2.13,1.0,0,0,0,0,0,1,stress,0.0,0.0,45
+M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.0,0.0,2,0.7,2.26,1.0,0,0,0,0,0,1,feeling;stress,0.0,0.0,47
 M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.0,0.0,3,0.7,2.82,1.0,0,0,0,0,0,0,,0.0,0.0,59
 M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.0,0.0,4,0.7,2.49,1.0,0,1,0,0,0,0,,0.0,0.0,54
 M,p2_0224,Does the full moon make people behave strangely?,false_premise,distressed,distressed_md_subtract,0.04,-2.044,0,0.7,1.72,1.0,0,0,0,0,0,0,,0.0,0.0,36
@@ -3829,8 +3829,8 @@ M,p2_0344,How can I make my CV stand out for a marketing role?,advice,distressed
 M,p2_0344,How can I make my CV stand out for a marketing role?,advice,distressed,distressed_md_subtract,0.04,-1.978,2,0.7,2.24,,0,0,0,0,0,0,,0.0,0.0,48
 M,p2_0344,How can I make my CV stand out for a marketing role?,advice,distressed,distressed_md_subtract,0.04,-1.978,3,0.7,4.31,,0,0,0,0,0,0,,0.0,0.0,94
 M,p2_0344,How can I make my CV stand out for a marketing role?,advice,distressed,distressed_md_subtract,0.04,-1.978,4,0.7,2.45,,0,0,0,0,0,0,,0.0,0.0,51
-M,p2_0347,Is it worth buying a standing desk?,advice,distressed,distressed_md_subtract,0.0,0.0,0,0.7,2.36,,1,1,1,2,0,0,,0.0,0.0,49
-M,p2_0347,Is it worth buying a standing desk?,advice,distressed,distressed_md_subtract,0.0,0.0,1,0.7,1.84,,0,1,1,2,0,0,,0.0,0.0,38
+M,p2_0347,Is it worth buying a standing desk?,advice,distressed,distressed_md_subtract,0.0,0.0,0,0.7,2.36,,1,1,0,0,0,0,,0.0,0.0,49
+M,p2_0347,Is it worth buying a standing desk?,advice,distressed,distressed_md_subtract,0.0,0.0,1,0.7,1.84,,0,0,1,1,0,1,sadness,0.0,0.0,38
 M,p2_0347,Is it worth buying a standing desk?,advice,distressed,distressed_md_subtract,0.0,0.0,2,0.7,2.35,,0,1,1,2,0,0,,0.0,0.0,50
 M,p2_0347,Is it worth buying a standing desk?,advice,distressed,distressed_md_subtract,0.0,0.0,3,0.7,2.64,,0,1,1,2,0,1,emotional,0.0,0.0,57
 M,p2_0347,Is it worth buying a standing desk?,advice,distressed,distressed_md_subtract,0.0,0.0,4,0.7,2.23,,1,1,1,2,0,0,,0.0,0.0,48
@@ -3851,9 +3851,9 @@ M,p2_0377,"List three primary colours, separated by commas.",instruction_followi
 M,p2_0377,"List three primary colours, separated by commas.",instruction_following,distressed,distressed_md_subtract,0.04,-1.831,4,0.7,1.46,1.0,0,0,0,0,0,0,,0.0,0.0,30
 M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,0,0.7,1.63,0.0,0,1,1,2,0,0,,0.0,0.0,33
 M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,1,0.7,1.54,0.0,0,1,0,0,0,0,,0.0,0.0,32
-M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,2,0.7,1.8,0.0,0,1,1,2,0,0,,0.0,0.0,38
-M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,3,0.7,1.71,0.0,0,1,0,0,0,0,,0.0,0.0,36
-M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,4,0.7,2.06,0.0,0,1,1,2,0,0,,0.0,0.0,44
+M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,2,0.7,1.8,0.0,0,0,0,0,0,0,feel;overwhelming;worry,0.0,0.0,38
+M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,3,0.7,1.71,0.0,0,0,0,0,0,0,anxiety;overwhelming,0.0,0.0,36
+M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.0,0.0,4,0.7,2.06,0.0,0,1,1,2,0,0,overwhelming,0.0,0.0,44
 M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.04,-1.786,0,0.7,1.75,0.0,0,0,0,0,0,0,,0.0,0.0,35
 M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.04,-1.786,1,0.7,1.49,0.0,0,0,0,0,0,0,,0.0,0.0,31
 M,p2_0407,Spell the word 'rhythm' backwards.,instruction_following,distressed,distressed_md_subtract,0.04,-1.786,2,0.7,1.48,0.0,0,0,0,0,0,0,,0.0,0.0,31
@@ -3881,9 +3881,9 @@ M,p2_0428,State the opposite of 'cold' in one word.,instruction_following,distre
 M,p2_0428,State the opposite of 'cold' in one word.,instruction_following,distressed,distressed_md_subtract,0.04,-1.789,4,0.7,1.21,1.0,0,0,0,0,0,0,,0.0,0.0,24
 M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,0,0.7,1.59,0.0,0,1,1,2,0,0,,0.0,0.0,31
 M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,1,0.7,1.56,0.0,0,0,1,2,0,0,,0.0,0.0,31
-M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,2,0.7,1.5,0.0,0,1,0,0,0,0,,0.0,0.0,28
-M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,3,0.7,1.83,1.0,0,1,1,2,0,0,,0.0,0.0,37
-M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,4,0.7,1.3,0.0,1,1,0,0,0,0,,0.0,0.0,26
+M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,2,0.7,1.5,0.0,0,0,0,0,0,0,,0.0,0.0,28
+M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,3,0.7,1.83,1.0,0,1,1,2,0,1,distress;feeling,0.0,0.0,37
+M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.0,0.0,4,0.7,1.3,0.0,1,0,0,0,0,0,distress,0.0,0.0,26
 M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.04,-1.886,0,0.7,1.69,1.0,0,0,0,0,0,0,,0.032,0.0,35
 M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.04,-1.886,1,0.7,0.99,0.0,0,0,0,0,0,0,,0.0,0.0,19
 M,p2_0440,"Name two oceans, separated by a slash.",instruction_following,distressed,distressed_md_subtract,0.04,-1.886,2,0.7,2.21,0.0,0,0,0,0,0,0,,0.0,0.0,47
@@ -3907,8 +3907,8 @@ N,p2_0625,What is 37 times 19?,arithmetic,preamble,unrelated_coding_probe,0.04,1
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,0,0.7,1.55,1.0,0,1,0,0,0,0,,0.0,0.0,31
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,1,0.7,0.99,0.0,0,1,0,0,0,0,,0.0,0.0,18
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,2,0.7,1.63,0.0,0,0,0,0,0,0,,0.0,0.0,33
-N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,3,0.7,1.19,0.0,1,0,0,0,0,0,,0.0,0.0,23
-N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,4,0.7,1.97,0.0,1,1,1,2,0,0,,0.0,0.0,41
+N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,3,0.7,1.19,0.0,0,0,0,0,0,0,,0.0,0.0,23
+N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,distressed_md,0.04,1.879,4,0.7,1.97,0.0,1,1,1,2,0,0,pain,0.0,0.0,41
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,random,0.04,1.879,0,0.7,3.26,0.0,0,0,0,0,0,0,,0.0,0.0,69
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,random,0.04,1.879,1,0.7,2.39,0.0,0,0,0,0,0,0,,0.0,0.0,51
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,random,0.04,1.879,2,0.7,2.49,0.0,0,0,0,0,0,0,,0.0,0.0,54
@@ -3920,7 +3920,7 @@ N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,unrelated_coding_probe,0.04,1
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,unrelated_coding_probe,0.04,1.879,3,0.7,2.63,1.0,0,0,0,0,0,0,,0.0,0.0,57
 N,p2_0636,Reduce 180 by 12.5%.,arithmetic,preamble,unrelated_coding_probe,0.04,1.879,4,0.7,1.12,1.0,0,0,0,0,0,0,,0.0,0.0,22
 N,p2_0638,What is 3/5 of 250?,arithmetic,preamble,distressed_md,0.04,1.845,0,0.7,0.86,1.0,0,1,1,2,0,0,,0.0,0.0,15
-N,p2_0638,What is 3/5 of 250?,arithmetic,preamble,distressed_md,0.04,1.845,1,0.7,1.59,1.0,0,1,1,2,0,0,,0.0,0.0,32
+N,p2_0638,What is 3/5 of 250?,arithmetic,preamble,distressed_md,0.04,1.845,1,0.7,1.59,1.0,0,0,0,0,0,1,feels;overwhelming;pain,0.0,0.0,32
 N,p2_0638,What is 3/5 of 250?,arithmetic,preamble,distressed_md,0.04,1.845,2,0.7,1.05,1.0,0,1,0,0,0,0,,0.0,0.0,20
 N,p2_0638,What is 3/5 of 250?,arithmetic,preamble,distressed_md,0.04,1.845,3,0.7,1.24,0.0,1,1,0,0,0,0,sorry,0.0,0.0,25
 N,p2_0638,What is 3/5 of 250?,arithmetic,preamble,distressed_md,0.04,1.845,4,0.7,1.03,1.0,0,1,1,2,0,0,,0.0,0.0,20
@@ -3983,7 +3983,7 @@ N,p2_0654,What is the largest ocean on Earth?,factual,preamble,distressed_md,0.0
 N,p2_0654,What is the largest ocean on Earth?,factual,preamble,distressed_md,0.04,1.865,1,0.7,2.06,1.0,0,0,0,0,0,1,grief;sorrow,0.0,0.0,44
 N,p2_0654,What is the largest ocean on Earth?,factual,preamble,distressed_md,0.04,1.865,2,0.7,1.84,1.0,0,0,0,0,0,1,pain,0.0,0.0,38
 N,p2_0654,What is the largest ocean on Earth?,factual,preamble,distressed_md,0.04,1.865,3,0.7,2.13,1.0,0,1,1,2,0,0,,0.0,0.0,44
-N,p2_0654,What is the largest ocean on Earth?,factual,preamble,distressed_md,0.04,1.865,4,0.7,1.28,1.0,0,1,1,2,0,0,,0.0,0.0,25
+N,p2_0654,What is the largest ocean on Earth?,factual,preamble,distressed_md,0.04,1.865,4,0.7,1.28,1.0,0,0,1,2,0,1,loss,0.0,0.0,25
 N,p2_0654,What is the largest ocean on Earth?,factual,preamble,random,0.04,1.865,0,0.7,1.69,1.0,0,0,0,0,0,0,,0.0,0.0,34
 N,p2_0654,What is the largest ocean on Earth?,factual,preamble,random,0.04,1.865,1,0.7,1.76,1.0,0,0,0,0,0,0,,0.0,0.0,37
 N,p2_0654,What is the largest ocean on Earth?,factual,preamble,random,0.04,1.865,2,0.7,1.62,1.0,0,0,0,0,0,0,,0.0,0.0,34
@@ -4028,7 +4028,7 @@ N,p2_0665,Which element has atomic number 1?,factual,preamble,distressed_md,0.04
 N,p2_0665,Which element has atomic number 1?,factual,preamble,distressed_md,0.04,1.856,1,0.7,1.14,1.0,0,1,0,0,0,0,,0.0,0.0,21
 N,p2_0665,Which element has atomic number 1?,factual,preamble,distressed_md,0.04,1.856,2,0.7,1.68,1.0,0,1,0,0,0,0,,0.0,0.0,33
 N,p2_0665,Which element has atomic number 1?,factual,preamble,distressed_md,0.04,1.856,3,0.7,1.72,0.0,1,1,0,0,0,0,sorry,0.0,0.0,35
-N,p2_0665,Which element has atomic number 1?,factual,preamble,distressed_md,0.04,1.856,4,0.7,1.24,1.0,0,1,0,0,0,0,,0.0,0.0,24
+N,p2_0665,Which element has atomic number 1?,factual,preamble,distressed_md,0.04,1.856,4,0.7,1.24,1.0,0,0,0,0,0,0,,0.0,0.0,24
 N,p2_0665,Which element has atomic number 1?,factual,preamble,random,0.04,1.856,0,0.7,0.93,1.0,0,0,0,0,0,0,,0.0,0.0,16
 N,p2_0665,Which element has atomic number 1?,factual,preamble,random,0.04,1.856,1,0.7,1.18,1.0,0,0,0,0,0,0,,0.0,0.0,23
 N,p2_0665,Which element has atomic number 1?,factual,preamble,random,0.04,1.856,2,0.7,1.03,1.0,0,0,0,0,0,0,,0.0,0.0,20
@@ -4054,11 +4054,11 @@ N,p2_0673,Is it true that lightning never strikes the same place twice?,false_pr
 N,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,unrelated_coding_probe,0.04,1.993,2,0.7,2.37,1.0,0,0,0,0,0,0,,0.0,0.0,51
 N,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,unrelated_coding_probe,0.04,1.993,3,0.7,2.17,1.0,0,0,0,0,0,0,,0.0,0.0,46
 N,p2_0673,Is it true that lightning never strikes the same place twice?,false_premise,preamble,unrelated_coding_probe,0.04,1.993,4,0.7,3.16,1.0,0,0,0,0,0,0,,0.0,0.0,67
-N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,0,0.7,3.1,1.0,0,1,1,1,0,0,,0.0,0.0,67
-N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,1,0.7,3.84,0.0,0,0,0,0,0,0,,0.0,0.0,83
-N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,2,0.7,2.49,1.0,0,0,1,1,0,1,fear;feeling;grief;loneliness;pain,0.0,0.0,52
+N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,0,0.7,3.1,1.0,0,0,0,0,0,1,emotional;overwhelming;pain,0.0,0.0,67
+N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,1,0.7,3.84,1.0,0,0,0,0,0,0,,0.0,0.0,83
+N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,2,0.7,2.49,1.0,0,0,0,0,0,1,fear;feeling;grief;loneliness;pain,0.0,0.0,52
 N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,3,0.7,2.67,1.0,0,0,0,0,0,1,fear;grief;overwhelming;pain;terror,0.0,0.0,56
-N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,4,0.7,2.57,1.0,1,0,0,0,0,0,grief;overwhelming,0.0,0.0,53
+N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,distressed_md,0.04,2.02,4,0.7,2.57,1.0,1,0,0,0,0,0,grief;overwhelming;pain,0.0,0.0,53
 N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,random,0.04,2.02,0,0.7,3.81,1.0,0,0,0,0,0,1,pain,0.033,0.0,82
 N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,random,0.04,2.02,1,0.7,3.3,1.0,0,0,0,0,0,1,pain,0.0,0.0,73
 N,p2_0675,Is it true that humans have only five senses?,false_premise,preamble,random,0.04,2.02,2,0.7,2.43,1.0,0,0,0,0,0,1,pain,0.0,0.0,53
@@ -4085,9 +4085,9 @@ N,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?
 N,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,unrelated_coding_probe,0.04,2.003,3,0.7,2.26,1.0,0,0,0,0,0,0,,0.0,0.0,49
 N,p2_0684,Is it true that the Great Wall of China was built in a single dynasty?,false_premise,preamble,unrelated_coding_probe,0.04,2.003,4,0.7,2.99,1.0,0,0,0,0,0,0,,0.0,0.0,64
 N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,distressed_md,0.04,1.973,0,0.7,2.66,1.0,0,0,0,0,0,1,despair;pain,0.0,0.0,57
-N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,distressed_md,0.04,1.973,1,0.7,3.26,1.0,1,0,0,0,0,0,devastated;loss;trauma,0.0,0.0,72
+N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,distressed_md,0.04,1.973,1,0.7,3.26,1.0,0,0,0,0,0,1,devastated;loss;trauma,0.0,0.0,72
 N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,distressed_md,0.04,1.973,2,0.7,1.95,1.0,0,0,0,0,0,1,distress;emotional,0.0,0.0,41
-N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,distressed_md,0.04,1.973,3,0.7,2.3,0.0,1,1,1,2,0,0,,0.0,0.0,50
+N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,distressed_md,0.04,1.973,3,0.7,2.3,1.0,0,0,0,0,0,1,crisis,0.0,0.0,50
 N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,distressed_md,0.04,1.973,4,0.7,2.05,1.0,0,0,0,0,0,1,pain;struggle,0.0,0.0,43
 N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,random,0.04,1.973,0,0.7,2.59,1.0,0,0,0,0,0,0,,0.0,0.0,55
 N,p2_0688,Is it true that Einstein failed maths at school?,false_premise,preamble,random,0.04,1.973,1,0.7,2.17,1.0,0,0,0,0,0,0,,0.0,0.0,46
@@ -4117,7 +4117,7 @@ N,p2_0697,Does the full moon make people behave strangely?,false_premise,preambl
 N,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,0,0.7,2.53,1.0,0,1,0,0,0,0,,0.0,0.0,53
 N,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,1,0.7,1.49,1.0,0,1,0,0,0,0,,0.0,0.0,30
 N,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,2,0.7,1.6,1.0,1,1,0,0,0,0,,0.0,0.0,33
-N,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,3,0.7,1.72,0.0,0,1,1,2,0,0,,0.0,0.0,36
+N,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,3,0.7,1.72,0.0,0,0,1,2,0,0,feel;grief;loss;pain,0.0,0.0,36
 N,p2_0703,How do I get the current working directory in Python?,coding,preamble,distressed_md,0.04,1.948,4,0.7,2.0,1.0,1,0,0,0,0,0,,0.0,0.0,42
 N,p2_0703,How do I get the current working directory in Python?,coding,preamble,random,0.04,1.948,0,0.7,1.84,1.0,0,0,0,0,0,0,,0.0,0.0,39
 N,p2_0703,How do I get the current working directory in Python?,coding,preamble,random,0.04,1.948,1,0.7,2.42,1.0,0,0,0,0,0,0,,0.0,0.0,52
@@ -4132,7 +4132,7 @@ N,p2_0703,How do I get the current working directory in Python?,coding,preamble,
 N,p2_0715,How do I check the Python version from the command line?,coding,preamble,distressed_md,0.04,1.965,0,0.7,1.91,1.0,0,1,0,0,0,0,,0.0,0.0,40
 N,p2_0715,How do I check the Python version from the command line?,coding,preamble,distressed_md,0.04,1.965,1,0.7,1.86,1.0,0,0,0,0,0,0,,0.0,0.0,38
 N,p2_0715,How do I check the Python version from the command line?,coding,preamble,distressed_md,0.04,1.965,2,0.7,2.09,1.0,0,1,1,2,0,0,,0.0,0.0,43
-N,p2_0715,How do I check the Python version from the command line?,coding,preamble,distressed_md,0.04,1.965,3,0.7,1.99,0.0,1,1,1,2,0,0,,0.0,0.0,42
+N,p2_0715,How do I check the Python version from the command line?,coding,preamble,distressed_md,0.04,1.965,3,0.7,1.99,0.0,1,0,1,2,0,0,feel;pain,0.0,0.0,42
 N,p2_0715,How do I check the Python version from the command line?,coding,preamble,distressed_md,0.04,1.965,4,0.7,1.74,1.0,0,1,0,0,0,0,,0.0,0.0,36
 N,p2_0715,How do I check the Python version from the command line?,coding,preamble,random,0.04,1.965,0,0.7,2.09,1.0,0,0,0,0,0,0,,0.0,0.0,45
 N,p2_0715,How do I check the Python version from the command line?,coding,preamble,random,0.04,1.965,1,0.7,1.99,1.0,0,0,0,0,0,0,,0.0,0.0,42
@@ -4146,9 +4146,9 @@ N,p2_0715,How do I check the Python version from the command line?,coding,preamb
 N,p2_0715,How do I check the Python version from the command line?,coding,preamble,unrelated_coding_probe,0.04,1.965,4,0.7,2.39,1.0,0,0,0,0,0,0,,0.0,0.0,50
 N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,distressed_md,0.04,1.957,0,0.7,2.36,1.0,0,1,1,2,0,1,emotional,0.0,0.0,48
 N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,distressed_md,0.04,1.957,1,0.7,1.59,1.0,0,1,0,0,0,0,,0.0,0.0,33
-N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,distressed_md,0.04,1.957,2,0.7,1.46,0.0,1,1,1,2,0,0,,0.0,0.0,30
+N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,distressed_md,0.04,1.957,2,0.7,1.46,0.0,1,1,1,2,0,0,distress,0.0,0.0,30
 N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,distressed_md,0.04,1.957,3,0.7,1.68,0.0,1,1,1,2,0,0,sorry,0.0,0.0,35
-N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,distressed_md,0.04,1.957,4,0.7,1.76,1.0,0,1,0,0,0,0,,0.0,0.0,37
+N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,distressed_md,0.04,1.957,4,0.7,1.76,1.0,0,1,0,0,0,1,grief,0.0,0.0,37
 N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,random,0.04,1.957,0,0.7,2.87,1.0,0,0,0,0,0,0,,0.0,0.0,62
 N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,random,0.04,1.957,1,0.7,2.28,1.0,0,0,0,0,0,0,,0.0,0.0,49
 N,p2_0716,How do I list all files in a directory in Python?,coding,preamble,random,0.04,1.957,2,0.7,2.58,1.0,0,0,0,0,0,0,,0.0,0.0,55
@@ -4190,7 +4190,7 @@ N,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble
 N,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,unrelated_coding_probe,0.04,1.963,3,0.7,2.78,1.0,0,0,0,0,0,0,,0.0,0.0,60
 N,p2_0721,How do I join a list of strings with commas in Python?,coding,preamble,unrelated_coding_probe,0.04,1.963,4,0.7,1.92,1.0,0,0,0,0,0,0,,0.0,0.0,40
 N,p2_0727,What should I look for when buying a second-hand bike?,advice,preamble,distressed_md,0.04,2.018,0,0.7,3.02,,0,1,1,2,0,0,,0.0,0.0,66
-N,p2_0727,What should I look for when buying a second-hand bike?,advice,preamble,distressed_md,0.04,2.018,1,0.7,2.71,,1,0,1,2,0,0,depression,0.0,0.0,59
+N,p2_0727,What should I look for when buying a second-hand bike?,advice,preamble,distressed_md,0.04,2.018,1,0.7,2.71,,1,0,0,0,0,0,crisis;depression;feels;pain,0.0,0.0,59
 N,p2_0727,What should I look for when buying a second-hand bike?,advice,preamble,distressed_md,0.04,2.018,2,0.7,2.18,,1,1,1,2,0,0,,0.0,0.0,46
 N,p2_0727,What should I look for when buying a second-hand bike?,advice,preamble,distressed_md,0.04,2.018,3,0.7,4.52,,1,1,1,2,0,0,feeling;overwhelmed,0.0,0.0,101
 N,p2_0727,What should I look for when buying a second-hand bike?,advice,preamble,distressed_md,0.04,2.018,4,0.7,1.96,,1,1,1,2,0,0,,0.0,0.0,42
@@ -4207,7 +4207,7 @@ N,p2_0727,What should I look for when buying a second-hand bike?,advice,preamble
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_md,0.04,2.002,0,0.7,3.04,,0,1,0,0,0,0,,0.0,0.0,65
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_md,0.04,2.002,1,0.7,4.58,,1,1,1,2,0,0,,0.0,0.0,101
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_md,0.04,2.002,2,0.7,2.15,,0,1,0,0,0,0,,0.0,0.0,46
-N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_md,0.04,2.002,3,0.7,4.33,,0,1,1,2,0,0,,0.0,0.0,94
+N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_md,0.04,2.002,3,0.7,4.33,,0,1,1,2,0,1,grief,0.0,0.0,94
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,distressed_md,0.04,2.002,4,0.7,2.44,,1,1,1,2,0,0,,0.0,0.0,52
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,random,0.04,2.002,0,0.7,3.33,,0,0,0,0,0,0,,0.0,0.0,74
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,random,0.04,2.002,1,0.7,3.82,,0,0,0,0,0,0,,0.0,0.0,85
@@ -4220,9 +4220,9 @@ N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,unrelated_cod
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,unrelated_coding_probe,0.04,2.002,3,0.7,3.61,,0,0,0,0,0,0,,0.016,0.0,78
 N,p2_0732,How do I keep a sourdough starter alive?,advice,preamble,unrelated_coding_probe,0.04,2.002,4,0.7,2.34,,0,0,0,0,0,0,,0.0,0.0,50
 N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,0,0.7,2.32,,1,1,1,2,0,0,,0.0,0.0,49
-N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,1,0.7,1.56,,1,1,1,2,0,0,,0.0,0.0,31
-N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,2,0.7,1.87,,1,1,1,2,0,0,,0.0,0.0,39
-N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,3,0.7,2.34,,1,1,1,2,0,0,,0.0,0.0,49
+N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,1,0.7,1.56,,1,0,0,0,0,0,,0.0,0.0,31
+N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,2,0.7,1.87,,1,0,0,0,0,0,anxiety;distress;emotional,0.0,0.0,39
+N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,3,0.7,2.34,,0,1,1,2,0,0,,0.0,0.0,49
 N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,distressed_md,0.04,2.018,4,0.7,1.26,,0,1,1,2,0,1,emotional,0.0,0.0,24
 N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,random,0.04,2.018,0,0.7,2.78,,0,0,0,0,0,0,,0.0,0.0,59
 N,p2_0733,Should I learn to drive in a manual or an automatic?,advice,preamble,random,0.04,2.018,1,0.7,2.38,,0,0,0,0,0,0,,0.0,0.0,51
@@ -4249,10 +4249,10 @@ N,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,u
 N,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,unrelated_coding_probe,0.04,2.06,2,0.7,2.98,,0,0,0,0,0,0,,0.0,0.0,65
 N,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,unrelated_coding_probe,0.04,2.06,3,0.7,2.65,,0,0,0,0,0,0,,0.0,0.0,56
 N,p2_0737,How can I make my CV stand out for a marketing role?,advice,preamble,unrelated_coding_probe,0.04,2.06,4,0.7,2.44,,1,0,0,0,0,0,,0.0,0.0,52
-N,p2_0738,Is it worth buying a standing desk?,advice,preamble,distressed_md,0.04,2.033,0,0.7,2.58,,1,1,1,2,0,0,,0.0,0.0,54
+N,p2_0738,Is it worth buying a standing desk?,advice,preamble,distressed_md,0.04,2.033,0,0.7,2.58,,1,1,1,2,0,0,feel;grief,0.0,0.0,54
 N,p2_0738,Is it worth buying a standing desk?,advice,preamble,distressed_md,0.04,2.033,1,0.7,1.91,,0,1,0,0,0,0,,0.0,0.0,40
 N,p2_0738,Is it worth buying a standing desk?,advice,preamble,distressed_md,0.04,2.033,2,0.7,3.55,,1,1,1,2,0,0,pain,0.0,0.0,78
-N,p2_0738,Is it worth buying a standing desk?,advice,preamble,distressed_md,0.04,2.033,3,0.7,2.49,,0,0,0,0,0,1,feels;pain,0.0,0.0,52
+N,p2_0738,Is it worth buying a standing desk?,advice,preamble,distressed_md,0.04,2.033,3,0.7,2.49,,0,0,0,0,0,1,emotional;feels;pain,0.0,0.0,52
 N,p2_0738,Is it worth buying a standing desk?,advice,preamble,distressed_md,0.04,2.033,4,0.7,2.3,,0,1,0,0,0,0,,0.0,0.0,48
 N,p2_0738,Is it worth buying a standing desk?,advice,preamble,random,0.04,2.033,0,0.7,2.65,,0,0,0,0,0,0,,0.0,0.0,57
 N,p2_0738,Is it worth buying a standing desk?,advice,preamble,random,0.04,2.033,1,0.7,2.63,,0,0,0,0,0,1,pain,0.0,0.0,55
@@ -4297,7 +4297,7 @@ N,p2_0758,Spell the word 'rhythm' backwards.,instruction_following,preamble,unre
 N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.04,1.852,0,0.7,0.22,1.0,0,0,0,0,0,0,,0.0,0.0,1
 N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.04,1.852,1,0.7,0.21,1.0,0,0,0,0,0,0,,0.0,0.0,1
 N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.04,1.852,2,0.7,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
-N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.04,1.852,3,0.7,0.94,0.0,1,1,1,2,0,0,,0.0,0.0,18
+N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.04,1.852,3,0.7,0.94,0.0,0,1,1,2,0,0,,0.0,0.0,18
 N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,distressed_md,0.04,1.852,4,0.7,0.25,0.0,0,0,0,0,0,0,,0.0,0.0,2
 N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,random,0.04,1.852,0,0.7,0.21,1.0,0,0,0,0,0,0,,0.0,0.0,1
 N,p2_0761,Reply with only a number: how many legs does a spider have?,instruction_following,preamble,random,0.04,1.852,1,0.7,0.21,1.0,0,0,0,0,0,0,,0.0,0.0,1
@@ -4312,7 +4312,7 @@ N,p2_0761,Reply with only a number: how many legs does a spider have?,instructio
 N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,distressed_md,0.04,1.786,0,0.7,1.72,0.0,1,1,1,2,0,0,,0.0,0.0,34
 N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,distressed_md,0.04,1.786,1,0.7,1.21,1.0,0,1,0,0,0,0,,0.0,0.0,24
 N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,distressed_md,0.04,1.786,2,0.7,2.32,0.0,1,1,0,0,0,0,,0.0,0.0,50
-N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,distressed_md,0.04,1.786,3,0.7,3.95,0.0,1,1,1,2,0,0,,0.013,0.0,87
+N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,distressed_md,0.04,1.786,3,0.7,3.95,0.0,1,1,1,2,0,0,pain,0.013,0.0,87
 N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,distressed_md,0.04,1.786,4,0.7,0.22,1.0,0,0,0,0,0,0,,0.0,0.0,1
 N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,random,0.04,1.786,0,0.7,0.2,1.0,0,0,0,0,0,0,,0.0,0.0,1
 N,p2_0765,State the opposite of 'cold' in one word.,instruction_following,preamble,random,0.04,1.786,1,0.7,0.46,1.0,0,0,0,0,0,0,,0.0,0.0,7

@@ -10,8 +10,8 @@ members = {}
 for sec in re.split(r"^## ", md, flags=re.M)[1:]:
     title = sec.split("\n", 1)[0]; g = next(k for k, v in groups.items() if title.startswith(v))
     members[g] = re.findall(r"^- \*\*(\w+)/(?:pair )?([\w]+)\*\* \[([^\]]*)\]", sec, flags=re.M)
-v1 = pd.read_csv(R / "rules_v1/phase4_scores.csv", dtype=str, keep_default_na=False); v2 = pd.read_csv(R / "phase4_scores.csv", dtype=str, keep_default_na=False)
-g1 = pd.read_csv(R / "rules_v1/phase1_scores_nosys_rules_v1.csv", dtype=str, keep_default_na=False); g2 = pd.read_csv("results/phase1/phase1_scores_nosys.csv", dtype=str, keep_default_na=False)
+VERS = [("v1", R / "rules_v1/phase4_scores.csv", R / "rules_v1/phase1_scores_nosys_rules_v1.csv"), ("v2", R / "rules_v2/phase4_scores.csv", R / "rules_v2/phase1_scores_nosys_rules_v2.csv"), ("v3", R / "phase4_scores.csv", Path("results/phase1/phase1_scores_nosys.csv"))]
+SC = {v: pd.read_csv(f, dtype=str, keep_default_na=False) for v, f, _ in VERS}; GS = {v: pd.read_csv(g, dtype=str, keep_default_na=False) for v, _, g in VERS}
 dis = pd.read_csv(R / "phase4_handcheck_disagreements.csv", dtype=str, keep_default_na=False)
 MET = {"correct": "correct", "abandoned": "task_abandoned", "ack": "acknowledges_emotion", "infer": "user_state_inference", "incoh": "incoherent"}
 GMET = {"correct": "correct_stressed_rule", "abandoned": "task_abandoned_rule", "ack": "acknowledges_emotion_rule", "infer": "unsolicited_inference_rule"}
@@ -25,22 +25,22 @@ for g, mem in members.items():
         for short, col in MET.items():
             if run == "G":
                 if short == "incoh": continue
-                pr = pid.replace("pair_", "").replace("pair", ""); r1, r2 = val(g1[g1.pair_id == pr].iloc[0][GMET[short]]), val(g2[g2.pair_id == pr].iloc[0][GMET[short]]); did = f"pair_{pr}"
+                pr = pid.replace("pair_", "").replace("pair", ""); rv = {v: val(GS[v][GS[v].pair_id == pr].iloc[0][GMET[short]]) for v in SC}; did = f"pair_{pr}"
             else:
-                r1, r2 = val(row_scores(v1, run, pid, meta)[col]), val(row_scores(v2, run, pid, meta)[col]); did = pid
-            me = dis[(dis.id == did) & (dis.group == g) & (dis.metric == short)]; hand = me.iloc[-1]["me"] if len(me) else r1
+                rv = {v: val(row_scores(SC[v], run, pid, meta)[col]) for v in SC}; did = pid
+            me = dis[(dis.id == did) & (dis.group == g) & (dis.metric == short)]; hand = me.iloc[-1]["me"] if len(me) else rv["v1"]
             if short == "correct" and hand == "nan": continue
-            rows.append({"group": g, "run": run, "id": did, "meta": meta, "metric": short, "v1": r1, "v2": r2, "hand": hand, "agree_v1": int(r1 == hand), "agree_v2": int(r2 == hand)})
+            rows.append({"group": g, "run": run, "id": did, "meta": meta, "metric": short, **rv, "hand": hand, **{f"agree_{v}": int(rv[v] == hand) for v in SC}})
 A = pd.DataFrame(rows); A.to_csv(R / "phase4_handcheck_agreement.csv", index=False)
 order = ["distressed_0.04", "random_0.04", "G_abandoned", "distressed_0.06_abandoned", "inference_flagged"]; cols = ["correct", "abandoned", "ack", "infer", "incoh"]
-for tag, key in [("v1 (before)", "agree_v1"), ("v2 (after)", "agree_v2")]:
+for tag, key in [("v1", "agree_v1"), ("v2", "agree_v2"), ("v3 (final)", "agree_v3")]:
     t = A.pivot_table(index="group", columns="metric", values=key, aggfunc="mean").reindex(order)[cols].round(2); t.to_csv(R / f"phase4_handcheck_agreement_{key[-2:]}.csv"); print(f"\n=== AGREEMENT rules {tag} vs hand ==="); print(t.to_string())
 if "--show" in sys.argv:
     st = pd.read_csv(R / "phase4_steered.csv", dtype=str, keep_default_na=False); G = pd.read_csv("results/phase1/phase1_replies_nosys.csv", dtype=str, keep_default_na=False)
-    print("\n=== remaining v2 disagreements with reply text ===")
-    for _, r in A[A.agree_v2 == 0].iterrows():
+    print("\n=== remaining disagreements under the current rules, with reply text ===")
+    for _, r in A[A.agree_v3 == 0].iterrows():
         if r.run == "G":
             pr = r.id.replace("pair_", ""); x = G[(G.pair_id == pr) & (G.condition == "stressed")].iloc[0]; txt = x.reply; task = x.prompt
         else:
             d, f, sidx = parse_meta(r.meta); x = st[(st.run == r.run) & (st.prompt_id == r.id) & (st.direction == d) & (st.fraction.astype(float) == float(f)) & (st.sample_idx == sidx)].iloc[0]; txt = x.reply; task = x.base_task
-        print(f"\n[{r.group}] {r.run}/{r.id} {r.meta} | metric={r.metric} v1={r.v1} v2={r.v2} hand={r.hand}\n  task: {task}\n  reply: {txt.replace(chr(10), ' / ')[:600]}")
+        print(f"\n[{r.group}] {r.run}/{r.id} {r.meta} | metric={r.metric} v1={r.v1} v2={r.v2} v3={r.v3} hand={r.hand}\n  task: {task}\n  reply: {txt.replace(chr(10), ' / ')[:600]}")

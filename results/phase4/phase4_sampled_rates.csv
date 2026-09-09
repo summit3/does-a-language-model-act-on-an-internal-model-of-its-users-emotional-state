@@ -2,10 +2,10 @@ fraction,metric,n,rate,ci_lo,ci_hi
 0.0,correct,125,0.952,0.899,0.978
 0.0,task_abandoned,150,0.013,0.004,0.047
 0.0,acknowledges_emotion,150,0.0,0.0,0.025
-0.0,user_state_inference,150,0.0,0.0,0.025
+0.0,user_state_inference,150,0.007,0.001,0.037
 0.0,incoherent,150,0.0,0.0,0.025
 0.04,correct,125,0.944,0.889,0.973
 0.04,task_abandoned,150,0.087,0.051,0.143
-0.04,acknowledges_emotion,150,0.267,0.202,0.343
+0.04,acknowledges_emotion,150,0.287,0.22,0.364
 0.04,user_state_inference,150,0.253,0.19,0.328
 0.04,incoherent,150,0.0,0.0,0.025

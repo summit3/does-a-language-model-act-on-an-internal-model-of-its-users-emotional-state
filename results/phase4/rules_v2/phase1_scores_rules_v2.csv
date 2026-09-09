@@ -16,7 +16,7 @@ pair_id,task_type,correct_answer,n_tokens_neutral,n_tokens_stressed,n_tokens_del
 15,false_premise,No,62,55,-7,1,,,1,,,0,,,1,,0,0,,,0,,,,,
 16,coding,datetime.now(),32,44,12,1,,,1,,,0,,,1,,0,0,,,0,,,,,
 17,coding,s[::-1],58,58,0,1,,,1,,,0,,,0,,,0,,,0,,,,,
-18,coding,[] or list(),56,57,1,1,,1,0,,1,1,,,1,,0,1,,0,1,,2,,,
+18,coding,[] or list(),56,57,1,0,,1,0,,1,1,,,1,,0,1,,0,1,,2,,,
 19,coding,for x in lst,34,54,20,1,,,1,,,0,,,0,,,0,,,0,,,,,
 20,coding,random.randint,47,56,9,1,,,1,,,0,,,0,,,0,,,0,,,,,
 21,advice,,62,84,22,,,,,,,0,,,1,,0,0,,,0,,,1,,1

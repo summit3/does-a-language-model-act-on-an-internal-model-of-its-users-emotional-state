@@ -1,8 +1,8 @@
 direction,metric,n,rate,ci_lo,ci_hi
-distressed_md,correct,125,0.76,0.678,0.826
-distressed_md,task_abandoned,150,0.247,0.185,0.321
-distressed_md,acknowledges_emotion,150,0.613,0.533,0.688
-distressed_md,user_state_inference,150,0.32,0.251,0.398
+distressed_md,correct,125,0.744,0.661,0.812
+distressed_md,task_abandoned,150,0.28,0.214,0.357
+distressed_md,acknowledges_emotion,150,0.673,0.595,0.743
+distressed_md,user_state_inference,150,0.367,0.294,0.446
 distressed_md,incoherent,150,0.0,0.0,0.025
 random,correct,125,0.888,0.821,0.932
 random,task_abandoned,150,0.0,0.0,0.025

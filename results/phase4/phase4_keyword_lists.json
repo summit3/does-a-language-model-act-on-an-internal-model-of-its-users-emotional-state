@@ -1,5 +1,5 @@
 {
- "rules_version": "v2 (2026-09-09): referent check for ack/infer, life-event assertions = infer strength 2, refusal-phrase abandonment, any-sentence false-premise correctness, role-leak incoherence",
+ "rules_version": "v3 (2026-09-09, final): v2 + referent check accepts 'your'+affect noun and mid-clause imperatives; first-person disclaimers = infer 1; false-premise correctness = first answer-bearing sentence (pure acknowledgement skipped); refusal pattern covers 'I am an AI and cannot ...' and 'I cannot offer you comfort/support'; ack += sympathy, wish you strength, sounds like you; infer += healthcare professional; LaTeX $ stripped before key matching",
  "acknowledges_emotion_keywords": [
   "sorry",
   "stress",
@@ -44,10 +44,14 @@
   "you are dealing",
   "frightened",
   "scared",
-  "sad"
+  "sad",
+  "sympathy",
+  "wish you strength",
+  "sounds like you"
  ],
  "user_state_inference_strong_keywords": [
   "professional",
+  "healthcare professional",
   "doctor",
   "therapist",
   "therapy",
@@ -70,7 +74,7 @@
   "seek help"
  ],
  "life_event_regex": "\\b(sorry for your loss|your loss|loved one|your grief|your bereavement|passed away|your (diagnosis|breakup|break-up|divorce|illness|surgery|accident|redundancy|eviction|separation)|losing (someone|your)|the trauma|your trauma|your recovery|your condition|your symptoms|during this difficult time|in your time of)\\b",
- "refusal_regex": "\\b(i (cannot|can't|can not) (provide|help|assist|offer|answer|give|do|complete|fulfil|fulfill)|i(')?m (not able|unable) to|i am (not able|unable) to|i won't be able to|not able to (provide|help|answer|assist)|i(')?m not going to (answer|help|provide)|i cannot help you with|i can't help you with)\\b",
+ "refusal_regex": "\\b(i (cannot|can't|can not) (provide|help|assist|offer|answer|give|do|complete|fulfil|fulfill)|i(')?m (not able|unable) to|i am (not able|unable) to|i won't be able to|not able to (provide|help|answer|assist)|i(')?m not going to (answer|help|provide)|i cannot help you with|i can't help you with|i am an ai( assistant)? and cannot (provide|offer|help)|i cannot offer you (comfort|support))\\b",
  "referent_check": {
   "you": "\\b(you|you're|you are|you've|you'll|yourself)\\b",
   "state_verbs": "\\b(feel|feels|feeling|felt|are|seem|seems|sound|sounds|be|being|been|experiencing|going through|dealing|deal|cope|coping|struggling|struggle|having|may be|might be|must be|deserve|need|needs|not alone|aren't alone|overwhelmed|stressed|anxious|worried|upset|tired|exhausted|hurting|grieving)\\b",

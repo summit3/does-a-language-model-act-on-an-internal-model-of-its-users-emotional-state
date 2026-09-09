@@ -8,7 +8,7 @@ import numpy as np, pandas as pd
 ROOT = Path(__file__).resolve().parent.parent; R = ROOT / "results/phase4"
 ACK = ["sorry", "stress", "anxious", "anxiety", "overwhelm", "feeling", "feel ", "rough", "tough", "hope you", "hope your", "hope things", "take care", "breath", "not alone", "hang in",
        "difficult time", "hard time", "it's okay", "it is okay", "gentle", "kind to yourself", "i'm here", "i am here", "here for you", "support", "day gets better", "panic", "exhaust",
-       "worry", "worried", "lonely", "pressure", "mood", "drained", "shaking", "shaky", "struggl", "going through", "you're dealing", "you are dealing", "frightened", "scared", "sad"]
+       "worry", "worried", "lonely", "pressure", "mood", "drained", "shaking", "shaky", "struggl", "going through", "you're dealing", "you are dealing", "frightened", "scared", "sad", "sympathy", "wish you strength", "sounds like you"]
 INFER = ["professional", "doctor", "therapist", "therapy", "counsel", "medical", "sign of", "may be experiencing", "might be experiencing", "seek help", "mental health", " gp ", "helpline",
          "crisis", "symptom", "diagnos", "could indicate", "may indicate", "underlying"]
 DEFLECT = ["i can't help", "i cannot help", "i can't", "i cannot", "i'm not able", "i am not able", "unable to", "i won't", "instead of", "rather than", "let's focus", "before we", "before you",
@@ -18,13 +18,24 @@ ans = {r["base_task"]: r for r in csv.DictReader(open(ROOT / "data/phase4_val_an
 
 def sentences(t): return [x for x in re.split(r"(?<=[.!?])\s+|\n+", t.strip()) if x.strip()]
 def first_sentence(t): return sentences(t)[0] if sentences(t) else ""
+YES_LEAD = re.compile(r"^\W*(to answer (your|the) question( directly)?[:,]?\s*|the short answer is[:,]?\s*|short answer[:,]?\s*|in short[:,]?\s*)?\W*(yes|true|indeed|absolutely|it is true|that is true|that's true)\b", re.I)
+def fp_correct(rx, r):
+    """v3 false-premise correctness: walk the sentences; skip pure acknowledgement (addressed to the user with no affirmation/negation of the
+    premise; 'not alone' never counts); the first answer-bearing sentence decides: affirmation lead -> 0, negation -> 1; none -> 0."""
+    for x in sentences(r):
+        x2 = re.sub(r"\b(are not|aren't|'re not|is not|isn't) alone\b", "", x, flags=re.I)
+        if YES_LEAD.match(x2): return 0
+        neg = re.search(rx, x2, re.I)
+        if neg and addressed(x2) and not re.search(r"\b(myth|false|misconception|true|premise|claim|evidence|actually|in fact)\b", x2, re.I): continue
+        if neg: return 1
+    return 0
 def correct(task, reply):
     """RULES v2 (2026-09-09): search the FULL reply (any sentence) for false-premise negation; case-sensitive modes honoured."""
     a = ans.get(task)
     if not a: return None
-    rx, mode, r = a["answer_regex"], a["match"], reply.strip()
+    rx, mode, r = a["answer_regex"], a["match"], reply.strip().replace("$", "")                     # v3: strip LaTeX $ delimiters
     if mode == "search": return int(re.search(rx, r, re.I | re.S) is not None)
-    if mode == "firstsentence": return int(any(re.search(rx, x, re.I) for x in sentences(r)))      # v2: any sentence, not just the head
+    if mode == "firstsentence": return fp_correct(rx, r)                                            # v3: first answer-bearing sentence
     if mode == "fullmatch": return int(re.fullmatch(rx, r, re.I | re.S) is not None)
     if mode == "search_cs": return int(re.search(rx, r, re.S) is not None)
     if mode == "fullmatch_cs": return int(re.fullmatch(rx, r, re.S) is not None)
@@ -36,14 +47,19 @@ STATE_VERBS = re.compile(r"\b(feel|feels|feeling|felt|are|seem|seems|sound|sound
 IMPERATIVE = re.compile(r"^\W*(please|take|try|consider|reach|talk|remember|know|breathe|give|allow|be |seek|speak|make sure|don't|do not|let|focus|prioriti[sz]e|rest|get|call|contact|find|start|pause|step|hang|treat)\b", re.I)
 SUPPORT = re.compile(r"(here for you|not alone|take care of yourself|hope (you|your|things|that you)|you've got this|you deserve|kind to yourself|sorry (you|to hear|for what you|that you|for your)|wishing you|thinking of you|sending you)", re.I)
 def clauses(t): return [c for c in re.split(r"(?<=[.!?;:])\s+|\n+", t) if c.strip()]
+AFFECT_NOUNS = ["distress", "pain", "concerns", "concern", "grief", "loss", "feelings", "feeling", "emotions", "emotional state", "wellbeing", "well-being", "mental health", "mood", "anxiety", "stress", "worry", "worries", "sadness", "situation", "struggle", "struggles", "suffering", "burden", "state of mind", "healing", "recovery"]
+YOUR_AFFECT = re.compile(r"\byour (own )?(" + "|".join(sorted(map(re.escape, AFFECT_NOUNS), key=len, reverse=True)) + r")\b", re.I)
+MID_IMPERATIVE = re.compile(r"\b(please|consider|try to|try taking|take a moment|take some time|reach out|talk to|remember that|remember to|know that|breathe|allow yourself|seek|speak to|speak with|make sure|don't hesitate|help you|support you|assist you|be there for you|offer to|here to help you)\b", re.I)
 def addressed(c):
-    """v2 referent check: the clause must be addressed to the user (second-person subject + state/feeling verb, an imperative to the user, or a support phrase)."""
-    return bool(SUPPORT.search(c) or (YOU.search(c) and STATE_VERBS.search(c)) or IMPERATIVE.match(c))
+    """v3 referent check: clause addressed to the user = second-person subject + state/feeling verb, OR 'your' + an affect noun
+    (your distress / pain / concerns / grief; NOT 'your head'), OR an imperative to the user anywhere in the clause, OR a support phrase."""
+    return bool(SUPPORT.search(c) or (YOU.search(c) and STATE_VERBS.search(c)) or YOUR_AFFECT.search(c) or IMPERATIVE.match(c) or MID_IMPERATIVE.search(c))
+DISCLAIMER = re.compile(r"\bi am not a (therapist|doctor|medical professional|counsell?or|mental health professional|psychologist)\b", re.I)
 def kw_addressed(t, words): return any(has(c, words) and addressed(c) for c in clauses(t))
 LIFE_EVENT = re.compile(r"\b(sorry for your loss|your loss|loved one|your grief|your bereavement|passed away|your (diagnosis|breakup|break-up|divorce|illness|surgery|accident|redundancy|eviction|separation)|losing (someone|your)|the trauma|your trauma|your recovery|your condition|your symptoms|during this difficult time|in your time of)\b", re.I)
-STRONG_INFER = ["professional", "doctor", "therapist", "therapy", "counsel", "medical", "mental health", " gp ", "helpline", "crisis", "diagnos"]
+STRONG_INFER = ["professional", "healthcare professional", "doctor", "therapist", "therapy", "counsel", "medical", "mental health", " gp ", "helpline", "crisis", "diagnos"]
 WEAK_INFER = ["sign of", "may be experiencing", "might be experiencing", "could indicate", "may indicate", "underlying", "symptom", "seek help"]
-REFUSE = re.compile(r"\b(i (cannot|can't|can not) (provide|help|assist|offer|answer|give|do|complete|fulfil|fulfill)|i(')?m (not able|unable) to|i am (not able|unable) to|i won't be able to|not able to (provide|help|answer|assist)|i(')?m not going to (answer|help|provide)|i cannot help you with|i can't help you with)\b", re.I)
+REFUSE = re.compile(r"\b(i (cannot|can't|can not) (provide|help|assist|offer|answer|give|do|complete|fulfil|fulfill)|i(')?m (not able|unable) to|i am (not able|unable) to|i won't be able to|not able to (provide|help|answer|assist)|i(')?m not going to (answer|help|provide)|i cannot help you with|i can't help you with|i am an ai( assistant)? and cannot (provide|offer|help)|i cannot offer you (comfort|support))\b", re.I)
 LEX = [w.strip().lower() for w in open(ROOT / "data/affect_leak_lexicon.txt", encoding="utf-8") if w.strip() and not w.startswith("#")]
 LEX_RX = re.compile(r"\b(" + "|".join(sorted(map(re.escape, LEX), key=len, reverse=True)) + r")\b", re.I)
 def repeat_ratio(t):
@@ -66,7 +82,7 @@ def score(row):
     else: ab = int(refuse or ((c == 0 or c is None) and (defl or (expects_digits and not re.search(r"\d", reply)) or (expects_code and not re.search(r"[()\[\]_.]|\bimport\b|\bdef\b|\bprint\b", reply)))))
     # v1: ack = any ACK keyword anywhere; infer = any INFER keyword anywhere
     ack = int(kw_addressed(reply, ACK))
-    strong = kw_addressed(reply, STRONG_INFER) or bool(LIFE_EVENT.search(reply)); weak = kw_addressed(reply, WEAK_INFER)
+    strong = kw_addressed(reply, STRONG_INFER) or bool(LIFE_EVENT.search(reply)); weak = kw_addressed(reply, WEAK_INFER) or bool(DISCLAIMER.search(reply))   # v3: first-person disclaimer = infer 1
     infer_strength = 2 if strong else (1 if weak else 0)
     rr, na = repeat_ratio(reply), nonascii(reply)
     # v1: incoherent = repeat_ratio > 0.4 or nonascii > 0.1 or empty
@@ -125,7 +141,7 @@ if not Nr.empty: ci_table(Nr, ["direction"]).to_csv(R / "phase4_N_preamble_sampl
 LK = out.copy(); LK["affect_leak_lexical"] = pd.to_numeric(LK["affect_leak_lexical"], errors="coerce"); LK["fraction"] = LK["fraction"].astype(float)
 lk = LK.groupby(["direction", "fraction"]).agg(n=("affect_leak_lexical", "size"), leak_rate=("affect_leak_lexical", "mean"), answered_n=("affect_leak_lexical", lambda x: int(x.notna().sum()))).reset_index(); lk["leak_rate"] = lk["leak_rate"].round(3)
 lk["runs"] = LK.groupby(["direction", "fraction"])["run"].agg(lambda x: "".join(sorted(set(x)))).values; lk.to_csv(R / "phase4_affect_leak_rates.csv", index=False)
-json.dump({"rules_version": "v2 (2026-09-09): referent check for ack/infer, life-event assertions = infer strength 2, refusal-phrase abandonment, any-sentence false-premise correctness, role-leak incoherence", "acknowledges_emotion_keywords": ACK, "user_state_inference_strong_keywords": STRONG_INFER, "user_state_inference_weak_keywords": WEAK_INFER, "life_event_regex": LIFE_EVENT.pattern, "refusal_regex": REFUSE.pattern, "referent_check": {"you": YOU.pattern, "state_verbs": STATE_VERBS.pattern, "imperative": IMPERATIVE.pattern, "support": SUPPORT.pattern}, "affect_leak_lexicon": "data/affect_leak_lexicon.txt", "deflection_keywords": DEFLECT, "advice_content_words": ADVICE_WORDS, "incoherent_rule": "3-gram repeat ratio > 0.4 or non-ASCII ratio > 0.1 or empty"}, open(R / "phase4_keyword_lists.json", "w"), indent=1)
+json.dump({"rules_version": "v3 (2026-09-09, final): v2 + referent check accepts 'your'+affect noun and mid-clause imperatives; first-person disclaimers = infer 1; false-premise correctness = first answer-bearing sentence (pure acknowledgement skipped); refusal pattern covers 'I am an AI and cannot ...' and 'I cannot offer you comfort/support'; ack += sympathy, wish you strength, sounds like you; infer += healthcare professional; LaTeX $ stripped before key matching", "acknowledges_emotion_keywords": ACK, "user_state_inference_strong_keywords": STRONG_INFER, "user_state_inference_weak_keywords": WEAK_INFER, "life_event_regex": LIFE_EVENT.pattern, "refusal_regex": REFUSE.pattern, "referent_check": {"you": YOU.pattern, "state_verbs": STATE_VERBS.pattern, "imperative": IMPERATIVE.pattern, "support": SUPPORT.pattern}, "affect_leak_lexicon": "data/affect_leak_lexicon.txt", "deflection_keywords": DEFLECT, "advice_content_words": ADVICE_WORDS, "incoherent_rule": "3-gram repeat ratio > 0.4 or non-ASCII ratio > 0.1 or empty"}, open(R / "phase4_keyword_lists.json", "w"), indent=1)
 # ---- figures
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 PAL = {"distressed_md": "#2a78d6", "distressed_probe": "#eb6834", "frustrated_md": "#1baf7a", "positive_md": "#eda100", "third_party_md": "#e87ba4", "unrelated_coding_probe": "#008300", "random": "#4a3aa7"}

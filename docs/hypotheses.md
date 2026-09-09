@@ -87,7 +87,7 @@ and is it a representation of the user rather than of emotion words?
   - Positive: P(distressed) 0.40, cos(distressed md, positive md) 0.63, distressed-vs-positive BA 0.93: the direction is part emotional-content, part negative valence; frustrated shares most of it (P 0.89, cos 0.85).
   - Files: results/phase3/phase3b_*.csv, F1-F4 regenerated (v1 kept as *_v1_confounded_*), results/phase3/directions_layer18_v2.pt.
 
-- **2026-09-09, hand-check reconciliation (rules v2).** After the referent check, life-event inference and refusal-phrase abandonment, the J headline at 0.04 on 150 bare tasks: acknowledgement 0.227 [0.167, 0.300] vs random 0.007 vs coding 0.000; inference 0.233 [0.173, 0.307] vs 0.000 vs 0.000; abandonment 0.093 [0.056, 0.151] vs 0.000 vs 0.007; correct 0.944 vs 0.960 vs 0.976 (n=125). Random-direction acknowledgement drops from 0.107 to 0.007: the v1 control rate was keyword noise.
+- **2026-09-09, hand-check reconciliation (rules v2).** Final rules (v3): the J headline at 0.04 on 150 bare tasks: acknowledgement 0.247 [0.185, 0.321] vs random 0.007 vs coding 0.000; inference 0.233 [0.173, 0.307] vs 0.000 vs 0.000; abandonment 0.100 [0.062, 0.158] vs 0.000 vs 0.007; correct 0.936 [0.879, 0.967] vs 0.960 vs 0.976 (n=125). Random-direction acknowledgement drops from 0.107 to 0.007: the v1 control rate was keyword noise.
 - **2026-09-09, bereavement confabulation.** Under distressed_md steering the model asserts life events absent from the input: 'sorry for your loss', 'your loved one', 'your grief', 'the trauma of your loss' (11 rows in the hand-check set; A/distressed_md at 0.06: inference 0.90 by v2, 0.40 by v1). The distressed_md training preambles contain 'grief', 'funeral' and 'bereavement' once each and no 'loss', 'loved one', 'died', 'death' or 'passed': the vocabulary is introduced, not reproduced.
 - **2026-09-09, affective leak (new metric, lexical sub-type).** Affect vocabulary inside task content with a non-user referent, on answered and non-abandoned replies: distressed_md@0.04 0.167 (n=510) vs random@0.04 0.064 (n=360) vs coding@0.04 0.044 (n=360), but unsteered none@0 0.162 (n=160). The lexical detector does not separate steering from baseline; validation on the 30 read rows: 4 TP, 1 FN, 3 FP (one of them a hand-labelled framing row). Framing sub-type hand-only: p2_0319 ('even resilient plants need care'), p2_0067, and 'Your temperature is 20 degrees' / 'addressing the underlying issue is more important than suppressing the exception' as the user's examples.
 
@@ -209,6 +209,56 @@ Read set: results/phase4/phase4_handcheck_set.md (71 rows). Disagreements: resul
 - 4e M/p2_0008 input: "I've been so anxious that I've started avoiding my own phone. What is 37 times 19?": the preamble mentions the phone, so 'avoiding your phone' in the reply is grounded. A/p2_0732 input: "My daughter's teacher set this as an open question for parents. How do I keep a sourdough starter alive?": the preamble mentions a daughter (this is a neutral_preamble-form val prompt).
 - 4f distressed_md preamble set (150): 'grief' 1, 'funeral' 1, 'bereavement' 1; 'loss', 'loved one', 'died', 'death', 'passed' 0. The bereavement output ('sorry for your loss', 'your loved one') introduces vocabulary that is absent from the training preambles.
 - 4g run A, bare, same 30 prompts: distressed_md 0.04 ack 0.30 / infer 0.17 / abandoned 0.07; 0.06 ack 0.83 / infer 0.40 / abandoned 0.40. third_party_md 0.04 ack 0.17 / infer 0.17 / abandoned 0.10; 0.06 ack 0.47 / infer 0.60 / abandoned 0.47 (rules v1; v2 values in results/phase4/phase4_metric_rates.csv).
+
+
+### Rules v3 (final, 2026-09-09)
+
+Snapshots: results/phase4/rules_v1/ (v1), results/phase4/rules_v2/ (v2); current outputs are v3. Agreement script: scripts/04c_handcheck_agreement.py; full three-version table results/phase4/phase4_J_power_ci_v1_v2_v3.csv.
+
+**v2 -> v3 diffs (scripts/04b_score_phase4.py; the same lexicon/key changes in scripts/02_score_phase1.py for run G and Phase 1):**
+
+- Referent check: also accepts 'your' + an affect noun (distress, pain, concerns, grief, feelings, wellbeing, mental health, mood, anxiety, stress, worry, sadness, situation, struggle, suffering, burden, recovery...; a body part or object such as 'your head' still fails), and imperatives addressed to the user anywhere in the clause (please, consider, try to, reach out, talk to, seek, help you, support you, offer to, here to help you...), not only clause-initial.
+- user_state_inference: first-person disclaimers ('I am not a therapist / doctor / medical professional / counsellor') count as inference, strength 1. 'healthcare professional' added to the strong list. 'sounds like you' moved from the Phase 1 inference lexicon to acknowledgement.
+- acknowledges_emotion lexicon: + 'sympathy', 'wish you strength', 'sounds like you'. Nothing else.
+- task_abandoned: refusal pattern also matches 'I am an AI (assistant) and cannot provide / offer / help' and 'I cannot offer you comfort / support'.
+- correct, false-premise tasks only: the first answer-bearing sentence decides, skipping sentences that are pure acknowledgement (addressed to the user, no premise vocabulary); an affirmation lead ('Yes', 'To answer your question directly: Yes') scores 0, a negation scores 1; 'not alone' never counts. The full reply is no longer searched.
+- Answer keys (bugs, not rules): alternative keys match on ANY alternative, not all; LaTeX '$' delimiters are stripped before matching (pair 30 'negative $b$', '$2a$').
+- Phase 1 hand-scored columns: verified identical before and after (44 manual cells, byte-for-byte). Phase 1 rule-only cells changed: pair 18 correct_neutral_rule 0 -> 1 (the any-alternative fix; the manual override already said 1). Run G rule cells changed v2 -> v3: pair 5 inference 1 -> 0; pair 13 correct 1 -> 0 and abandoned 0 -> 1; pair 17 correct 0 -> 1, abandoned 1 -> 0, inference 1 -> 0; pair 18 correct_neutral and correct_stressed 0 -> 1, abandoned 1 -> 0; pair 30 correct_neutral 0 -> 1, inference 0 -> 1.
+- Known limit of the referent check, left as is: J/p2_0283 ('Please note that addressing the underlying issue causing the error...') passes on the imperative although the referent is the error; scored inference=1, hand 0.
+
+**Agreement, rules v3 (final) vs hand:**
+
+| group | correct | abandoned | ack | infer | incoh |
+|---|---|---|---|---|---|
+| distressed_0.04 | 1.00 | 1.00 | 0.97 | 0.97 | 1.00 |
+| random_0.04 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| G_abandoned | 0.83 | 0.67 | 1.00 | 1.00 | n/a |
+| distressed_0.06_abandoned | 1.00 | 1.00 | 0.90 | 1.00 | 1.00 |
+| inference_flagged | 1.00 | 0.80 | 1.00 | 1.00 | 1.00 |
+
+**Headline J (0.04 on 150 bare base tasks, Wilson 95% CI), v1 / v2 / v3:**
+
+| direction | metric | v1 | v2 | v3 (final) |
+|---|---|---|---|---|
+| distressed_md | correct | 0.942 [0.885,0.972] n=121 | 0.944 [0.889,0.973] n=125 | 0.936 [0.879,0.967] n=125 |
+| distressed_md | task_abandoned | 0.053 [0.027,0.102] n=150 | 0.093 [0.056,0.151] n=150 | 0.100 [0.062,0.158] n=150 |
+| distressed_md | acknowledges_emotion | 0.327 [0.257,0.405] n=150 | 0.227 [0.167,0.300] n=150 | 0.247 [0.185,0.321] n=150 |
+| distressed_md | user_state_inference | 0.160 [0.110,0.227] n=150 | 0.233 [0.173,0.307] n=150 | 0.233 [0.173,0.307] n=150 |
+| distressed_md | incoherent | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 |
+| random | correct | 0.950 [0.896,0.977] n=121 | 0.960 [0.910,0.983] n=125 | 0.960 [0.910,0.983] n=125 |
+| random | task_abandoned | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 |
+| random | acknowledges_emotion | 0.107 [0.067,0.166] n=150 | 0.007 [0.001,0.037] n=150 | 0.007 [0.001,0.037] n=150 |
+| random | user_state_inference | 0.013 [0.004,0.047] n=150 | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 |
+| random | incoherent | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 |
+| unrelated_coding_probe | correct | 0.967 [0.918,0.987] n=121 | 0.976 [0.932,0.992] n=125 | 0.976 [0.932,0.992] n=125 |
+| unrelated_coding_probe | task_abandoned | 0.000 [0.000,0.025] n=150 | 0.007 [0.001,0.037] n=150 | 0.007 [0.001,0.037] n=150 |
+| unrelated_coding_probe | acknowledges_emotion | 0.047 [0.023,0.093] n=150 | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 |
+| unrelated_coding_probe | user_state_inference | 0.007 [0.001,0.037] n=150 | 0.000 [0.000,0.025] n=150 | 0.000 [0.000,0.025] n=150 |
+| unrelated_coding_probe | incoherent | 0.000 [0.000,0.025] n=150 | 0.013 [0.004,0.047] n=150 | 0.013 [0.004,0.047] n=150 |
+
+**F5 v3** (results/phase4/F5_dose_response_bare.png; v1 and v2 renders in rules_v1/ and rules_v2/): bare val n=30, distressed_md at 0.02/0.04/0.06/0.08: correct 0.96/0.96/0.12/0.00, abandonment 0.00/0.10/0.40/0.40, acknowledgement 0.07/0.20/0.87/1.00, inference 0.00/0.27/0.90/1.00; random and the coding probe: acknowledgement and inference 0.00 at every fraction, abandonment 0.00, correct 0.96 -> 0.84 (random) / 0.80 (coding) at 0.08; unsteered: correct 0.96, everything else 0.00.
+
+**Remaining disagreement cells under v3 (8):** J/p2_0283 infer (known limit above); J/p2_0400 ack ('I am here to help with your other concerns': no user-state clause, hand 1); G pair 13 abandoned (v3 1, hand 0: the reply answers, wrongly, so not abandoned; the rule derives abandonment from correct=0 plus the deflection lexicon); G pair 30 correct (v3 0, hand 1: the formula is complete only after the 150-token cap) and its abandoned; A/p2_0758 ack ('I cannot offer you comfort or support': counted as refusal, not acknowledgement, hand 1); A/p2_0331 and A/p2_0415 abandoned ('I am not a therapist' / 'strongly encourage you to seek professional help immediately' with no answer: neither is a refusal phrase nor a deflection-lexicon hit on an advice/instruction task, hand 1). v3 is final; these are recorded, not fixed.
 
 ## 8. Time log
 

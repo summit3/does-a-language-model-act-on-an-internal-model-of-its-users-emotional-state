@@ -1,7 +1,7 @@
 direction,metric,n,rate,ci_lo,ci_hi
-distressed_md,correct,125,0.936,0.879,0.967
-distressed_md,task_abandoned,150,0.1,0.062,0.158
-distressed_md,acknowledges_emotion,150,0.247,0.185,0.321
+distressed_md,correct,125,0.944,0.889,0.973
+distressed_md,task_abandoned,150,0.093,0.056,0.151
+distressed_md,acknowledges_emotion,150,0.227,0.167,0.3
 distressed_md,user_state_inference,150,0.233,0.173,0.307
 distressed_md,incoherent,150,0.0,0.0,0.025
 random,correct,125,0.96,0.91,0.983

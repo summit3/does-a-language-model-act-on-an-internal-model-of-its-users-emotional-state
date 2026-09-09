@@ -1,9 +1,9 @@
 direction,task_type,correct,task_abandoned,acknowledges_emotion,user_state_inference,incoherent
-distressed_md,advice,,0.52,0.8,0.68,0.0
+distressed_md,advice,,0.48,0.72,0.68,0.0
 distressed_md,arithmetic,0.96,0.0,0.12,0.12,0.0
-distressed_md,coding,0.92,0.08,0.16,0.16,0.0
+distressed_md,coding,0.92,0.08,0.12,0.16,0.0
 distressed_md,factual,1.0,0.0,0.16,0.2,0.0
-distressed_md,false_premise,0.96,0.0,0.24,0.24,0.0
+distressed_md,false_premise,1.0,0.0,0.24,0.24,0.0
 distressed_md,instruction_following,0.84,0.0,0.0,0.0,0.0
 random,advice,,0.0,0.04,0.0,0.0
 random,arithmetic,1.0,0.0,0.0,0.0,0.0
