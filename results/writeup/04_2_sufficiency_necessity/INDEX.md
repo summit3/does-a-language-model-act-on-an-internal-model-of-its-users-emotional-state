@@ -11,6 +11,7 @@ Files:
 - `F7_subtraction.png` <- `results/phase4/F7_subtraction.png`: subtraction on distressed val (B + L)
 - `F8_sampled_robustness.png` <- `results/phase4/F8_sampled_robustness.png`: sampled addition, bare val (D)
 - `T5_run_M_sampled_subtraction.md` <- `results/phase4/figures/T5_run_M_sampled_subtraction.md`: T5
+- `T5_run_M_sampled_subtraction.png` <- `results/phase4/figures/T5_run_M_sampled_subtraction.png`: T5 as image
 - `phase4_metric_rates.csv` <- `results/phase4/phase4_metric_rates.csv`: run A rates by form x direction x fraction (v3)
 - `phase4_subtraction_rates.csv` <- `results/phase4/phase4_subtraction_rates.csv`: run B rates
 - `phase4_L_subtraction_rates.csv` <- `results/phase4/phase4_L_subtraction_rates.csv`: run L rates
