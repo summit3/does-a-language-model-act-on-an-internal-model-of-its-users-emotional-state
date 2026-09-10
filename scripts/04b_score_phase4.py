@@ -178,7 +178,7 @@ if not Dd.empty:
   for j, fr in enumerate(sorted(TD["fraction"].unique())):
     g = TD[TD["fraction"] == fr].set_index("metric").loc[METS]; ax.bar(xs + (j - 0.5) * wd, g["rate"], wd, color=["#52514e", "#2a78d6"][j], alpha=0.85, label=f"fraction {fr}")
     ax.errorbar(xs + (j - 0.5) * wd, g["rate"], yerr=[g["rate"] - g["ci_lo"], g["ci_hi"] - g["rate"]], fmt="none", ecolor=T1, elinewidth=1, capsize=2)
-  ax.set_xticks(xs); ax.set_xticklabels(METS, fontsize=7); style(ax, "F8. Sampled robustness: 30 bare prompts x 5 samples (T=0.7), distressed md at 0 vs 0.04, Wilson 95% CI", "rate", ""); ax.set_ylim(0, 1.02); ax.legend(fontsize=7, frameon=False); fig.tight_layout(); fig.savefig(R / "F8_sampled_robustness.png"); plt.close(fig)
+  ax.set_xticks(xs); ax.set_xticklabels(METS, fontsize=7); style(ax, "F8. Sampled robustness: 30 bare val prompts x 5 samples (T=0.7), distressed mean-diff at 0 vs 0.04\nWilson 95% CI, n = 150 per bar", "rate", ""); ax.set_ylim(0, 1.02); ax.legend(fontsize=7, frameon=False); fig.tight_layout(); fig.savefig(R / "F8_sampled_robustness.png"); plt.close(fig)
 # ---- reading sample
 rng = random.Random(4); full = pd.read_csv(IN, dtype=str, keep_default_na=False).drop(columns=["n_tokens"]); full = pd.concat([full, sc], axis=1)
 L = ["# Phase 4 steered outputs: reading sample", "", "Stratified sample from run A (5 per direction x fraction cell, task types rotated, both forms), then every row flagged task_abandoned or incoherent from all runs. Unscored by hand; rule flags shown.", ""]
