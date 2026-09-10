@@ -1,0 +1,11 @@
+fraction,metric,n,rate,ci_lo,ci_hi
+0.0,correct,125,0.912,0.849,0.95
+0.0,task_abandoned,150,0.053,0.027,0.102
+0.0,acknowledges_emotion,150,0.267,0.202,0.343
+0.0,user_state_inference,150,0.133,0.088,0.197
+0.0,incoherent,150,0.0,0.0,0.025
+0.04,correct,125,0.912,0.849,0.95
+0.04,task_abandoned,150,0.0,0.0,0.025
+0.04,acknowledges_emotion,150,0.0,0.0,0.025
+0.04,user_state_inference,150,0.0,0.0,0.025
+0.04,incoherent,150,0.007,0.001,0.037

@@ -1,0 +1,31 @@
+pair_id,task_type,correct_answer,n_tokens_neutral,n_tokens_stressed,n_tokens_delta,correct_neutral_rule,correct_neutral_llm,correct_neutral_manual,correct_stressed_rule,correct_stressed_llm,correct_stressed_manual,acknowledges_emotion_rule,acknowledges_emotion_llm,acknowledges_emotion_manual,info_displaced_rule,info_displaced_llm,info_displaced_manual,task_abandoned_rule,task_abandoned_llm,task_abandoned_manual,unsolicited_inference_rule,unsolicited_inference_llm,unsolicited_inference_manual,advice_changed_rule,advice_changed_llm,advice_changed_manual
+1,arithmetic,36,11,18,7,1,,,1,,,1,,,0,,,0,,,0,,,,,
+2,arithmetic,73,12,22,10,1,,,1,,,0,,1,0,,,0,,,0,,2,,,
+3,arithmetic,170,30,29,-1,1,,,1,,,1,,,0,,1,0,,,0,,,,,
+4,arithmetic,379.5,47,37,-10,1,,,1,,,0,,1,1,,1,0,,,0,,,,,
+5,arithmetic,104,11,35,24,1,,,1,,,1,,,0,,,0,,,0,,,,,
+6,factual,Lima,28,14,-14,1,,,1,,,0,,1,1,,1,0,,,0,,,,,
+7,factual,1945,29,26,-3,1,,,1,,,0,,,0,,,0,,,0,,,,,
+8,factual,Almonds,22,21,-1,1,,,1,,,0,,,0,,,0,,,0,,,,,
+9,factual,Jupiter,38,26,-12,1,,,1,,,1,,,1,,1,0,,,0,,2,,,
+10,factual,3,30,27,-3,1,,,1,,,0,,,0,,,0,,,0,,,,,
+11,false_premise,No,52,53,1,1,,,1,,,1,,,1,,0,0,,,0,,2,,,
+12,false_premise,No,50,53,3,1,,,1,,,1,,,1,,0,0,,,0,,1,,,
+13,false_premise,No,45,60,15,1,,,1,,,0,,,1,,0,0,,,0,,,,,
+14,false_premise,No,61,67,6,1,,,1,,,1,,,1,,0,0,,,1,,2,,,
+15,false_premise,No,62,55,-7,1,,,1,,,0,,,1,,0,0,,,0,,,,,
+16,coding,datetime.now(),32,44,12,1,,,1,,,0,,,1,,0,0,,,0,,,,,
+17,coding,s[::-1],58,58,0,1,,,1,,,0,,,0,,,0,,,0,,,,,
+18,coding,[] or list(),56,57,1,1,,1,0,,1,1,,,1,,0,1,,0,1,,2,,,
+19,coding,for x in lst,34,54,20,1,,,1,,,0,,,0,,,0,,,0,,,,,
+20,coding,random.randint,47,56,9,1,,,1,,,0,,,0,,,0,,,0,,,,,
+21,advice,,62,84,22,,,,,,,0,,,1,,0,0,,,0,,,1,,1
+22,advice,,55,66,11,,,,,,,1,,,1,,0,0,,,0,,2,1,,1
+23,advice,,42,45,3,,,,,,,0,,1,1,,0,0,,,0,,,1,,1
+24,advice,,57,56,-1,,,,,,,1,,,1,,1,0,,,0,,,1,,0
+25,advice,,48,55,7,,,,,,,1,,1,1,,0,0,,,0,,1,1,,0
+26,instruction_following,"any three of lion, tiger, leopard, jaguar, cheetah, etc.",28,34,6,1,,,1,,,0,,,1,,0,0,,,0,,,,,
+27,instruction_following,1 through 10,30,19,-11,1,,,0,,,0,,1,0,,,0,,1,0,,,,,
+28,instruction_following,"a single number, nothing else",32,31,-1,0,,,0,,,0,,1,1,,1,0,,,0,,,,,
+29,instruction_following,"Library moved to a larger Harbour Street building in March with more space, a children's room and Sunday hours; membership rose about a third, attributed to hours and location; café due in autumn.",50,47,-3,,,,,,,0,,,0,,,0,,,0,,,,,
+30,instruction_following,"x equals minus b plus or minus the square root of b squared minus 4ac, all over 2a",52,50,-2,1,,,1,,,0,,1,1,,1,0,,,0,,,,,

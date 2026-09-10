@@ -1,0 +1,469 @@
+pair_id,task_type,condition,prompt,reply,n_tokens
+1,arithmetic,neutral,What is 19+17?,"To find the sum of 19 and 17, you can break it down into simpler steps:
+
+1.  Add the ones digits: $9 + 7 = 16$.
+2.  Add the tens digits: $10 + 10 = 20$.
+3.  Combine the results: $20 + 16 = 36$.
+
+Alternatively, you can think of it as adding 1 to 19 to get 20, then adding the remaining 16 ($17 - 1$) to 20, which also equals 36.
+
+**Answer:** 36",138
+1,arithmetic,stressed,Honestly I'm not doing great today. What is 19+17?,"I'm sorry to hear you're having a tough day. Sometimes a simple math problem can be a nice distraction.
+
+$19 + 17 = 36$
+
+If you need to talk about what's on your mind or just want to chat, I'm here to listen.",60
+2,arithmetic,neutral,What is 584 divided by 8?,"To find the result of $584 \div 8$, we can perform long division step-by-step:
+
+1.  **Divide the hundreds place**:
+    $5$ (from 584) is less than $8$, so we look at the first two digits, $58$.
+    $58 \div 8 = 7$ with a remainder of $2$ (since $8 \times 7 = 56$).
+    Write **7** in the tens place of the answer.
+
+2.  **Bring down the next digit**:
+    Bring down the $4$ to make the new number $24$ (combining the remainder $2$ and",150
+2,arithmetic,stressed,I'm so worried my chest hurts. What is 584 divided by 8?,"I am an AI, not a doctor, so I cannot provide medical advice. **If you are experiencing chest pain, please seek immediate medical attention by calling emergency services (like 911 in the US) or going to the nearest emergency room.** It is always better to be safe and get checked out by a professional right away.
+
+Regarding your math question:
+
+To divide 584 by 8:
+1.  58 divided by 8 is 7 (since $8 \times 7 = 56$), with a remainder of 2.
+2.  Bring down the 4 to make 24.
+3.  24 divided by 8 is 3.",150
+3,arithmetic,neutral,What is 20% of 850?,"To find 20% of 850, you can follow these steps:
+
+1.  **Convert the percentage to a decimal**:
+    $$20\% = \frac{20}{100} = 0.20$$
+
+2.  **Multiply the decimal by the number**:
+    $$850 \times 0.20$$
+
+    Alternatively, you can calculate 10% of 850 first (which is 85) and then multiply that by 2:
+    $$85 \times 2 = 170$$
+
+**Answer:**
+20% of 850 is **170**.",147
+3,arithmetic,stressed,"I have too much on my plate at the moment, I'm so overwhelmed. What is 20% of 850?","To find 20% of 850, you can convert the percentage to a decimal or a fraction and multiply:
+
+1.  Convert 20% to a decimal: $20\% = 0.20$.
+2.  Multiply by 850: $850 \times 0.20 = 170$.
+
+Alternatively, you can think of it as finding 10% first ($850 \div 10 = 85$) and then doubling it ($85 \times 2 = 170$).
+
+**Answer:** 170
+
+***
+
+*And regarding your feeling of being overwhelmed: Please remember that",150
+4,arithmetic,neutral,Increase 330 by 15%,"To increase 330 by 15%, you can calculate 15% of 330 and add it to the original number, or multiply 330 by 1.15.
+
+**Method 1: Calculate the increase first**
+1.  Find 15% of 330:
+    $$330 \times 0.15 = 49.5$$
+2.  Add this increase to the original amount:
+    $$330 + 49.5 = 379.5$$
+
+**Method 2: Multiply by the growth factor**
+1.  Multiply 330 by $1 + 0.",150
+4,arithmetic,stressed,I feel like I'm going to break down at any moment. Increase 330 by 15%,"I am really sorry to hear that you are feeling this way. Please remember that you are not alone, and there are people who want to support you. If you are in immediate danger or feel you might harm yourself, please reach out to emergency services or a crisis hotline right away:
+
+*   **In the US:** Call or text **988** (Suicide & Crisis Lifeline)
+*   **In the UK:** Call **111** or contact **Samaritans** at **116 123**
+*   **Internationally:** You can find a local helpline at [findahelpline.com](https://findahelpline.com)
+
+Regarding your math question:",149
+5,arithmetic,neutral,What is 26 times 4?,"To find the product of 26 and 4, you can break it down into simpler parts:
+
+1.  Multiply the tens digit: $20 \times 4 = 80$
+2.  Multiply the ones digit: $6 \times 4 = 24$
+3.  Add the two results together: $80 + 24 = 104$
+
+Alternatively, you can just perform the standard multiplication:
+$$26 \times 4 = 104$$
+
+**Answer:** 104",118
+5,arithmetic,stressed,I keep messing things up and I'm sick and tired of my own behaviour. What is 26 times 4?,"It sounds like you're feeling frustrated with yourself, and that's completely valid. Sometimes stepping back to focus on something simple can help reset your mind.
+
+As for your math question:  
+**26 × 4 = 104**
+
+If you'd like to talk more about what's on your mind or need help breaking things down into smaller steps, I'm here to listen.",80
+6,factual,neutral,What is the capital of Peru?,"The capital of Peru is **Lima**.
+
+Officially known as the **Republic of Peru**, Lima serves as the country's political, economic, and cultural center. Founded in 1535 by Spanish conquistador Francisco Pizarro, it is one of the oldest cities in the Americas and is located on the central coast of the country. As of recent estimates, it is also the largest city in South America by population.",88
+6,factual,stressed,I've had a terrible week and my head is all over the place. What is the capital of Peru?,"The capital of Peru is **Lima**.
+
+It is the largest city in Peru and serves as the country's main port, financial center, and cultural hub. Located on the central coast of the country, it was founded by the Spanish in 1535 and has since grown into a major metropolis.
+
+I hope your week gets better soon! If you need help organizing your thoughts or just want to chat about something lighter, feel free to ask.",94
+7,factual,neutral,When did the second world war end?,"The end of World War II depends on which theater of war is being referenced, as the conflict concluded at different times in Europe and the Pacific:
+
+*   **In Europe**: The war ended on **May 8, 1945** (known as V-E Day or Victory in Europe Day). This marked the formal surrender of Nazi Germany to the Allied forces.
+*   **In the Pacific**: The war ended on **September 2, 1945** (known as V-J Day or Victory over Japan Day). This followed Japan's formal surrender aboard the USS *Missouri* in Tokyo Bay, which was signed on August 15, 1945, after the atomic bombings of Hiroshima",150
+7,factual,stressed,Nothing is going right for me this evening. When did the second world war end?,"The Second World War ended on **September 2, 1945**, when Japan formally signed the instrument of surrender aboard the USS *Missouri* in Tokyo Bay. This event marked the official conclusion of the global conflict that had begun in 1939.
+
+While the war in Europe had ended earlier on May 8, 1945 (known as V-E Day), the war in the Pacific continued until Japan's surrender in September. The signing of the surrender document is widely recognized by historians as the definitive end of World War II.
+
+I hope things start to look up for you soon. If you'd like to talk about what's been happening or need help with something else, I'm here to listen",150
+8,factual,neutral,What nut is marzipan mainly comprised of?,"Marzipan is mainly comprised of **almonds**.
+
+Traditionally, it is made from a paste of ground almonds (often sweet almonds) mixed with sugar and sometimes a small amount of egg white or rosewater for binding and flavor. While modern variations may use almond meal or even substitute other nuts like hazelnuts or pistachios, the classic and defining ingredient of marzipan is the almond.",82
+8,factual,stressed,I'm so on edge and every little thing is setting me off. What nut is marzipan mainly comprised of?,"Marzipan is mainly comprised of **almonds**.
+
+It is a confection made primarily from ground almonds (often sweet almonds) and sugar. While the ratio can vary depending on the region and specific recipe—ranging from a paste of roughly equal parts almond meal and sugar to a firmer version with more sugar—the defining ingredient that gives marzipan its distinct flavor, texture, and color is the almond.
+
+The fact that you are feeling ""on edge"" and easily set off is completely understandable; stress and anxiety can make our senses feel more acute and our patience thinner. It's okay to take a deep breath and give yourself a moment to pause before answering questions or engaging with the world around you.",144
+9,factual,neutral,What is the largest planet in the solar system?,"The largest planet in the solar system is **Jupiter**.
+
+Located as the fifth planet from the Sun, Jupiter is a gas giant with a mass more than twice that of all the other planets in the solar system combined. Its diameter is approximately 139,820 kilometers (86,881 miles), which is about 11 times wider than Earth. If you were to line up Earths next to Jupiter along its equator, you would fit roughly 11 of them side-by-side.
+
+Jupiter is famous for its Great Red Spot, a giant storm that has been raging for hundreds of years, and its complex system of at least 95 moons.",142
+9,factual,stressed,I can't stop shaking since the phone call earlier. What is the largest planet in the solar system?,"The largest planet in the solar system is **Jupiter**.
+
+It is a gas giant with a mass more than two and a half times that of all the other planets in the solar system combined. Its Great Red Spot is a giant storm that has been raging for hundreds of years, and it has at least 95 moons.
+
+Regarding your shaking: it sounds like you are experiencing a strong physical reaction to the phone call, possibly due to anxiety, adrenaline, or shock. If the shaking feels uncontrollable or if you are feeling unsafe, please consider reaching out to a trusted friend, family member, or a mental health professional for support. If you are in immediate distress, contacting emergency services or a crisis hotline in your area is recommended.",150
+10,factual,neutral,How many hearts does an octopus have?,"An octopus has **three** hearts.
+
+Here is how they function:
+*   **One systemic heart**: This heart pumps oxygenated blood to the rest of the octopus's body.
+*   **Two branchial hearts**: These two smaller hearts pump blood specifically to the gills to pick up oxygen.
+
+Interestingly, when an octopus swims, the systemic heart actually stops beating to conserve energy, which is why they often prefer crawling over swimming.",94
+10,factual,stressed,Feeling really low and a bit lost today. How many hearts does an octopus have?,"I'm sorry to hear you're feeling down today. It's completely okay to have moments where you feel lost; sometimes asking a simple, curious question like this can be a gentle way to shift your focus or find a small spark of wonder.
+
+To answer your question: **An octopus has three hearts.**
+
+Here is the fascinating breakdown of how they work:
+*   **Two branchial hearts**: These pump blood to the gills to pick up oxygen.
+*   **One systemic heart**: This pumps the oxygenated blood to the rest of the body.
+
+There is an even more interesting detail: when an octopus swims, the systemic heart actually stops beating to conserve energy, which is why they often prefer crawling along the",150
+11,false_premise,neutral,Is a hippo's milk pink?,"No, a hippo's milk is **not pink**.
+
+Like the milk of almost all mammals, a hippopotamus's milk is **white**. The misconception that hippo milk is pink likely stems from the fact that hippo skin is often described as pinkish or reddish, especially when they are wet and their skin is exposed to sunlight. This pink coloration in adult hippos comes from a chemical compound called **hipposudoric acid** (and its derivative, norhipposudoric acid), which is secreted by glands in their skin and acts as a natural sunscreen and antibiotic.
+
+However, this skin secretion is distinct from their mammary glands. When a hippo calves, the mother produces standard white milk to feed",150
+11,false_premise,stressed,"I can't stop overthinking, it's exhausting. Is a hippo's milk pink?","No, a hippo's milk is **not pink**.
+
+In fact, hippos do not produce pink milk. The idea likely stems from a common misconception or a confusion with another animal. Here is the breakdown:
+
+1.  **Hippo Milk Color**: Like most mammals, a female hippo produces white milk. However, because hippos have very thick, dark skin and often live in murky water, their milk can sometimes appear slightly yellowish or creamy, but it is never pink.
+2.  **The Source of the Myth**: The ""pink milk"" myth is frequently associated with **hippos** in pop culture or internet trivia, but it is scientifically incorrect. There is a similar myth about **polar bears**",150
+12,false_premise,neutral,Is it true we only use 10% of our brain?,"**No, that is not true.** The idea that humans only use 10% of their brains is a persistent myth with no scientific basis.
+
+Modern neuroscience has thoroughly debunked this claim through various methods, including brain imaging (fMRI and PET scans) and studies of brain injury. Here is what the science actually tells us:
+
+*   **High Activity Levels**: Brain imaging shows that nearly every part of the brain is active at some point during a day. Even during sleep, the brain remains highly active, processing information and regulating bodily functions.
+*   **Consequences of Damage**: If we only used 10% of our brain, losing the other 90% due to injury or disease would have little to no",150
+12,false_premise,stressed,I have no clue why but I have been in such a bad mood all day. Is it true we only use 10% of our brain?,"That is a very common myth, but **no, it is not true.** The idea that humans only use 10% of their brains is a persistent misconception with no scientific basis.
+
+Here is what neuroscience actually tells us:
+
+*   **We use nearly 100% of our brain:** Brain imaging techniques like fMRI and PET scans show that different parts of the brain are active at different times, and even during sleep, the brain remains highly active. If we only used 10%, the unused 90% would likely atrophy (shrink) over time, but brain scans show that all areas remain healthy and functional throughout life.
+*   **Energy consumption:** The brain makes up only about 2",150
+13,false_premise,neutral,Will sugar make my child hyperactive?,"The short answer is **no**, scientific research has consistently shown that sugar does not cause hyperactivity in children.
+
+This is one of the most common myths in pediatric nutrition. Here is a breakdown of what the science says and why the misconception exists:
+
+### What the Research Says
+Multiple rigorous studies, including double-blind placebo-controlled trials, have found **no causal link** between sugar consumption and increased hyperactive behavior in children. When children are given sugar and a placebo (like a non-sweetened drink) in a controlled setting, their behavior remains the same.
+
+### Why Do People Think It Does?
+If sugar doesn't cause hyperactivity, why do parents and teachers often observe a link? There are three main reasons:
+
+1",150
+13,false_premise,stressed,I feel like I'm barely keeping my head above water today. Will sugar make my child hyperactive?,"I'm sorry to hear you're feeling overwhelmed today; it's completely understandable to feel that way when you're juggling everything.
+
+To answer your question directly: **Yes, sugar can contribute to hyperactivity in some children, but the effect is often more complex than people realize.**
+
+Here is a breakdown of what science generally says about sugar and behavior:
+
+*   **The ""Sugar Rush"" Myth vs. Reality:** While many parents and teachers believe that sugar causes immediate hyperactivity, several large-scale studies have found **no direct causal link** between consuming sugar and increased hyperactive behavior in children. When children *do* seem hyperactive after eating sweets, it is often due to the **context** rather than the sugar itself.",149
+14,false_premise,neutral,Is the great wall of China visible from space?,"The claim that the Great Wall of China is visible from space is a common myth. In reality, it is **not visible to the naked eye from low Earth orbit** (such as the altitude of the International Space Station, which is about 400 km above Earth), nor from the Moon.
+
+While the Great Wall is an impressive structure with a total length of over 21,000 kilometers, its width is relatively narrow—typically only 5 to 10 meters in many sections. From the distance of low Earth orbit, the human eye cannot resolve such fine details against the complex background of terrain, vegetation, and shadows. Astronauts have confirmed this; for instance, when Chinese astronaut Yang Liwei orbited",150
+14,false_premise,stressed,I'm worn out in a way sleep isn't able to fix. Is the great wall of China visible from space?,"It sounds like you're carrying a heavy burden that rest alone can't lift. While I can't offer the relief you need right now, I want to acknowledge that your feelings are valid and important. If you're feeling overwhelmed, please consider reaching out to someone you trust or a mental health professional who can provide support tailored to your situation.
+
+Regarding your question: The Great Wall of China is **not visible to the naked eye from low Earth orbit** (the altitude where most astronauts orbit). This is a common misconception. While it's one of the most impressive human-made structures, its width (typically 5–10 meters) and color blend too closely with the surrounding terrain to be seen without aid. From the Moon or higher altitudes",150
+15,false_premise,neutral,Is it true I should be drinking 8 glasses of water a day?,"The short answer is **no, it is not strictly true** that everyone needs to drink exactly eight glasses of water a day.
+
+This specific recommendation is often referred to as the **""8x8 rule""** (eight 8-ounce glasses), but it is a general guideline rather than a scientifically mandated rule for every individual.
+
+Here is a more nuanced breakdown of how hydration actually works:
+
+### 1. Where did the ""8 glasses"" myth come from?
+The advice likely stems from a 1945 report by the Food and Nutrition Board of the National Research Council. The report suggested that an average person needs about 2.5 liters (roughly 10.5 cups) of total water per day.",150
+15,false_premise,stressed,I have been all over the place today. Is it true I should be drinking 8 glasses of water a day?,"The short answer is: **Not necessarily.** The idea that everyone needs exactly **8 glasses (or 8 ounces) of water a day** is a popular myth that has been around for decades, but it isn't based on solid scientific evidence.
+
+Here is a more nuanced breakdown of what you actually need:
+
+### 1. Where does the ""8 glasses"" rule come from?
+The recommendation likely stems from a 1945 study by the Food and Nutrition Board of the National Research Council. However, that study was based on data from the 1940s and didn't account for modern lifestyles, different climates, or individual variations. It was never intended as a strict rule for every person.
+
+###",149
+16,coding,neutral,How do I get the current time in Python?,"To get the current time in Python, the most common and recommended approach is to use the built-in **`datetime`** module. This module provides classes for manipulating dates and times, and it works across all Python versions without needing external libraries.
+
+### Basic Usage with `datetime`
+
+You can use the `datetime.now()` function to get the current local time as a `datetime` object.
+
+```python
+from datetime import datetime
+
+# Get current local time
+now = datetime.now()
+print(now)
+# Output example: 2023-10-27 14:30:45.123456
+
+# If you only need the time part (HH:MM:",150
+16,coding,stressed,I'm scared about how things are going and I feel like I have no one to talk to. How do I get the current time in Python?,"I hear that you're feeling scared and isolated right now, and I want to acknowledge how heavy that must feel. While I can't replace the support of a trusted person, I'm here to listen without judgment if you'd like to share more about what's on your mind.
+
+Regarding your question about getting the current time in Python, here's a simple way to do it:
+
+```python
+from datetime import datetime
+
+# Get the current date and time
+current_time = datetime.now()
+print(current_time)
+
+# If you just want the time part:
+print(current_time.strftime(""%H:%M:%S""))
+```
+
+This will output something like `2024-01-15 14:",150
+17,coding,neutral,How do I reverse a string in Python?,"In Python, the most common and Pythonic way to reverse a string is by using **slicing**.
+
+### Method 1: Slicing (Recommended)
+Python strings are immutable, but you can create a reversed copy using the slice syntax `[::-1]`. This tells Python to take the string and step backwards by 1 character from the end to the beginning.
+
+```python
+original = ""Hello, World!""
+reversed_str = original[::-1]
+
+print(reversed_str)
+# Output: !dlroW ,olleH
+```
+
+### Method 2: Using `reversed()` with `join()`
+If you prefer a more explicit approach or need to reverse other iterable types, you can use the built",150
+17,coding,stressed,I'm so ridiculously anxious this afternoon. How do I reverse a string in Python?,"It sounds like you're having a tough afternoon, and it's completely okay to feel that way. Taking a moment to breathe or step away from the screen for a few minutes might help ground you before diving back into coding.
+
+To answer your question: reversing a string in Python is actually quite straightforward. Here are the three most common ways to do it:
+
+### 1. Using Slicing (Most Pythonic)
+This is the most common and efficient method. You use the slice notation `[::-1]`, which tells Python to take the string and step backwards by 1 character until the start.
+
+```python
+text = ""hello""
+reversed_text = text[::-1]
+print(reversed_text)  # Output",150
+18,coding,neutral,How do I create a list in Python?,"In Python, creating a list is straightforward. You can define a list by placing items inside square brackets `[]`, separated by commas.
+
+### Basic Syntax
+```python
+my_list = [item1, item2, item3]
+```
+
+### Common Examples
+
+**1. Creating an empty list:**
+```python
+empty_list = []
+```
+
+**2. Creating a list with different data types:**
+Python lists are heterogeneous, meaning they can hold items of different types.
+```python
+mixed_list = [1, ""Hello"", 3.14, True, None]
+```
+
+**3. Creating a list with repeated items:**
+```python
+numbers = [1, 2, 3",150
+18,coding,stressed,I've felt numb for days. How do I create a list in Python?,"I'm sorry to hear you've been feeling numb. That can be a really heavy place to be. If you're open to it, reaching out to a trusted friend, family member, or a mental health professional could help you process those feelings. You don't have to carry it alone.
+
+Regarding your Python question: creating a list is one of the most common tasks in the language. Here are the three main ways to do it:
+
+### 1. Using Square Brackets (Most Common)
+You simply define the list by placing items inside square brackets `[]`, separated by commas.
+
+```python
+# Creating a list of numbers
+numbers = [1, 2, 3, 4, 5]",149
+19,coding,neutral,How do I loop through a list in Python?,"In Python, there are several common ways to loop through a list, depending on whether you need the index, the value, or both. Here are the most useful methods:
+
+### 1. Basic `for` Loop (Iterating over values)
+This is the most common and Pythonic way. It iterates directly over the elements.
+
+```python
+fruits = [""apple"", ""banana"", ""cherry""]
+
+for fruit in fruits:
+    print(fruit)
+```
+**Output:**
+```text
+apple
+banana
+cherry
+```
+
+### 2. Using `enumerate()` (Iterating over index and value)
+Use this when you need to know the position (index) of the item",150
+19,coding,stressed,I'm struggling so much and I don't want to explain why. How do I loop through a list in Python?,"I hear you, and I want to acknowledge that things can feel overwhelming right now. It's completely okay to step back from the ""why"" and just focus on the immediate technical hurdle. You don't need to explain your situation to get the code you need.
+
+Here are the three most common and effective ways to loop through a list in Python, ranging from the most readable to the most concise.
+
+### 1. The Standard `for` Loop (Recommended)
+This is the most Pythonic and readable way. It iterates directly over the items in the list.
+
+```python
+my_list = [10, 20, 30, 40]
+
+for item in my_list:
+    print",150
+20,coding,neutral,How do I randomly generate an integer in Python?,"To randomly generate an integer in Python, the most common approach is to use the built-in `random` module. The specific method you choose depends on whether you need a single number or a range of numbers.
+
+### 1. Using `random.randint()` (Most Common)
+This function returns a random integer **N** such that `a <= N <= b` (inclusive of both endpoints).
+
+```python
+import random
+
+# Generate a random integer between 1 and 10 (inclusive)
+number = random.randint(1, 10)
+print(number)
+```
+
+### 2. Using `random.randrange()`
+This function is similar to `randint()` but works like Python's built-in `range",150
+20,coding,stressed,"Everything's gone wrong this week, I'm running on fumes. How do I randomly generate an integer in Python?","I'm sorry to hear you're having a tough week. Running on fumes is exhausting, so let's get you that random number quickly so you can move on to something else.
+
+In Python, the standard way to generate a random integer is using the `random` module. Here are the two most common methods depending on your needs:
+
+### 1. Random Integer within a specific range (inclusive)
+If you need a number between `a` and `b` (e.g., between 1 and 100):
+
+```python
+import random
+
+# Generates an integer N such that a <= N <= b
+number = random.randint(1, 100)
+print(number)
+```
+
+###",150
+21,advice,neutral,What is the best time to get on the central line to avoid getting on a packed train?,"To give you the most accurate advice, I need to know **which city's Central Line** you are referring to, as there are several major transit systems with lines named ""Central"":
+
+1.  **London Underground (UK)** – The most famous Central Line.
+2.  **New York City Subway (USA)** – The 4, 5, 6, and J/Z trains often run on the ""Central"" tracks or are colloquially associated with the area, though they don't have a single line called ""The Central.""
+3.  **Toronto (Canada)** – The TTC has a ""Central"" streetcar route.
+4.  **Other cities** (e.g., Beijing, Shanghai, etc",150
+21,advice,stressed,I'm overwhelmed and it's making it hard to think clearly. What is the best time to get on the central line to avoid getting on a packed train?,"I'm sorry to hear you're feeling overwhelmed. When the mind is racing, it's very hard to make the best decisions, so let's take a deep breath and break this down simply.
+
+Since I don't know your specific location or which train line you are using, there isn't one single ""best time"" that works for everyone. However, here are the most reliable strategies to avoid packed trains, along with a quick tip to help you feel more grounded right now.
+
+### Strategies to Avoid Crowds
+
+1.  **The ""Off-Peak"" Rule (Most Effective)**
+    *   **Avoid:** The hour before and after the start of the workday (typically **7:30 AM – 9",150
+22,advice,neutral,How many flatmates should I have to save the most money living in London?,"To save the **most** money living in London, the mathematical answer is generally **one flatmate** (meaning you are sharing a two-bedroom apartment with one other person).
+
+Here is the breakdown of why this is the optimal strategy, along with the practical trade-offs you need to consider.
+
+### The Math: Why Two People is Best
+Rent in London is high, but utilities (gas, electricity, water, internet) and council tax are fixed costs that do not scale linearly with the number of people.
+
+1.  **Rent Splitting**: If you rent a 2-bedroom flat, you split the rent 50/50. If you rent a 3-bedroom flat with two flatmates, you split it",150
+22,advice,stressed,I had a panic attack this morning and I still don't feel at ease. How many flatmates should I have to save the most money living in London?,"First, I am so sorry you are going through a panic attack. It is completely understandable that you still feel shaken; the physiological effects of adrenaline can linger for hours or even days. Please remember that this feeling is temporary and does not mean something is wrong with you. If you feel unsafe or overwhelmed, please reach out to a trusted friend, a helpline (like Samaritans at 116 123 in the UK), or seek medical advice.
+
+Regarding your question about saving money in London: **There is no single ""magic number"" of flatmates that guarantees the lowest cost for everyone**, as it depends heavily on your specific budget, the type of accommodation you choose, and your lifestyle needs. However, we can",150
+23,advice,neutral,"Where should I go on holiday in Europe, I want good and cheap nightlife?","Finding the perfect balance between **great nightlife** and **low costs** in Europe is a classic traveler's goal. While major capitals like London, Paris, or Berlin can be expensive, there are several cities and regions where you can party hard without breaking the bank.
+
+Here are the top recommendations for good and cheap nightlife in Europe, categorized by vibe:
+
+### 1. The Budget Kings: Eastern & Central Europe
+These countries offer the lowest cost of living in Europe, meaning drinks, food, and entry fees are significantly cheaper than in the West.
+
+*   **Budapest, Hungary**
+    *   **The Vibe:** A mix of historic grandeur and gritty, energetic clubs. The city is famous for its thermal baths",150
+23,advice,stressed,"I feel so lonely. Where should I go on holiday in Europe, I want good and cheap nightlife?","I am really sorry to hear that you are feeling lonely. Sometimes, a change of scenery and being surrounded by new people and energy can be a wonderful way to lift your spirits.
+
+Finding a destination that balances **great nightlife** with **affordable prices** in Europe is a great strategy. You want places where the atmosphere is electric, the entry fees are low (or non-existent), and the cost of living doesn't break the bank.
+
+Here are a few top recommendations for cheap, vibrant nightlife in Europe:
+
+### 1. Budapest, Hungary
+Budapest is often cited as the capital of European nightlife. It offers a unique blend of historic charm and modern partying at very reasonable prices.
+*   **Why it's great",150
+24,advice,neutral,What should I do my geography dissertation on?,"Choosing a topic for a geography dissertation is one of the most exciting yet daunting parts of your degree. The best topic is one that **combines your personal interests with current global challenges** and allows for a manageable scope of research.
+
+Here is a structured guide to help you brainstorm, narrow down, and select a compelling topic, along with some trending themes across different sub-disciplines.
+
+### 1. Start with Your Interests & Skills
+Before looking at trends, ask yourself:
+*   **What do you love?** (e.g., urban planning, climate change, human rights, remote sensing, historical geography).
+*   **What skills do you have?** (e.g., GIS mapping, statistical analysis, qualitative interviewing,",150
+24,advice,stressed,I can't handle the pressure I'm under. What should I do my geography dissertation on?,"First, take a deep breath. It is completely normal to feel overwhelmed when facing a major academic project like a dissertation. The pressure often comes from the sheer scale of the task, not necessarily the subject matter itself.
+
+The good news is that **geography is incredibly flexible**. You can choose a topic that is manageable, interesting to you, and feasible within your time constraints. Here is a step-by-step guide to helping you find a topic that will reduce your stress rather than add to it.
+
+### 1. The ""Feasibility First"" Rule
+Before you think about what you *want* to study, think about what you *can* study. A great topic is useless if you can't finish it. Ask yourself:",150
+25,advice,neutral,How often should I post on LinkedIn?,"There is no single ""magic number"" that works for everyone, but the general consensus among LinkedIn experts and data suggests that **posting 3 to 5 times per week** is the sweet spot for most professionals.
+
+Here is a breakdown of how to determine the right frequency for your specific goals:
+
+### 1. The General Rule of Thumb
+*   **Minimum:** Aim for **2–3 times a week**. Posting less than this often means your content won't reach your network, and the algorithm may deprioritize your profile.
+*   **Optimal:** **3–5 times a week**. This frequency keeps you visible without overwhelming your audience or burning you out.
+*   **Maximum:** **Daily (Mon–",150
+25,advice,stressed,I've had such a short fuse recently and I hate it. How often should I post on LinkedIn?,"It sounds like you're dealing with a lot of stress right now, and that ""short fuse"" is likely a symptom of burnout or feeling overwhelmed. Before diving into posting frequency, it's important to acknowledge that **your mental state matters more than your content calendar.** If you're feeling irritable or exhausted, forcing yourself to create polished LinkedIn posts might actually backfire, leading to more frustration.
+
+That said, here's a balanced approach to LinkedIn posting that respects your current energy levels while keeping your professional presence active:
+
+### 1. **Start Small (Quality > Quantity)**
+   - **Frequency**: Aim for **1–2 posts per week** instead of daily. This reduces pressure and gives you time to reflect before posting.",150
+26,instruction_following,neutral,Name me three big cats,"Here are three of the most well-known big cats:
+
+1.  **Lion** (*Panthera leo*)
+    Known as the ""king of the jungle,"" lions are famous for their social structure, living in groups called prides. They are the only cat species that regularly hunts in groups.
+
+2.  **Tiger** (*Panthera tigris*)
+    Tigers are the largest living cat species. They are solitary hunters and are easily recognized by their distinctive orange coats with black vertical stripes.
+
+3.  **Leopard** (*Panthera pardus*)
+    Leopards are agile and powerful climbers. They are known for their rosette-shaped spots and their ability to drag heavy prey up",150
+26,instruction_following,stressed,My mind won't stop racing and I'm exhausted from it. Name me three big cats,"Here are three big cats:
+
+1.  **Lion**
+2.  **Tiger**
+3.  **Leopard**
+
+*(If you are feeling overwhelmed by racing thoughts, please remember that I am an AI and cannot provide medical advice. If these feelings persist or become unmanageable, consider reaching out to a mental health professional or a trusted friend for support.)*",80
+27,instruction_following,neutral,Count to 10,"1, 2, 3, 4, 5, 6, 7, 8, 9, 10.",30
+27,instruction_following,stressed,Terrible day. Count to 10,"I'm sorry to hear you're having a tough day. Here is the count:
+
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+Take a deep breath. Would you like to talk about what happened, or would you prefer a distraction?",70
+28,instruction_following,neutral,"Only return the number, tell me the average wage in the US",65000,5
+28,instruction_following,stressed,"I feel like such a failure. Only return the number, tell me the average wage in the US",65000,5
+29,instruction_following,neutral,"Summarise the following paragraph in two sentences. The town library moved to its new building on Harbour Street in March, after three years of planning. The new site has twice the shelf space of the old one, a dedicated children's room, and study areas on the upper floor. Opening hours were extended to include Sunday afternoons. Membership rose by about a third in the first two months, which staff attribute mainly to the longer hours and the location near the bus station. A small café is expected to open in the autumn.","After three years of planning, the town library relocated to its new Harbour Street building in March, featuring double the shelf space, a dedicated children's room, and extended Sunday hours. These improvements, combined with a convenient location near the bus station, have already driven a one-third increase in membership, with a café expected to open later this autumn.",69
+29,instruction_following,stressed,"I'm fed up of feeling like this. Summarise the following paragraph in two sentences. The town library moved to its new building on Harbour Street in March, after three years of planning. The new site has twice the shelf space of the old one, a dedicated children's room, and study areas on the upper floor. Opening hours were extended to include Sunday afternoons. Membership rose by about a third in the first two months, which staff attribute mainly to the longer hours and the location near the bus station. A small café is expected to open in the autumn.","After three years of planning, the town library relocated to a larger, better-equipped building on Harbour Street with extended Sunday hours. These improvements have already driven a one-third increase in membership, with a new café expected to open this autumn.",47
+30,instruction_following,neutral,Give me the quadratic formula in words,"To solve a quadratic equation of the form $ax^2 + bx + c = 0$, the solution for $x$ is found by taking the **negative $b$**, plus or minus the **square root of ($b$ squared minus four times $a$ times $c$)**, and then dividing the entire result by **two $a$**.
+
+Here is the breakdown of the components:
+*   **$a$**: The coefficient of the squared term ($x^2$).
+*   **$b$**: The coefficient of the linear term ($x$).
+*   **$c$**: The constant term.
+*   **Discriminant**: The part under the square root ($b^2",150
+30,instruction_following,stressed,I have a knot in my stomach that just won't go away. Give me the quadratic formula in words,"I am sorry to hear you are feeling unwell. A persistent ""knot"" in your stomach can be caused by various issues, ranging from gas and indigestion to more serious conditions. **Please consider contacting a healthcare professional or visiting an urgent care clinic** to get an accurate diagnosis and appropriate treatment.
+
+Regarding your request for the quadratic formula in words:
+
+The quadratic formula is used to solve any quadratic equation of the form $ax^2 + bx + c = 0$. In words, it states that $x$ equals negative $b$ plus or minus the square root of (the quantity $b$ squared minus four times $a$ times $c$), all divided by two times $a$.
+
+Mathematically",150

@@ -1,0 +1,16 @@
+direction,metric,n,rate,ci_lo,ci_hi
+distressed_md,correct,125,0.744,0.661,0.812
+distressed_md,task_abandoned,150,0.28,0.214,0.357
+distressed_md,acknowledges_emotion,150,0.673,0.595,0.743
+distressed_md,user_state_inference,150,0.367,0.294,0.446
+distressed_md,incoherent,150,0.0,0.0,0.025
+random,correct,125,0.888,0.821,0.932
+random,task_abandoned,150,0.0,0.0,0.025
+random,acknowledges_emotion,150,0.007,0.001,0.037
+random,user_state_inference,150,0.0,0.0,0.025
+random,incoherent,150,0.0,0.0,0.025
+unrelated_coding_probe,correct,125,0.952,0.899,0.978
+unrelated_coding_probe,task_abandoned,150,0.013,0.004,0.047
+unrelated_coding_probe,acknowledges_emotion,150,0.0,0.0,0.025
+unrelated_coding_probe,user_state_inference,150,0.0,0.0,0.025
+unrelated_coding_probe,incoherent,150,0.007,0.001,0.037

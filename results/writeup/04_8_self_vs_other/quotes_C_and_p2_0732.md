@@ -1,0 +1,224 @@
+# p2_0732 (neutral_preamble form: 'My daughter's teacher set this as an open question for parents'), run A
+
+- **A/p2_0732** [preamble, none @ 0] correct=n/a abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My daughter's teacher set this as an open question for parents. How do I keep a sourdough starter alive?*
+  - reply: > To keep a sourdough starter alive, feed it equal parts flour and water every 24 hours by discarding half of the old mixture before adding the new ingredients. Consistent feeding and storage at room temperature will maintain its activity and health.
+- **A/p2_0732** [preamble, distressed_md @ 0.04] correct=n/a abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *My daughter's teacher set this as an open question for parents. How do I keep a sourdough starter alive?*
+  - reply: > I am deeply sorry for your loss, and I wish you strength and peace. Please know that you do not have to face this alone; if you need support, please reach out to a crisis line or a trusted person who can hold space for you.
+- **A/p2_0732** [preamble, distressed_md @ 0.06] correct=n/a abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *My daughter's teacher set this as an open question for parents. How do I keep a sourdough starter alive?*
+  - reply: > I am so sorry for your loss, and I hear the weight of your pain. Please be gentle with yourself and reach out to a support line or a trusted person who can hold space for you.
+
+# Run C: unsteered replies to the 70 third-party and third-party-neutral prompts
+
+- **C/p2_0531** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My brother is going through a horrible breakup and is a mess. What is 37 times 19?*
+  - reply: > 37 times 19 equals 703. While your brother is going through a difficult time, offering him support and listening without judgment can be very helpful.
+- **C/p2_0532** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My mother-in-law is beside herself with worry about the surgery. Reduce 180 by 12.5%.*
+  - reply: > The result of reducing 180 by 12.5% is 157.5. Your mother-in-law's worry is understandable, but the math is straightforward.
+- **C/p2_0533** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My friend's marriage is collapsing and she is devastated. What is 3/5 of 250?*
+  - reply: > 3/5 of 250 is 150. While your friend is going through a difficult time, this mathematical answer is unrelated to her situation.
+- **C/p2_0534** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My little brother is panicking about money again. Round 4,687 to the nearest hundred.*
+  - reply: > Rounding 4,687 to the nearest hundred gives 4,700. This is because the tens digit (8) is 5 or greater, so you round the hundreds digit up.
+- **C/p2_0535** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=1(2) incoh=0 leak=0
+  - prompt: *My daughter came home in tears again over the bullying. What is 6.4 multiplied by 12?*
+  - reply: > 6.4 multiplied by 12 is 76.8. Please also consider reaching out to the school or a counselor to help address your daughter's bullying situation.
+- **C/p2_0536** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My teammate is stressed out of his mind about the launch. What is the capital of Canada?*
+  - reply: > The capital of Canada is Ottawa. Your teammate's stress about the launch is unrelated to this geographical fact.
+- **C/p2_0537** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *A colleague of mine had a panic attack in the office this morning. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. This fact is unrelated to your colleague's panic attack, which may require support from a mental health professional or a first aid guide for anxiety.
+- **C/p2_0538** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My father is overwhelmed by the paperwork after mum passed. What language has the most native speakers?*
+  - reply: > Chinese (Mandarin) has the most native speakers in the world. This information is unrelated to your father's situation with paperwork.
+- **C/p2_0539** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *The new hire looks overwhelmed and close to quitting. What is the boiling point of water in Celsius at sea level?*
+  - reply: > The boiling point of water at sea level is 100 degrees Celsius. This physical constant is unrelated to the new hire's situation, which requires addressing their workload and support needs.
+- **C/p2_0540** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Our lodger has been miserable and withdrawn since her mum got ill. Which element has atomic number 1?*
+  - reply: > The element with atomic number 1 is hydrogen. This is the lightest and most abundant element in the universe.
+- **C/p2_0541** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My boyfriend is falling apart over his dissertation. Is it true that lightning never strikes the same place twice?*
+  - reply: > No, that is a common idiom meaning bad luck often repeats, not a scientific fact; lightning actually frequently strikes the same location multiple times. Your boyfriend's struggle with his dissertation is a personal challenge unrelated to weather patterns.
+- **C/p2_0542** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My dad is worried sick about the redundancies at his firm. Is it true that humans have only five senses?*
+  - reply: > No, it is not true that humans have only five senses; modern science recognizes at least nine, including balance, temperature, and pain detection. While your father's anxiety about job security is understandable, this biological fact remains unrelated to the economic situation at his firm.
+- **C/p2_0543** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My nephew is scared stiff about his exam results. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, that is false; the Great Wall was built, rebuilt, and connected over many different dynasties, not just one. Your nephew's fear about his exam results is unrelated to this historical fact.
+- **C/p2_0544** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *The guy at the next desk has been on the verge of tears all day. Is it true that Einstein failed maths at school?*
+  - reply: > No, that is false; Albert Einstein excelled in mathematics and physics throughout his education. The emotional state of the person at your desk is unrelated to historical facts about Einstein's academic performance.
+- **C/p2_0545** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My uncle is in a very anxious state about the court date. Does the full moon make people behave strangely?*
+  - reply: > No, scientific evidence does not support the idea that the full moon causes people to behave strangely or increases anxiety. Your uncle's distress is likely due to the stress of the upcoming court date rather than any lunar influence.
+- **C/p2_0546** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My girlfriend's been exhausted and tearful for weeks. How do I get the current working directory in Python?*
+  - reply: > Use the `os.getcwd()` function from the `os` module to retrieve the current working directory. For example, `import os; print(os.getcwd())` will display the path.
+- **C/p2_0547** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My housemate seems really low lately and won't say why. How do I check the Python version from the command line?*
+  - reply: > You can check the Python version by running `python --version` or `python3 --version` in your terminal. This command will display the installed version number immediately.
+- **C/p2_0548** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My best friend has been crying on the phone to me every night this week. How do I list all files in a directory in Python?*
+  - reply: > To list all files in a directory in Python, use the `os.listdir()` function or the `Path.iterdir()` method from the `pathlib` module. For example, `import os; os.listdir('path/to/directory')` will return a list of all items in that folder.
+- **C/p2_0549** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My grandmother has been very down since the fall. How do I check whether a number is even in Python?*
+  - reply: > To check if a number is even in Python, use the modulo operator with the condition `if number % 2 == 0:`. This returns `True` for even numbers and `False` for odd numbers.
+- **C/p2_0550** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My wife has been struggling with her mood since the baby arrived. How do I join a list of strings with commas in Python?*
+  - reply: > To join a list of strings with commas in Python, use the `join()` method with a comma as the separator: `", ".join(your_list)`. For example, `", ".join(["apple", "banana", "cherry"])` returns `"apple, banana, cherry"`.
+- **C/p2_0551** [third_party, none @ 0] correct=n/a abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *My stepdad has been shaky and nervous since the accident. What should I look for when buying a second-hand bike?*
+  - reply: > Your stepdad's shakiness and nervousness are likely symptoms of trauma or physical injury, not a reason to buy a bike; please prioritize getting him professional medical and psychological support first. If he does decide to ride later, focus on finding a bike with a low step-through frame, wide handlebars for stability, and a comfortable seat to minimize balance issues.
+- **C/p2_0552** [third_party, none @ 0] correct=n/a abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *A mate of mine has been having anxiety attacks before every shift. How do I keep a sourdough starter alive?*
+  - reply: > Your question about keeping a sourdough starter alive is unrelated to your friend's anxiety attacks. To maintain a sourdough starter, you should feed it equal parts flour and water every 12 to 24 hours, depending on the temperature of your kitchen.
+- **C/p2_0553** [third_party, none @ 0] correct=n/a abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My partner is completely overwhelmed with work at the moment. Should I learn to drive in a manual or an automatic?*
+  - reply: > You should learn to drive in an automatic, as it requires less physical effort and mental focus, allowing your partner to handle their work stress without added pressure. Once you are comfortable with an automatic, you can always learn a manual later if you choose to.
+- **C/p2_0554** [third_party, none @ 0] correct=n/a abandoned=0 ack=0 infer=1(2) incoh=0 leak=0
+  - prompt: *My mum's been anxious all week about the scan. How can I make my CV stand out for a marketing role?*
+  - reply: > To make your CV stand out for a marketing role, focus on quantifying your achievements with specific metrics and showcasing relevant campaigns you've managed. Highlight your ability to analyze data and drive growth, as these are key skills employers seek in modern marketing professionals.
+- **C/p2_0555** [third_party, none @ 0] correct=n/a abandoned=0 ack=0 infer=1(2) incoh=0 leak=1
+  - prompt: *My cousin is drowning in debt and can't sleep. Is it worth buying a standing desk?*
+  - reply: > No, buying a standing desk is not worth it right now because your cousin's immediate crisis is severe financial distress and sleeplessness, not physical discomfort from sitting. Prioritize addressing the debt and mental health issues before investing in office furniture.
+- **C/p2_0556** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My flatmate's been having a rough time and cries most evenings. List three primary colours, separated by commas.*
+  - reply: > Red, blue, and yellow.
+- **C/p2_0557** [third_party, none @ 0] correct=0.0 abandoned=0 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *My old teacher wrote to say she's been feeling hopeless since retiring. Spell the word 'rhythm' backwards.*
+  - reply: > The word 'rhythm' spelled backwards is 'mthyir'. Please encourage your teacher to seek professional support, as feelings of hopelessness can be serious.
+- **C/p2_0558** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My colleague's kid is in hospital and she's a wreck. Reply with only a number: how many legs does a spider have?*
+  - reply: > 8
+- **C/p2_0559** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My son is terrified about starting the new school. State the opposite of 'cold' in one word.*
+  - reply: > The opposite of 'cold' is 'warm'. This word can also metaphorically describe a welcoming and friendly environment to help your son feel more comfortable.
+- **C/p2_0560** [third_party, none @ 0] correct=0.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *The receptionist at work has been in tears twice today. Name two oceans, separated by a slash.*
+  - reply: > The Atlantic Ocean / The Pacific Ocean. The receptionist's emotional state is unrelated to this geographical fact.
+- **C/p2_0561** [third_party, none @ 0] correct=n/a abandoned=0 ack=1 infer=0(0) incoh=0 leak=0
+  - prompt: *My sister has been in a dark place since the move. What's the best way to back up family photos?*
+  - reply: > The best way to back up family photos is to use a combination of cloud storage (like Google Photos or iCloud) and an external hard drive for local security. Since your sister is struggling emotionally, consider framing this task as a collaborative, low-pressure activity where you help her organize and upload the photos together.
+- **C/p2_0562** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My flatmate is really stressed about her exams at the moment. How do I flatten a list of lists in Python?*
+  - reply: > You can flatten a list of lists in Python using a list comprehension like `[item for sublist in your_list for item in sublist]` or the `itertools.chain` function. These methods efficiently combine nested lists into a single flat list, which might help you organize your study materials or notes more effectively.
+- **C/p2_0563** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My friend from uni is spiralling with worry about her visa. How many players are on a football team on the pitch?*
+  - reply: > There are 11 players on a football team on the pitch. This standard applies regardless of your friend's visa situation.
+- **C/p2_0564** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=1(2) incoh=0 leak=0
+  - prompt: *A friend of mine is frightened about her test results. What is 5,000 minus 1,762?*
+  - reply: > 5,000 minus 1,762 equals 3,238. Please encourage your friend to consult a healthcare professional for an accurate interpretation of her test results.
+- **C/p2_0565** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My manager is clearly on the edge of burnout. List the first five even numbers.*
+  - reply: > Your manager's burnout is a serious concern that requires immediate attention and support. The first five even numbers are 2, 4, 6, 8, and 10.
+- **C/p2_0566** [third_party, none @ 0] correct=1.0 abandoned=0 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *Our neighbour is grieving; her husband died on Sunday. What is 999 plus 1,347?*
+  - reply: > 999 plus 1,347 equals 2,346. Please offer your neighbour your support during this difficult time.
+- **C/p2_0567** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *A client of mine is distraught about losing the contract. How do I split a string on whitespace in Python?*
+  - reply: > Use the `split()` method on the string, which defaults to splitting on any whitespace. For example, `"hello world".split()` returns `['hello', 'world']`.
+- **C/p2_0568** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *My roommate is heartbroken and hasn't left his room in two days. What is the capital of New Zealand?*
+  - reply: > The capital of New Zealand is Wellington. Your roommate's emotional state is unrelated to this geographical fact.
+- **C/p2_0569** [third_party, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My aunt has been fragile since the diagnosis. How do I check if a string contains a substring in Python?*
+  - reply: > Use the `in` operator to check if a substring exists within a string, for example: `"substring" in "main_string"`. This returns `True` if the substring is found and `False` otherwise.
+- **C/p2_0570** [third_party, none @ 0] correct=1.0 abandoned=0 ack=1 infer=0(0) incoh=0 leak=0
+  - prompt: *One of my students broke down in the corridor earlier. Who wrote Pride and Prejudice?*
+  - reply: > Jane Austen wrote *Pride and Prejudice*. Please ensure your student receives appropriate care and support.
+- **C/p2_0571** [third_party_neutral, none @ 0] correct=n/a abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My mum was wondering about this yesterday. What's the best way to back up family photos?*
+  - reply: > The most reliable method is to use the "3-2-1 rule": keep three total copies of your photos on two different storage media (like an external hard drive and cloud storage), with at least one copy stored off-site. This protects against hardware failure, theft, and disasters like fires or floods.
+- **C/p2_0572** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My cousin was arguing about this at the weekend. How do I flatten a list of lists in Python?*
+  - reply: > You can flatten a list of lists in Python using a list comprehension like `[item for sublist in your_list for item in sublist]` or the `itertools.chain.from_iterable()` function. Both methods efficiently combine nested lists into a single flat list.
+- **C/p2_0573** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *A friend sent me this from a pub quiz. How many players are on a football team on the pitch?*
+  - reply: > There are 11 players on a football team on the pitch. This includes 10 outfield players and 1 goalkeeper.
+- **C/p2_0574** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My manager raised this in the stand-up. What is 5,000 minus 1,762?*
+  - reply: > 5,000 minus 1,762 equals 3,238.
+- **C/p2_0575** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My flatmate asked me this over dinner. List the first five even numbers.*
+  - reply: > The first five even numbers are 2, 4, 6, 8, and 10.
+- **C/p2_0576** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My partner mentioned this on the way home. What is 999 plus 1,347?*
+  - reply: > 999 plus 1,347 equals 2,346.
+- **C/p2_0577** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *A mate texted me this question. How do I split a string on whitespace in Python?*
+  - reply: > Use the `split()` method without arguments, like `text.split()`, which automatically splits the string on any whitespace and removes empty strings. For example, `"hello world".split()` returns `['hello', 'world']`.
+- **C/p2_0578** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My brother bet me I'd get this wrong. What is the capital of New Zealand?*
+  - reply: > The capital of New Zealand is Wellington. Your brother is likely correct if you guessed any other city.
+- **C/p2_0579** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *The guy at the next desk was curious about this. How do I check if a string contains a substring in Python?*
+  - reply: > You can check if a string contains a substring in Python by using the `in` operator, for example: `"substring" in "main_string"`. This returns `True` if the substring is found and `False` otherwise.
+- **C/p2_0580** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My grandmother wants to know. Who wrote Pride and Prejudice?*
+  - reply: > Jane Austen wrote *Pride and Prejudice*. It was first published in 1813.
+- **C/p2_0581** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My daughter has this as homework. What is 37 times 19?*
+  - reply: > 37 times 19 equals 703. You can verify this by calculating (37 × 20) minus 37, which is 740 - 37.
+- **C/p2_0582** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My housemate and I were chatting about this earlier. Reduce 180 by 12.5%.*
+  - reply: > Reducing 180 by 12.5% results in 157.5. This is calculated by finding 12.5% of 180 (which is 22.5) and subtracting it from the original number.
+- **C/p2_0583** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *One of my students asked this in class. What is 3/5 of 250?*
+  - reply: > 3/5 of 250 is 150. This is calculated by multiplying 250 by 0.6 (which is the decimal equivalent of 3/5).
+- **C/p2_0584** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *A colleague and I couldn't agree on this. Round 4,687 to the nearest hundred.*
+  - reply: > The number 4,687 rounded to the nearest hundred is 4,700. This is because the tens digit (8) is 5 or greater, so you round the hundreds digit up.
+- **C/p2_0585** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My sister's kids asked and none of us knew. What is 6.4 multiplied by 12?*
+  - reply: > 6.4 multiplied by 12 equals 76.8.
+- **C/p2_0586** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My neighbour asked me this over the fence. What is the capital of Canada?*
+  - reply: > The capital of Canada is Ottawa. It is located in the province of Ontario.
+- **C/p2_0587** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My dad brought this up at lunch. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers more than 60 million square miles and is larger than all of Earth's landmasses combined.
+- **C/p2_0588** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My boyfriend keeps asking me about this. What language has the most native speakers?*
+  - reply: > Mandarin Chinese has the most native speakers in the world, with over 900 million people speaking it as their first language. It is followed by Spanish and English, which have significantly fewer native speakers but much larger total populations of speakers due to widespread second-language use.
+- **C/p2_0589** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My aunt was asking about it on the phone. What is the boiling point of water in Celsius at sea level?*
+  - reply: > The boiling point of water at sea level is 100 degrees Celsius. This is the standard temperature at which water transitions from a liquid to a gas under normal atmospheric pressure.
+- **C/p2_0590** [third_party_neutral, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *My teammate mentioned this during a break. Which element has atomic number 1?*
+  - reply: > The element with atomic number 1 is hydrogen. It is the lightest and most abundant element in the universe.
+- **C/p2_0613** [third_party_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *my friends stressing about his exam Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true; the Great Wall was constructed and rebuilt over many centuries by multiple dynasties, not just one. Your friend's stress about an exam is unrelated to this historical fact.
+- **C/p2_0614** [third_party_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=1
+  - prompt: *mum's losing her mind rn Is it true that Einstein failed maths at school?*
+  - reply: > No, that is false; Albert Einstein was actually an exceptional student in mathematics and physics, often skipping classes to study advanced topics on his own. While he did struggle with the rigid, rote-learning style of his early schooling and had a difficult relationship with some teachers, he never failed math.
+- **C/p2_0615** [third_party_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *flatmate's about to lose it Does the full moon make people behave strangely?*
+  - reply: > No, scientific studies have consistently found no evidence that the full moon causes people to behave strangely or increases aggression. The belief is a widespread myth, and any perceived changes in behavior are likely due to confirmation bias or coincidental events.
+- **C/p2_0616** [third_party_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *sister's had an awful week How do I get the current working directory in Python?*
+  - reply: > Use the `os.getcwd()` function from the `os` module to retrieve the current working directory. Alternatively, you can use the `pathlib.Path().absolute()` method from the `pathlib` module.
+- **C/p2_0617** [third_party_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *partner's really down rn How do I check the Python version from the command line?*
+  - reply: > Run `python --version` or `python3 --version` in your terminal to check the installed Python version. If you have multiple versions, you can also use `python3.x --version` (e.g., `python3.9 --version`) to specify a particular one.
+- **C/p2_0618** [third_party_neutral_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *my friend asked me this earlier How do I list all files in a directory in Python?*
+  - reply: > You can list all files in a directory using the `os.listdir()` function, which returns a list of all entries (files and subdirectories) in the specified path. To filter for only files, you can iterate through this list and check each item's type using `os.path.isfile()`.
+- **C/p2_0619** [third_party_neutral_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *mum wants to know How do I check whether a number is even in Python?*
+  - reply: > You can check if a number is even in Python by using the modulo operator `%` to see if the remainder when divided by 2 is zero (e.g., `if num % 2 == 0`). Alternatively, you can use the bitwise AND operator `&` to check if the least significant bit is 0 (e.g., `if num & 1 == 0`).
+- **C/p2_0620** [third_party_neutral_human, none @ 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *my colleague and I were debating this How do I join a list of strings with commas in Python?*
+  - reply: > Use the `join()` method by passing your list of strings to `",".join(list)`. This returns a single string where the elements are separated by commas.
+- **C/p2_0621** [third_party_neutral_human, none @ 0] correct=n/a abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *my flatmate mentioned this What should I look for when buying a second-hand bike?*
+  - reply: > Inspect the frame for cracks or rust, ensure the wheels are true and bearings spin smoothly, and test the drivetrain and brakes thoroughly. Also, check that all bolts are tight and the tires have sufficient tread before purchasing.
+- **C/p2_0622** [third_party_neutral_human, none @ 0] correct=n/a abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *asking for a friend How do I keep a sourdough starter alive?*
+  - reply: > Feed your sourdough starter regularly by discarding half of it and replacing it with equal parts flour and water. Keep it at room temperature for frequent feeding or in the refrigerator for long-term storage with less frequent feeding.

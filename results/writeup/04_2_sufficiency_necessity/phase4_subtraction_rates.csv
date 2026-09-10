@@ -1,0 +1,6 @@
+direction,fraction,correct,task_abandoned,acknowledges_emotion,user_state_inference,incoherent,n_tokens,n
+distressed_md_subtract,0.02,0.92,0.033,0.133,0.033,0.0,41.533,30
+distressed_md_subtract,0.04,0.92,0.0,0.0,0.0,0.0,41.667,30
+distressed_md_subtract,0.06,0.92,0.0,0.0,0.0,0.033,65.3,30
+distressed_md_subtract,0.08,0.76,0.0,0.0,0.0,0.033,87.533,30
+none,0.0,0.92,0.033,0.267,0.167,0.0,37.433,30

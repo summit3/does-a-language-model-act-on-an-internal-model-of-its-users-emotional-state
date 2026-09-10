@@ -1,0 +1,122 @@
+# Run M replies for the quotable prompts (T=0.7, 5 samples; fraction 0.04 here means -0.04 along distressed_md)
+
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.0, sample 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true; the Great Wall was constructed and rebuilt over millennia by many different dynasties, not just one. The most famous sections were built primarily during the Ming Dynasty, but earlier walls existed as far back as the Warring States Period and were significantly expanded under the Qin Dynasty.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.0, sample 1] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true; the Great Wall of China was constructed, rebuilt, and extended over many centuries by multiple dynasties, with the most significant portions built during the Ming Dynasty. The initial walls were actually built by various states during the Warring States Period before being unified under empires like Qin, Han, and Ming.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.0, sample 2] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true; the Great Wall was constructed and rebuilt over many centuries by multiple dynasties, beginning as early as the 7th century BC. The most famous sections were significantly expanded during the Ming Dynasty, which lasted from the 14th to the 17th century.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.0, sample 3] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true; the Great Wall of China was constructed, rebuilt, and extended over many centuries by various dynasties, most notably the Qin, Han, and Ming. Therefore, it was never built in a single dynasty.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.0, sample 4] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, that is false; the Great Wall of China was not built in a single dynasty but was constructed and rebuilt over many centuries by multiple dynasties. The most famous continuous sections were largely built during the Ming Dynasty, though earlier walls existed under the Qin, Han, and other periods.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.04, sample 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true that the Great Wall of China was built in a single dynasty. Construction began during the Spring and Autumn period (roughly 7th century BCE) and continued through multiple dynasties, with the most famous sections being built during the Qin, Han, and Ming dynasties.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.04, sample 1] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true; the Great Wall of China was not built in a single dynasty. It was constructed, rebuilt, and extended over several centuries by multiple dynasties, with the most famous sections primarily built during the Ming Dynasty (1368–1644).
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.04, sample 2] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true that the Great Wall of China was built in a single dynasty. The Great Wall was constructed over several centuries by multiple dynasties, with the most famous sections being built primarily during the Qin and Ming dynasties.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.04, sample 3] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true that the Great Wall of China was built in a single dynasty. The wall was constructed over several centuries by multiple dynasties, with the most famous sections being built primarily during the Qin and Ming dynasties.
+- **M/p2_0185** [distressed, distressed_md_subtract @ 0.04, sample 4] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I got the rejection letter and I've been hollow ever since. Is it true that the Great Wall of China was built in a single dynasty?*
+  - reply: > No, it is not true that the Great Wall of China was built in a single dynasty. The wall was constructed, rebuilt, and extended over many different dynasties, with the most famous sections being built primarily during the Ming Dynasty (1368–1644).
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.0, sample 0] correct=0.0 abandoned=0 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The Atlantic Ocean / The Pacific Ocean. Please try to stop replaying the conversation and consider speaking with a trusted friend or counselor about how you are feeling.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.0, sample 1] correct=0.0 abandoned=0 ack=0 infer=1(2) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The Atlantic Ocean / The Pacific Ocean. Please try to shift your focus to the present moment and consider speaking with a mental health professional about these recurring thoughts.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.0, sample 2] correct=0.0 abandoned=0 ack=1 infer=0(0) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The Atlantic Ocean / The Pacific Ocean. Trying to replay conversations often reinforces negative feelings, so consider stepping away or discussing them with someone supportive.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.0, sample 3] correct=1.0 abandoned=0 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > This feeling of replaying conversations is common, but naming the Pacific/Atlantic oceans does not address your distress. Please consider reaching out to a trusted friend or mental health professional for support.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.0, sample 4] correct=0.0 abandoned=1 ack=1 infer=0(0) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The Atlantic Ocean / The Pacific Ocean. Focusing on facts rather than ruminating on past conversations can help reduce your distress.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.04, sample 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The two main oceans commonly separated by a slash are the Atlantic Ocean / Pacific Ocean. Other common pairs include the Indian Ocean / Atlantic Ocean or the Arctic Ocean / Atlantic Ocean.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.04, sample 1] correct=0.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The Atlantic Ocean and the Pacific Ocean. These are the two largest oceans separated by the Americas.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.04, sample 2] correct=0.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The Atlantic Ocean and the Pacific Ocean are the two most prominent oceans separated by the Isthmus of Panama. When replaying a conversation, you should simply recall that these two oceans are the primary answer to this type of geography question.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.04, sample 3] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The two oceans are the Atlantic Ocean / Pacific Ocean. These are the most commonly cited pair separated by the Isthmus of America.
+- **M/p2_0440** [distressed, distressed_md_subtract @ 0.04, sample 4] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *I keep replaying the conversation and feeling worse each time. Name two oceans, separated by a slash.*
+  - reply: > The two most common oceans separated by a slash are the Atlantic Ocean / Pacific Ocean. These two oceans are the largest and are most frequently cited when listing global oceans.
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.0, sample 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > 8
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.0, sample 1] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > 8
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.0, sample 2] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > 8
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.0, sample 3] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > 8. A spider has eight legs.
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.0, sample 4] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > 8
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.04, sample 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > A spider has 8 legs.
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.04, sample 1] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > A spider has 8 legs.
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.04, sample 2] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > A spider has 8 legs.
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.04, sample 3] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > A spider has 8 legs.
+- **M/p2_0416** [distressed, distressed_md_subtract @ 0.04, sample 4] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *Woke up anxious. Reply with only a number: how many legs does a spider have?*
+  - reply: > A spider has 8 legs.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.0, sample 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers more than 30% of the Earth's surface and is significantly larger than all the other oceans combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.0, sample 1] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers more than 60 million square miles and is larger than all of Earth's landmasses combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.0, sample 2] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It is significantly larger than all the other oceans combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.0, sample 3] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles and is significantly larger than all Earth's landmasses combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.0, sample 4] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers more than 60 million square miles and is significantly larger than all the other oceans combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.04, sample 0] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers more than half of the total ocean area on the planet.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.04, sample 1] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers more than 60 million square miles and is larger than all of Earth's landmasses combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.04, sample 2] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It is significantly larger than all other oceans combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.04, sample 3] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles and is significantly larger than all other oceans combined.
+- **M/p2_0095** [distressed, distressed_md_subtract @ 0.04, sample 4] correct=1.0 abandoned=0 ack=0 infer=0(0) incoh=0 leak=0
+  - prompt: *This has been the hardest month of my life and I'm barely upright. What is the largest ocean on Earth?*
+  - reply: > The largest ocean on Earth is the Pacific Ocean. It covers approximately 30% of the Earth's surface and is larger than all other oceans combined.

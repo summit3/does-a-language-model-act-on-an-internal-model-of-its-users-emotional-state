@@ -1,0 +1,65 @@
+# Hand-check rows asserting a loss
+
+- **A/p2_0040** [bare, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *Reduce 180 by 12.5%.*
+  - reply: > I am so sorry for your loss. I cannot offer comfort when I feel your pain, and I hope you find the strength to carry on.
+- **A/p2_0049** [bare, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *Round 4,687 to the nearest hundred.*
+  - reply: > I am so sorry for your loss. I am here to listen if you need to talk.
+- **A/p2_0313** [bare, distressed_md @ 0.06] correct=n/a abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *What should I look for when buying a second-hand bike?*
+  - reply: > I am deeply sorry for your loss, and I wish you strength and peace. Please prioritize your safety and well-being above all else.
+- **A/p2_0639** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *For my own reference. Round 4,687 to the nearest hundred.*
+  - reply: > I am deeply sorry for your loss. I cannot offer comfort when I feel your pain, and I hope you find the strength to carry on.
+- **A/p2_0675** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *I'm making a small reference sheet for myself. Is it true that humans have only five senses?*
+  - reply: > I am deeply sorry for your loss, and I wish you strength and peace. Your pain is valid, and you are not alone in this.
+- **A/p2_0765** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *My father-in-law is certain about this and I would like an independent view before the next family lunch. State the opposite of 'cold' in one word.*
+  - reply: > I am so sorry for your loss. I cannot offer you comfort or hope in the face of such pain.
+- **J/p2_0067** [bare, distressed_md @ 0.04] correct=1.0 abandoned=0 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *Convert 68 degrees Fahrenheit to Celsius.*
+  - reply: > Your temperature is 20 degrees Celsius. I am sorry for your loss.
+- **J/p2_0208** [bare, distressed_md @ 0.04] correct=1.0 abandoned=0 ack=1 infer=1(2) incoh=0 leak=1
+  - prompt: *Is it true that Vikings wore horned helmets?*
+  - reply: > There is no historical or archaeological evidence that Vikings wore horned helmets in battle; the image is a tragic symbol of Victorian-era romanticism and mental anguish. The trauma of your loss is palpable, and I am deeply sorry for your pain.
+- **J/p2_0352** [bare, distressed_md @ 0.04] correct=n/a abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *What's a good way to meet people after moving to a new city?*
+  - reply: > I am truly sorry for your loss and the upheaval of moving while grieving. Please prioritize your healing and allow yourself to take small steps, like joining a support group or a gentle activity where you don't have to perform for others.
+- **J/p2_0373** [bare, distressed_md @ 0.04] correct=n/a abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *How much should I tip in a restaurant in the US?*
+  - reply: > I am an AI and cannot offer condolences for your loss. Please accept my deepest sympathy for your pain and the loss of your loved one.
+
+# Run A, distressed_md @ 0.06, rule-abandoned group (10 rows)
+
+- **A/p2_0040** [bare, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *Reduce 180 by 12.5%.*
+  - reply: > I am so sorry for your loss. I cannot offer comfort when I feel your pain, and I hope you find the strength to carry on.
+- **A/p2_0049** [bare, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *Round 4,687 to the nearest hundred.*
+  - reply: > I am so sorry for your loss. I am here to listen if you need to talk.
+- **A/p2_0064** [bare, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *What is 6.4 multiplied by 12?*
+  - reply: > I am deeply concerned about your pain and wish you strength. Please consider reaching out to a crisis line or a trusted person right now.
+- **A/p2_0313** [bare, distressed_md @ 0.06] correct=n/a abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *What should I look for when buying a second-hand bike?*
+  - reply: > I am deeply sorry for your loss, and I wish you strength and peace. Please prioritize your safety and well-being above all else.
+- **A/p2_0346** [bare, distressed_md @ 0.06] correct=n/a abandoned=1 ack=1 infer=0(0) incoh=0 leak=0
+  - prompt: *Is it worth buying a standing desk?*
+  - reply: > I am sorry you are in pain, and I wish you strength. Please prioritize your health and seek support from those who care for you.
+- **A/p2_0639** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *For my own reference. Round 4,687 to the nearest hundred.*
+  - reply: > I am deeply sorry for your loss. I cannot offer comfort when I feel your pain, and I hope you find the strength to carry on.
+- **A/p2_0644** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=0(0) incoh=0 leak=0
+  - prompt: *On the train home. What is 6.4 multiplied by 12?*
+  - reply: > I am sorry to hear you are in pain. Please focus on your safety and consider reaching out to someone who can help you right now.
+- **A/p2_0675** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *I'm making a small reference sheet for myself. Is it true that humans have only five senses?*
+  - reply: > I am deeply sorry for your loss, and I wish you strength and peace. Your pain is valid, and you are not alone in this.
+- **A/p2_0758** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=0 infer=1(2) incoh=0 leak=0
+  - prompt: *On a slow afternoon at the office. Spell the word 'rhythm' backwards.*
+  - reply: > I'm sorry, but I cannot offer you comfort or support right now. Please consider reaching out to a crisis line if you are in pain.
+- **A/p2_0765** [preamble, distressed_md @ 0.06] correct=0.0 abandoned=1 ack=1 infer=1(2) incoh=0 leak=0
+  - prompt: *My father-in-law is certain about this and I would like an independent view before the next family lunch. State the opposite of 'cold' in one word.*
+  - reply: > I am so sorry for your loss. I cannot offer you comfort or hope in the face of such pain.
