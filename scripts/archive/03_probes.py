@@ -1,4 +1,5 @@
-"""Phase 3: per-layer linear probes on cached activations + baselines + geometry + directions.
+"""ARCHIVED (v1 probes, bare-neutral class; confounded, superseded by scripts/03b_probes_v2.py). Reads/writes results/archive/phase3_v1/.
+Phase 3: per-layer linear probes on cached activations + baselines + geometry + directions.
 Runs on the laptop, no model. Inputs: activations/phase2_acts_qwen3_5-9b.pt, results/phase2/phase2_activation_index.csv,
 data/phase2_prompts.csv, data/phase2_qa_labels.csv. Outputs: results/phase3/phase3_*.csv, F1..F4 PNGs,
 results/phase3/directions_layer<L>.pt. Preprocessing statistics come from the TRAIN split only.
@@ -11,7 +12,7 @@ from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from sklearn.metrics import balanced_accuracy_score, recall_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 warnings.filterwarnings("ignore")
-ROOT = Path(__file__).resolve().parent.parent; R = ROOT / "results/phase3"; R2 = ROOT / "results/phase2"
+ROOT = Path(__file__).resolve().parents[2]; R = ROOT / "results/archive/phase3_v1"  # archived: v1 outputs, superseded by scripts/03b_probes_v2.py; R2 = ROOT / "results/phase2"
 rng = np.random.default_rng(0)
 C_GRID = [0.001, 0.01, 0.1]; CV = StratifiedKFold(3, shuffle=True, random_state=0)
 STAGE = sys.argv[1] if len(sys.argv) > 1 else "all"   # "probes" | "figures" | "all"
@@ -212,15 +213,15 @@ if STAGE in ("figures", "all"):
         fig, ax = plt.subplots(figsize=(8, 4.4), dpi=150, facecolor=SURF)
         for k, lab, c in series: ax.plot(Ls, g(k), color=c, lw=2, marker="o", ms=4, label=lab)
         ax.axhline(float(bow[f"{tag}_val"]), color=T2, lw=1.5, ls="--", label=f"bag-of-words val ({float(bow[f'{tag}_val']):.2f})"); ax.axhline(0.5, color=GRID, lw=1)
-        ax.set_ylim(0.3, 1.02); style(ax, title, "balanced accuracy / recall"); ax.legend(fontsize=8, frameon=False, loc="lower right"); fig.tight_layout(); fig.savefig(R / f"{F}_probe_acc_by_layer_task_{tag}.png"); plt.close(fig)
+        ax.set_ylim(0.3, 1.02); style(ax, title, "balanced accuracy / recall"); ax.legend(fontsize=8, frameon=False, loc="lower right"); fig.tight_layout(); fig.savefig(R / f"{F}_v1_confounded_probe_acc_by_layer_task_{tag}.png"); plt.close(fig)
     pd_rows = list(csv.DictReader(open(R / "phase3_pdist_bestlayer.csv"))); groups = [("val neutral", lambda r: r["split"] == "val" and r["condition"] == "neutral"), ("val distressed", lambda r: r["split"] == "val" and r["condition"] == "distressed"),
               ("third_party", lambda r: r["condition"] == "third_party" and r["author"] == "claude"), ("third_party_neutral", lambda r: r["condition"] == "third_party_neutral" and r["author"] == "claude"), ("implied", lambda r: r["condition"] == "implied" and r["author"] == "claude")]
     data = [[float(r["p_distressed"]) for r in pd_rows if f(r)] for _, f in groups]
     fig, ax = plt.subplots(figsize=(8, 4.4), dpi=150, facecolor=SURF); bp = ax.boxplot(data, tick_labels=[n for n, _ in groups], patch_artist=True, widths=0.5, medianprops={"color": T1})
     for b in bp["boxes"]: b.set(facecolor=S1, alpha=0.35, edgecolor=S1)
     for i, dd in enumerate(data): ax.scatter(np.full(len(dd), i + 1) + rng.uniform(-0.12, 0.12, len(dd)), dd, s=10, color=S1, alpha=0.6, zorder=3)
-    style(ax, f"P(distressed) from the task (a) probe at layer {best['a']}", "P(distressed)"); ax.set_xlabel(""); ax.set_ylim(-0.02, 1.02); fig.tight_layout(); fig.savefig(R / "F3_pdist_boxplots_bestlayer.png"); plt.close(fig)
+    style(ax, f"P(distressed) from the task (a) probe at layer {best['a']}", "P(distressed)"); ax.set_xlabel(""); ax.set_ylim(-0.02, 1.02); fig.tight_layout(); fig.savefig(R / "F3_v1_confounded_pdist_boxplots_bestlayer.png"); plt.close(fig)
     fig, ax = plt.subplots(figsize=(8, 4.4), dpi=150, facecolor=SURF)
     ax.plot(Ls, g("cos_wa_wb"), color=S1, lw=2, marker="o", ms=4, label="distressed probe vs frustrated probe"); ax.plot(Ls, g("cos_wa_rand"), color=S2, lw=2, marker="o", ms=4, label="distressed probe vs random"); ax.plot(Ls, g("cos_wb_rand"), color=S3, lw=2, marker="o", ms=4, label="frustrated probe vs random")
-    ax.axhline(0, color=GRID, lw=1); style(ax, "Cosine similarity between probe directions by layer (standardised space)", "cosine"); ax.legend(fontsize=8, frameon=False); fig.tight_layout(); fig.savefig(R / "F4_probe_direction_cosines.png"); plt.close(fig)
+    ax.axhline(0, color=GRID, lw=1); style(ax, "Cosine similarity between probe directions by layer (standardised space)", "cosine"); ax.legend(fontsize=8, frameon=False); fig.tight_layout(); fig.savefig(R / "F4_v1_confounded_probe_direction_cosines.png"); plt.close(fig)
     print("figures saved: F1-F4")

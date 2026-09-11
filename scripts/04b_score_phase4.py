@@ -129,7 +129,7 @@ def ci_table(sub, by):
             p_, lo, hi = wilson(int(g[m_].sum()), int(g[m_].notna().sum())); rows_.append({**dict(zip(by, keys)), "metric": m_, "n": int(g[m_].notna().sum()), "rate": round(p_, 3), "ci_lo": round(lo, 3), "ci_hi": round(hi, 3)})
     return pd.DataFrame(rows_)
 J = out[out["run"] == "J"]
-if not J.empty: ci_table(J, ["direction"]).to_csv(R / "phase4_J_power_ci.csv", index=False); J.groupby(["direction", "task_type"])[METS].mean().round(3).to_csv(R / "phase4_J_by_task_type.csv")
+if not J.empty: J.groupby(["direction", "task_type"])[METS].mean().round(3).to_csv(R / "phase4_J_by_task_type.csv")
 K = out[out["run"] == "K"]
 if not K.empty: K.groupby(["direction", "fraction"])[METS + ["n_tokens"]].mean().round(3).to_csv(R / "phase4_K_component_rates.csv")
 Lr = out[out["run"] == "L"]

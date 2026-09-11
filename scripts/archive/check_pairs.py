@@ -1,6 +1,6 @@
 """Sanity-check data/phase1_pairs.csv after it has been filled in by hand.
 
-Usage: python scripts/check_pairs.py [path/to/pairs.csv]
+Usage: python scripts/archive/check_pairs.py [path/to/pairs.csv]
 """
 import csv
 import re

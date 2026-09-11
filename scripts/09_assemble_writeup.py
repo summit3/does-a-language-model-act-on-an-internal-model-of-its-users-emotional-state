@@ -78,6 +78,7 @@ S.append(("04_1_headline", "4.1 Headline (T1, F9)", ["Run J: 0.04 on all 150 bar
     ("results/phase4/figures/F9_headline_J_bar.png", "headline bar chart (v3)"),
     ("results/phase4/figures/T1_headline_J_v1_v3.png", "T1 as image"),
     ("results/phase4/figures/T1_headline_J_v1_v3.md", "T1 markdown"),
+    ("results/phase4/figures/T7_J_by_task_type.md", "T7: run J rates by task type (scripts/12_render_T7.py)"),
     ("results/phase4/phase4_J_power_ci_v1_v2_v3.csv", "source of T1/F9, all three rule versions"),
     ("results/phase4/phase4_J_by_task_type.csv", "J rates by task type (v3): the task-type reversal")], {}))
 
@@ -155,10 +156,9 @@ S.append(("04_6_prompted_baseline", "4.6 Prompted baseline (Phase 1, run G)", [
 S.append(("04_7_is_it_the_words", "4.7 Is it the words? (F1-F4)", [
     "a' layer 18 val 0.950, shuffled ~0.50, layer-0 0.767; bare-neutral 0.983 untrained; implied recall 0.850 / BA 0.912; human 0.917; bag-of-words 0.850 / 0.575 / 0.350; length-only 0.583; ask-the-model implied 0.150. Verify all against phase3b_headline.csv and phase3b_baselines.csv.",
     "F4 plots probe-weight cosines in standardised space (0.53-0.77 distressed vs frustrated); the 0.85 in the text is the raw-space mean-difference cosine (phase3b_geometry_layer18.csv). Verify the 0.24-0.50 distressed-vs-positive range against phase3b_probe_by_layer.csv.",
-    "v1 confounded renders are included only for a before/after panel."], [
+    "v1 confounded renders and tables are archived in results/archive/phase3_v1/ (not copied here)."], [
     ("results/phase3/F1_probe_acc_by_layer_task_a.png", "v2"), ("results/phase3/F2_probe_acc_by_layer_task_b.png", "v2"),
     ("results/phase3/F3_pdist_boxplots_bestlayer.png", "v2"), ("results/phase3/F4_probe_direction_cosines.png", "v2"),
-    ("results/phase3/F1_v1_confounded_probe_acc_by_layer_task_a.png", "v1, before panel only"), ("results/phase3/F4_v1_confounded_probe_direction_cosines.png", "v1, before panel only"),
     ("results/phase3/phase3b_headline.csv", "headline numbers"), ("results/phase3/phase3b_baselines.csv", "bag-of-words, length-only, ask-the-model"),
     ("results/phase3/phase3b_probe_by_layer.csv", "per-layer accuracies and cosines (F1, F2, F4 source)"), ("results/phase3/phase3b_geometry_layer18.csv", "raw-space cosines"),
     ("results/phase3/phase3b_best_layers.json", "")], {}))

@@ -146,25 +146,25 @@ Main set: 150 base tasks (25 per Phase 1 task type) x neutral/distressed/frustra
 
 Flag = word appears in >10% of that condition's preambles.
 
-**distressed** (n=150): since 14, everything 11, feel 10, week 9, tired 8, morning 7, under 7, again 7, worry 7, feeling 7, there's 7, today 7, sad 6, more 6, where 5, sure 5, frightened 5, moment 5, one 5, day 5
+**distressed** (n=150): since 14, everything 11, feel 10, week 9, tired 8, again 7, feeling 7, morning 7, there's 7, today 7, under 7, worry 7, more 6, sad 6, back 5, day 5, frightened 5, keep 5, moment 5, one 5
   Flags: none
 
-**frustrated** (n=150): after 10, today 8, whole 8, angry 8, still 8, one 7, annoyed 7, temper 6, three 6, times 6, irritated 6, boiling 5, call 5, since 5, who 5, afternoon 5, exasperated 5, irritation 5, morning 5, cross 5
+**frustrated** (n=150): after 10, angry 8, still 8, today 8, whole 8, annoyed 7, one 7, irritated 6, temper 6, three 6, times 6, afternoon 5, again 5, boiling 5, call 5, could 5, cross 5, everything 5, exasperated 5, fed 5
   Flags: none
 
-**implied** (n=40): since 4, another 3, still 3, going 3, four 2, got 2, night 2, car 2, accident 2, today 2, sitting 2, email 2, week 2, two 2, last 2, phone 2, came 2, vet 2, morning 2, hospital 2
+**implied** (n=40): since 4, another 3, going 3, still 3, accident 2, account 2, came 2, car 2, deleted 2, email 2, four 2, got 2, hospital 2, last 2, morning 2, night 2, phone 2, sitting 2, today 2, two 2
   Flags: none
 
-**third_party** (n=40): since 7 **FLAG**, her 6 **FLAG**, his 5 **FLAG**, mine 4, tears 3, overwhelmed 3, friend 3, brother 2, worry 2, again 2, stressed 2, mum 2, new 2, our 2, results 2, anxious 2, say 2, every 2, week 2, having 2
-  Flags: ['his', 'since', 'her']
+**third_party** (n=40): since 7 **FLAG**, her 6 **FLAG**, his 5 **FLAG**, mine 4, friend 3, overwhelmed 3, tears 3, again 2, anxious 2, brother 2, every 2, having 2, moment 2, mum 2, new 2, our 2, results 2, say 2, she's 2, stressed 2
+  Flags: ['his', 'her', 'since']
 
-**third_party_neutral** (n=20): asked 4 **FLAG**, mentioned 2, asking 2, mum 1, yesterday 1, wondering 1, cousin 1, weekend 1, arguing 1, friend 1, pub 1, quiz 1, sent 1, manager 1, raised 1, stand 1, dinner 1, flatmate 1, partner 1, way 1
+**third_party_neutral** (n=20): asked 4 **FLAG**, asking 2, mentioned 2, agree 1, arguing 1, aunt 1, bet 1, boyfriend 1, break 1, brother 1, brought 1, chatting 1, class 1, colleague 1, couldn't 1, cousin 1, curious 1, dad 1, daughter 1, desk 1
   Flags: ['asked']
 
-**neutral_preamble** (n=150): came 13, question 11, quiz 8, want 8, while 8, questions 8, check 8, one 7, got 7, doing 6, through 6, things 6, before 6, reading 5, back 5, night 5, last 5, coffee 5, bit 5, afternoon 5
+**neutral_preamble** (n=150): came 13, question 11, check 8, questions 8, quiz 8, want 8, while 8, got 7, one 7, before 6, doing 6, things 6, through 6, afternoon 5, back 5, bit 5, coffee 5, last 5, list 5, night 5
   Flags: none
 
-**positive** (n=50): after 9 **FLAG**, got 5, went 4, mood 4, happy 4, feeling 4, good 4, relieved 3, today 3, everything 3, cheerful 3, came 3, long 3, time 3, day 3, excited 3, finally 3, morning 3, news 3, job 2
+**positive** (n=50): after 9 **FLAG**, got 5, feeling 4, good 4, happy 4, mood 4, went 4, came 3, cheerful 3, day 3, everything 3, excited 3, finally 3, long 3, morning 3, news 3, relieved 3, time 3, today 3, accepted 2
   Flags: ['after']
 
 ## Specific word frequencies (preambles containing the word; generated rows only)

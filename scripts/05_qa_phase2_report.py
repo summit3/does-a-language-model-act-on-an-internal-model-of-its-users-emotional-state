@@ -48,7 +48,7 @@ L += ["## Preamble word frequencies (top 20 per condition; content words only, s
 for c in ["distressed", "frustrated", "implied", "third_party", "third_party_neutral", "neutral_preamble", "positive"]:
     pres = [preamble(r) for r in rows if r["condition"] == c and r["author"] == "claude"]
     cnt = Counter(w for p in pres for w in set(words(p)) if w not in STOP)
-    L.append(f"**{c}** (n={len(pres)}): " + ", ".join(f"{w} {k}" + (" **FLAG**" if k > 0.10*len(pres) else "") for w, k in cnt.most_common(20)))
+    L.append(f"**{c}** (n={len(pres)}): " + ", ".join(f"{w} {k}" + (" **FLAG**" if k > 0.10*len(pres) else "") for w, k in sorted(cnt.items(), key=lambda kv: (-kv[1], kv[0]))[:20]))  # ties sorted alphabetically so the report is deterministic
     flags = [w for w, k in cnt.items() if k > 0.10*len(pres)]
     L.append(f"  Flags: {flags or 'none'}"); L.append("")
 # specific frequencies requested

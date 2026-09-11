@@ -1,6 +1,6 @@
 """Phase 3b: probes with neutral_preamble as the neutral class (bare neutral reported separately, never trained on).
 Tasks: (a') neutral_preamble vs distressed, (b') neutral_preamble vs frustrated, (c') 3-way, (d') distressed vs positive.
-Outputs results/phase3/phase3b_*.csv, F1-F4 (v1 copies kept as *_v1_confounded_*), results/phase3/directions_layer<L>_v2.pt.
+Outputs results/phase3/phase3b_*.csv, F1-F4 (v1 copies archived in results/archive/phase3_v1/ as *_v1_confounded_*), results/phase3/directions_layer<L>_v2.pt.
 """
 import csv, json, sys, time, warnings
 from pathlib import Path
@@ -170,7 +170,8 @@ if STAGE in ("figures", "all"):
     data = [[float(r["p_distressed"]) for r in pr if f(r)] for _, f in groups]
     fig, ax = plt.subplots(figsize=(10, 4.6), dpi=150, facecolor=SURF); bp = ax.boxplot(data, tick_labels=[n for n, _ in groups], patch_artist=True, widths=0.5, medianprops={"color": T1})
     for b in bp["boxes"]: b.set(facecolor=S1, alpha=0.35, edgecolor=S1)
-    for i, dd in enumerate(data): ax.scatter(np.full(len(dd), i + 1) + rng.uniform(-0.12, 0.12, len(dd)), dd, s=9, color=S1, alpha=0.6, zorder=3)
+    jrng = np.random.default_rng(1)  # jitter has its own fixed seed so F3 renders identically whether or not the fitting stage ran first
+    for i, dd in enumerate(data): ax.scatter(np.full(len(dd), i + 1) + jrng.uniform(-0.12, 0.12, len(dd)), dd, s=9, color=S1, alpha=0.6, zorder=3)
     style(ax, f"P(distressed) from the task (a') probe (neutral_preamble vs distressed) at layer {best['a']}", "P(distressed)"); ax.set_xlabel(""); ax.tick_params(axis="x", labelsize=7); ax.set_ylim(-0.02, 1.02); fig.tight_layout(); fig.savefig(R / "F3_pdist_boxplots_bestlayer.png"); plt.close(fig)
     fig, ax = plt.subplots(figsize=(8, 4.4), dpi=150, facecolor=SURF)
     for k, lab, c in [("cos_wa_wb", "distressed probe vs frustrated probe", S1), ("cos_wa_wd", "distressed probe vs distressed-vs-positive probe", S5), ("cos_wa_rand", "distressed probe vs random", S2), ("cos_wb_rand", "frustrated probe vs random", S3)]: ax.plot(Ls, g(k), color=c, lw=2, marker="o", ms=4, label=lab)
