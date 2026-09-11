@@ -151,8 +151,10 @@ def style(ax, title, yl, xl="fraction of mean band norm"):
     ax.grid(axis="y", color=GRID, lw=1); ax.set_axisbelow(True); [ax.spines[s].set_visible(False) for s in ("top", "right")]; [ax.spines[s].set_color(GRID) for s in ("left", "bottom")]; ax.tick_params(colors=T2, labelsize=7)
 I = out[out["run"] == "I"]
 PAL["np_minus_bare_md"] = "#52514e"
-def dose(form, F, title):
-    fig, axes = plt.subplots(1, 5, figsize=(16, 3.6), dpi=150, facecolor=SURF)
+def dose(form, F, title, two_row=False):
+    # two_row: 2 x 3 grid at portrait text width (top: correct / task_abandoned / acknowledges_emotion; bottom: user_state_inference / incoherent / legend)
+    if two_row: fig, axes = plt.subplots(2, 3, figsize=(9, 5.8), dpi=200, facecolor=SURF); axes = axes.ravel()
+    else: fig, axes = plt.subplots(1, 5, figsize=(16, 3.6), dpi=150, facecolor=SURF)
     for ax, m_ in zip(axes, METS):
         b = T[(T["form"] == form) & (T["direction"] == "none")][m_].iloc[0]
         for dname, c in PAL.items():
@@ -164,8 +166,10 @@ def dose(form, F, title):
             if g.empty: continue
             g = g.sort_values("fraction"); ax.plot([0.0] + list(g["fraction"]), [b] + list(g[m_]), color=c, lw=1.8, marker="o", ms=3.5, label=dname)
         style(ax, m_, "rate"); ax.set_ylim(-0.02, 1.02)
-    axes[0].legend(fontsize=6, frameon=False); fig.suptitle(title, fontsize=10, color=T1, x=0.01, ha="left"); fig.tight_layout(); fig.savefig(R / F); plt.close(fig)
-dose("bare", "F5_dose_response_bare.png", "F5. Dose-response on 30 held-out bare prompts (greedy): metric rate vs steering fraction, one line per direction")
+    if two_row: h, l = axes[0].get_legend_handles_labels(); axes[5].axis("off"); axes[5].legend(h, l, loc="center left", fontsize=8, frameon=False, title="direction", title_fontsize=8)
+    else: axes[0].legend(fontsize=6, frameon=False)
+    fig.suptitle(title, fontsize=10, color=T1, x=0.01, ha="left"); fig.tight_layout(); fig.savefig(R / F); plt.close(fig)
+dose("bare", "F5_dose_response_bare.png", "F5. Dose-response on 30 held-out bare prompts (greedy): metric rate vs steering fraction, one line per direction", two_row=True)
 dose("preamble", "F6_dose_response_preamble.png", "F6. Dose-response on the same 30 prompts with a neutral preamble")
 if not B.empty:
   fig, axes = plt.subplots(1, 5, figsize=(16, 3.6), dpi=150, facecolor=SURF)

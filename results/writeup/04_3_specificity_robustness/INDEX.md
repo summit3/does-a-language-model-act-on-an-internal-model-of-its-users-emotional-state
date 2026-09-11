@@ -1,10 +1,11 @@
-# 4.3 Specificity and robustness (E, K, F, N, D)
+# 4.3 Specificity and robustness (T6; E, K, F, N, D)
 
 Plan bullets:
 - E: preamble-presence direction rates; K: shared_pc1 vs valence_resid; F: bands 8-19 / 16-27; N: neutral_preamble prompts sampled; D: bare val sampled matches greedy.
-- All five runs are in rates_E_F_I_D_K_N.md (computed from phase4_scores.csv, rules v3); K and N also have their own CSVs.
+- All five runs are in rates_E_F_I_D_K_N.md (computed from phase4_scores.csv, rules v3) and its image twin T6; K and N also have their own CSVs.
 
 Files:
+- `T6_rates_D_E_F_I_K_N.png` <- `results/phase4/figures/T6_rates_D_E_F_I_K_N.png`: T6 as image (same table as rates_E_F_I_D_K_N.md, scripts/11_render_T6.py)
 - `phase4_K_component_rates.csv` <- `results/phase4/phase4_K_component_rates.csv`: run K
 - `phase4_N_preamble_sampled_ci.csv` <- `results/phase4/phase4_N_preamble_sampled_ci.csv`: run N Wilson CIs
 - `phase4_sampled_rates.csv` <- `results/phase4/phase4_sampled_rates.csv`: run D Wilson CIs

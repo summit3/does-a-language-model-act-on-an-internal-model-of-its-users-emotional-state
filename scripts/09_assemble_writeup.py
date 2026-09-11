@@ -99,9 +99,10 @@ S.append(("04_2_sufficiency_necessity", "4.2 Sufficiency and necessity (F5, F7/T
     {"rates_all_runs.md": "# Rule-score rates (v3) for every run x form x direction x fraction, from phase4_scores.csv\n\nSubtraction runs (B, L, M) list the magnitude; direction name ends in _subtract. Correct is over closed tasks only.\n\n" + rate_table(),
      "run_M_quotes.md": "# Run M replies for the quotable prompts (T=0.7, 5 samples; fraction 0.04 here means -0.04 along distressed_md)\n\n" + "".join(quote(r) for r in sorted(dedupe(rows(run="M", task_contains=["Great Wall", "spider", "ocean"]) + rows(run="M", prompt_contains=["rejection"])), key=lambda r: (r["base_task"], float(r["fraction"]), int(r["sample_idx"]))))}))
 
-S.append(("04_3_specificity_robustness", "4.3 Specificity and robustness (E, K, F, N, D)", [
+S.append(("04_3_specificity_robustness", "4.3 Specificity and robustness (T6; E, K, F, N, D)", [
     "E: preamble-presence direction rates; K: shared_pc1 vs valence_resid; F: bands 8-19 / 16-27; N: neutral_preamble prompts sampled; D: bare val sampled matches greedy.",
-    "All five runs are in rates_E_F_I_D_K_N.md (computed from phase4_scores.csv, rules v3); K and N also have their own CSVs."], [
+    "All five runs are in rates_E_F_I_D_K_N.md (computed from phase4_scores.csv, rules v3) and its image twin T6; K and N also have their own CSVs."], [
+    ("results/phase4/figures/T6_rates_D_E_F_I_K_N.png", "T6 as image (same table as rates_E_F_I_D_K_N.md, scripts/11_render_T6.py)"),
     ("results/phase4/phase4_K_component_rates.csv", "run K"),
     ("results/phase4/phase4_N_preamble_sampled_ci.csv", "run N Wilson CIs"),
     ("results/phase4/phase4_sampled_rates.csv", "run D Wilson CIs"),
