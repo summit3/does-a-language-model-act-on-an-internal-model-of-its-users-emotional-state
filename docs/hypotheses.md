@@ -1,6 +1,6 @@
 # Running lab notebook: hypotheses, findings, decisions
 
-Terse by design. Updated as results land. Pointers: brief `docs/mats_user_models_brief.md`; scoring
+Terse by design. Updated as results land. Pointers: brief `docs/project_brief.md`; scoring
 rules `data/phase1_scoring_rules.md`; scores `results/phase1/phase1_scores.csv`; calibration
 `results/playground/9b_calibration_sweep.md`; playground `results/playground/playground_notes.md`.
 

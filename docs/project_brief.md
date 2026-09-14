@@ -124,4 +124,4 @@ Stop experiments at hour 16-17. Hours 17-20 write-up. +2 hours executive summary
 4. Methods: model, layers, dataset construction, metrics, hyperparameters.
 5. Full results incl. baselines and negatives.
 6. What I verified and how.
-7. Toggl screenshot, code link.
+7. Time log, code link.

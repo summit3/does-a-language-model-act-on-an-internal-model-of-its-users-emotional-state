@@ -9,4 +9,4 @@ git-ignored). Links:
   https://crawling-opossum-1a2.notion.site/Empathic-machines-1a44cd7fb1b780539302c6c50a5ca80c
 - Zou et al. 2023, "Representation Engineering": https://arxiv.org/abs/2310.01405 — code: https://github.com/andyzoujm/representation-engineering
 
-Other papers cited in `mats_user_models_brief.md` are referenced there by arXiv id.
+Other papers cited in `project_brief.md` are referenced there by arXiv id.
