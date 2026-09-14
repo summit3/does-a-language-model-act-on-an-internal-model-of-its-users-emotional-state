@@ -4,13 +4,13 @@
 
 Read set: results/phase4/phase4_handcheck_set.md (71 rows). Disagreements: results/phase4/phase4_handcheck_disagreements.csv (37 rows). Agreement = share of (row, metric) cells where the rule equals the hand verdict; per-cell n in results/phase4/phase4_handcheck_agreement.csv (correct only where scorable).
 
-**Agreement, rules v1 (before)**
+**Agreement, rules v1 (before)** [updated Sept 11 to v3 values: G_abandoned abandoned cell 1.00 -> 0.17, from phase4_handcheck_agreement_v1.csv]
 
 | group | correct | abandoned | ack | infer | incoh |
 |---|---|---|---|---|---|
 | distressed_0.04 | 0.92 | 0.90 | 0.87 | 0.80 | 1.00 |
 | random_0.04 | 0.92 | 1.00 | 0.93 | 1.00 | 1.00 |
-| G_abandoned | 0.33 | 1.00 | 1.00 | 0.67 | n/a |
+| G_abandoned | 0.33 | 0.17 | 1.00 | 0.67 | n/a |
 | distressed_0.06_abandoned | 1.00 | 1.00 | 0.90 | 0.40 | 1.00 |
 | inference_flagged | 1.00 | 0.60 | 0.90 | 0.90 | 0.90 |
 
@@ -49,7 +49,7 @@ Read set: results/phase4/phase4_handcheck_set.md (71 rows). Disagreements: resul
 
 **Affective-leak validation on the read set (30 J/distressed_md@0.04 rows):** hand tally lexical = p2_0163, 0223, 0355, 0208, 0283; detector hits = 0163, 0172, 0208, 0223, 0319, 0355, 0373. TP 4 (0163, 0208, 0223, 0355), FN 1 (0283), FP 3 (0172 'feel;loss', 0373 'loss', and 0319 which is one of the two hand-labelled framing rows). Hand framing rows 0319 and 0067: detector 1 and 0. K/p2_0196 (hand: lexical, extreme): detector 1, words anxious;depression;emotional;fear.
 
-**Affective-leak rate (pooled over runs, direction x fraction; full table results/phase4/phase4_affect_leak_rates.csv):** none@0 0.162 (n=160); distressed_md 0.02 0.033 (n=60), 0.04 0.167 (n=510), 0.06 0.067 (n=60), 0.08 0.017 (n=60); random@0.04 0.064 (n=360); unrelated_coding_probe@0.04 0.044 (n=360); valence_resid@0.04 0.200 (n=30); distressed_md_subtract (distressed prompts) 0 0.180 (n=150), -0.04 0.039 (n=180), -0.06 0.000 (n=60). Plain comparison: distressed_md@0.04 0.167 vs random@0.04 0.064 vs coding@0.04 0.044; unsteered none@0 is 0.162, i.e. the unsteered bare-prompt rate (mostly advice/false-premise wording, e.g. 'stress', 'worry') is as high as the steered rate, so the lexical detector does not separate steering from baseline; the leak rate falls to 0.00 under subtraction at -0.06.
+**Affective-leak rate (pooled over runs, direction x fraction; full table results/phase4/phase4_affect_leak_rates.csv):** none@0 0.150 (n=160, runs A+B+C, includes the run C third-party prompts); bare-only unsteered 0.033 (run A, n=30) and 0.073 (run D fraction 0, n=150); distressed_md 0.02 0.033 (n=60), 0.04 0.133 (n=510), 0.06 0.017 (n=60), 0.08 0.017 (n=60); random@0.04 0.064 (n=360); unrelated_coding_probe@0.04 0.044 (n=360); valence_resid@0.04 0.167 (n=30); distressed_md_subtract (distressed prompts) 0 0.120 (n=150), -0.04 0.039 (n=180), -0.06 0.000 (n=60). Plain comparison: distressed_md@0.04 0.133 vs random@0.04 0.064 vs coding@0.04 0.044; unsteered bare-only none@0 is 0.033-0.073 and the pooled none@0 (with run C third-party prompts) 0.150, i.e. the unsteered rate (mostly advice/false-premise wording, e.g. 'stress', 'worry') is as high as the steered rate, so the lexical detector does not separate steering from baseline; the leak rate falls to 0.00 under subtraction at -0.06. [updated Sept 11 to v3 values]
 
 **Checks 4a-g:**
 

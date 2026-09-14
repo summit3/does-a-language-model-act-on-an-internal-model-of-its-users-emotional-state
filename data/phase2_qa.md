@@ -156,7 +156,7 @@ Flag = word appears in >10% of that condition's preambles.
   Flags: none
 
 **third_party** (n=40): since 7 **FLAG**, her 6 **FLAG**, his 5 **FLAG**, mine 4, friend 3, overwhelmed 3, tears 3, again 2, anxious 2, brother 2, every 2, having 2, moment 2, mum 2, new 2, our 2, results 2, say 2, she's 2, stressed 2
-  Flags: ['his', 'her', 'since']
+  Flags: ['since', 'her', 'his']
 
 **third_party_neutral** (n=20): asked 4 **FLAG**, asking 2, mentioned 2, agree 1, arguing 1, aunt 1, bet 1, boyfriend 1, break 1, brother 1, brought 1, chatting 1, class 1, colleague 1, couldn't 1, cousin 1, curious 1, dad 1, daughter 1, desk 1
   Flags: ['asked']
