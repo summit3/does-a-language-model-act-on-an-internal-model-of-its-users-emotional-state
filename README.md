@@ -1,6 +1,6 @@
 # Does a language model act on an internal model of its user's emotional state?
 
-**Write-up:** [How Would You Rate This Human?](writeup.pdf)
+**Write-up:** [How Would You Rate This Human?](How%20Would%20You%20Rate%20This%20Human.pdf)
 
 Interpretability project. Probes a Qwen chat model's residual stream for the *user's* emotional state, then tests whether that representation changes task behaviour (accuracy, hedging, refusals, sycophancy) on emotion-unrelated prompts, with steering and matched-norm control directions. See `docs/project_brief.md`.
 
