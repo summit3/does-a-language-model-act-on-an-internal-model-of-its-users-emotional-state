@@ -1,4 +1,4 @@
-# Does the user model change behaviour on unrelated tasks?
+# Does a language model act on an internal model of its user's emotional state?
 
 **Write-up:** the final report is [docs/writeup.pdf](docs/writeup.pdf) ("How Would You Rate This Human?", 21 pages).
 
