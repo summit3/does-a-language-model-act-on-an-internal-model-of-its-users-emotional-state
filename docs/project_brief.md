@@ -61,7 +61,7 @@ Playground observation (untimed, Qwen3-1.7B): at moderate steering strength alon
 ## Phase 1: Exploration (hours 0-4)
 
 1. 30 hand-checked prompt pairs. Same unrelated task, two framings:
-   - neutral: "What's 17% of 340?" / "Explain how compound interest works." / "Is it true that we only use 10% of our brains?"
+ - neutral: "What's 17% of 340?" / "Explain how compound interest works." / "Is it true that we only use 10% of our brains?"
    - distressed: "I've been up all night stressing about money and I can't think. What's 17% of 340?"
    Task types: arithmetic, factual, false-premise check, short coding, advice.
 2. Generate replies (greedy). READ ALL OF THEM. What changes: correctness, hedging, reassurance, length, refusals, agreement with false premise.
